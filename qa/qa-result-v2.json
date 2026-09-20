@@ -1,0 +1,78 @@
+{
+  "generatedAt": "2026-09-20T12:15:42.369Z",
+  "runtime": "jsdom",
+  "counts": {
+    "webPages": 145,
+    "pcPages": 20,
+    "expectedFields": 2030,
+    "renderedFields": 2030,
+    "expectedButtons": 437,
+    "renderedButtons": 437
+  },
+  "pageFailures": [],
+  "interactions": [
+    {
+      "name": "商品搜索→探查结果",
+      "result": "PASS"
+    },
+    {
+      "name": "探查结果→候选列表",
+      "result": "PASS"
+    },
+    {
+      "name": "候选选择→候选确认",
+      "result": "PASS"
+    },
+    {
+      "name": "候选确认→正式采集任务",
+      "result": "PASS"
+    },
+    {
+      "name": "商品列表→详情→编辑",
+      "result": "PASS"
+    },
+    {
+      "name": "商品编辑→店铺草稿预览",
+      "result": "PASS"
+    },
+    {
+      "name": "店铺草稿→PublishTask",
+      "result": "PASS"
+    },
+    {
+      "name": "订单回流批次启动",
+      "result": "PASS"
+    },
+    {
+      "name": "采购确认异常拦截",
+      "result": "PASS"
+    },
+    {
+      "name": "列表筛选/排序/返回上下文",
+      "result": "PASS"
+    },
+    {
+      "name": "店铺范围约束列表与直达对象",
+      "result": "PASS"
+    },
+    {
+      "name": "AUDITOR 只读权限",
+      "result": "PASS"
+    },
+    {
+      "name": "错误/冲突/长文本状态",
+      "result": "PASS"
+    },
+    {
+      "name": "业务模式隔离研发追踪",
+      "result": "PASS"
+    },
+    {
+      "name": "PC 管理/执行/诊断页面类型匹配",
+      "result": "PASS"
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "pass": true
+}
