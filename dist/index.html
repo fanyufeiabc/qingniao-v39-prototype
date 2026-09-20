@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0B1013">
+    <title>青鸟 · 家庭电商中台 V3.9</title>
+    <meta name="description" content="依据青鸟标识 A 款封版和 V3.9-FROZEN 需求构建的 PC 管理端与 PC Worker 可交互原型。">
+    <link rel="icon" type="image/svg+xml" href="./assets/qingniao-A-marque.svg">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div id="loading" class="boot-screen" role="status" aria-live="polite">
+      <img src="./assets/qingniao-A-ink.svg" width="48" height="48" alt="">
+      <div>
+        <strong>青鸟</strong>
+        <span>正在载入 V3.9 冻结需求台账…</span>
+      </div>
+    </div>
+    <div id="app"></div>
+    <div id="overlay-root"></div>
+    <div id="toast-root" class="toast-root" aria-live="polite"></div>
+    <script src="./data/requirements.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
