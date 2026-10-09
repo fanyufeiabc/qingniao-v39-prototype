@@ -1,0 +1,4998 @@
+{
+  "version": "9.1.1-w8r2a-p1",
+  "counts": {
+    "nasScenes": 158,
+    "pcScenes": 23,
+    "logicalIds": 61,
+    "originalNas": 145,
+    "originalPc": 20,
+    "originalFields": 2030,
+    "originalButtons": 437
+  },
+  "nasMenus": [
+    {
+      "module": "DASH",
+      "name": "经营总览",
+      "group": "今日经营",
+      "scenes": 8
+    },
+    {
+      "module": "PLT",
+      "name": "平台与路由",
+      "group": "商品供给",
+      "scenes": 8
+    },
+    {
+      "module": "ACC",
+      "name": "账号授权",
+      "group": "商品供给",
+      "scenes": 8
+    },
+    {
+      "module": "STR",
+      "name": "店铺管理",
+      "group": "商品供给",
+      "scenes": 7
+    },
+    {
+      "module": "SUP",
+      "name": "供应商",
+      "group": "商品供给",
+      "scenes": 5
+    },
+    {
+      "module": "SRC",
+      "name": "货源与采集",
+      "group": "商品供给",
+      "scenes": 16
+    },
+    {
+      "module": "PRD",
+      "name": "商品中心",
+      "group": "商品供给",
+      "scenes": 17
+    },
+    {
+      "module": "CHN",
+      "name": "店铺草稿",
+      "group": "销售履约",
+      "scenes": 11
+    },
+    {
+      "module": "JD",
+      "name": "京东小店",
+      "group": "销售履约",
+      "scenes": 6
+    },
+    {
+      "module": "ORD",
+      "name": "订单中心",
+      "group": "销售履约",
+      "scenes": 9
+    },
+    {
+      "module": "PUR",
+      "name": "采购中心",
+      "group": "销售履约",
+      "scenes": 7
+    },
+    {
+      "module": "LOGI",
+      "name": "物流中心",
+      "group": "销售履约",
+      "scenes": 5
+    },
+    {
+      "module": "AS",
+      "name": "售后中心",
+      "group": "销售履约",
+      "scenes": 4
+    },
+    {
+      "module": "FIN",
+      "name": "财务与利润",
+      "group": "销售履约",
+      "scenes": 2
+    },
+    {
+      "module": "TSK",
+      "name": "任务中心",
+      "group": "运行支撑",
+      "scenes": 6
+    },
+    {
+      "module": "RTE",
+      "name": "执行节点",
+      "group": "运行支撑",
+      "scenes": 5
+    },
+    {
+      "module": "MED",
+      "name": "媒体存储",
+      "group": "运行支撑",
+      "scenes": 7
+    },
+    {
+      "module": "STD",
+      "name": "标准数据",
+      "group": "运行支撑",
+      "scenes": 7
+    },
+    {
+      "module": "SYS",
+      "name": "系统管理",
+      "group": "运行支撑",
+      "scenes": 20
+    }
+  ],
+  "pcGroups": [
+    {
+      "label": "设备与连接",
+      "ids": [
+        "PC-001",
+        "PC-002",
+        "PC-003",
+        "CUR-PC-SETTINGS"
+      ]
+    },
+    {
+      "label": "账号与浏览器",
+      "ids": [
+        "CUR-PC-LOGIN",
+        "PC-004",
+        "PC-005",
+        "PC-013"
+      ]
+    },
+    {
+      "label": "任务与人工接管",
+      "ids": [
+        "CUR-PC-MONITOR",
+        "PC-011"
+      ]
+    },
+    {
+      "label": "货源与媒体",
+      "ids": [
+        "PC-009",
+        "PC-010",
+        "PC-012"
+      ]
+    },
+    {
+      "label": "店铺草稿与发布",
+      "ids": [
+        "PC-014",
+        "PC-015"
+      ]
+    },
+    {
+      "label": "订单与履约",
+      "ids": [
+        "PC-016",
+        "PC-017",
+        "PC-018",
+        "PC-019"
+      ]
+    },
+    {
+      "label": "适配与诊断",
+      "ids": [
+        "PC-006",
+        "PC-007",
+        "PC-008",
+        "PC-020"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "surface": "web",
+      "sceneId": "DASH-001",
+      "name": "工作台",
+      "module": "DASH",
+      "currentId": "DASH-001",
+      "route": "#/web/DASH-001?view=DASH-001",
+      "original": true,
+      "fields": [
+        "FLD-DASH-001-01",
+        "FLD-DASH-001-02",
+        "FLD-DASH-001-03",
+        "FLD-DASH-001-04",
+        "FLD-DASH-001-05",
+        "FLD-DASH-001-06",
+        "FLD-DASH-001-07",
+        "FLD-DASH-001-08",
+        "FLD-DASH-001-09",
+        "FLD-DASH-001-10"
+      ],
+      "buttons": [
+        "BTN-DASH-001-01",
+        "BTN-DASH-001-02",
+        "BTN-DASH-001-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "DASH-002",
+      "name": "待办/人工任务",
+      "module": "DASH",
+      "currentId": "DASH-002",
+      "route": "#/web/DASH-002?view=DASH-002",
+      "original": true,
+      "fields": [
+        "FLD-DASH-002-01",
+        "FLD-DASH-002-02",
+        "FLD-DASH-002-03",
+        "FLD-DASH-002-04",
+        "FLD-DASH-002-05",
+        "FLD-DASH-002-06",
+        "FLD-DASH-002-07",
+        "FLD-DASH-002-08",
+        "FLD-DASH-002-09",
+        "FLD-DASH-002-10",
+        "FLD-DASH-002-11",
+        "FLD-DASH-002-12"
+      ],
+      "buttons": [
+        "BTN-DASH-002-01",
+        "BTN-DASH-002-02",
+        "BTN-DASH-002-03",
+        "BTN-DASH-002-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "DASH-003",
+      "name": "异常中心",
+      "module": "DASH",
+      "currentId": "DASH-003",
+      "route": "#/web/DASH-003?view=DASH-003",
+      "original": true,
+      "fields": [
+        "FLD-DASH-003-01",
+        "FLD-DASH-003-02",
+        "FLD-DASH-003-03",
+        "FLD-DASH-003-04",
+        "FLD-DASH-003-05",
+        "FLD-DASH-003-06",
+        "FLD-DASH-003-07",
+        "FLD-DASH-003-08",
+        "FLD-DASH-003-09",
+        "FLD-DASH-003-10"
+      ],
+      "buttons": [
+        "BTN-DASH-003-01",
+        "BTN-DASH-003-02",
+        "BTN-DASH-003-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "DASH-004",
+      "name": "任务概览",
+      "module": "DASH",
+      "currentId": "DASH-001",
+      "route": "#/web/DASH-001?view=DASH-004",
+      "original": true,
+      "fields": [
+        "FLD-DASH-004-01",
+        "FLD-DASH-004-02",
+        "FLD-DASH-004-03",
+        "FLD-DASH-004-04",
+        "FLD-DASH-004-05",
+        "FLD-DASH-004-06",
+        "FLD-DASH-004-07",
+        "FLD-DASH-004-08",
+        "FLD-DASH-004-09",
+        "FLD-DASH-004-10",
+        "FLD-DASH-004-11",
+        "FLD-DASH-004-12"
+      ],
+      "buttons": [
+        "BTN-DASH-004-01",
+        "BTN-DASH-004-02",
+        "BTN-DASH-004-03",
+        "BTN-DASH-004-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "DASH-005",
+      "name": "订单概览",
+      "module": "DASH",
+      "currentId": "DASH-001",
+      "route": "#/web/DASH-001?view=DASH-005",
+      "original": true,
+      "fields": [
+        "FLD-DASH-005-01",
+        "FLD-DASH-005-02",
+        "FLD-DASH-005-03",
+        "FLD-DASH-005-04",
+        "FLD-DASH-005-05",
+        "FLD-DASH-005-06",
+        "FLD-DASH-005-07",
+        "FLD-DASH-005-08",
+        "FLD-DASH-005-09",
+        "FLD-DASH-005-10"
+      ],
+      "buttons": [
+        "BTN-DASH-005-01",
+        "BTN-DASH-005-02",
+        "BTN-DASH-005-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "DASH-006",
+      "name": "采集概览",
+      "module": "DASH",
+      "currentId": "DASH-001",
+      "route": "#/web/DASH-001?view=DASH-006",
+      "original": true,
+      "fields": [
+        "FLD-DASH-006-01",
+        "FLD-DASH-006-02",
+        "FLD-DASH-006-03",
+        "FLD-DASH-006-04",
+        "FLD-DASH-006-05",
+        "FLD-DASH-006-06",
+        "FLD-DASH-006-07",
+        "FLD-DASH-006-08",
+        "FLD-DASH-006-09",
+        "FLD-DASH-006-10"
+      ],
+      "buttons": [
+        "BTN-DASH-006-01",
+        "BTN-DASH-006-02",
+        "BTN-DASH-006-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "DASH-007",
+      "name": "发布概览",
+      "module": "DASH",
+      "currentId": "DASH-001",
+      "route": "#/web/DASH-001?view=DASH-007",
+      "original": true,
+      "fields": [
+        "FLD-DASH-007-01",
+        "FLD-DASH-007-02",
+        "FLD-DASH-007-03",
+        "FLD-DASH-007-04",
+        "FLD-DASH-007-05",
+        "FLD-DASH-007-06",
+        "FLD-DASH-007-07",
+        "FLD-DASH-007-08",
+        "FLD-DASH-007-09",
+        "FLD-DASH-007-10"
+      ],
+      "buttons": [
+        "BTN-DASH-007-01",
+        "BTN-DASH-007-02",
+        "BTN-DASH-007-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "DASH-008",
+      "name": "系统健康",
+      "module": "DASH",
+      "currentId": "DASH-001",
+      "route": "#/web/DASH-001?view=DASH-008",
+      "original": true,
+      "fields": [
+        "FLD-DASH-008-01",
+        "FLD-DASH-008-02",
+        "FLD-DASH-008-03",
+        "FLD-DASH-008-04",
+        "FLD-DASH-008-05",
+        "FLD-DASH-008-06",
+        "FLD-DASH-008-07",
+        "FLD-DASH-008-08",
+        "FLD-DASH-008-09",
+        "FLD-DASH-008-10"
+      ],
+      "buttons": [
+        "BTN-DASH-008-01",
+        "BTN-DASH-008-02",
+        "BTN-DASH-008-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PLT-009",
+      "name": "货源平台",
+      "module": "PLT",
+      "currentId": "SYS-001",
+      "route": "#/web/SYS-001?view=PLT-009",
+      "original": true,
+      "fields": [
+        "FLD-PLT-009-01",
+        "FLD-PLT-009-02",
+        "FLD-PLT-009-03",
+        "FLD-PLT-009-04",
+        "FLD-PLT-009-05",
+        "FLD-PLT-009-06",
+        "FLD-PLT-009-07",
+        "FLD-PLT-009-08",
+        "FLD-PLT-009-09",
+        "FLD-PLT-009-10",
+        "FLD-PLT-009-11"
+      ],
+      "buttons": [
+        "BTN-PLT-009-01",
+        "BTN-PLT-009-02",
+        "BTN-PLT-009-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PLT-010",
+      "name": "货源平台新增/编辑",
+      "module": "PLT",
+      "currentId": "SYS-001",
+      "route": "#/web/SYS-001?view=PLT-010",
+      "original": true,
+      "fields": [
+        "FLD-PLT-010-01",
+        "FLD-PLT-010-02",
+        "FLD-PLT-010-03",
+        "FLD-PLT-010-04",
+        "FLD-PLT-010-05",
+        "FLD-PLT-010-06",
+        "FLD-PLT-010-07",
+        "FLD-PLT-010-08",
+        "FLD-PLT-010-09",
+        "FLD-PLT-010-10",
+        "FLD-PLT-010-11"
+      ],
+      "buttons": [
+        "BTN-PLT-010-01",
+        "BTN-PLT-010-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PLT-011",
+      "name": "平台地址",
+      "module": "PLT",
+      "currentId": "SYS-001",
+      "route": "#/web/SYS-001?view=PLT-011",
+      "original": true,
+      "fields": [
+        "FLD-PLT-011-01",
+        "FLD-PLT-011-02",
+        "FLD-PLT-011-03",
+        "FLD-PLT-011-04",
+        "FLD-PLT-011-05",
+        "FLD-PLT-011-06",
+        "FLD-PLT-011-07",
+        "FLD-PLT-011-08",
+        "FLD-PLT-011-09",
+        "FLD-PLT-011-10",
+        "FLD-PLT-011-11"
+      ],
+      "buttons": [
+        "BTN-PLT-011-01",
+        "BTN-PLT-011-02",
+        "BTN-PLT-011-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PLT-012",
+      "name": "平台能力",
+      "module": "PLT",
+      "currentId": "SYS-001",
+      "route": "#/web/SYS-001?view=PLT-012",
+      "original": true,
+      "fields": [
+        "FLD-PLT-012-01",
+        "FLD-PLT-012-02",
+        "FLD-PLT-012-03",
+        "FLD-PLT-012-04",
+        "FLD-PLT-012-05",
+        "FLD-PLT-012-06",
+        "FLD-PLT-012-07",
+        "FLD-PLT-012-08",
+        "FLD-PLT-012-09",
+        "FLD-PLT-012-10",
+        "FLD-PLT-012-11"
+      ],
+      "buttons": [
+        "BTN-PLT-012-01",
+        "BTN-PLT-012-02",
+        "BTN-PLT-012-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PLT-013",
+      "name": "销售平台",
+      "module": "PLT",
+      "currentId": "SYS-001",
+      "route": "#/web/SYS-001?view=PLT-013",
+      "original": true,
+      "fields": [
+        "FLD-PLT-013-01",
+        "FLD-PLT-013-02",
+        "FLD-PLT-013-03",
+        "FLD-PLT-013-04",
+        "FLD-PLT-013-05",
+        "FLD-PLT-013-06",
+        "FLD-PLT-013-07",
+        "FLD-PLT-013-08",
+        "FLD-PLT-013-09",
+        "FLD-PLT-013-10",
+        "FLD-PLT-013-11"
+      ],
+      "buttons": [
+        "BTN-PLT-013-01",
+        "BTN-PLT-013-02",
+        "BTN-PLT-013-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PLT-014",
+      "name": "销售平台新增/编辑",
+      "module": "PLT",
+      "currentId": "SYS-001",
+      "route": "#/web/SYS-001?view=PLT-014",
+      "original": true,
+      "fields": [
+        "FLD-PLT-014-01",
+        "FLD-PLT-014-02",
+        "FLD-PLT-014-03",
+        "FLD-PLT-014-04",
+        "FLD-PLT-014-05",
+        "FLD-PLT-014-06",
+        "FLD-PLT-014-07",
+        "FLD-PLT-014-08",
+        "FLD-PLT-014-09",
+        "FLD-PLT-014-10",
+        "FLD-PLT-014-11"
+      ],
+      "buttons": [
+        "BTN-PLT-014-01",
+        "BTN-PLT-014-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PLT-015",
+      "name": "销售平台能力",
+      "module": "PLT",
+      "currentId": "SYS-001",
+      "route": "#/web/SYS-001?view=PLT-015",
+      "original": true,
+      "fields": [
+        "FLD-PLT-015-01",
+        "FLD-PLT-015-02",
+        "FLD-PLT-015-03",
+        "FLD-PLT-015-04",
+        "FLD-PLT-015-05",
+        "FLD-PLT-015-06",
+        "FLD-PLT-015-07",
+        "FLD-PLT-015-08",
+        "FLD-PLT-015-09",
+        "FLD-PLT-015-10",
+        "FLD-PLT-015-11"
+      ],
+      "buttons": [
+        "BTN-PLT-015-01",
+        "BTN-PLT-015-02",
+        "BTN-PLT-015-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PLT-016",
+      "name": "平台版本",
+      "module": "PLT",
+      "currentId": "SYS-001",
+      "route": "#/web/SYS-001?view=PLT-016",
+      "original": true,
+      "fields": [
+        "FLD-PLT-016-01",
+        "FLD-PLT-016-02",
+        "FLD-PLT-016-03",
+        "FLD-PLT-016-04",
+        "FLD-PLT-016-05",
+        "FLD-PLT-016-06",
+        "FLD-PLT-016-07",
+        "FLD-PLT-016-08",
+        "FLD-PLT-016-09",
+        "FLD-PLT-016-10",
+        "FLD-PLT-016-11"
+      ],
+      "buttons": [
+        "BTN-PLT-016-01",
+        "BTN-PLT-016-02",
+        "BTN-PLT-016-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "ACC-017",
+      "name": "货源账号",
+      "module": "ACC",
+      "currentId": "SYS-002",
+      "route": "#/web/SYS-002?view=ACC-017",
+      "original": true,
+      "fields": [
+        "FLD-ACC-017-01",
+        "FLD-ACC-017-02",
+        "FLD-ACC-017-03",
+        "FLD-ACC-017-04",
+        "FLD-ACC-017-05",
+        "FLD-ACC-017-06",
+        "FLD-ACC-017-07",
+        "FLD-ACC-017-08",
+        "FLD-ACC-017-09",
+        "FLD-ACC-017-10",
+        "FLD-ACC-017-11",
+        "FLD-ACC-017-12",
+        "FLD-ACC-017-13"
+      ],
+      "buttons": [
+        "BTN-ACC-017-01",
+        "BTN-ACC-017-02",
+        "BTN-ACC-017-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "ACC-018",
+      "name": "货源账号新增/编辑",
+      "module": "ACC",
+      "currentId": "SYS-002",
+      "route": "#/web/SYS-002?view=ACC-018",
+      "original": true,
+      "fields": [
+        "FLD-ACC-018-01",
+        "FLD-ACC-018-02",
+        "FLD-ACC-018-03",
+        "FLD-ACC-018-04",
+        "FLD-ACC-018-05",
+        "FLD-ACC-018-06",
+        "FLD-ACC-018-07",
+        "FLD-ACC-018-08",
+        "FLD-ACC-018-09",
+        "FLD-ACC-018-10",
+        "FLD-ACC-018-11",
+        "FLD-ACC-018-12",
+        "FLD-ACC-018-13"
+      ],
+      "buttons": [
+        "BTN-ACC-018-01",
+        "BTN-ACC-018-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "ACC-019",
+      "name": "1688 账号登录与核验",
+      "module": "ACC",
+      "currentId": "SYS-002",
+      "route": "#/web/SYS-002?view=ACC-019",
+      "original": true,
+      "fields": [
+        "FLD-ACC-019-01",
+        "FLD-ACC-019-02",
+        "FLD-ACC-019-03",
+        "FLD-ACC-019-04",
+        "FLD-ACC-019-05",
+        "FLD-ACC-019-06",
+        "FLD-ACC-019-07",
+        "FLD-ACC-019-08",
+        "FLD-ACC-019-09",
+        "FLD-ACC-019-10",
+        "FLD-ACC-019-11",
+        "FLD-ACC-019-12",
+        "FLD-ACC-019-13"
+      ],
+      "buttons": [
+        "BTN-ACC-019-01",
+        "BTN-ACC-019-02",
+        "BTN-ACC-019-03",
+        "BTN-ACC-019-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "ACC-020",
+      "name": "货源账号Endpoint",
+      "module": "ACC",
+      "currentId": "SYS-002",
+      "route": "#/web/SYS-002?view=ACC-020",
+      "original": true,
+      "fields": [
+        "FLD-ACC-020-01",
+        "FLD-ACC-020-02",
+        "FLD-ACC-020-03",
+        "FLD-ACC-020-04",
+        "FLD-ACC-020-05",
+        "FLD-ACC-020-06",
+        "FLD-ACC-020-07",
+        "FLD-ACC-020-08",
+        "FLD-ACC-020-09",
+        "FLD-ACC-020-10",
+        "FLD-ACC-020-11",
+        "FLD-ACC-020-12",
+        "FLD-ACC-020-13"
+      ],
+      "buttons": [
+        "BTN-ACC-020-01",
+        "BTN-ACC-020-02",
+        "BTN-ACC-020-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "ACC-021",
+      "name": "销售账号",
+      "module": "ACC",
+      "currentId": "SYS-002",
+      "route": "#/web/SYS-002?view=ACC-021",
+      "original": true,
+      "fields": [
+        "FLD-ACC-021-01",
+        "FLD-ACC-021-02",
+        "FLD-ACC-021-03",
+        "FLD-ACC-021-04",
+        "FLD-ACC-021-05",
+        "FLD-ACC-021-06",
+        "FLD-ACC-021-07",
+        "FLD-ACC-021-08",
+        "FLD-ACC-021-09",
+        "FLD-ACC-021-10",
+        "FLD-ACC-021-11",
+        "FLD-ACC-021-12",
+        "FLD-ACC-021-13"
+      ],
+      "buttons": [
+        "BTN-ACC-021-01",
+        "BTN-ACC-021-02",
+        "BTN-ACC-021-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "ACC-022",
+      "name": "销售账号新增/编辑",
+      "module": "ACC",
+      "currentId": "SYS-002",
+      "route": "#/web/SYS-002?view=ACC-022",
+      "original": true,
+      "fields": [
+        "FLD-ACC-022-01",
+        "FLD-ACC-022-02",
+        "FLD-ACC-022-03",
+        "FLD-ACC-022-04",
+        "FLD-ACC-022-05",
+        "FLD-ACC-022-06",
+        "FLD-ACC-022-07",
+        "FLD-ACC-022-08",
+        "FLD-ACC-022-09",
+        "FLD-ACC-022-10",
+        "FLD-ACC-022-11",
+        "FLD-ACC-022-12",
+        "FLD-ACC-022-13"
+      ],
+      "buttons": [
+        "BTN-ACC-022-01",
+        "BTN-ACC-022-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "ACC-023",
+      "name": "店铺账号登录与核验",
+      "module": "ACC",
+      "currentId": "SYS-002",
+      "route": "#/web/SYS-002?view=ACC-023",
+      "original": true,
+      "fields": [
+        "FLD-ACC-023-01",
+        "FLD-ACC-023-02",
+        "FLD-ACC-023-03",
+        "FLD-ACC-023-04",
+        "FLD-ACC-023-05",
+        "FLD-ACC-023-06",
+        "FLD-ACC-023-07",
+        "FLD-ACC-023-08",
+        "FLD-ACC-023-09",
+        "FLD-ACC-023-10",
+        "FLD-ACC-023-11",
+        "FLD-ACC-023-12",
+        "FLD-ACC-023-13"
+      ],
+      "buttons": [
+        "BTN-ACC-023-01",
+        "BTN-ACC-023-02",
+        "BTN-ACC-023-03",
+        "BTN-ACC-023-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "ACC-024",
+      "name": "销售账号Endpoint",
+      "module": "ACC",
+      "currentId": "SYS-002",
+      "route": "#/web/SYS-002?view=ACC-024",
+      "original": true,
+      "fields": [
+        "FLD-ACC-024-01",
+        "FLD-ACC-024-02",
+        "FLD-ACC-024-03",
+        "FLD-ACC-024-04",
+        "FLD-ACC-024-05",
+        "FLD-ACC-024-06",
+        "FLD-ACC-024-07",
+        "FLD-ACC-024-08",
+        "FLD-ACC-024-09",
+        "FLD-ACC-024-10",
+        "FLD-ACC-024-11",
+        "FLD-ACC-024-12",
+        "FLD-ACC-024-13"
+      ],
+      "buttons": [
+        "BTN-ACC-024-01",
+        "BTN-ACC-024-02",
+        "BTN-ACC-024-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "STR-025",
+      "name": "店铺列表",
+      "module": "STR",
+      "currentId": "STORE-001",
+      "route": "#/web/STORE-001?view=STR-025",
+      "original": true,
+      "fields": [
+        "FLD-STR-025-01",
+        "FLD-STR-025-02",
+        "FLD-STR-025-03",
+        "FLD-STR-025-04",
+        "FLD-STR-025-05",
+        "FLD-STR-025-06",
+        "FLD-STR-025-07",
+        "FLD-STR-025-08",
+        "FLD-STR-025-09",
+        "FLD-STR-025-10",
+        "FLD-STR-025-11",
+        "FLD-STR-025-12",
+        "FLD-STR-025-13"
+      ],
+      "buttons": [
+        "BTN-STR-025-01",
+        "BTN-STR-025-02",
+        "BTN-STR-025-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "STR-026",
+      "name": "店铺新增/编辑",
+      "module": "STR",
+      "currentId": "STORE-001",
+      "route": "#/web/STORE-001?view=STR-026",
+      "original": true,
+      "fields": [
+        "FLD-STR-026-01",
+        "FLD-STR-026-02",
+        "FLD-STR-026-03",
+        "FLD-STR-026-04",
+        "FLD-STR-026-05",
+        "FLD-STR-026-06",
+        "FLD-STR-026-07",
+        "FLD-STR-026-08",
+        "FLD-STR-026-09",
+        "FLD-STR-026-10",
+        "FLD-STR-026-11",
+        "FLD-STR-026-12",
+        "FLD-STR-026-13"
+      ],
+      "buttons": [
+        "BTN-STR-026-01",
+        "BTN-STR-026-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "STR-027",
+      "name": "店铺Endpoint",
+      "module": "STR",
+      "currentId": "STORE-001",
+      "route": "#/web/STORE-001?view=STR-027",
+      "original": true,
+      "fields": [
+        "FLD-STR-027-01",
+        "FLD-STR-027-02",
+        "FLD-STR-027-03",
+        "FLD-STR-027-04",
+        "FLD-STR-027-05",
+        "FLD-STR-027-06",
+        "FLD-STR-027-07",
+        "FLD-STR-027-08",
+        "FLD-STR-027-09",
+        "FLD-STR-027-10",
+        "FLD-STR-027-11",
+        "FLD-STR-027-12",
+        "FLD-STR-027-13"
+      ],
+      "buttons": [
+        "BTN-STR-027-01",
+        "BTN-STR-027-02",
+        "BTN-STR-027-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "STR-028",
+      "name": "店铺工作台地址",
+      "module": "STR",
+      "currentId": "STORE-001",
+      "route": "#/web/STORE-001?view=STR-028",
+      "original": true,
+      "fields": [
+        "FLD-STR-028-01",
+        "FLD-STR-028-02",
+        "FLD-STR-028-03",
+        "FLD-STR-028-04",
+        "FLD-STR-028-05",
+        "FLD-STR-028-06",
+        "FLD-STR-028-07",
+        "FLD-STR-028-08",
+        "FLD-STR-028-09",
+        "FLD-STR-028-10",
+        "FLD-STR-028-11",
+        "FLD-STR-028-12",
+        "FLD-STR-028-13"
+      ],
+      "buttons": [
+        "BTN-STR-028-01",
+        "BTN-STR-028-02",
+        "BTN-STR-028-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "STR-029",
+      "name": "店铺账号关联",
+      "module": "STR",
+      "currentId": "STORE-001",
+      "route": "#/web/STORE-001?view=STR-029",
+      "original": true,
+      "fields": [
+        "FLD-STR-029-01",
+        "FLD-STR-029-02",
+        "FLD-STR-029-03",
+        "FLD-STR-029-04",
+        "FLD-STR-029-05",
+        "FLD-STR-029-06",
+        "FLD-STR-029-07",
+        "FLD-STR-029-08",
+        "FLD-STR-029-09",
+        "FLD-STR-029-10",
+        "FLD-STR-029-11",
+        "FLD-STR-029-12",
+        "FLD-STR-029-13"
+      ],
+      "buttons": [
+        "BTN-STR-029-01",
+        "BTN-STR-029-02",
+        "BTN-STR-029-03",
+        "BTN-STR-029-04",
+        "BTN-STR-029-05"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "STR-030",
+      "name": "店铺状态",
+      "module": "STR",
+      "currentId": "STORE-001",
+      "route": "#/web/STORE-001?view=STR-030",
+      "original": true,
+      "fields": [
+        "FLD-STR-030-01",
+        "FLD-STR-030-02",
+        "FLD-STR-030-03",
+        "FLD-STR-030-04",
+        "FLD-STR-030-05",
+        "FLD-STR-030-06",
+        "FLD-STR-030-07",
+        "FLD-STR-030-08",
+        "FLD-STR-030-09",
+        "FLD-STR-030-10",
+        "FLD-STR-030-11",
+        "FLD-STR-030-12",
+        "FLD-STR-030-13"
+      ],
+      "buttons": [
+        "BTN-STR-030-01",
+        "BTN-STR-030-02",
+        "BTN-STR-030-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "STR-031",
+      "name": "店铺路由测试",
+      "module": "STR",
+      "currentId": "STORE-001",
+      "route": "#/web/STORE-001?view=STR-031",
+      "original": true,
+      "fields": [
+        "FLD-STR-031-01",
+        "FLD-STR-031-02",
+        "FLD-STR-031-03",
+        "FLD-STR-031-04",
+        "FLD-STR-031-05",
+        "FLD-STR-031-06",
+        "FLD-STR-031-07",
+        "FLD-STR-031-08",
+        "FLD-STR-031-09",
+        "FLD-STR-031-10",
+        "FLD-STR-031-11",
+        "FLD-STR-031-12",
+        "FLD-STR-031-13"
+      ],
+      "buttons": [
+        "BTN-STR-031-01",
+        "BTN-STR-031-02",
+        "BTN-STR-031-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SUP-032",
+      "name": "供应商",
+      "module": "SUP",
+      "currentId": "SRC-005",
+      "route": "#/web/SRC-005?view=SUP-032",
+      "original": true,
+      "fields": [
+        "FLD-SUP-032-01",
+        "FLD-SUP-032-02",
+        "FLD-SUP-032-03",
+        "FLD-SUP-032-04",
+        "FLD-SUP-032-05",
+        "FLD-SUP-032-06",
+        "FLD-SUP-032-07",
+        "FLD-SUP-032-08",
+        "FLD-SUP-032-09",
+        "FLD-SUP-032-10",
+        "FLD-SUP-032-11"
+      ],
+      "buttons": [
+        "BTN-SUP-032-01",
+        "BTN-SUP-032-02",
+        "BTN-SUP-032-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SUP-033",
+      "name": "供应商新增/编辑",
+      "module": "SUP",
+      "currentId": "SRC-005",
+      "route": "#/web/SRC-005?view=SUP-033",
+      "original": true,
+      "fields": [
+        "FLD-SUP-033-01",
+        "FLD-SUP-033-02",
+        "FLD-SUP-033-03",
+        "FLD-SUP-033-04",
+        "FLD-SUP-033-05",
+        "FLD-SUP-033-06",
+        "FLD-SUP-033-07",
+        "FLD-SUP-033-08",
+        "FLD-SUP-033-09",
+        "FLD-SUP-033-10",
+        "FLD-SUP-033-11"
+      ],
+      "buttons": [
+        "BTN-SUP-033-01",
+        "BTN-SUP-033-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SUP-034",
+      "name": "供应商详情",
+      "module": "SUP",
+      "currentId": "SRC-005",
+      "route": "#/web/SRC-005?view=SUP-034",
+      "original": true,
+      "fields": [
+        "FLD-SUP-034-01",
+        "FLD-SUP-034-02",
+        "FLD-SUP-034-03",
+        "FLD-SUP-034-04",
+        "FLD-SUP-034-05",
+        "FLD-SUP-034-06",
+        "FLD-SUP-034-07",
+        "FLD-SUP-034-08",
+        "FLD-SUP-034-09",
+        "FLD-SUP-034-10",
+        "FLD-SUP-034-11"
+      ],
+      "buttons": [
+        "BTN-SUP-034-01",
+        "BTN-SUP-034-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SUP-035",
+      "name": "供应商商品",
+      "module": "SUP",
+      "currentId": "SRC-005",
+      "route": "#/web/SRC-005?view=SUP-035",
+      "original": true,
+      "fields": [
+        "FLD-SUP-035-01",
+        "FLD-SUP-035-02",
+        "FLD-SUP-035-03",
+        "FLD-SUP-035-04",
+        "FLD-SUP-035-05",
+        "FLD-SUP-035-06",
+        "FLD-SUP-035-07",
+        "FLD-SUP-035-08",
+        "FLD-SUP-035-09",
+        "FLD-SUP-035-10",
+        "FLD-SUP-035-11"
+      ],
+      "buttons": [
+        "BTN-SUP-035-01",
+        "BTN-SUP-035-02",
+        "BTN-SUP-035-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SUP-036",
+      "name": "供应商采购记录",
+      "module": "SUP",
+      "currentId": "SRC-005",
+      "route": "#/web/SRC-005?view=SUP-036",
+      "original": true,
+      "fields": [
+        "FLD-SUP-036-01",
+        "FLD-SUP-036-02",
+        "FLD-SUP-036-03",
+        "FLD-SUP-036-04",
+        "FLD-SUP-036-05",
+        "FLD-SUP-036-06",
+        "FLD-SUP-036-07",
+        "FLD-SUP-036-08",
+        "FLD-SUP-036-09",
+        "FLD-SUP-036-10",
+        "FLD-SUP-036-11"
+      ],
+      "buttons": [
+        "BTN-SUP-036-01",
+        "BTN-SUP-036-02",
+        "BTN-SUP-036-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SRC-037",
+      "name": "来源商品",
+      "module": "SRC",
+      "currentId": "SRC-005",
+      "route": "#/web/SRC-005?view=SRC-037",
+      "original": true,
+      "fields": [
+        "FLD-SRC-037-01",
+        "FLD-SRC-037-02",
+        "FLD-SRC-037-03",
+        "FLD-SRC-037-04",
+        "FLD-SRC-037-05",
+        "FLD-SRC-037-06",
+        "FLD-SRC-037-07",
+        "FLD-SRC-037-08",
+        "FLD-SRC-037-09",
+        "FLD-SRC-037-10",
+        "FLD-SRC-037-11",
+        "FLD-SRC-037-12",
+        "FLD-SRC-037-13",
+        "FLD-SRC-037-14",
+        "FLD-SRC-037-15",
+        "FLD-SRC-037-16"
+      ],
+      "buttons": [
+        "BTN-SRC-037-01",
+        "BTN-SRC-037-02",
+        "BTN-SRC-037-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SRC-038",
+      "name": "来源商品详情",
+      "module": "SRC",
+      "currentId": "SRC-005",
+      "route": "#/web/SRC-005?view=SRC-038",
+      "original": true,
+      "fields": [
+        "FLD-SRC-038-01",
+        "FLD-SRC-038-02",
+        "FLD-SRC-038-03",
+        "FLD-SRC-038-04",
+        "FLD-SRC-038-05",
+        "FLD-SRC-038-06",
+        "FLD-SRC-038-07",
+        "FLD-SRC-038-08",
+        "FLD-SRC-038-09",
+        "FLD-SRC-038-10",
+        "FLD-SRC-038-11",
+        "FLD-SRC-038-12",
+        "FLD-SRC-038-13",
+        "FLD-SRC-038-14",
+        "FLD-SRC-038-15",
+        "FLD-SRC-038-16"
+      ],
+      "buttons": [
+        "BTN-SRC-038-01",
+        "BTN-SRC-038-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SRC-039",
+      "name": "来源SKU",
+      "module": "SRC",
+      "currentId": "SRC-005",
+      "route": "#/web/SRC-005?view=SRC-039",
+      "original": true,
+      "fields": [
+        "FLD-SRC-039-01",
+        "FLD-SRC-039-02",
+        "FLD-SRC-039-03",
+        "FLD-SRC-039-04",
+        "FLD-SRC-039-05",
+        "FLD-SRC-039-06",
+        "FLD-SRC-039-07",
+        "FLD-SRC-039-08",
+        "FLD-SRC-039-09",
+        "FLD-SRC-039-10",
+        "FLD-SRC-039-11",
+        "FLD-SRC-039-12",
+        "FLD-SRC-039-13",
+        "FLD-SRC-039-14",
+        "FLD-SRC-039-15",
+        "FLD-SRC-039-16"
+      ],
+      "buttons": [
+        "BTN-SRC-039-01",
+        "BTN-SRC-039-02",
+        "BTN-SRC-039-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SRC-040",
+      "name": "来源快照",
+      "module": "SRC",
+      "currentId": "SRC-005",
+      "route": "#/web/SRC-005?view=SRC-040",
+      "original": true,
+      "fields": [
+        "FLD-SRC-040-01",
+        "FLD-SRC-040-02",
+        "FLD-SRC-040-03",
+        "FLD-SRC-040-04",
+        "FLD-SRC-040-05",
+        "FLD-SRC-040-06",
+        "FLD-SRC-040-07",
+        "FLD-SRC-040-08",
+        "FLD-SRC-040-09",
+        "FLD-SRC-040-10",
+        "FLD-SRC-040-11",
+        "FLD-SRC-040-12",
+        "FLD-SRC-040-13",
+        "FLD-SRC-040-14",
+        "FLD-SRC-040-15",
+        "FLD-SRC-040-16"
+      ],
+      "buttons": [
+        "BTN-SRC-040-01",
+        "BTN-SRC-040-02",
+        "BTN-SRC-040-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SRC-041",
+      "name": "来源媒体",
+      "module": "SRC",
+      "currentId": "SRC-005",
+      "route": "#/web/SRC-005?view=SRC-041",
+      "original": true,
+      "fields": [
+        "FLD-SRC-041-01",
+        "FLD-SRC-041-02",
+        "FLD-SRC-041-03",
+        "FLD-SRC-041-04",
+        "FLD-SRC-041-05",
+        "FLD-SRC-041-06",
+        "FLD-SRC-041-07",
+        "FLD-SRC-041-08",
+        "FLD-SRC-041-09",
+        "FLD-SRC-041-10",
+        "FLD-SRC-041-11",
+        "FLD-SRC-041-12",
+        "FLD-SRC-041-13",
+        "FLD-SRC-041-14",
+        "FLD-SRC-041-15",
+        "FLD-SRC-041-16"
+      ],
+      "buttons": [
+        "BTN-SRC-041-01",
+        "BTN-SRC-041-02",
+        "BTN-SRC-041-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SRC-042",
+      "name": "探查任务",
+      "module": "SRC",
+      "currentId": "SRC-001",
+      "route": "#/web/SRC-001?view=SRC-042",
+      "original": true,
+      "fields": [
+        "FLD-SRC-042-01",
+        "FLD-SRC-042-02",
+        "FLD-SRC-042-03",
+        "FLD-SRC-042-04",
+        "FLD-SRC-042-05",
+        "FLD-SRC-042-06",
+        "FLD-SRC-042-07",
+        "FLD-SRC-042-08",
+        "FLD-SRC-042-09",
+        "FLD-SRC-042-10",
+        "FLD-SRC-042-11",
+        "FLD-SRC-042-12",
+        "FLD-SRC-042-13",
+        "FLD-SRC-042-14",
+        "FLD-SRC-042-15",
+        "FLD-SRC-042-16",
+        "FLD-SRC-042-17",
+        "FLD-SRC-042-18"
+      ],
+      "buttons": [
+        "BTN-SRC-042-01",
+        "BTN-SRC-042-02",
+        "BTN-SRC-042-03",
+        "BTN-SRC-042-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SRC-043",
+      "name": "探查结果",
+      "module": "SRC",
+      "currentId": "SRC-001",
+      "route": "#/web/SRC-001?view=SRC-043",
+      "original": true,
+      "fields": [
+        "FLD-SRC-043-01",
+        "FLD-SRC-043-02",
+        "FLD-SRC-043-03",
+        "FLD-SRC-043-04",
+        "FLD-SRC-043-05",
+        "FLD-SRC-043-06",
+        "FLD-SRC-043-07",
+        "FLD-SRC-043-08",
+        "FLD-SRC-043-09",
+        "FLD-SRC-043-10",
+        "FLD-SRC-043-11",
+        "FLD-SRC-043-12",
+        "FLD-SRC-043-13",
+        "FLD-SRC-043-14",
+        "FLD-SRC-043-15",
+        "FLD-SRC-043-16"
+      ],
+      "buttons": [
+        "BTN-SRC-043-01",
+        "BTN-SRC-043-02",
+        "BTN-SRC-043-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SRC-044",
+      "name": "候选商品",
+      "module": "SRC",
+      "currentId": "SRC-002",
+      "route": "#/web/SRC-002?view=SRC-044",
+      "original": true,
+      "fields": [
+        "FLD-SRC-044-01",
+        "FLD-SRC-044-02",
+        "FLD-SRC-044-03",
+        "FLD-SRC-044-04",
+        "FLD-SRC-044-05",
+        "FLD-SRC-044-06",
+        "FLD-SRC-044-07",
+        "FLD-SRC-044-08",
+        "FLD-SRC-044-09",
+        "FLD-SRC-044-10",
+        "FLD-SRC-044-11",
+        "FLD-SRC-044-12",
+        "FLD-SRC-044-13",
+        "FLD-SRC-044-14",
+        "FLD-SRC-044-15",
+        "FLD-SRC-044-16"
+      ],
+      "buttons": [
+        "BTN-SRC-044-01",
+        "BTN-SRC-044-02",
+        "BTN-SRC-044-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SRC-045",
+      "name": "候选确认",
+      "module": "SRC",
+      "currentId": "SRC-002",
+      "route": "#/web/SRC-002?view=SRC-045",
+      "original": true,
+      "fields": [
+        "FLD-SRC-045-01",
+        "FLD-SRC-045-02",
+        "FLD-SRC-045-03",
+        "FLD-SRC-045-04",
+        "FLD-SRC-045-05",
+        "FLD-SRC-045-06",
+        "FLD-SRC-045-07",
+        "FLD-SRC-045-08",
+        "FLD-SRC-045-09",
+        "FLD-SRC-045-10",
+        "FLD-SRC-045-11",
+        "FLD-SRC-045-12",
+        "FLD-SRC-045-13",
+        "FLD-SRC-045-14",
+        "FLD-SRC-045-15",
+        "FLD-SRC-045-16"
+      ],
+      "buttons": [
+        "BTN-SRC-045-01",
+        "BTN-SRC-045-02",
+        "BTN-SRC-045-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SRC-046",
+      "name": "正式采集任务",
+      "module": "SRC",
+      "currentId": "SRC-003",
+      "route": "#/web/SRC-003?view=SRC-046",
+      "original": true,
+      "fields": [
+        "FLD-SRC-046-01",
+        "FLD-SRC-046-02",
+        "FLD-SRC-046-03",
+        "FLD-SRC-046-04",
+        "FLD-SRC-046-05",
+        "FLD-SRC-046-06",
+        "FLD-SRC-046-07",
+        "FLD-SRC-046-08",
+        "FLD-SRC-046-09",
+        "FLD-SRC-046-10",
+        "FLD-SRC-046-11",
+        "FLD-SRC-046-12",
+        "FLD-SRC-046-13",
+        "FLD-SRC-046-14",
+        "FLD-SRC-046-15",
+        "FLD-SRC-046-16",
+        "FLD-SRC-046-17",
+        "FLD-SRC-046-18"
+      ],
+      "buttons": [
+        "BTN-SRC-046-01",
+        "BTN-SRC-046-02",
+        "BTN-SRC-046-03",
+        "BTN-SRC-046-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SRC-047",
+      "name": "采集记录",
+      "module": "SRC",
+      "currentId": "SRC-004",
+      "route": "#/web/SRC-004?view=SRC-047",
+      "original": true,
+      "fields": [
+        "FLD-SRC-047-01",
+        "FLD-SRC-047-02",
+        "FLD-SRC-047-03",
+        "FLD-SRC-047-04",
+        "FLD-SRC-047-05",
+        "FLD-SRC-047-06",
+        "FLD-SRC-047-07",
+        "FLD-SRC-047-08",
+        "FLD-SRC-047-09",
+        "FLD-SRC-047-10",
+        "FLD-SRC-047-11",
+        "FLD-SRC-047-12",
+        "FLD-SRC-047-13",
+        "FLD-SRC-047-14",
+        "FLD-SRC-047-15",
+        "FLD-SRC-047-16"
+      ],
+      "buttons": [
+        "BTN-SRC-047-01",
+        "BTN-SRC-047-02",
+        "BTN-SRC-047-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SRC-048",
+      "name": "Excel导入采集",
+      "module": "SRC",
+      "currentId": "SRC-006",
+      "route": "#/web/SRC-006?view=SRC-048",
+      "original": true,
+      "fields": [
+        "FLD-SRC-048-01",
+        "FLD-SRC-048-02",
+        "FLD-SRC-048-03",
+        "FLD-SRC-048-04",
+        "FLD-SRC-048-05",
+        "FLD-SRC-048-06",
+        "FLD-SRC-048-07",
+        "FLD-SRC-048-08",
+        "FLD-SRC-048-09",
+        "FLD-SRC-048-10",
+        "FLD-SRC-048-11",
+        "FLD-SRC-048-12",
+        "FLD-SRC-048-13",
+        "FLD-SRC-048-14",
+        "FLD-SRC-048-15",
+        "FLD-SRC-048-16"
+      ],
+      "buttons": [
+        "BTN-SRC-048-01",
+        "BTN-SRC-048-02",
+        "BTN-SRC-048-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SRC-049",
+      "name": "采集失败处理",
+      "module": "SRC",
+      "currentId": "SRC-004",
+      "route": "#/web/SRC-004?view=SRC-049",
+      "original": true,
+      "fields": [
+        "FLD-SRC-049-01",
+        "FLD-SRC-049-02",
+        "FLD-SRC-049-03",
+        "FLD-SRC-049-04",
+        "FLD-SRC-049-05",
+        "FLD-SRC-049-06",
+        "FLD-SRC-049-07",
+        "FLD-SRC-049-08",
+        "FLD-SRC-049-09",
+        "FLD-SRC-049-10",
+        "FLD-SRC-049-11",
+        "FLD-SRC-049-12",
+        "FLD-SRC-049-13",
+        "FLD-SRC-049-14",
+        "FLD-SRC-049-15",
+        "FLD-SRC-049-16",
+        "FLD-SRC-049-17",
+        "FLD-SRC-049-18"
+      ],
+      "buttons": [
+        "BTN-SRC-049-01",
+        "BTN-SRC-049-02",
+        "BTN-SRC-049-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PRD-050",
+      "name": "商品列表",
+      "module": "PRD",
+      "currentId": "PRD-001",
+      "route": "#/web/PRD-001?view=PRD-050",
+      "original": true,
+      "fields": [
+        "FLD-PRD-050-01",
+        "FLD-PRD-050-02",
+        "FLD-PRD-050-03",
+        "FLD-PRD-050-04",
+        "FLD-PRD-050-05",
+        "FLD-PRD-050-06",
+        "FLD-PRD-050-07",
+        "FLD-PRD-050-08",
+        "FLD-PRD-050-09",
+        "FLD-PRD-050-10",
+        "FLD-PRD-050-11",
+        "FLD-PRD-050-12",
+        "FLD-PRD-050-13",
+        "FLD-PRD-050-14",
+        "FLD-PRD-050-15",
+        "FLD-PRD-050-16"
+      ],
+      "buttons": [
+        "BTN-PRD-050-01",
+        "BTN-PRD-050-02",
+        "BTN-PRD-050-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PRD-051",
+      "name": "商品详情",
+      "module": "PRD",
+      "currentId": "PRD-001",
+      "route": "#/web/PRD-001?view=PRD-051",
+      "original": true,
+      "fields": [
+        "FLD-PRD-051-01",
+        "FLD-PRD-051-02",
+        "FLD-PRD-051-03",
+        "FLD-PRD-051-04",
+        "FLD-PRD-051-05",
+        "FLD-PRD-051-06",
+        "FLD-PRD-051-07",
+        "FLD-PRD-051-08",
+        "FLD-PRD-051-09",
+        "FLD-PRD-051-10",
+        "FLD-PRD-051-11",
+        "FLD-PRD-051-12",
+        "FLD-PRD-051-13",
+        "FLD-PRD-051-14",
+        "FLD-PRD-051-15",
+        "FLD-PRD-051-16"
+      ],
+      "buttons": [
+        "BTN-PRD-051-01",
+        "BTN-PRD-051-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PRD-052",
+      "name": "商品编辑",
+      "module": "PRD",
+      "currentId": "PRD-002",
+      "route": "#/web/PRD-002?view=PRD-052",
+      "original": true,
+      "fields": [
+        "FLD-PRD-052-01",
+        "FLD-PRD-052-02",
+        "FLD-PRD-052-03",
+        "FLD-PRD-052-04",
+        "FLD-PRD-052-05",
+        "FLD-PRD-052-06",
+        "FLD-PRD-052-07",
+        "FLD-PRD-052-08",
+        "FLD-PRD-052-09",
+        "FLD-PRD-052-10",
+        "FLD-PRD-052-11",
+        "FLD-PRD-052-12",
+        "FLD-PRD-052-13",
+        "FLD-PRD-052-14",
+        "FLD-PRD-052-15",
+        "FLD-PRD-052-16"
+      ],
+      "buttons": [
+        "BTN-PRD-052-01",
+        "BTN-PRD-052-02",
+        "BTN-PRD-052-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PRD-053",
+      "name": "商品SKU",
+      "module": "PRD",
+      "currentId": "PRD-002",
+      "route": "#/web/PRD-002?view=PRD-053",
+      "original": true,
+      "fields": [
+        "FLD-PRD-053-01",
+        "FLD-PRD-053-02",
+        "FLD-PRD-053-03",
+        "FLD-PRD-053-04",
+        "FLD-PRD-053-05",
+        "FLD-PRD-053-06",
+        "FLD-PRD-053-07",
+        "FLD-PRD-053-08",
+        "FLD-PRD-053-09",
+        "FLD-PRD-053-10",
+        "FLD-PRD-053-11",
+        "FLD-PRD-053-12",
+        "FLD-PRD-053-13",
+        "FLD-PRD-053-14",
+        "FLD-PRD-053-15",
+        "FLD-PRD-053-16"
+      ],
+      "buttons": [
+        "BTN-PRD-053-01",
+        "BTN-PRD-053-02",
+        "BTN-PRD-053-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PRD-054",
+      "name": "商品版本",
+      "module": "PRD",
+      "currentId": "PRD-004",
+      "route": "#/web/PRD-004?view=PRD-054",
+      "original": true,
+      "fields": [
+        "FLD-PRD-054-01",
+        "FLD-PRD-054-02",
+        "FLD-PRD-054-03",
+        "FLD-PRD-054-04",
+        "FLD-PRD-054-05",
+        "FLD-PRD-054-06",
+        "FLD-PRD-054-07",
+        "FLD-PRD-054-08",
+        "FLD-PRD-054-09",
+        "FLD-PRD-054-10",
+        "FLD-PRD-054-11",
+        "FLD-PRD-054-12",
+        "FLD-PRD-054-13",
+        "FLD-PRD-054-14",
+        "FLD-PRD-054-15",
+        "FLD-PRD-054-16"
+      ],
+      "buttons": [
+        "BTN-PRD-054-01",
+        "BTN-PRD-054-02",
+        "BTN-PRD-054-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PRD-055",
+      "name": "商品版本对比",
+      "module": "PRD",
+      "currentId": "PRD-004",
+      "route": "#/web/PRD-004?view=PRD-055",
+      "original": true,
+      "fields": [
+        "FLD-PRD-055-01",
+        "FLD-PRD-055-02",
+        "FLD-PRD-055-03",
+        "FLD-PRD-055-04",
+        "FLD-PRD-055-05",
+        "FLD-PRD-055-06",
+        "FLD-PRD-055-07",
+        "FLD-PRD-055-08",
+        "FLD-PRD-055-09",
+        "FLD-PRD-055-10",
+        "FLD-PRD-055-11",
+        "FLD-PRD-055-12",
+        "FLD-PRD-055-13",
+        "FLD-PRD-055-14",
+        "FLD-PRD-055-15",
+        "FLD-PRD-055-16"
+      ],
+      "buttons": [
+        "BTN-PRD-055-01",
+        "BTN-PRD-055-02",
+        "BTN-PRD-055-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PRD-056",
+      "name": "商品媒体",
+      "module": "PRD",
+      "currentId": "MED-002",
+      "route": "#/web/MED-002?view=PRD-056",
+      "original": true,
+      "fields": [
+        "FLD-PRD-056-01",
+        "FLD-PRD-056-02",
+        "FLD-PRD-056-03",
+        "FLD-PRD-056-04",
+        "FLD-PRD-056-05",
+        "FLD-PRD-056-06",
+        "FLD-PRD-056-07",
+        "FLD-PRD-056-08",
+        "FLD-PRD-056-09",
+        "FLD-PRD-056-10",
+        "FLD-PRD-056-11",
+        "FLD-PRD-056-12",
+        "FLD-PRD-056-13",
+        "FLD-PRD-056-14",
+        "FLD-PRD-056-15",
+        "FLD-PRD-056-16"
+      ],
+      "buttons": [
+        "BTN-PRD-056-01",
+        "BTN-PRD-056-02",
+        "BTN-PRD-056-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PRD-057",
+      "name": "商品分类属性",
+      "module": "PRD",
+      "currentId": "PRD-001",
+      "route": "#/web/PRD-001?view=PRD-057",
+      "original": true,
+      "fields": [
+        "FLD-PRD-057-01",
+        "FLD-PRD-057-02",
+        "FLD-PRD-057-03",
+        "FLD-PRD-057-04",
+        "FLD-PRD-057-05",
+        "FLD-PRD-057-06",
+        "FLD-PRD-057-07",
+        "FLD-PRD-057-08",
+        "FLD-PRD-057-09",
+        "FLD-PRD-057-10",
+        "FLD-PRD-057-11",
+        "FLD-PRD-057-12",
+        "FLD-PRD-057-13",
+        "FLD-PRD-057-14",
+        "FLD-PRD-057-15",
+        "FLD-PRD-057-16"
+      ],
+      "buttons": [
+        "BTN-PRD-057-01",
+        "BTN-PRD-057-02",
+        "BTN-PRD-057-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PRD-058",
+      "name": "商品成本利润",
+      "module": "PRD",
+      "currentId": "PRD-001",
+      "route": "#/web/PRD-001?view=PRD-058",
+      "original": true,
+      "fields": [
+        "FLD-PRD-058-01",
+        "FLD-PRD-058-02",
+        "FLD-PRD-058-03",
+        "FLD-PRD-058-04",
+        "FLD-PRD-058-05",
+        "FLD-PRD-058-06",
+        "FLD-PRD-058-07",
+        "FLD-PRD-058-08",
+        "FLD-PRD-058-09",
+        "FLD-PRD-058-10",
+        "FLD-PRD-058-11",
+        "FLD-PRD-058-12",
+        "FLD-PRD-058-13",
+        "FLD-PRD-058-14",
+        "FLD-PRD-058-15",
+        "FLD-PRD-058-16"
+      ],
+      "buttons": [
+        "BTN-PRD-058-01",
+        "BTN-PRD-058-02",
+        "BTN-PRD-058-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PRD-059",
+      "name": "AI清洗",
+      "module": "PRD",
+      "currentId": "PRD-003",
+      "route": "#/web/PRD-003?view=PRD-059",
+      "original": true,
+      "fields": [
+        "FLD-PRD-059-01",
+        "FLD-PRD-059-02",
+        "FLD-PRD-059-03",
+        "FLD-PRD-059-04",
+        "FLD-PRD-059-05",
+        "FLD-PRD-059-06",
+        "FLD-PRD-059-07",
+        "FLD-PRD-059-08",
+        "FLD-PRD-059-09",
+        "FLD-PRD-059-10",
+        "FLD-PRD-059-11",
+        "FLD-PRD-059-12",
+        "FLD-PRD-059-13",
+        "FLD-PRD-059-14",
+        "FLD-PRD-059-15",
+        "FLD-PRD-059-16"
+      ],
+      "buttons": [
+        "BTN-PRD-059-01",
+        "BTN-PRD-059-02",
+        "BTN-PRD-059-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PRD-060",
+      "name": "AI清洗结果",
+      "module": "PRD",
+      "currentId": "PRD-003",
+      "route": "#/web/PRD-003?view=PRD-060",
+      "original": true,
+      "fields": [
+        "FLD-PRD-060-01",
+        "FLD-PRD-060-02",
+        "FLD-PRD-060-03",
+        "FLD-PRD-060-04",
+        "FLD-PRD-060-05",
+        "FLD-PRD-060-06",
+        "FLD-PRD-060-07",
+        "FLD-PRD-060-08",
+        "FLD-PRD-060-09",
+        "FLD-PRD-060-10",
+        "FLD-PRD-060-11",
+        "FLD-PRD-060-12",
+        "FLD-PRD-060-13",
+        "FLD-PRD-060-14",
+        "FLD-PRD-060-15",
+        "FLD-PRD-060-16"
+      ],
+      "buttons": [
+        "BTN-PRD-060-01",
+        "BTN-PRD-060-02",
+        "BTN-PRD-060-03",
+        "BTN-PRD-060-04",
+        "BTN-PRD-060-05"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PRD-061",
+      "name": "商品发布准备",
+      "module": "PRD",
+      "currentId": "PRD-005",
+      "route": "#/web/PRD-005?view=PRD-061",
+      "original": true,
+      "fields": [
+        "FLD-PRD-061-01",
+        "FLD-PRD-061-02",
+        "FLD-PRD-061-03",
+        "FLD-PRD-061-04",
+        "FLD-PRD-061-05",
+        "FLD-PRD-061-06",
+        "FLD-PRD-061-07",
+        "FLD-PRD-061-08",
+        "FLD-PRD-061-09",
+        "FLD-PRD-061-10",
+        "FLD-PRD-061-11",
+        "FLD-PRD-061-12",
+        "FLD-PRD-061-13",
+        "FLD-PRD-061-14",
+        "FLD-PRD-061-15",
+        "FLD-PRD-061-16"
+      ],
+      "buttons": [
+        "BTN-PRD-061-01",
+        "BTN-PRD-061-02",
+        "BTN-PRD-061-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PRD-062",
+      "name": "商品关联来源",
+      "module": "PRD",
+      "currentId": "PRD-001",
+      "route": "#/web/PRD-001?view=PRD-062",
+      "original": true,
+      "fields": [
+        "FLD-PRD-062-01",
+        "FLD-PRD-062-02",
+        "FLD-PRD-062-03",
+        "FLD-PRD-062-04",
+        "FLD-PRD-062-05",
+        "FLD-PRD-062-06",
+        "FLD-PRD-062-07",
+        "FLD-PRD-062-08",
+        "FLD-PRD-062-09",
+        "FLD-PRD-062-10",
+        "FLD-PRD-062-11",
+        "FLD-PRD-062-12",
+        "FLD-PRD-062-13",
+        "FLD-PRD-062-14",
+        "FLD-PRD-062-15",
+        "FLD-PRD-062-16"
+      ],
+      "buttons": [
+        "BTN-PRD-062-01",
+        "BTN-PRD-062-02",
+        "BTN-PRD-062-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PRD-063",
+      "name": "商品关联渠道",
+      "module": "PRD",
+      "currentId": "PRD-001",
+      "route": "#/web/PRD-001?view=PRD-063",
+      "original": true,
+      "fields": [
+        "FLD-PRD-063-01",
+        "FLD-PRD-063-02",
+        "FLD-PRD-063-03",
+        "FLD-PRD-063-04",
+        "FLD-PRD-063-05",
+        "FLD-PRD-063-06",
+        "FLD-PRD-063-07",
+        "FLD-PRD-063-08",
+        "FLD-PRD-063-09",
+        "FLD-PRD-063-10",
+        "FLD-PRD-063-11",
+        "FLD-PRD-063-12",
+        "FLD-PRD-063-13",
+        "FLD-PRD-063-14",
+        "FLD-PRD-063-15",
+        "FLD-PRD-063-16"
+      ],
+      "buttons": [
+        "BTN-PRD-063-01",
+        "BTN-PRD-063-02",
+        "BTN-PRD-063-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "CHN-064",
+      "name": "渠道商品",
+      "module": "CHN",
+      "currentId": "STORE-002",
+      "route": "#/web/STORE-002?view=CHN-064",
+      "original": true,
+      "fields": [
+        "FLD-CHN-064-01",
+        "FLD-CHN-064-02",
+        "FLD-CHN-064-03",
+        "FLD-CHN-064-04",
+        "FLD-CHN-064-05",
+        "FLD-CHN-064-06",
+        "FLD-CHN-064-07",
+        "FLD-CHN-064-08",
+        "FLD-CHN-064-09",
+        "FLD-CHN-064-10",
+        "FLD-CHN-064-11",
+        "FLD-CHN-064-12",
+        "FLD-CHN-064-13",
+        "FLD-CHN-064-14",
+        "FLD-CHN-064-15"
+      ],
+      "buttons": [
+        "BTN-CHN-064-01",
+        "BTN-CHN-064-02",
+        "BTN-CHN-064-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "CHN-065",
+      "name": "渠道商品详情",
+      "module": "CHN",
+      "currentId": "STORE-002",
+      "route": "#/web/STORE-002?view=CHN-065",
+      "original": true,
+      "fields": [
+        "FLD-CHN-065-01",
+        "FLD-CHN-065-02",
+        "FLD-CHN-065-03",
+        "FLD-CHN-065-04",
+        "FLD-CHN-065-05",
+        "FLD-CHN-065-06",
+        "FLD-CHN-065-07",
+        "FLD-CHN-065-08",
+        "FLD-CHN-065-09",
+        "FLD-CHN-065-10",
+        "FLD-CHN-065-11",
+        "FLD-CHN-065-12",
+        "FLD-CHN-065-13",
+        "FLD-CHN-065-14",
+        "FLD-CHN-065-15"
+      ],
+      "buttons": [
+        "BTN-CHN-065-01",
+        "BTN-CHN-065-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "CHN-066",
+      "name": "渠道映射",
+      "module": "CHN",
+      "currentId": "SYS-007",
+      "route": "#/web/SYS-007?view=CHN-066",
+      "original": true,
+      "fields": [
+        "FLD-CHN-066-01",
+        "FLD-CHN-066-02",
+        "FLD-CHN-066-03",
+        "FLD-CHN-066-04",
+        "FLD-CHN-066-05",
+        "FLD-CHN-066-06",
+        "FLD-CHN-066-07",
+        "FLD-CHN-066-08",
+        "FLD-CHN-066-09",
+        "FLD-CHN-066-10",
+        "FLD-CHN-066-11",
+        "FLD-CHN-066-12",
+        "FLD-CHN-066-13",
+        "FLD-CHN-066-14",
+        "FLD-CHN-066-15"
+      ],
+      "buttons": [
+        "BTN-CHN-066-01",
+        "BTN-CHN-066-02",
+        "BTN-CHN-066-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "CHN-067",
+      "name": "渠道分类映射",
+      "module": "CHN",
+      "currentId": "PRD-005",
+      "route": "#/web/PRD-005?view=CHN-067",
+      "original": true,
+      "fields": [
+        "FLD-CHN-067-01",
+        "FLD-CHN-067-02",
+        "FLD-CHN-067-03",
+        "FLD-CHN-067-04",
+        "FLD-CHN-067-05",
+        "FLD-CHN-067-06",
+        "FLD-CHN-067-07",
+        "FLD-CHN-067-08",
+        "FLD-CHN-067-09",
+        "FLD-CHN-067-10",
+        "FLD-CHN-067-11",
+        "FLD-CHN-067-12",
+        "FLD-CHN-067-13",
+        "FLD-CHN-067-14",
+        "FLD-CHN-067-15"
+      ],
+      "buttons": [
+        "BTN-CHN-067-01",
+        "BTN-CHN-067-02",
+        "BTN-CHN-067-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "CHN-068",
+      "name": "渠道属性映射",
+      "module": "CHN",
+      "currentId": "PRD-005",
+      "route": "#/web/PRD-005?view=CHN-068",
+      "original": true,
+      "fields": [
+        "FLD-CHN-068-01",
+        "FLD-CHN-068-02",
+        "FLD-CHN-068-03",
+        "FLD-CHN-068-04",
+        "FLD-CHN-068-05",
+        "FLD-CHN-068-06",
+        "FLD-CHN-068-07",
+        "FLD-CHN-068-08",
+        "FLD-CHN-068-09",
+        "FLD-CHN-068-10",
+        "FLD-CHN-068-11",
+        "FLD-CHN-068-12",
+        "FLD-CHN-068-13",
+        "FLD-CHN-068-14",
+        "FLD-CHN-068-15"
+      ],
+      "buttons": [
+        "BTN-CHN-068-01",
+        "BTN-CHN-068-02",
+        "BTN-CHN-068-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "CHN-069",
+      "name": "渠道SKU映射",
+      "module": "CHN",
+      "currentId": "PRD-005",
+      "route": "#/web/PRD-005?view=CHN-069",
+      "original": true,
+      "fields": [
+        "FLD-CHN-069-01",
+        "FLD-CHN-069-02",
+        "FLD-CHN-069-03",
+        "FLD-CHN-069-04",
+        "FLD-CHN-069-05",
+        "FLD-CHN-069-06",
+        "FLD-CHN-069-07",
+        "FLD-CHN-069-08",
+        "FLD-CHN-069-09",
+        "FLD-CHN-069-10",
+        "FLD-CHN-069-11",
+        "FLD-CHN-069-12",
+        "FLD-CHN-069-13",
+        "FLD-CHN-069-14",
+        "FLD-CHN-069-15"
+      ],
+      "buttons": [
+        "BTN-CHN-069-01",
+        "BTN-CHN-069-02",
+        "BTN-CHN-069-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "CHN-070",
+      "name": "渠道预览",
+      "module": "CHN",
+      "currentId": "STORE-004",
+      "route": "#/web/STORE-004?view=CHN-070",
+      "original": true,
+      "fields": [
+        "FLD-CHN-070-01",
+        "FLD-CHN-070-02",
+        "FLD-CHN-070-03",
+        "FLD-CHN-070-04",
+        "FLD-CHN-070-05",
+        "FLD-CHN-070-06",
+        "FLD-CHN-070-07",
+        "FLD-CHN-070-08",
+        "FLD-CHN-070-09",
+        "FLD-CHN-070-10",
+        "FLD-CHN-070-11",
+        "FLD-CHN-070-12",
+        "FLD-CHN-070-13",
+        "FLD-CHN-070-14",
+        "FLD-CHN-070-15"
+      ],
+      "buttons": [
+        "BTN-CHN-070-01",
+        "BTN-CHN-070-02",
+        "BTN-CHN-070-03",
+        "BTN-CHN-070-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "CHN-071",
+      "name": "发布任务",
+      "module": "CHN",
+      "currentId": "STORE-003",
+      "route": "#/web/STORE-003?view=CHN-071",
+      "original": true,
+      "fields": [
+        "FLD-CHN-071-01",
+        "FLD-CHN-071-02",
+        "FLD-CHN-071-03",
+        "FLD-CHN-071-04",
+        "FLD-CHN-071-05",
+        "FLD-CHN-071-06",
+        "FLD-CHN-071-07",
+        "FLD-CHN-071-08",
+        "FLD-CHN-071-09",
+        "FLD-CHN-071-10",
+        "FLD-CHN-071-11",
+        "FLD-CHN-071-12",
+        "FLD-CHN-071-13",
+        "FLD-CHN-071-14",
+        "FLD-CHN-071-15",
+        "FLD-CHN-071-16",
+        "FLD-CHN-071-17"
+      ],
+      "buttons": [
+        "BTN-CHN-071-01",
+        "BTN-CHN-071-02",
+        "BTN-CHN-071-03",
+        "BTN-CHN-071-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "CHN-072",
+      "name": "发布记录",
+      "module": "CHN",
+      "currentId": "STORE-004",
+      "route": "#/web/STORE-004?view=CHN-072",
+      "original": true,
+      "fields": [
+        "FLD-CHN-072-01",
+        "FLD-CHN-072-02",
+        "FLD-CHN-072-03",
+        "FLD-CHN-072-04",
+        "FLD-CHN-072-05",
+        "FLD-CHN-072-06",
+        "FLD-CHN-072-07",
+        "FLD-CHN-072-08",
+        "FLD-CHN-072-09",
+        "FLD-CHN-072-10",
+        "FLD-CHN-072-11",
+        "FLD-CHN-072-12",
+        "FLD-CHN-072-13",
+        "FLD-CHN-072-14",
+        "FLD-CHN-072-15"
+      ],
+      "buttons": [
+        "BTN-CHN-072-01",
+        "BTN-CHN-072-02",
+        "BTN-CHN-072-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "CHN-073",
+      "name": "发布失败处理",
+      "module": "CHN",
+      "currentId": "STORE-004",
+      "route": "#/web/STORE-004?view=CHN-073",
+      "original": true,
+      "fields": [
+        "FLD-CHN-073-01",
+        "FLD-CHN-073-02",
+        "FLD-CHN-073-03",
+        "FLD-CHN-073-04",
+        "FLD-CHN-073-05",
+        "FLD-CHN-073-06",
+        "FLD-CHN-073-07",
+        "FLD-CHN-073-08",
+        "FLD-CHN-073-09",
+        "FLD-CHN-073-10",
+        "FLD-CHN-073-11",
+        "FLD-CHN-073-12",
+        "FLD-CHN-073-13",
+        "FLD-CHN-073-14",
+        "FLD-CHN-073-15",
+        "FLD-CHN-073-16",
+        "FLD-CHN-073-17"
+      ],
+      "buttons": [
+        "BTN-CHN-073-01",
+        "BTN-CHN-073-02",
+        "BTN-CHN-073-03",
+        "BTN-CHN-073-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "ORD-074",
+      "name": "订单列表",
+      "module": "ORD",
+      "currentId": "ORD-001",
+      "route": "#/web/ORD-001?view=ORD-074",
+      "original": true,
+      "fields": [
+        "FLD-ORD-074-01",
+        "FLD-ORD-074-02",
+        "FLD-ORD-074-03",
+        "FLD-ORD-074-04",
+        "FLD-ORD-074-05",
+        "FLD-ORD-074-06",
+        "FLD-ORD-074-07",
+        "FLD-ORD-074-08",
+        "FLD-ORD-074-09",
+        "FLD-ORD-074-10",
+        "FLD-ORD-074-11",
+        "FLD-ORD-074-12",
+        "FLD-ORD-074-13",
+        "FLD-ORD-074-14",
+        "FLD-ORD-074-15",
+        "FLD-ORD-074-16",
+        "FLD-ORD-074-17",
+        "FLD-ORD-074-18"
+      ],
+      "buttons": [
+        "BTN-ORD-074-01",
+        "BTN-ORD-074-02",
+        "BTN-ORD-074-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "ORD-075",
+      "name": "订单详情",
+      "module": "ORD",
+      "currentId": "ORD-001-D",
+      "route": "#/web/ORD-001-D?view=ORD-075",
+      "original": true,
+      "fields": [
+        "FLD-ORD-075-01",
+        "FLD-ORD-075-02",
+        "FLD-ORD-075-03",
+        "FLD-ORD-075-04",
+        "FLD-ORD-075-05",
+        "FLD-ORD-075-06",
+        "FLD-ORD-075-07",
+        "FLD-ORD-075-08",
+        "FLD-ORD-075-09",
+        "FLD-ORD-075-10",
+        "FLD-ORD-075-11",
+        "FLD-ORD-075-12",
+        "FLD-ORD-075-13",
+        "FLD-ORD-075-14",
+        "FLD-ORD-075-15",
+        "FLD-ORD-075-16",
+        "FLD-ORD-075-17",
+        "FLD-ORD-075-18"
+      ],
+      "buttons": [
+        "BTN-ORD-075-01",
+        "BTN-ORD-075-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "ORD-076",
+      "name": "订单明细/SKU",
+      "module": "ORD",
+      "currentId": "ORD-001-D",
+      "route": "#/web/ORD-001-D?view=ORD-076",
+      "original": true,
+      "fields": [
+        "FLD-ORD-076-01",
+        "FLD-ORD-076-02",
+        "FLD-ORD-076-03",
+        "FLD-ORD-076-04",
+        "FLD-ORD-076-05",
+        "FLD-ORD-076-06",
+        "FLD-ORD-076-07",
+        "FLD-ORD-076-08",
+        "FLD-ORD-076-09",
+        "FLD-ORD-076-10",
+        "FLD-ORD-076-11",
+        "FLD-ORD-076-12",
+        "FLD-ORD-076-13",
+        "FLD-ORD-076-14",
+        "FLD-ORD-076-15",
+        "FLD-ORD-076-16",
+        "FLD-ORD-076-17",
+        "FLD-ORD-076-18"
+      ],
+      "buttons": [
+        "BTN-ORD-076-01",
+        "BTN-ORD-076-02",
+        "BTN-ORD-076-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "ORD-077",
+      "name": "订单同步",
+      "module": "ORD",
+      "currentId": "ORD-002",
+      "route": "#/web/ORD-002?view=ORD-077",
+      "original": true,
+      "fields": [
+        "FLD-ORD-077-01",
+        "FLD-ORD-077-02",
+        "FLD-ORD-077-03",
+        "FLD-ORD-077-04",
+        "FLD-ORD-077-05",
+        "FLD-ORD-077-06",
+        "FLD-ORD-077-07",
+        "FLD-ORD-077-08",
+        "FLD-ORD-077-09",
+        "FLD-ORD-077-10",
+        "FLD-ORD-077-11",
+        "FLD-ORD-077-12",
+        "FLD-ORD-077-13",
+        "FLD-ORD-077-14",
+        "FLD-ORD-077-15",
+        "FLD-ORD-077-16",
+        "FLD-ORD-077-17",
+        "FLD-ORD-077-18",
+        "FLD-ORD-077-19",
+        "FLD-ORD-077-20"
+      ],
+      "buttons": [
+        "BTN-ORD-077-01",
+        "BTN-ORD-077-02",
+        "BTN-ORD-077-03",
+        "BTN-ORD-077-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "ORD-078",
+      "name": "SKU匹配",
+      "module": "ORD",
+      "currentId": "ORD-001",
+      "route": "#/web/ORD-001?view=ORD-078",
+      "original": true,
+      "fields": [
+        "FLD-ORD-078-01",
+        "FLD-ORD-078-02",
+        "FLD-ORD-078-03",
+        "FLD-ORD-078-04",
+        "FLD-ORD-078-05",
+        "FLD-ORD-078-06",
+        "FLD-ORD-078-07",
+        "FLD-ORD-078-08",
+        "FLD-ORD-078-09",
+        "FLD-ORD-078-10",
+        "FLD-ORD-078-11",
+        "FLD-ORD-078-12",
+        "FLD-ORD-078-13",
+        "FLD-ORD-078-14",
+        "FLD-ORD-078-15",
+        "FLD-ORD-078-16",
+        "FLD-ORD-078-17",
+        "FLD-ORD-078-18"
+      ],
+      "buttons": [
+        "BTN-ORD-078-01",
+        "BTN-ORD-078-02",
+        "BTN-ORD-078-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "ORD-079",
+      "name": "采购建议",
+      "module": "ORD",
+      "currentId": "PUR-001",
+      "route": "#/web/PUR-001?view=ORD-079",
+      "original": true,
+      "fields": [
+        "FLD-ORD-079-01",
+        "FLD-ORD-079-02",
+        "FLD-ORD-079-03",
+        "FLD-ORD-079-04",
+        "FLD-ORD-079-05",
+        "FLD-ORD-079-06",
+        "FLD-ORD-079-07",
+        "FLD-ORD-079-08",
+        "FLD-ORD-079-09",
+        "FLD-ORD-079-10",
+        "FLD-ORD-079-11",
+        "FLD-ORD-079-12",
+        "FLD-ORD-079-13",
+        "FLD-ORD-079-14",
+        "FLD-ORD-079-15",
+        "FLD-ORD-079-16",
+        "FLD-ORD-079-17",
+        "FLD-ORD-079-18"
+      ],
+      "buttons": [
+        "BTN-ORD-079-01",
+        "BTN-ORD-079-02",
+        "BTN-ORD-079-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "ORD-080",
+      "name": "订单履约跟踪",
+      "module": "ORD",
+      "currentId": "LOG-001",
+      "route": "#/web/LOG-001?view=ORD-080",
+      "original": true,
+      "fields": [
+        "FLD-ORD-080-01",
+        "FLD-ORD-080-02",
+        "FLD-ORD-080-03",
+        "FLD-ORD-080-04",
+        "FLD-ORD-080-05",
+        "FLD-ORD-080-06",
+        "FLD-ORD-080-07",
+        "FLD-ORD-080-08",
+        "FLD-ORD-080-09",
+        "FLD-ORD-080-10",
+        "FLD-ORD-080-11",
+        "FLD-ORD-080-12",
+        "FLD-ORD-080-13",
+        "FLD-ORD-080-14",
+        "FLD-ORD-080-15",
+        "FLD-ORD-080-16",
+        "FLD-ORD-080-17",
+        "FLD-ORD-080-18"
+      ],
+      "buttons": [
+        "BTN-ORD-080-01",
+        "BTN-ORD-080-02",
+        "BTN-ORD-080-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "ORD-081",
+      "name": "订单财务",
+      "module": "ORD",
+      "currentId": "FIN-002",
+      "route": "#/web/FIN-002?view=ORD-081",
+      "original": true,
+      "fields": [
+        "FLD-ORD-081-01",
+        "FLD-ORD-081-02",
+        "FLD-ORD-081-03",
+        "FLD-ORD-081-04",
+        "FLD-ORD-081-05",
+        "FLD-ORD-081-06",
+        "FLD-ORD-081-07",
+        "FLD-ORD-081-08",
+        "FLD-ORD-081-09",
+        "FLD-ORD-081-10",
+        "FLD-ORD-081-11",
+        "FLD-ORD-081-12",
+        "FLD-ORD-081-13",
+        "FLD-ORD-081-14",
+        "FLD-ORD-081-15",
+        "FLD-ORD-081-16",
+        "FLD-ORD-081-17",
+        "FLD-ORD-081-18"
+      ],
+      "buttons": [
+        "BTN-ORD-081-01",
+        "BTN-ORD-081-02",
+        "BTN-ORD-081-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PUR-082",
+      "name": "采购建议",
+      "module": "PUR",
+      "currentId": "PUR-001",
+      "route": "#/web/PUR-001?view=PUR-082",
+      "original": true,
+      "fields": [
+        "FLD-PUR-082-01",
+        "FLD-PUR-082-02",
+        "FLD-PUR-082-03",
+        "FLD-PUR-082-04",
+        "FLD-PUR-082-05",
+        "FLD-PUR-082-06",
+        "FLD-PUR-082-07",
+        "FLD-PUR-082-08",
+        "FLD-PUR-082-09",
+        "FLD-PUR-082-10",
+        "FLD-PUR-082-11",
+        "FLD-PUR-082-12",
+        "FLD-PUR-082-13",
+        "FLD-PUR-082-14"
+      ],
+      "buttons": [
+        "BTN-PUR-082-01",
+        "BTN-PUR-082-02",
+        "BTN-PUR-082-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PUR-083",
+      "name": "采购单列表",
+      "module": "PUR",
+      "currentId": "PUR-003",
+      "route": "#/web/PUR-003?view=PUR-083",
+      "original": true,
+      "fields": [
+        "FLD-PUR-083-01",
+        "FLD-PUR-083-02",
+        "FLD-PUR-083-03",
+        "FLD-PUR-083-04",
+        "FLD-PUR-083-05",
+        "FLD-PUR-083-06",
+        "FLD-PUR-083-07",
+        "FLD-PUR-083-08",
+        "FLD-PUR-083-09",
+        "FLD-PUR-083-10",
+        "FLD-PUR-083-11",
+        "FLD-PUR-083-12",
+        "FLD-PUR-083-13",
+        "FLD-PUR-083-14"
+      ],
+      "buttons": [
+        "BTN-PUR-083-01",
+        "BTN-PUR-083-02",
+        "BTN-PUR-083-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PUR-084",
+      "name": "采购单详情",
+      "module": "PUR",
+      "currentId": "PUR-003",
+      "route": "#/web/PUR-003?view=PUR-084",
+      "original": true,
+      "fields": [
+        "FLD-PUR-084-01",
+        "FLD-PUR-084-02",
+        "FLD-PUR-084-03",
+        "FLD-PUR-084-04",
+        "FLD-PUR-084-05",
+        "FLD-PUR-084-06",
+        "FLD-PUR-084-07",
+        "FLD-PUR-084-08",
+        "FLD-PUR-084-09",
+        "FLD-PUR-084-10",
+        "FLD-PUR-084-11",
+        "FLD-PUR-084-12",
+        "FLD-PUR-084-13",
+        "FLD-PUR-084-14"
+      ],
+      "buttons": [
+        "BTN-PUR-084-01",
+        "BTN-PUR-084-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PUR-085",
+      "name": "采购确认",
+      "module": "PUR",
+      "currentId": "PUR-002",
+      "route": "#/web/PUR-002?view=PUR-085",
+      "original": true,
+      "fields": [
+        "FLD-PUR-085-01",
+        "FLD-PUR-085-02",
+        "FLD-PUR-085-03",
+        "FLD-PUR-085-04",
+        "FLD-PUR-085-05",
+        "FLD-PUR-085-06",
+        "FLD-PUR-085-07",
+        "FLD-PUR-085-08",
+        "FLD-PUR-085-09",
+        "FLD-PUR-085-10",
+        "FLD-PUR-085-11",
+        "FLD-PUR-085-12",
+        "FLD-PUR-085-13",
+        "FLD-PUR-085-14"
+      ],
+      "buttons": [
+        "BTN-PUR-085-01",
+        "BTN-PUR-085-02",
+        "BTN-PUR-085-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PUR-086",
+      "name": "采购商品明细",
+      "module": "PUR",
+      "currentId": "PUR-003",
+      "route": "#/web/PUR-003?view=PUR-086",
+      "original": true,
+      "fields": [
+        "FLD-PUR-086-01",
+        "FLD-PUR-086-02",
+        "FLD-PUR-086-03",
+        "FLD-PUR-086-04",
+        "FLD-PUR-086-05",
+        "FLD-PUR-086-06",
+        "FLD-PUR-086-07",
+        "FLD-PUR-086-08",
+        "FLD-PUR-086-09",
+        "FLD-PUR-086-10",
+        "FLD-PUR-086-11",
+        "FLD-PUR-086-12",
+        "FLD-PUR-086-13",
+        "FLD-PUR-086-14"
+      ],
+      "buttons": [
+        "BTN-PUR-086-01",
+        "BTN-PUR-086-02",
+        "BTN-PUR-086-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PUR-087",
+      "name": "采购供应商",
+      "module": "PUR",
+      "currentId": "PUR-003",
+      "route": "#/web/PUR-003?view=PUR-087",
+      "original": true,
+      "fields": [
+        "FLD-PUR-087-01",
+        "FLD-PUR-087-02",
+        "FLD-PUR-087-03",
+        "FLD-PUR-087-04",
+        "FLD-PUR-087-05",
+        "FLD-PUR-087-06",
+        "FLD-PUR-087-07",
+        "FLD-PUR-087-08",
+        "FLD-PUR-087-09",
+        "FLD-PUR-087-10",
+        "FLD-PUR-087-11",
+        "FLD-PUR-087-12",
+        "FLD-PUR-087-13",
+        "FLD-PUR-087-14"
+      ],
+      "buttons": [
+        "BTN-PUR-087-01",
+        "BTN-PUR-087-02",
+        "BTN-PUR-087-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PUR-088",
+      "name": "采购失败/异常",
+      "module": "PUR",
+      "currentId": "PUR-003",
+      "route": "#/web/PUR-003?view=PUR-088",
+      "original": true,
+      "fields": [
+        "FLD-PUR-088-01",
+        "FLD-PUR-088-02",
+        "FLD-PUR-088-03",
+        "FLD-PUR-088-04",
+        "FLD-PUR-088-05",
+        "FLD-PUR-088-06",
+        "FLD-PUR-088-07",
+        "FLD-PUR-088-08",
+        "FLD-PUR-088-09",
+        "FLD-PUR-088-10",
+        "FLD-PUR-088-11",
+        "FLD-PUR-088-12",
+        "FLD-PUR-088-13",
+        "FLD-PUR-088-14"
+      ],
+      "buttons": [
+        "BTN-PUR-088-01",
+        "BTN-PUR-088-02",
+        "BTN-PUR-088-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "LOGI-089",
+      "name": "物流列表",
+      "module": "LOGI",
+      "currentId": "LOG-001",
+      "route": "#/web/LOG-001?view=LOGI-089",
+      "original": true,
+      "fields": [
+        "FLD-LOGI-089-01",
+        "FLD-LOGI-089-02",
+        "FLD-LOGI-089-03",
+        "FLD-LOGI-089-04",
+        "FLD-LOGI-089-05",
+        "FLD-LOGI-089-06",
+        "FLD-LOGI-089-07",
+        "FLD-LOGI-089-08",
+        "FLD-LOGI-089-09",
+        "FLD-LOGI-089-10",
+        "FLD-LOGI-089-11",
+        "FLD-LOGI-089-12"
+      ],
+      "buttons": [
+        "BTN-LOGI-089-01",
+        "BTN-LOGI-089-02",
+        "BTN-LOGI-089-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "LOGI-090",
+      "name": "物流详情",
+      "module": "LOGI",
+      "currentId": "LOG-001",
+      "route": "#/web/LOG-001?view=LOGI-090",
+      "original": true,
+      "fields": [
+        "FLD-LOGI-090-01",
+        "FLD-LOGI-090-02",
+        "FLD-LOGI-090-03",
+        "FLD-LOGI-090-04",
+        "FLD-LOGI-090-05",
+        "FLD-LOGI-090-06",
+        "FLD-LOGI-090-07",
+        "FLD-LOGI-090-08",
+        "FLD-LOGI-090-09",
+        "FLD-LOGI-090-10",
+        "FLD-LOGI-090-11",
+        "FLD-LOGI-090-12"
+      ],
+      "buttons": [
+        "BTN-LOGI-090-01",
+        "BTN-LOGI-090-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "LOGI-091",
+      "name": "发货记录",
+      "module": "LOGI",
+      "currentId": "LOG-002",
+      "route": "#/web/LOG-002?view=LOGI-091",
+      "original": true,
+      "fields": [
+        "FLD-LOGI-091-01",
+        "FLD-LOGI-091-02",
+        "FLD-LOGI-091-03",
+        "FLD-LOGI-091-04",
+        "FLD-LOGI-091-05",
+        "FLD-LOGI-091-06",
+        "FLD-LOGI-091-07",
+        "FLD-LOGI-091-08",
+        "FLD-LOGI-091-09",
+        "FLD-LOGI-091-10",
+        "FLD-LOGI-091-11",
+        "FLD-LOGI-091-12"
+      ],
+      "buttons": [
+        "BTN-LOGI-091-01",
+        "BTN-LOGI-091-02",
+        "BTN-LOGI-091-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "LOGI-092",
+      "name": "物流轨迹",
+      "module": "LOGI",
+      "currentId": "LOG-001",
+      "route": "#/web/LOG-001?view=LOGI-092",
+      "original": true,
+      "fields": [
+        "FLD-LOGI-092-01",
+        "FLD-LOGI-092-02",
+        "FLD-LOGI-092-03",
+        "FLD-LOGI-092-04",
+        "FLD-LOGI-092-05",
+        "FLD-LOGI-092-06",
+        "FLD-LOGI-092-07",
+        "FLD-LOGI-092-08",
+        "FLD-LOGI-092-09",
+        "FLD-LOGI-092-10",
+        "FLD-LOGI-092-11",
+        "FLD-LOGI-092-12"
+      ],
+      "buttons": [
+        "BTN-LOGI-092-01",
+        "BTN-LOGI-092-02",
+        "BTN-LOGI-092-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "AS-093",
+      "name": "售后列表",
+      "module": "AS",
+      "currentId": "AS-001",
+      "route": "#/web/AS-001?view=AS-093",
+      "original": true,
+      "fields": [
+        "FLD-AS-093-01",
+        "FLD-AS-093-02",
+        "FLD-AS-093-03",
+        "FLD-AS-093-04",
+        "FLD-AS-093-05",
+        "FLD-AS-093-06",
+        "FLD-AS-093-07",
+        "FLD-AS-093-08",
+        "FLD-AS-093-09",
+        "FLD-AS-093-10",
+        "FLD-AS-093-11",
+        "FLD-AS-093-12"
+      ],
+      "buttons": [
+        "BTN-AS-093-01",
+        "BTN-AS-093-02",
+        "BTN-AS-093-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "AS-094",
+      "name": "售后详情",
+      "module": "AS",
+      "currentId": "AS-002",
+      "route": "#/web/AS-002?view=AS-094",
+      "original": true,
+      "fields": [
+        "FLD-AS-094-01",
+        "FLD-AS-094-02",
+        "FLD-AS-094-03",
+        "FLD-AS-094-04",
+        "FLD-AS-094-05",
+        "FLD-AS-094-06",
+        "FLD-AS-094-07",
+        "FLD-AS-094-08",
+        "FLD-AS-094-09",
+        "FLD-AS-094-10",
+        "FLD-AS-094-11",
+        "FLD-AS-094-12"
+      ],
+      "buttons": [
+        "BTN-AS-094-01",
+        "BTN-AS-094-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "AS-095",
+      "name": "售后双侧关联与退款核对",
+      "module": "AS",
+      "currentId": "AS-002",
+      "route": "#/web/AS-002?view=AS-095",
+      "original": true,
+      "fields": [
+        "FLD-AS-095-01",
+        "FLD-AS-095-02",
+        "FLD-AS-095-03",
+        "FLD-AS-095-04",
+        "FLD-AS-095-05",
+        "FLD-AS-095-06",
+        "FLD-AS-095-07",
+        "FLD-AS-095-08",
+        "FLD-AS-095-09",
+        "FLD-AS-095-10",
+        "FLD-AS-095-11",
+        "FLD-AS-095-12",
+        "FLD-AS-095-13",
+        "FLD-AS-095-14"
+      ],
+      "buttons": [
+        "BTN-AS-095-01",
+        "BTN-AS-095-02",
+        "BTN-AS-095-03",
+        "BTN-AS-095-04",
+        "BTN-AS-095-05",
+        "BTN-AS-095-06"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "FIN-096",
+      "name": "财务流水",
+      "module": "FIN",
+      "currentId": "FIN-003",
+      "route": "#/web/FIN-003?view=FIN-096",
+      "original": true,
+      "fields": [
+        "FLD-FIN-096-01",
+        "FLD-FIN-096-02",
+        "FLD-FIN-096-03",
+        "FLD-FIN-096-04",
+        "FLD-FIN-096-05",
+        "FLD-FIN-096-06",
+        "FLD-FIN-096-07",
+        "FLD-FIN-096-08",
+        "FLD-FIN-096-09",
+        "FLD-FIN-096-10",
+        "FLD-FIN-096-11",
+        "FLD-FIN-096-12",
+        "FLD-FIN-096-13",
+        "FLD-FIN-096-14",
+        "FLD-FIN-096-15",
+        "FLD-FIN-096-16"
+      ],
+      "buttons": [
+        "BTN-FIN-096-01",
+        "BTN-FIN-096-02",
+        "BTN-FIN-096-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "FIN-097",
+      "name": "利润汇总",
+      "module": "FIN",
+      "currentId": "FIN-001",
+      "route": "#/web/FIN-001?view=FIN-097",
+      "original": true,
+      "fields": [
+        "FLD-FIN-097-01",
+        "FLD-FIN-097-02",
+        "FLD-FIN-097-03",
+        "FLD-FIN-097-04",
+        "FLD-FIN-097-05",
+        "FLD-FIN-097-06",
+        "FLD-FIN-097-07",
+        "FLD-FIN-097-08",
+        "FLD-FIN-097-09",
+        "FLD-FIN-097-10",
+        "FLD-FIN-097-11",
+        "FLD-FIN-097-12",
+        "FLD-FIN-097-13",
+        "FLD-FIN-097-14",
+        "FLD-FIN-097-15",
+        "FLD-FIN-097-16"
+      ],
+      "buttons": [
+        "BTN-FIN-097-01",
+        "BTN-FIN-097-02",
+        "BTN-FIN-097-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "TSK-098",
+      "name": "任务列表",
+      "module": "TSK",
+      "currentId": "SYS-009",
+      "route": "#/web/SYS-009?view=TSK-098",
+      "original": true,
+      "fields": [
+        "FLD-TSK-098-01",
+        "FLD-TSK-098-02",
+        "FLD-TSK-098-03",
+        "FLD-TSK-098-04",
+        "FLD-TSK-098-05",
+        "FLD-TSK-098-06",
+        "FLD-TSK-098-07",
+        "FLD-TSK-098-08",
+        "FLD-TSK-098-09",
+        "FLD-TSK-098-10",
+        "FLD-TSK-098-11",
+        "FLD-TSK-098-12",
+        "FLD-TSK-098-13",
+        "FLD-TSK-098-14",
+        "FLD-TSK-098-15",
+        "FLD-TSK-098-16",
+        "FLD-TSK-098-17"
+      ],
+      "buttons": [
+        "BTN-TSK-098-01",
+        "BTN-TSK-098-02",
+        "BTN-TSK-098-03",
+        "BTN-TSK-098-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "TSK-099",
+      "name": "任务详情",
+      "module": "TSK",
+      "currentId": "SYS-009",
+      "route": "#/web/SYS-009?view=TSK-099",
+      "original": true,
+      "fields": [
+        "FLD-TSK-099-01",
+        "FLD-TSK-099-02",
+        "FLD-TSK-099-03",
+        "FLD-TSK-099-04",
+        "FLD-TSK-099-05",
+        "FLD-TSK-099-06",
+        "FLD-TSK-099-07",
+        "FLD-TSK-099-08",
+        "FLD-TSK-099-09",
+        "FLD-TSK-099-10",
+        "FLD-TSK-099-11",
+        "FLD-TSK-099-12",
+        "FLD-TSK-099-13",
+        "FLD-TSK-099-14",
+        "FLD-TSK-099-15",
+        "FLD-TSK-099-16"
+      ],
+      "buttons": [
+        "BTN-TSK-099-01",
+        "BTN-TSK-099-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "TSK-100",
+      "name": "任务执行日志",
+      "module": "TSK",
+      "currentId": "SYS-009",
+      "route": "#/web/SYS-009?view=TSK-100",
+      "original": true,
+      "fields": [
+        "FLD-TSK-100-01",
+        "FLD-TSK-100-02",
+        "FLD-TSK-100-03",
+        "FLD-TSK-100-04",
+        "FLD-TSK-100-05",
+        "FLD-TSK-100-06",
+        "FLD-TSK-100-07",
+        "FLD-TSK-100-08",
+        "FLD-TSK-100-09",
+        "FLD-TSK-100-10",
+        "FLD-TSK-100-11",
+        "FLD-TSK-100-12",
+        "FLD-TSK-100-13",
+        "FLD-TSK-100-14",
+        "FLD-TSK-100-15",
+        "FLD-TSK-100-16",
+        "FLD-TSK-100-17"
+      ],
+      "buttons": [
+        "BTN-TSK-100-01",
+        "BTN-TSK-100-02",
+        "BTN-TSK-100-03",
+        "BTN-TSK-100-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "TSK-101",
+      "name": "Worker Lease",
+      "module": "TSK",
+      "currentId": "SYS-009",
+      "route": "#/web/SYS-009?view=TSK-101",
+      "original": true,
+      "fields": [
+        "FLD-TSK-101-01",
+        "FLD-TSK-101-02",
+        "FLD-TSK-101-03",
+        "FLD-TSK-101-04",
+        "FLD-TSK-101-05",
+        "FLD-TSK-101-06",
+        "FLD-TSK-101-07",
+        "FLD-TSK-101-08",
+        "FLD-TSK-101-09",
+        "FLD-TSK-101-10",
+        "FLD-TSK-101-11",
+        "FLD-TSK-101-12",
+        "FLD-TSK-101-13",
+        "FLD-TSK-101-14",
+        "FLD-TSK-101-15",
+        "FLD-TSK-101-16"
+      ],
+      "buttons": [
+        "BTN-TSK-101-01",
+        "BTN-TSK-101-02",
+        "BTN-TSK-101-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "TSK-102",
+      "name": "调度计划",
+      "module": "TSK",
+      "currentId": "SYS-009",
+      "route": "#/web/SYS-009?view=TSK-102",
+      "original": true,
+      "fields": [
+        "FLD-TSK-102-01",
+        "FLD-TSK-102-02",
+        "FLD-TSK-102-03",
+        "FLD-TSK-102-04",
+        "FLD-TSK-102-05",
+        "FLD-TSK-102-06",
+        "FLD-TSK-102-07",
+        "FLD-TSK-102-08",
+        "FLD-TSK-102-09",
+        "FLD-TSK-102-10",
+        "FLD-TSK-102-11",
+        "FLD-TSK-102-12",
+        "FLD-TSK-102-13",
+        "FLD-TSK-102-14",
+        "FLD-TSK-102-15",
+        "FLD-TSK-102-16"
+      ],
+      "buttons": [
+        "BTN-TSK-102-01",
+        "BTN-TSK-102-02",
+        "BTN-TSK-102-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "STD-103",
+      "name": "标准分类树",
+      "module": "STD",
+      "currentId": "CAT-001",
+      "route": "#/web/CAT-001?view=STD-103",
+      "original": true,
+      "fields": [
+        "FLD-STD-103-01",
+        "FLD-STD-103-02",
+        "FLD-STD-103-03",
+        "FLD-STD-103-04",
+        "FLD-STD-103-05",
+        "FLD-STD-103-06",
+        "FLD-STD-103-07",
+        "FLD-STD-103-08",
+        "FLD-STD-103-09",
+        "FLD-STD-103-10",
+        "FLD-STD-103-11",
+        "FLD-STD-103-12",
+        "FLD-STD-103-13"
+      ],
+      "buttons": [
+        "BTN-STD-103-01",
+        "BTN-STD-103-02",
+        "BTN-STD-103-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "STD-104",
+      "name": "标准分类编辑",
+      "module": "STD",
+      "currentId": "CAT-001",
+      "route": "#/web/CAT-001?view=STD-104",
+      "original": true,
+      "fields": [
+        "FLD-STD-104-01",
+        "FLD-STD-104-02",
+        "FLD-STD-104-03",
+        "FLD-STD-104-04",
+        "FLD-STD-104-05",
+        "FLD-STD-104-06",
+        "FLD-STD-104-07",
+        "FLD-STD-104-08",
+        "FLD-STD-104-09",
+        "FLD-STD-104-10",
+        "FLD-STD-104-11",
+        "FLD-STD-104-12",
+        "FLD-STD-104-13"
+      ],
+      "buttons": [
+        "BTN-STD-104-01",
+        "BTN-STD-104-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "STD-105",
+      "name": "标准属性库",
+      "module": "STD",
+      "currentId": "CAT-001",
+      "route": "#/web/CAT-001?view=STD-105",
+      "original": true,
+      "fields": [
+        "FLD-STD-105-01",
+        "FLD-STD-105-02",
+        "FLD-STD-105-03",
+        "FLD-STD-105-04",
+        "FLD-STD-105-05",
+        "FLD-STD-105-06",
+        "FLD-STD-105-07",
+        "FLD-STD-105-08",
+        "FLD-STD-105-09",
+        "FLD-STD-105-10",
+        "FLD-STD-105-11",
+        "FLD-STD-105-12",
+        "FLD-STD-105-13"
+      ],
+      "buttons": [
+        "BTN-STD-105-01",
+        "BTN-STD-105-02",
+        "BTN-STD-105-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "STD-106",
+      "name": "分类属性绑定",
+      "module": "STD",
+      "currentId": "CAT-001",
+      "route": "#/web/CAT-001?view=STD-106",
+      "original": true,
+      "fields": [
+        "FLD-STD-106-01",
+        "FLD-STD-106-02",
+        "FLD-STD-106-03",
+        "FLD-STD-106-04",
+        "FLD-STD-106-05",
+        "FLD-STD-106-06",
+        "FLD-STD-106-07",
+        "FLD-STD-106-08",
+        "FLD-STD-106-09",
+        "FLD-STD-106-10",
+        "FLD-STD-106-11",
+        "FLD-STD-106-12",
+        "FLD-STD-106-13"
+      ],
+      "buttons": [
+        "BTN-STD-106-01",
+        "BTN-STD-106-02",
+        "BTN-STD-106-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "STD-107",
+      "name": "标准码值管理",
+      "module": "STD",
+      "currentId": "SYS-007",
+      "route": "#/web/SYS-007?view=STD-107",
+      "original": true,
+      "fields": [
+        "FLD-STD-107-01",
+        "FLD-STD-107-02",
+        "FLD-STD-107-03",
+        "FLD-STD-107-04",
+        "FLD-STD-107-05",
+        "FLD-STD-107-06",
+        "FLD-STD-107-07",
+        "FLD-STD-107-08",
+        "FLD-STD-107-09",
+        "FLD-STD-107-10",
+        "FLD-STD-107-11",
+        "FLD-STD-107-12",
+        "FLD-STD-107-13"
+      ],
+      "buttons": [
+        "BTN-STD-107-01",
+        "BTN-STD-107-02",
+        "BTN-STD-107-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "STD-108",
+      "name": "标准码版本",
+      "module": "STD",
+      "currentId": "SYS-007",
+      "route": "#/web/SYS-007?view=STD-108",
+      "original": true,
+      "fields": [
+        "FLD-STD-108-01",
+        "FLD-STD-108-02",
+        "FLD-STD-108-03",
+        "FLD-STD-108-04",
+        "FLD-STD-108-05",
+        "FLD-STD-108-06",
+        "FLD-STD-108-07",
+        "FLD-STD-108-08",
+        "FLD-STD-108-09",
+        "FLD-STD-108-10",
+        "FLD-STD-108-11",
+        "FLD-STD-108-12",
+        "FLD-STD-108-13"
+      ],
+      "buttons": [
+        "BTN-STD-108-01",
+        "BTN-STD-108-02",
+        "BTN-STD-108-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "MED-109",
+      "name": "存储提供方",
+      "module": "MED",
+      "currentId": "SYS-006",
+      "route": "#/web/SYS-006?view=MED-109",
+      "original": true,
+      "fields": [
+        "FLD-MED-109-01",
+        "FLD-MED-109-02",
+        "FLD-MED-109-03",
+        "FLD-MED-109-04",
+        "FLD-MED-109-05",
+        "FLD-MED-109-06",
+        "FLD-MED-109-07",
+        "FLD-MED-109-08",
+        "FLD-MED-109-09",
+        "FLD-MED-109-10",
+        "FLD-MED-109-11",
+        "FLD-MED-109-12",
+        "FLD-MED-109-13"
+      ],
+      "buttons": [
+        "BTN-MED-109-01",
+        "BTN-MED-109-02",
+        "BTN-MED-109-03",
+        "BTN-MED-109-04",
+        "BTN-MED-109-05"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "MED-110",
+      "name": "存储策略",
+      "module": "MED",
+      "currentId": "SYS-006",
+      "route": "#/web/SYS-006?view=MED-110",
+      "original": true,
+      "fields": [
+        "FLD-MED-110-01",
+        "FLD-MED-110-02",
+        "FLD-MED-110-03",
+        "FLD-MED-110-04",
+        "FLD-MED-110-05",
+        "FLD-MED-110-06",
+        "FLD-MED-110-07",
+        "FLD-MED-110-08",
+        "FLD-MED-110-09",
+        "FLD-MED-110-10",
+        "FLD-MED-110-11",
+        "FLD-MED-110-12",
+        "FLD-MED-110-13"
+      ],
+      "buttons": [
+        "BTN-MED-110-01",
+        "BTN-MED-110-02",
+        "BTN-MED-110-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "MED-111",
+      "name": "媒体对象列表",
+      "module": "MED",
+      "currentId": "MED-001",
+      "route": "#/web/MED-001?view=MED-111",
+      "original": true,
+      "fields": [
+        "FLD-MED-111-01",
+        "FLD-MED-111-02",
+        "FLD-MED-111-03",
+        "FLD-MED-111-04",
+        "FLD-MED-111-05",
+        "FLD-MED-111-06",
+        "FLD-MED-111-07",
+        "FLD-MED-111-08",
+        "FLD-MED-111-09",
+        "FLD-MED-111-10",
+        "FLD-MED-111-11",
+        "FLD-MED-111-12",
+        "FLD-MED-111-13"
+      ],
+      "buttons": [
+        "BTN-MED-111-01",
+        "BTN-MED-111-02",
+        "BTN-MED-111-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "MED-112",
+      "name": "媒体上传/恢复",
+      "module": "MED",
+      "currentId": "MED-001",
+      "route": "#/web/MED-001?view=MED-112",
+      "original": true,
+      "fields": [
+        "FLD-MED-112-01",
+        "FLD-MED-112-02",
+        "FLD-MED-112-03",
+        "FLD-MED-112-04",
+        "FLD-MED-112-05",
+        "FLD-MED-112-06",
+        "FLD-MED-112-07",
+        "FLD-MED-112-08",
+        "FLD-MED-112-09",
+        "FLD-MED-112-10",
+        "FLD-MED-112-11",
+        "FLD-MED-112-12",
+        "FLD-MED-112-13"
+      ],
+      "buttons": [
+        "BTN-MED-112-01",
+        "BTN-MED-112-02",
+        "BTN-MED-112-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "MED-113",
+      "name": "媒体引用关系",
+      "module": "MED",
+      "currentId": "MED-001",
+      "route": "#/web/MED-001?view=MED-113",
+      "original": true,
+      "fields": [
+        "FLD-MED-113-01",
+        "FLD-MED-113-02",
+        "FLD-MED-113-03",
+        "FLD-MED-113-04",
+        "FLD-MED-113-05",
+        "FLD-MED-113-06",
+        "FLD-MED-113-07",
+        "FLD-MED-113-08",
+        "FLD-MED-113-09",
+        "FLD-MED-113-10",
+        "FLD-MED-113-11",
+        "FLD-MED-113-12",
+        "FLD-MED-113-13"
+      ],
+      "buttons": [
+        "BTN-MED-113-01",
+        "BTN-MED-113-02",
+        "BTN-MED-113-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SYS-114",
+      "name": "本人账号与操作范围",
+      "module": "SYS",
+      "currentId": "SYS-010",
+      "route": "#/web/SYS-010?view=SYS-114",
+      "original": true,
+      "fields": [
+        "FLD-SYS-114-01",
+        "FLD-SYS-114-02",
+        "FLD-SYS-114-03",
+        "FLD-SYS-114-04",
+        "FLD-SYS-114-05",
+        "FLD-SYS-114-06",
+        "FLD-SYS-114-07",
+        "FLD-SYS-114-08",
+        "FLD-SYS-114-09",
+        "FLD-SYS-114-10",
+        "FLD-SYS-114-11",
+        "FLD-SYS-114-12"
+      ],
+      "buttons": [
+        "BTN-SYS-114-01",
+        "BTN-SYS-114-02",
+        "BTN-SYS-114-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SYS-115",
+      "name": "操作权限与确认边界",
+      "module": "SYS",
+      "currentId": "SYS-010",
+      "route": "#/web/SYS-010?view=SYS-115",
+      "original": true,
+      "fields": [
+        "FLD-SYS-115-01",
+        "FLD-SYS-115-02",
+        "FLD-SYS-115-03",
+        "FLD-SYS-115-04",
+        "FLD-SYS-115-05",
+        "FLD-SYS-115-06",
+        "FLD-SYS-115-07",
+        "FLD-SYS-115-08",
+        "FLD-SYS-115-09",
+        "FLD-SYS-115-10",
+        "FLD-SYS-115-11",
+        "FLD-SYS-115-12"
+      ],
+      "buttons": [
+        "BTN-SYS-115-01",
+        "BTN-SYS-115-02",
+        "BTN-SYS-115-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SYS-116",
+      "name": "SecretRef",
+      "module": "SYS",
+      "currentId": "SYS-010",
+      "route": "#/web/SYS-010?view=SYS-116",
+      "original": true,
+      "fields": [
+        "FLD-SYS-116-01",
+        "FLD-SYS-116-02",
+        "FLD-SYS-116-03",
+        "FLD-SYS-116-04",
+        "FLD-SYS-116-05",
+        "FLD-SYS-116-06",
+        "FLD-SYS-116-07",
+        "FLD-SYS-116-08",
+        "FLD-SYS-116-09",
+        "FLD-SYS-116-10",
+        "FLD-SYS-116-11",
+        "FLD-SYS-116-12"
+      ],
+      "buttons": [
+        "BTN-SYS-116-01",
+        "BTN-SYS-116-02",
+        "BTN-SYS-116-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SYS-117",
+      "name": "审计日志",
+      "module": "SYS",
+      "currentId": "SYS-010",
+      "route": "#/web/SYS-010?view=SYS-117",
+      "original": true,
+      "fields": [
+        "FLD-SYS-117-01",
+        "FLD-SYS-117-02",
+        "FLD-SYS-117-03",
+        "FLD-SYS-117-04",
+        "FLD-SYS-117-05",
+        "FLD-SYS-117-06",
+        "FLD-SYS-117-07",
+        "FLD-SYS-117-08",
+        "FLD-SYS-117-09",
+        "FLD-SYS-117-10",
+        "FLD-SYS-117-11",
+        "FLD-SYS-117-12"
+      ],
+      "buttons": [
+        "BTN-SYS-117-01",
+        "BTN-SYS-117-02",
+        "BTN-SYS-117-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SYS-118",
+      "name": "运行日志",
+      "module": "SYS",
+      "currentId": "SYS-011",
+      "route": "#/web/SYS-011?view=SYS-118",
+      "original": true,
+      "fields": [
+        "FLD-SYS-118-01",
+        "FLD-SYS-118-02",
+        "FLD-SYS-118-03",
+        "FLD-SYS-118-04",
+        "FLD-SYS-118-05",
+        "FLD-SYS-118-06",
+        "FLD-SYS-118-07",
+        "FLD-SYS-118-08",
+        "FLD-SYS-118-09",
+        "FLD-SYS-118-10",
+        "FLD-SYS-118-11",
+        "FLD-SYS-118-12"
+      ],
+      "buttons": [
+        "BTN-SYS-118-01",
+        "BTN-SYS-118-02",
+        "BTN-SYS-118-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SYS-119",
+      "name": "安全事件",
+      "module": "SYS",
+      "currentId": "SYS-010",
+      "route": "#/web/SYS-010?view=SYS-119",
+      "original": true,
+      "fields": [
+        "FLD-SYS-119-01",
+        "FLD-SYS-119-02",
+        "FLD-SYS-119-03",
+        "FLD-SYS-119-04",
+        "FLD-SYS-119-05",
+        "FLD-SYS-119-06",
+        "FLD-SYS-119-07",
+        "FLD-SYS-119-08",
+        "FLD-SYS-119-09",
+        "FLD-SYS-119-10",
+        "FLD-SYS-119-11",
+        "FLD-SYS-119-12"
+      ],
+      "buttons": [
+        "BTN-SYS-119-01",
+        "BTN-SYS-119-02",
+        "BTN-SYS-119-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SYS-120",
+      "name": "备份恢复",
+      "module": "SYS",
+      "currentId": "SYS-012",
+      "route": "#/web/SYS-012?view=SYS-120",
+      "original": true,
+      "fields": [
+        "FLD-SYS-120-01",
+        "FLD-SYS-120-02",
+        "FLD-SYS-120-03",
+        "FLD-SYS-120-04",
+        "FLD-SYS-120-05",
+        "FLD-SYS-120-06",
+        "FLD-SYS-120-07",
+        "FLD-SYS-120-08",
+        "FLD-SYS-120-09",
+        "FLD-SYS-120-10",
+        "FLD-SYS-120-11",
+        "FLD-SYS-120-12"
+      ],
+      "buttons": [
+        "BTN-SYS-120-01",
+        "BTN-SYS-120-02",
+        "BTN-SYS-120-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SYS-121",
+      "name": "系统参数",
+      "module": "SYS",
+      "currentId": "SYS-011",
+      "route": "#/web/SYS-011?view=SYS-121",
+      "original": true,
+      "fields": [
+        "FLD-SYS-121-01",
+        "FLD-SYS-121-02",
+        "FLD-SYS-121-03",
+        "FLD-SYS-121-04",
+        "FLD-SYS-121-05",
+        "FLD-SYS-121-06",
+        "FLD-SYS-121-07",
+        "FLD-SYS-121-08",
+        "FLD-SYS-121-09",
+        "FLD-SYS-121-10",
+        "FLD-SYS-121-11",
+        "FLD-SYS-121-12"
+      ],
+      "buttons": [
+        "BTN-SYS-121-01",
+        "BTN-SYS-121-02",
+        "BTN-SYS-121-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SYS-122",
+      "name": "诊断中心",
+      "module": "SYS",
+      "currentId": "SYS-011",
+      "route": "#/web/SYS-011?view=SYS-122",
+      "original": true,
+      "fields": [
+        "FLD-SYS-122-01",
+        "FLD-SYS-122-02",
+        "FLD-SYS-122-03",
+        "FLD-SYS-122-04",
+        "FLD-SYS-122-05",
+        "FLD-SYS-122-06",
+        "FLD-SYS-122-07",
+        "FLD-SYS-122-08",
+        "FLD-SYS-122-09",
+        "FLD-SYS-122-10",
+        "FLD-SYS-122-11",
+        "FLD-SYS-122-12"
+      ],
+      "buttons": [
+        "BTN-SYS-122-01",
+        "BTN-SYS-122-02",
+        "BTN-SYS-122-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "RTE-123",
+      "name": "Worker管理",
+      "module": "RTE",
+      "currentId": "SYS-003",
+      "route": "#/web/SYS-003?view=RTE-123",
+      "original": true,
+      "fields": [
+        "FLD-RTE-123-01",
+        "FLD-RTE-123-02",
+        "FLD-RTE-123-03",
+        "FLD-RTE-123-04",
+        "FLD-RTE-123-05",
+        "FLD-RTE-123-06",
+        "FLD-RTE-123-07",
+        "FLD-RTE-123-08",
+        "FLD-RTE-123-09",
+        "FLD-RTE-123-10",
+        "FLD-RTE-123-11",
+        "FLD-RTE-123-12",
+        "FLD-RTE-123-13",
+        "FLD-RTE-123-14",
+        "FLD-RTE-123-15",
+        "FLD-RTE-123-16"
+      ],
+      "buttons": [
+        "BTN-RTE-123-01",
+        "BTN-RTE-123-02",
+        "BTN-RTE-123-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "RTE-124",
+      "name": "BrowserSession",
+      "module": "RTE",
+      "currentId": "SYS-005",
+      "route": "#/web/SYS-005?view=RTE-124",
+      "original": true,
+      "fields": [
+        "FLD-RTE-124-01",
+        "FLD-RTE-124-02",
+        "FLD-RTE-124-03",
+        "FLD-RTE-124-04",
+        "FLD-RTE-124-05",
+        "FLD-RTE-124-06",
+        "FLD-RTE-124-07",
+        "FLD-RTE-124-08",
+        "FLD-RTE-124-09",
+        "FLD-RTE-124-10",
+        "FLD-RTE-124-11",
+        "FLD-RTE-124-12",
+        "FLD-RTE-124-13",
+        "FLD-RTE-124-14",
+        "FLD-RTE-124-15",
+        "FLD-RTE-124-16"
+      ],
+      "buttons": [
+        "BTN-RTE-124-01",
+        "BTN-RTE-124-02",
+        "BTN-RTE-124-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "RTE-125",
+      "name": "RouteResolver/路由预览",
+      "module": "RTE",
+      "currentId": "SYS-005",
+      "route": "#/web/SYS-005?view=RTE-125",
+      "original": true,
+      "fields": [
+        "FLD-RTE-125-01",
+        "FLD-RTE-125-02",
+        "FLD-RTE-125-03",
+        "FLD-RTE-125-04",
+        "FLD-RTE-125-05",
+        "FLD-RTE-125-06",
+        "FLD-RTE-125-07",
+        "FLD-RTE-125-08",
+        "FLD-RTE-125-09",
+        "FLD-RTE-125-10",
+        "FLD-RTE-125-11",
+        "FLD-RTE-125-12",
+        "FLD-RTE-125-13",
+        "FLD-RTE-125-14",
+        "FLD-RTE-125-15",
+        "FLD-RTE-125-16"
+      ],
+      "buttons": [
+        "BTN-RTE-125-01",
+        "BTN-RTE-125-02",
+        "BTN-RTE-125-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PRD-126",
+      "name": "商品编辑后预览",
+      "module": "PRD",
+      "currentId": "PRD-002",
+      "route": "#/web/PRD-002?view=PRD-126",
+      "original": true,
+      "fields": [
+        "FLD-PRD-126-01",
+        "FLD-PRD-126-02",
+        "FLD-PRD-126-03",
+        "FLD-PRD-126-04",
+        "FLD-PRD-126-05",
+        "FLD-PRD-126-06",
+        "FLD-PRD-126-07",
+        "FLD-PRD-126-08",
+        "FLD-PRD-126-09",
+        "FLD-PRD-126-10",
+        "FLD-PRD-126-11",
+        "FLD-PRD-126-12",
+        "FLD-PRD-126-13",
+        "FLD-PRD-126-14",
+        "FLD-PRD-126-15",
+        "FLD-PRD-126-16"
+      ],
+      "buttons": [
+        "BTN-PRD-126-01",
+        "BTN-PRD-126-02",
+        "BTN-PRD-126-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SRC-127",
+      "name": "采集预览",
+      "module": "SRC",
+      "currentId": "SRC-005",
+      "route": "#/web/SRC-005?view=SRC-127",
+      "original": true,
+      "fields": [
+        "FLD-SRC-127-01",
+        "FLD-SRC-127-02",
+        "FLD-SRC-127-03",
+        "FLD-SRC-127-04",
+        "FLD-SRC-127-05",
+        "FLD-SRC-127-06",
+        "FLD-SRC-127-07",
+        "FLD-SRC-127-08",
+        "FLD-SRC-127-09",
+        "FLD-SRC-127-10",
+        "FLD-SRC-127-11",
+        "FLD-SRC-127-12",
+        "FLD-SRC-127-13",
+        "FLD-SRC-127-14",
+        "FLD-SRC-127-15",
+        "FLD-SRC-127-16"
+      ],
+      "buttons": [
+        "BTN-SRC-127-01",
+        "BTN-SRC-127-02",
+        "BTN-SRC-127-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SRC-128",
+      "name": "来源版本差异",
+      "module": "SRC",
+      "currentId": "SRC-005",
+      "route": "#/web/SRC-005?view=SRC-128",
+      "original": true,
+      "fields": [
+        "FLD-SRC-128-01",
+        "FLD-SRC-128-02",
+        "FLD-SRC-128-03",
+        "FLD-SRC-128-04",
+        "FLD-SRC-128-05",
+        "FLD-SRC-128-06",
+        "FLD-SRC-128-07",
+        "FLD-SRC-128-08",
+        "FLD-SRC-128-09",
+        "FLD-SRC-128-10",
+        "FLD-SRC-128-11",
+        "FLD-SRC-128-12",
+        "FLD-SRC-128-13",
+        "FLD-SRC-128-14",
+        "FLD-SRC-128-15",
+        "FLD-SRC-128-16"
+      ],
+      "buttons": [
+        "BTN-SRC-128-01",
+        "BTN-SRC-128-02",
+        "BTN-SRC-128-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SYS-129",
+      "name": "系统设置",
+      "module": "SYS",
+      "currentId": "SYS-011",
+      "route": "#/web/SYS-011?view=SYS-129",
+      "original": true,
+      "fields": [
+        "FLD-SYS-129-01",
+        "FLD-SYS-129-02",
+        "FLD-SYS-129-03",
+        "FLD-SYS-129-04",
+        "FLD-SYS-129-05",
+        "FLD-SYS-129-06",
+        "FLD-SYS-129-07",
+        "FLD-SYS-129-08",
+        "FLD-SYS-129-09",
+        "FLD-SYS-129-10",
+        "FLD-SYS-129-11",
+        "FLD-SYS-129-12"
+      ],
+      "buttons": [
+        "BTN-SYS-129-01",
+        "BTN-SYS-129-02",
+        "BTN-SYS-129-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SYS-130",
+      "name": "品牌设置",
+      "module": "SYS",
+      "currentId": "SYS-011",
+      "route": "#/web/SYS-011?view=SYS-130",
+      "original": true,
+      "fields": [
+        "FLD-SYS-130-01",
+        "FLD-SYS-130-02",
+        "FLD-SYS-130-03",
+        "FLD-SYS-130-04",
+        "FLD-SYS-130-05",
+        "FLD-SYS-130-06",
+        "FLD-SYS-130-07",
+        "FLD-SYS-130-08",
+        "FLD-SYS-130-09",
+        "FLD-SYS-130-10",
+        "FLD-SYS-130-11",
+        "FLD-SYS-130-12"
+      ],
+      "buttons": [
+        "BTN-SYS-130-01",
+        "BTN-SYS-130-02",
+        "BTN-SYS-130-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SYS-131",
+      "name": "本人账号资料",
+      "module": "SYS",
+      "currentId": "SYS-010",
+      "route": "#/web/SYS-010?view=SYS-131",
+      "original": true,
+      "fields": [
+        "FLD-SYS-131-01",
+        "FLD-SYS-131-02",
+        "FLD-SYS-131-03",
+        "FLD-SYS-131-04",
+        "FLD-SYS-131-05",
+        "FLD-SYS-131-06",
+        "FLD-SYS-131-07",
+        "FLD-SYS-131-08",
+        "FLD-SYS-131-09",
+        "FLD-SYS-131-10",
+        "FLD-SYS-131-11",
+        "FLD-SYS-131-12"
+      ],
+      "buttons": [
+        "BTN-SYS-131-01",
+        "BTN-SYS-131-02",
+        "BTN-SYS-131-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SYS-132",
+      "name": "本人账号编辑",
+      "module": "SYS",
+      "currentId": "SYS-010",
+      "route": "#/web/SYS-010?view=SYS-132",
+      "original": true,
+      "fields": [
+        "FLD-SYS-132-01",
+        "FLD-SYS-132-02",
+        "FLD-SYS-132-03",
+        "FLD-SYS-132-04",
+        "FLD-SYS-132-05",
+        "FLD-SYS-132-06",
+        "FLD-SYS-132-07",
+        "FLD-SYS-132-08",
+        "FLD-SYS-132-09",
+        "FLD-SYS-132-10",
+        "FLD-SYS-132-11",
+        "FLD-SYS-132-12"
+      ],
+      "buttons": [
+        "BTN-SYS-132-01",
+        "BTN-SYS-132-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SYS-133",
+      "name": "操作权限说明",
+      "module": "SYS",
+      "currentId": "SYS-010",
+      "route": "#/web/SYS-010?view=SYS-133",
+      "original": true,
+      "fields": [
+        "FLD-SYS-133-01",
+        "FLD-SYS-133-02",
+        "FLD-SYS-133-03",
+        "FLD-SYS-133-04",
+        "FLD-SYS-133-05",
+        "FLD-SYS-133-06",
+        "FLD-SYS-133-07",
+        "FLD-SYS-133-08",
+        "FLD-SYS-133-09",
+        "FLD-SYS-133-10",
+        "FLD-SYS-133-11",
+        "FLD-SYS-133-12"
+      ],
+      "buttons": [
+        "BTN-SYS-133-01",
+        "BTN-SYS-133-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SYS-134",
+      "name": "菜单管理",
+      "module": "SYS",
+      "currentId": "SYS-011",
+      "route": "#/web/SYS-011?view=SYS-134",
+      "original": true,
+      "fields": [
+        "FLD-SYS-134-01",
+        "FLD-SYS-134-02",
+        "FLD-SYS-134-03",
+        "FLD-SYS-134-04",
+        "FLD-SYS-134-05",
+        "FLD-SYS-134-06",
+        "FLD-SYS-134-07",
+        "FLD-SYS-134-08",
+        "FLD-SYS-134-09",
+        "FLD-SYS-134-10",
+        "FLD-SYS-134-11",
+        "FLD-SYS-134-12"
+      ],
+      "buttons": [
+        "BTN-SYS-134-01",
+        "BTN-SYS-134-02",
+        "BTN-SYS-134-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SYS-135",
+      "name": "日志中心",
+      "module": "SYS",
+      "currentId": "SYS-011",
+      "route": "#/web/SYS-011?view=SYS-135",
+      "original": true,
+      "fields": [
+        "FLD-SYS-135-01",
+        "FLD-SYS-135-02",
+        "FLD-SYS-135-03",
+        "FLD-SYS-135-04",
+        "FLD-SYS-135-05",
+        "FLD-SYS-135-06",
+        "FLD-SYS-135-07",
+        "FLD-SYS-135-08",
+        "FLD-SYS-135-09",
+        "FLD-SYS-135-10",
+        "FLD-SYS-135-11",
+        "FLD-SYS-135-12"
+      ],
+      "buttons": [
+        "BTN-SYS-135-01",
+        "BTN-SYS-135-02",
+        "BTN-SYS-135-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SYS-136",
+      "name": "日志详情",
+      "module": "SYS",
+      "currentId": "SYS-011",
+      "route": "#/web/SYS-011?view=SYS-136",
+      "original": true,
+      "fields": [
+        "FLD-SYS-136-01",
+        "FLD-SYS-136-02",
+        "FLD-SYS-136-03",
+        "FLD-SYS-136-04",
+        "FLD-SYS-136-05",
+        "FLD-SYS-136-06",
+        "FLD-SYS-136-07",
+        "FLD-SYS-136-08",
+        "FLD-SYS-136-09",
+        "FLD-SYS-136-10",
+        "FLD-SYS-136-11",
+        "FLD-SYS-136-12"
+      ],
+      "buttons": [
+        "BTN-SYS-136-01",
+        "BTN-SYS-136-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "MED-137",
+      "name": "存储健康与测试",
+      "module": "MED",
+      "currentId": "SYS-006",
+      "route": "#/web/SYS-006?view=MED-137",
+      "original": true,
+      "fields": [
+        "FLD-MED-137-01",
+        "FLD-MED-137-02",
+        "FLD-MED-137-03",
+        "FLD-MED-137-04",
+        "FLD-MED-137-05",
+        "FLD-MED-137-06",
+        "FLD-MED-137-07",
+        "FLD-MED-137-08",
+        "FLD-MED-137-09",
+        "FLD-MED-137-10",
+        "FLD-MED-137-11",
+        "FLD-MED-137-12",
+        "FLD-MED-137-13"
+      ],
+      "buttons": [
+        "BTN-MED-137-01",
+        "BTN-MED-137-02",
+        "BTN-MED-137-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "MED-138",
+      "name": "存储迁移",
+      "module": "MED",
+      "currentId": "SYS-006",
+      "route": "#/web/SYS-006?view=MED-138",
+      "original": true,
+      "fields": [
+        "FLD-MED-138-01",
+        "FLD-MED-138-02",
+        "FLD-MED-138-03",
+        "FLD-MED-138-04",
+        "FLD-MED-138-05",
+        "FLD-MED-138-06",
+        "FLD-MED-138-07",
+        "FLD-MED-138-08",
+        "FLD-MED-138-09",
+        "FLD-MED-138-10",
+        "FLD-MED-138-11",
+        "FLD-MED-138-12",
+        "FLD-MED-138-13"
+      ],
+      "buttons": [
+        "BTN-MED-138-01",
+        "BTN-MED-138-02",
+        "BTN-MED-138-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "STD-139",
+      "name": "数据字典",
+      "module": "STD",
+      "currentId": "SYS-007",
+      "route": "#/web/SYS-007?view=STD-139",
+      "original": true,
+      "fields": [
+        "FLD-STD-139-01",
+        "FLD-STD-139-02",
+        "FLD-STD-139-03",
+        "FLD-STD-139-04",
+        "FLD-STD-139-05",
+        "FLD-STD-139-06",
+        "FLD-STD-139-07",
+        "FLD-STD-139-08",
+        "FLD-STD-139-09",
+        "FLD-STD-139-10",
+        "FLD-STD-139-11",
+        "FLD-STD-139-12",
+        "FLD-STD-139-13"
+      ],
+      "buttons": [
+        "BTN-STD-139-01",
+        "BTN-STD-139-02",
+        "BTN-STD-139-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "SYS-140",
+      "name": "系统版本/升级",
+      "module": "SYS",
+      "currentId": "SYS-012",
+      "route": "#/web/SYS-012?view=SYS-140",
+      "original": true,
+      "fields": [
+        "FLD-SYS-140-01",
+        "FLD-SYS-140-02",
+        "FLD-SYS-140-03",
+        "FLD-SYS-140-04",
+        "FLD-SYS-140-05",
+        "FLD-SYS-140-06",
+        "FLD-SYS-140-07",
+        "FLD-SYS-140-08",
+        "FLD-SYS-140-09",
+        "FLD-SYS-140-10",
+        "FLD-SYS-140-11",
+        "FLD-SYS-140-12"
+      ],
+      "buttons": [
+        "BTN-SYS-140-01",
+        "BTN-SYS-140-02",
+        "BTN-SYS-140-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "CHN-141",
+      "name": "发布回执对账",
+      "module": "CHN",
+      "currentId": "STORE-004",
+      "route": "#/web/STORE-004?view=CHN-141",
+      "original": true,
+      "fields": [
+        "FLD-CHN-141-01",
+        "FLD-CHN-141-02",
+        "FLD-CHN-141-03",
+        "FLD-CHN-141-04",
+        "FLD-CHN-141-05",
+        "FLD-CHN-141-06",
+        "FLD-CHN-141-07",
+        "FLD-CHN-141-08",
+        "FLD-CHN-141-09",
+        "FLD-CHN-141-10",
+        "FLD-CHN-141-11",
+        "FLD-CHN-141-12",
+        "FLD-CHN-141-13",
+        "FLD-CHN-141-14",
+        "FLD-CHN-141-15"
+      ],
+      "buttons": [
+        "BTN-CHN-141-01",
+        "BTN-CHN-141-02",
+        "BTN-CHN-141-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "PRD-142",
+      "name": "商品编辑冲突",
+      "module": "PRD",
+      "currentId": "PRD-002",
+      "route": "#/web/PRD-002?view=PRD-142",
+      "original": true,
+      "fields": [
+        "FLD-PRD-142-01",
+        "FLD-PRD-142-02",
+        "FLD-PRD-142-03",
+        "FLD-PRD-142-04",
+        "FLD-PRD-142-05",
+        "FLD-PRD-142-06",
+        "FLD-PRD-142-07",
+        "FLD-PRD-142-08",
+        "FLD-PRD-142-09",
+        "FLD-PRD-142-10",
+        "FLD-PRD-142-11",
+        "FLD-PRD-142-12",
+        "FLD-PRD-142-13",
+        "FLD-PRD-142-14",
+        "FLD-PRD-142-15",
+        "FLD-PRD-142-16"
+      ],
+      "buttons": [
+        "BTN-PRD-142-01",
+        "BTN-PRD-142-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "ORD-143",
+      "name": "订单异常/冲突",
+      "module": "ORD",
+      "currentId": "ORD-001",
+      "route": "#/web/ORD-001?view=ORD-143",
+      "original": true,
+      "fields": [
+        "FLD-ORD-143-01",
+        "FLD-ORD-143-02",
+        "FLD-ORD-143-03",
+        "FLD-ORD-143-04",
+        "FLD-ORD-143-05",
+        "FLD-ORD-143-06",
+        "FLD-ORD-143-07",
+        "FLD-ORD-143-08",
+        "FLD-ORD-143-09",
+        "FLD-ORD-143-10",
+        "FLD-ORD-143-11",
+        "FLD-ORD-143-12",
+        "FLD-ORD-143-13",
+        "FLD-ORD-143-14",
+        "FLD-ORD-143-15",
+        "FLD-ORD-143-16",
+        "FLD-ORD-143-17",
+        "FLD-ORD-143-18"
+      ],
+      "buttons": [
+        "BTN-ORD-143-01",
+        "BTN-ORD-143-02",
+        "BTN-ORD-143-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "AS-144",
+      "name": "售后异常/冲突",
+      "module": "AS",
+      "currentId": "AS-002",
+      "route": "#/web/AS-002?view=AS-144",
+      "original": true,
+      "fields": [
+        "FLD-AS-144-01",
+        "FLD-AS-144-02",
+        "FLD-AS-144-03",
+        "FLD-AS-144-04",
+        "FLD-AS-144-05",
+        "FLD-AS-144-06",
+        "FLD-AS-144-07",
+        "FLD-AS-144-08",
+        "FLD-AS-144-09",
+        "FLD-AS-144-10",
+        "FLD-AS-144-11",
+        "FLD-AS-144-12"
+      ],
+      "buttons": [
+        "BTN-AS-144-01",
+        "BTN-AS-144-02",
+        "BTN-AS-144-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "TSK-145",
+      "name": "人工任务中心",
+      "module": "TSK",
+      "currentId": "SYS-009",
+      "route": "#/web/SYS-009?view=TSK-145",
+      "original": true,
+      "fields": [
+        "FLD-TSK-145-01",
+        "FLD-TSK-145-02",
+        "FLD-TSK-145-03",
+        "FLD-TSK-145-04",
+        "FLD-TSK-145-05",
+        "FLD-TSK-145-06",
+        "FLD-TSK-145-07",
+        "FLD-TSK-145-08",
+        "FLD-TSK-145-09",
+        "FLD-TSK-145-10",
+        "FLD-TSK-145-11",
+        "FLD-TSK-145-12",
+        "FLD-TSK-145-13",
+        "FLD-TSK-145-14",
+        "FLD-TSK-145-15",
+        "FLD-TSK-145-16",
+        "FLD-TSK-145-17"
+      ],
+      "buttons": [
+        "BTN-TSK-145-01",
+        "BTN-TSK-145-02",
+        "BTN-TSK-145-03",
+        "BTN-TSK-145-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "sceneId": "CUR-SRC-006",
+      "name": "链接采集批次",
+      "module": "SRC",
+      "currentId": "SRC-006",
+      "route": "#/web/SRC-006?view=CUR-SRC-006",
+      "original": false,
+      "fields": [
+        "SRC-006-F-001",
+        "SRC-006-F-002",
+        "SRC-006-F-003",
+        "SRC-006-F-004",
+        "SRC-006-F-005",
+        "SRC-006-F-006",
+        "SRC-006-F-007"
+      ],
+      "buttons": []
+    },
+    {
+      "surface": "web",
+      "sceneId": "CUR-LOG-002",
+      "name": "物流回填确认",
+      "module": "LOGI",
+      "currentId": "LOG-002",
+      "route": "#/web/LOG-002?view=CUR-LOG-002",
+      "original": false,
+      "fields": [
+        "LOG-002-F-001",
+        "LOG-002-F-002",
+        "LOG-002-F-003",
+        "LOG-002-F-004",
+        "LOG-002-F-005",
+        "LOG-002-F-006",
+        "LOG-002-F-007",
+        "LOG-002-F-008",
+        "LOG-002-F-009",
+        "LOG-002-F-010",
+        "LOG-002-F-011",
+        "LOG-002-F-012",
+        "LOG-002-F-013",
+        "LOG-002-F-014",
+        "LOG-002-F-015",
+        "LOG-002-F-016"
+      ],
+      "buttons": []
+    },
+    {
+      "surface": "web",
+      "sceneId": "CUR-SYS-004",
+      "name": "浏览器配置",
+      "module": "RTE",
+      "currentId": "SYS-004",
+      "route": "#/web/SYS-004?view=CUR-SYS-004",
+      "original": false,
+      "fields": [
+        "SYS-004-F-001",
+        "SYS-004-F-002",
+        "SYS-004-F-003",
+        "SYS-004-F-004",
+        "SYS-004-F-005",
+        "SYS-004-F-006"
+      ],
+      "buttons": []
+    },
+    {
+      "surface": "web",
+      "sceneId": "CUR-SYS-005",
+      "name": "UTP管理",
+      "module": "RTE",
+      "currentId": "SYS-005",
+      "route": "#/web/SYS-005?view=CUR-SYS-005",
+      "original": false,
+      "fields": [
+        "SYS-005-F-001",
+        "SYS-005-F-002",
+        "SYS-005-F-003",
+        "SYS-005-F-004",
+        "SYS-005-F-005",
+        "SYS-005-F-006"
+      ],
+      "buttons": []
+    },
+    {
+      "surface": "web",
+      "sceneId": "CUR-SYS-008",
+      "name": "AI配置",
+      "module": "SYS",
+      "currentId": "SYS-008",
+      "route": "#/web/SYS-008?view=CUR-SYS-008",
+      "original": false,
+      "fields": [
+        "SYS-008-F-001",
+        "SYS-008-F-002",
+        "SYS-008-F-003",
+        "SYS-008-F-004",
+        "SYS-008-F-005",
+        "SYS-008-F-006",
+        "SYS-008-F-007",
+        "SYS-008-F-008",
+        "SYS-008-X-F-001",
+        "SYS-008-X-F-002",
+        "SYS-008-X-F-003"
+      ],
+      "buttons": []
+    },
+    {
+      "surface": "web",
+      "sceneId": "CUR-PKG-001",
+      "name": "包装 OCR 核对",
+      "module": "PRD",
+      "currentId": "PKG-001",
+      "route": "#/web/PKG-001?view=CUR-PKG-001",
+      "original": false,
+      "fields": [
+        "PKG-001-F-001",
+        "PKG-001-F-002",
+        "PKG-001-F-003",
+        "PKG-001-F-004",
+        "PKG-001-F-005",
+        "PKG-001-F-006",
+        "PKG-001-F-007",
+        "PKG-001-F-008"
+      ],
+      "buttons": []
+    },
+    {
+      "surface": "web",
+      "sceneId": "CUR-JD-001",
+      "name": "京东商品准备",
+      "module": "JD",
+      "currentId": "JD-001",
+      "route": "#/web/JD-001?view=CUR-JD-001",
+      "original": false,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "web",
+      "sceneId": "CUR-JD-002",
+      "name": "京东类目与属性",
+      "module": "JD",
+      "currentId": "JD-002",
+      "route": "#/web/JD-002?view=CUR-JD-002",
+      "original": false,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "web",
+      "sceneId": "CUR-JD-003",
+      "name": "京东草稿同步与回读",
+      "module": "JD",
+      "currentId": "JD-003",
+      "route": "#/web/JD-003?view=CUR-JD-003",
+      "original": false,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "web",
+      "sceneId": "CUR-JD-004",
+      "name": "京东审核与发布确认",
+      "module": "JD",
+      "currentId": "JD-004",
+      "route": "#/web/JD-004?view=CUR-JD-004",
+      "original": false,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "web",
+      "sceneId": "CUR-JD-005",
+      "name": "京东发布对账恢复",
+      "module": "JD",
+      "currentId": "JD-005",
+      "route": "#/web/JD-005?view=CUR-JD-005",
+      "original": false,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "web",
+      "sceneId": "CUR-JD-006",
+      "name": "京东订单详情",
+      "module": "JD",
+      "currentId": "JD-006",
+      "route": "#/web/JD-006?view=CUR-JD-006",
+      "original": false,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "web",
+      "sceneId": "CUR-INST-001",
+      "name": "安装与运行管理",
+      "module": "SYS",
+      "currentId": "INST-001",
+      "route": "#/web/INST-001?view=CUR-INST-001",
+      "original": false,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "PC-001",
+      "name": "PC首页",
+      "module": "PC",
+      "currentId": "PC-002",
+      "route": "#/pc/PC-002?view=PC-001",
+      "original": true,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "PC-002",
+      "name": "Worker配对",
+      "module": "PC",
+      "currentId": "PC-001",
+      "route": "#/pc/PC-001?view=PC-002",
+      "original": true,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "PC-003",
+      "name": "Worker状态",
+      "module": "PC",
+      "currentId": "PC-002",
+      "route": "#/pc/PC-002?view=PC-003",
+      "original": true,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "PC-004",
+      "name": "BrowserProfile",
+      "module": "PC",
+      "currentId": "PC-007",
+      "route": "#/pc/PC-007?view=PC-004",
+      "original": true,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "PC-005",
+      "name": "BrowserSession",
+      "module": "PC",
+      "currentId": "PC-007",
+      "route": "#/pc/PC-007?view=PC-005",
+      "original": true,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "PC-006",
+      "name": "RouteSnapshot",
+      "module": "PC",
+      "currentId": "PC-006",
+      "route": "#/pc/PC-006?view=PC-006",
+      "original": true,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "PC-007",
+      "name": "Adapter",
+      "module": "PC",
+      "currentId": "PC-006",
+      "route": "#/pc/PC-006?view=PC-007",
+      "original": true,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "PC-008",
+      "name": "Fixture",
+      "module": "PC",
+      "currentId": "PC-006",
+      "route": "#/pc/PC-006?view=PC-008",
+      "original": true,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "PC-009",
+      "name": "商品探查执行",
+      "module": "PC",
+      "currentId": "PC-005",
+      "route": "#/pc/PC-005?view=PC-009",
+      "original": true,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "PC-010",
+      "name": "正式采集执行",
+      "module": "PC",
+      "currentId": "PC-005",
+      "route": "#/pc/PC-005?view=PC-010",
+      "original": true,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "PC-011",
+      "name": "采集人工处理",
+      "module": "PC",
+      "currentId": "PC-004",
+      "route": "#/pc/PC-004?view=PC-011",
+      "original": true,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "PC-012",
+      "name": "媒体下载/上传",
+      "module": "PC",
+      "currentId": "PC-005",
+      "route": "#/pc/PC-005?view=PC-012",
+      "original": true,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "PC-013",
+      "name": "登录人工处理",
+      "module": "PC",
+      "currentId": "PC-003",
+      "route": "#/pc/PC-003?view=PC-013",
+      "original": true,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "PC-014",
+      "name": "店铺草稿同步执行",
+      "module": "PC",
+      "currentId": "PC-005",
+      "route": "#/pc/PC-005?view=PC-014",
+      "original": true,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "PC-015",
+      "name": "发布回执对账",
+      "module": "PC",
+      "currentId": "PC-005",
+      "route": "#/pc/PC-005?view=PC-015",
+      "original": true,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "PC-016",
+      "name": "订单同步执行",
+      "module": "PC",
+      "currentId": "PC-005",
+      "route": "#/pc/PC-005?view=PC-016",
+      "original": true,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "PC-017",
+      "name": "1688 采购建单与回读",
+      "module": "PC",
+      "currentId": "PC-005",
+      "route": "#/pc/PC-005?view=PC-017",
+      "original": true,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "PC-018",
+      "name": "物流同步执行",
+      "module": "PC",
+      "currentId": "PC-005",
+      "route": "#/pc/PC-005?view=PC-018",
+      "original": true,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "PC-019",
+      "name": "售后只读协查",
+      "module": "PC",
+      "currentId": "PC-005",
+      "route": "#/pc/PC-005?view=PC-019",
+      "original": true,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "PC-020",
+      "name": "PC诊断/日志",
+      "module": "PC",
+      "currentId": "PC-006",
+      "route": "#/pc/PC-006?view=PC-020",
+      "original": true,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "CUR-PC-LOGIN",
+      "name": "登录中心",
+      "module": "PC",
+      "currentId": "PC-003",
+      "route": "#/pc/PC-003?view=CUR-PC-LOGIN",
+      "original": false,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "CUR-PC-MONITOR",
+      "name": "任务监控",
+      "module": "PC",
+      "currentId": "PC-005",
+      "route": "#/pc/PC-005?view=CUR-PC-MONITOR",
+      "original": false,
+      "fields": [],
+      "buttons": []
+    },
+    {
+      "surface": "pc",
+      "sceneId": "CUR-PC-SETTINGS",
+      "name": "连接与设置",
+      "module": "PC",
+      "currentId": "PC-006",
+      "route": "#/pc/PC-006?view=CUR-PC-SETTINGS",
+      "original": false,
+      "fields": [],
+      "buttons": []
+    }
+  ]
+}

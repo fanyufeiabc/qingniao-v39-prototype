@@ -1,0 +1,1191 @@
+{
+  "version": "9.1.1-w8r2a-p1",
+  "generatedAt": "2026-10-09T16:59:09.756Z",
+  "runtime": "jsdom (DOM and interaction checks; no visual acceptance)",
+  "groups": [
+    {
+      "name": "原 145 NAS / 20 PC 设计记录与字段、按钮身份不丢失",
+      "result": "PASS"
+    },
+    {
+      "name": "NAS 19 模块 / 四组菜单，全 158 场景在主导航可达",
+      "result": "PASS"
+    },
+    {
+      "name": "PC 七组 / 全 23 场景，原浏览器、采集、履约与诊断均可达",
+      "result": "PASS"
+    },
+    {
+      "name": "全部 181 场景渲染，原 2030 字段及 437 按钮实际落位",
+      "result": "PASS"
+    },
+    {
+      "name": "当前 61 逻辑页面保留编号与标题；PC 首次配对无旧编号歧义",
+      "result": "PASS"
+    },
+    {
+      "name": "无效路由、混用场景、跨端编号被阻断",
+      "result": "PASS"
+    },
+    {
+      "name": "全页搜索可搜原场景和当前编号，不再只返回前 80 条",
+      "result": "PASS"
+    },
+    {
+      "name": "固定本人操作，原视觉系统与品牌资产保持原样",
+      "result": "PASS"
+    },
+    {
+      "name": "上下文页直达必须选择对象；对象信息及返回列表上下文保持",
+      "result": "PASS"
+    },
+    {
+      "name": "分页为 20 / 50；错误、离线、空数据状态可恢复并保留输入",
+      "result": "PASS"
+    },
+    {
+      "name": "搜索 → 探查结果 → 候选确认 → 正式采集任务",
+      "result": "PASS"
+    },
+    {
+      "name": "商品列表 → 详情 → 编辑 → 店铺草稿预览 → 同步任务",
+      "result": "PASS"
+    },
+    {
+      "name": "采购价格变化阻断确认，正常采购须本人二次确认",
+      "result": "PASS"
+    },
+    {
+      "name": "京东独立能力未核验阻断草稿写入，本人确认审核与再次发布",
+      "result": "PASS"
+    },
+    {
+      "name": "京东 UNKNOWN 保持原锁，只读观察、证据及返回不恢复写按钮",
+      "result": "PASS"
+    },
+    {
+      "name": "PC UNKNOWN 跨菜单仍锁定，原任务身份不匹配不允许领取或恢复",
+      "result": "PASS"
+    },
+    {
+      "name": "PC 任务进度与证据跨菜单保留，不会每次回到 READY",
+      "result": "PASS"
+    },
+    {
+      "name": "PC RouteSnapshot、Adapter、Fixture 等查看入口有对象记录",
+      "result": "PASS"
+    },
+    {
+      "name": "售后按两条商品行关联不同采购单，两侧金额独立核对并保持本人输入",
+      "result": "PASS"
+    },
+    {
+      "name": "新增安装、批量链接、包装 OCR、登录与物流均有可操作场景",
+      "result": "PASS"
+    }
+  ],
+  "routes": [
+    {
+      "surface": "web",
+      "scene": "DASH-001",
+      "currentId": "DASH-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "DASH-002",
+      "currentId": "DASH-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "DASH-003",
+      "currentId": "DASH-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "DASH-004",
+      "currentId": "DASH-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "DASH-005",
+      "currentId": "DASH-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "DASH-006",
+      "currentId": "DASH-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "DASH-007",
+      "currentId": "DASH-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "DASH-008",
+      "currentId": "DASH-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PLT-009",
+      "currentId": "SYS-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PLT-010",
+      "currentId": "SYS-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PLT-011",
+      "currentId": "SYS-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PLT-012",
+      "currentId": "SYS-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PLT-013",
+      "currentId": "SYS-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PLT-014",
+      "currentId": "SYS-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PLT-015",
+      "currentId": "SYS-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PLT-016",
+      "currentId": "SYS-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ACC-017",
+      "currentId": "SYS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ACC-018",
+      "currentId": "SYS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ACC-019",
+      "currentId": "SYS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ACC-020",
+      "currentId": "SYS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ACC-021",
+      "currentId": "SYS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ACC-022",
+      "currentId": "SYS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ACC-023",
+      "currentId": "SYS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ACC-024",
+      "currentId": "SYS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STR-025",
+      "currentId": "STORE-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STR-026",
+      "currentId": "STORE-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STR-027",
+      "currentId": "STORE-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STR-028",
+      "currentId": "STORE-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STR-029",
+      "currentId": "STORE-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STR-030",
+      "currentId": "STORE-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STR-031",
+      "currentId": "STORE-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SUP-032",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SUP-033",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SUP-034",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SUP-035",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SUP-036",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-037",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-038",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-039",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-040",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-041",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-042",
+      "currentId": "SRC-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-043",
+      "currentId": "SRC-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-044",
+      "currentId": "SRC-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-045",
+      "currentId": "SRC-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-046",
+      "currentId": "SRC-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-047",
+      "currentId": "SRC-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-048",
+      "currentId": "SRC-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-049",
+      "currentId": "SRC-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-050",
+      "currentId": "PRD-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-051",
+      "currentId": "PRD-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-052",
+      "currentId": "PRD-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-053",
+      "currentId": "PRD-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-054",
+      "currentId": "PRD-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-055",
+      "currentId": "PRD-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-056",
+      "currentId": "MED-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-057",
+      "currentId": "PRD-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-058",
+      "currentId": "PRD-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-059",
+      "currentId": "PRD-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-060",
+      "currentId": "PRD-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-061",
+      "currentId": "PRD-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-062",
+      "currentId": "PRD-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-063",
+      "currentId": "PRD-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-064",
+      "currentId": "STORE-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-065",
+      "currentId": "STORE-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-066",
+      "currentId": "SYS-007",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-067",
+      "currentId": "PRD-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-068",
+      "currentId": "PRD-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-069",
+      "currentId": "PRD-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-070",
+      "currentId": "STORE-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-071",
+      "currentId": "STORE-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-072",
+      "currentId": "STORE-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-073",
+      "currentId": "STORE-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ORD-074",
+      "currentId": "ORD-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ORD-075",
+      "currentId": "ORD-001-D",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ORD-076",
+      "currentId": "ORD-001-D",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ORD-077",
+      "currentId": "ORD-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ORD-078",
+      "currentId": "ORD-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ORD-079",
+      "currentId": "PUR-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ORD-080",
+      "currentId": "LOG-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ORD-081",
+      "currentId": "FIN-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PUR-082",
+      "currentId": "PUR-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PUR-083",
+      "currentId": "PUR-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PUR-084",
+      "currentId": "PUR-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PUR-085",
+      "currentId": "PUR-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PUR-086",
+      "currentId": "PUR-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PUR-087",
+      "currentId": "PUR-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PUR-088",
+      "currentId": "PUR-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "LOGI-089",
+      "currentId": "LOG-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "LOGI-090",
+      "currentId": "LOG-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "LOGI-091",
+      "currentId": "LOG-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "LOGI-092",
+      "currentId": "LOG-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "AS-093",
+      "currentId": "AS-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "AS-094",
+      "currentId": "AS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "AS-095",
+      "currentId": "AS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "FIN-096",
+      "currentId": "FIN-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "FIN-097",
+      "currentId": "FIN-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "TSK-098",
+      "currentId": "SYS-009",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "TSK-099",
+      "currentId": "SYS-009",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "TSK-100",
+      "currentId": "SYS-009",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "TSK-101",
+      "currentId": "SYS-009",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "TSK-102",
+      "currentId": "SYS-009",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STD-103",
+      "currentId": "CAT-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STD-104",
+      "currentId": "CAT-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STD-105",
+      "currentId": "CAT-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STD-106",
+      "currentId": "CAT-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STD-107",
+      "currentId": "SYS-007",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STD-108",
+      "currentId": "SYS-007",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "MED-109",
+      "currentId": "SYS-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "MED-110",
+      "currentId": "SYS-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "MED-111",
+      "currentId": "MED-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "MED-112",
+      "currentId": "MED-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "MED-113",
+      "currentId": "MED-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-114",
+      "currentId": "SYS-010",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-115",
+      "currentId": "SYS-010",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-116",
+      "currentId": "SYS-010",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-117",
+      "currentId": "SYS-010",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-118",
+      "currentId": "SYS-011",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-119",
+      "currentId": "SYS-010",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-120",
+      "currentId": "SYS-012",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-121",
+      "currentId": "SYS-011",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-122",
+      "currentId": "SYS-011",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "RTE-123",
+      "currentId": "SYS-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "RTE-124",
+      "currentId": "SYS-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "RTE-125",
+      "currentId": "SYS-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-126",
+      "currentId": "PRD-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-127",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-128",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-129",
+      "currentId": "SYS-011",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-130",
+      "currentId": "SYS-011",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-131",
+      "currentId": "SYS-010",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-132",
+      "currentId": "SYS-010",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-133",
+      "currentId": "SYS-010",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-134",
+      "currentId": "SYS-011",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-135",
+      "currentId": "SYS-011",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-136",
+      "currentId": "SYS-011",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "MED-137",
+      "currentId": "SYS-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "MED-138",
+      "currentId": "SYS-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STD-139",
+      "currentId": "SYS-007",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-140",
+      "currentId": "SYS-012",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-141",
+      "currentId": "STORE-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-142",
+      "currentId": "PRD-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ORD-143",
+      "currentId": "ORD-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "AS-144",
+      "currentId": "AS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "TSK-145",
+      "currentId": "SYS-009",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-SRC-006",
+      "currentId": "SRC-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-LOG-002",
+      "currentId": "LOG-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-SYS-004",
+      "currentId": "SYS-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-SYS-005",
+      "currentId": "SYS-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-SYS-008",
+      "currentId": "SYS-008",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-PKG-001",
+      "currentId": "PKG-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-JD-001",
+      "currentId": "JD-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-JD-002",
+      "currentId": "JD-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-JD-003",
+      "currentId": "JD-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-JD-004",
+      "currentId": "JD-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-JD-005",
+      "currentId": "JD-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-JD-006",
+      "currentId": "JD-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-INST-001",
+      "currentId": "INST-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-001",
+      "currentId": "PC-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-002",
+      "currentId": "PC-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-003",
+      "currentId": "PC-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-004",
+      "currentId": "PC-007",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-005",
+      "currentId": "PC-007",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-006",
+      "currentId": "PC-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-007",
+      "currentId": "PC-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-008",
+      "currentId": "PC-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-009",
+      "currentId": "PC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-010",
+      "currentId": "PC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-011",
+      "currentId": "PC-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-012",
+      "currentId": "PC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-013",
+      "currentId": "PC-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-014",
+      "currentId": "PC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-015",
+      "currentId": "PC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-016",
+      "currentId": "PC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-017",
+      "currentId": "PC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-018",
+      "currentId": "PC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-019",
+      "currentId": "PC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-020",
+      "currentId": "PC-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "CUR-PC-LOGIN",
+      "currentId": "PC-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "CUR-PC-MONITOR",
+      "currentId": "PC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "CUR-PC-SETTINGS",
+      "currentId": "PC-006",
+      "result": "PASS"
+    }
+  ],
+  "coverage": {
+    "originalNas": 145,
+    "originalPc": 20,
+    "totalNas": 158,
+    "totalPc": 23,
+    "originalFields": 2030,
+    "originalButtons": 437,
+    "renderedFields": 2030,
+    "renderedButtons": 437,
+    "currentLogicalRoutes": 61
+  },
+  "networkCalls": 0,
+  "errors": [],
+  "passed": 20,
+  "failed": 0,
+  "total": 20
+}

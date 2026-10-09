@@ -1,0 +1,47 @@
+{
+  "version": "9.1.1-w8r2a-p1",
+  "checkedAt": "2026-10-09T17:09:35.663285+00:00",
+  "publishedUiCommit": "c453fb697e61800006590d0b7e828f088a0c196d",
+  "publishedUiWorkflow": {
+    "id": 37963065990,
+    "status": "completed",
+    "conclusion": "success"
+  },
+  "browser": "Chrome cloud browser",
+  "viewport": {
+    "width": 1348,
+    "height": 926
+  },
+  "siteUrl": "https://fanyufeiabc.github.io/qingniao-v39-prototype/#/web/DASH-001",
+  "checks": [
+    {
+      "name": "NAS 原白色侧栏、四组十九模块、完整折叠菜单、蓝青视觉与无加载残留",
+      "result": "PASS"
+    },
+    {
+      "name": "PC 原深色侧栏、七组二十三场景、首页队列及环境信息",
+      "result": "PASS"
+    },
+    {
+      "name": "京东独立能力未核验时同步按钮禁用；勾选演示核验后唯一完整草稿回读",
+      "result": "PASS"
+    },
+    {
+      "name": "提交审核前本人二次确认；SUBMIT_REQUESTED 之后只读回读 IN_REVIEW 与 APPROVED",
+      "result": "PASS"
+    },
+    {
+      "name": "审核后再次本人确认发布；PUBLISH_REQUESTED 之后只读回读 ON_SALE",
+      "result": "PASS"
+    },
+    {
+      "name": "UNKNOWN 原锁保留；只读对账及提交证据后返回审核记录仍禁止提交与发布",
+      "result": "PASS"
+    }
+  ],
+  "screenshots": [
+    "W8R2A-P1-NAS.jpg",
+    "W8R2A-P1-PC.jpg"
+  ],
+  "scope": "静态原型交互与布局核验；未进行真实 NAS、Windows、PostgreSQL 或外部平台验收"
+}
