@@ -1,0 +1,17 @@
+{
+  "name": "qingniao-v39-prototype",
+  "version": "9.1.1-w8r2a-p1",
+  "private": true,
+  "description": "Complete NAS and PC design prototype with current logical page mapping",
+  "scripts": {
+    "build": "python3 scripts/build-prototype-restoration.py",
+    "test": "node scripts/test-prototype.cjs",
+    "preview": "python3 -m http.server 8080 --directory dist"
+  },
+  "devDependencies": {
+    "jsdom": "27.0.0"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
