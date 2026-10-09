@@ -1,38 +1,25 @@
-# 青鸟家庭电商中台 V3.9-FROZEN 交互原型
+# 青鸟 V9.1.1 / W8R2A 双端原型
 
-本仓库是依据“青鸟标识 A 款封版”与 V3.9-FROZEN 需求制作的桌面端管理系统和 PC Worker 可交互原型。本轮已按《青鸟 V3.9-FROZEN 原型内部评审报告 R1.0》完成整改。
+当前在线入口：https://fanyufeiabc.github.io/qingniao-v39-prototype/#/web/DASH-001
 
-- 在线原型：<https://fanyufeiabc.github.io/qingniao-v39-prototype/#/web/DASH-001>
-- 整改报告：[REMEDIATION_REPORT.md](./REMEDIATION_REPORT.md)
-- 自动化回归结果：[qa/qa-result-v2.json](./qa/qa-result-v2.json)
+本轮按已确认的双端整改计划推进 W8R2A。原型与实际 NAS/PC 运行界面共享 A 款品牌、蓝青色主题、页面清单和路由规则。NAS 白色侧栏按今日经营、商品供给、销售履约、运行支撑组织；PC 黑色侧栏采用七条当前逻辑页面入口。
 
-## 本轮完成范围
+## 当前范围
 
-- 145 个管理端页面和 20 个 PC Worker 页面均有独立 PageID、页面规格、路由和场景内容。
-- 2030 个冻结字段、437 个冻结按钮、308 个 API 引用和 437 个 TestID 保持可追踪。
-- 列表支持受控查询、重置、排序、分页、行选择、批量入口及 loading/empty/error/offline/no-permission/conflict/long-content 状态。
-- 跨页携带 `entityId/version/sourcePage/filters/page/size/sort/tab/storeScope`，返回时恢复 QueryContext。
-- 个人/家庭无货源主链路可交互演示：搜索探查 → 候选选择 → 正式采集 → 落库商品 → 查看/编辑 → 店铺草稿 → 订单回流 → 人工采购确认 → 货源物流回流与店铺同步。
-- OWNER、OPS、HUMAN、AUDITOR、PC_WORKER 角色边界，以及 StoreScope/ObjectScope 均有原型级校验。
-- PC Worker 仅执行 NAS Server 下发的不可变 ExecutionContext，并回传 Progress、ResultDTO、Evidence；不直接写业务数据库或裁决业务状态。
+- 61 条逻辑记录：V9.1.1 的 54 条规格（含详情）及 7 条京东/安装增量。逻辑页面数与菜单数分开计算。
+- 工作台、待处理、异常中心更新为当前业务口径；实际系统接通 NAS 本地数据，原型使用明确标识的演示记录。
+- 当前操作者为本人；发布、采购和物流写入依据本人确认；退款按商品明细手工分配；UNKNOWN 只读对账、保留原锁。
+- 原型提供空态和读取失败场景。其余逻辑页面保留明确的 W8R2B/C/D 收口状态，不能据此认定整个系统页面已完成。
+- 快手后置；1688 → 小红书首链及微信、京东能力按各操作独立验证。环境部署与真实平台仍后置统一 SIT。
 
-## 关键业务边界
+## 历史与路由
 
-- NAS Server 是唯一业务真源。
-- 采集只有在标题、外部商品 ID、价格、平台必填 SKU、至少 1 张主图、SourceSnapshot、MediaManifest 和 Evidence 齐备并经 Server 校验后才算完成；PARTIAL 不伪装为 FULL。
-- 商品编辑后同步目标默认是“电商店铺草稿”，不会自动上架。
-- 外部写结果必须有外部对象 ID、PayloadHash 和 Evidence；UNKNOWN 先只读对账，禁止盲目重放。
-- 采购必须由授权家庭成员明确确认；价格、库存或 SKU 变化时停止执行并转人工。
-- 物流必须关联 Order 与 Purchase，校验承运商、运单号、状态和 Evidence；不得伪造已发货或已签收。
+原有 `#/web/DASH-001` 入口保持可用。当前 `#/pc/PC-001` 为首次配对；历史 V3.9 的同编号原为设备首页，应通过 `#/v39/pc/PC-001` 显式映射，或打开 `legacy/` 浏览完整历史场景。旧 145 个 NAS / 20 个 PC 场景全部保留源台账，不能与当前数量相加计算完成率。
 
-## 文件结构
+- `dist/index.html`、`dist/app-w8r2a.js`：当前多文件原型。
+- `dist/ui/theme.css`、`page-registry.js`、`routes.js`：与运行系统共享规范。
+- `dist/legacy/index.html`、原 `app-v2.js` / `data/requirements.*`：历史 V3.9 原型。
+- `README-V39.md`：历史交付说明。
+- `W8R2A_CHANGELOG.md`：本次变更与边界。
 
-- `dist/index.html`：GitHub Pages 入口。
-- `dist/app-v2.js`：本轮整改后的交互与页面规格实现。
-- `dist/styles.css`：青鸟 A 款桌面管理系统样式。
-- `dist/data/requirements.js`：V3.9-FROZEN 浏览器端需求台账。
-- `dist/data/requirements.json`：冻结需求结构化原始数据。
-
-## 说明
-
-这是开发/测试评审用高保真交互原型。平台 API、NAS 数据库和 PC Worker 的真实网络调用均以可验证的模拟状态呈现，不代表生产集成已经完成。冻结基线中发现的 API 动词、返回目标和“发布/店铺草稿”边界冲突没有被静默篡改，详见整改报告中的“需求基线待关闭事项”。
+GitHub Actions 使用原有 `.github/workflows/deploy-pages.yml` 发布 `dist/`。此仓库只保存静态设计内容；不包含运行服务、平台令牌、真实订单或私有数据库数据。
