@@ -1,5 +1,6 @@
 /* P2 business panels extend the frozen A-brand palette. */
-.p2-business{display:grid;gap:16px;min-width:0}
+.p2-business{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;min-width:0}
+.p2-business>.card{min-width:0}
 .p2-card .card-body{padding:16px 18px;min-width:0}
 .p2-card h2{font-size:16px;font-weight:650}
 .p2-context{display:flex;flex-wrap:wrap;align-items:center;gap:18px;padding:14px 18px}
