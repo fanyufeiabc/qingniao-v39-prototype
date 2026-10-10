@@ -1,4 +1,4 @@
-/* W8R2A-P1: generated from retained app-v2.js; rebuild with scripts/build-prototype-restoration.py */
+/* W8R2A-P2: generated from retained app-v2.js; rebuild with scripts/build-prototype-restoration.py */
 (() => {
   'use strict';
 
@@ -38,9 +38,9 @@
 
   const navGroups = [
     { label: '今日经营', modules: ['DASH'] },
-    { label: '商品供给', modules: ['PLT', 'ACC', 'STR', 'SUP', 'SRC', 'PRD'] },
+    { label: '商品供给', modules: ['SRC', 'PRD', 'SUP'] },
     { label: '销售履约', modules: ['CHN', 'JD', 'ORD', 'PUR', 'LOGI', 'AS', 'FIN'] },
-    { label: '运行支撑', modules: ['TSK', 'RTE', 'MED', 'STD', 'SYS'] }
+    { label: '运行支撑', modules: ['PLT', 'ACC', 'STR', 'TSK', 'RTE', 'MED', 'STD', 'SYS'] }
   ];
 
   const roleInfo = {
@@ -183,7 +183,7 @@
   const workflowSteps = [
     ['01', '配置接口', 'PLT-009', '平台能力与授权'], ['02', '商品搜索', 'SRC-042', 'UTP 与受控浏览器'], ['03', '候选选择', 'SRC-044', '批量勾选与确认'],
     ['04', '采集落库', 'SRC-046', '快照、SKU、媒体、Evidence'], ['05', '商品编辑', 'PRD-050', '草稿、版本与人工确认'], ['06', '店铺草稿', 'CHN-070', '映射校验后同步'],
-    ['07', '订单回流', 'ORD-077', '幂等入库与水位'], ['08', '采购确认', 'PUR-085', '禁止自动外部下单'], ['09', '物流同步', 'LOGI-092', '货源→Server→店铺']
+    ['07', '订单回流', 'ORD-077', '幂等入库与水位'], ['08', '采购确认', 'PUR-085', '本人确认后建单，不执行支付'], ['09', '物流同步', 'LOGI-092', '货源→Server→店铺']
   ];
 
   const state = {
@@ -344,14 +344,23 @@ function render() {
     const isPc = state.mode === 'pc';
     const original = isPc ? pcPageMap.get(state.activePc) : pageMap.get(state.activeWeb);
     const page = original ? { ...original, name: prototype.title(original, state.routeParams) } : null;
-    document.title = `${page?.name || '青鸟'} · 青鸟 V9.1.1 W8R2A-P1`;
-    prototype.bind({ toast: showToast, render, close: closeOverlays, overlay: renderOverlay, navigatePc });
+    document.title = `${page?.name || '青鸟'} · 青鸟 V9.1.1 W8R2A-P2`;
+    prototype.bind({ toast: showToast, render, close: closeOverlays, overlay: renderOverlay, navigatePc, domain,
+      context: () => ({ mode: state.mode, params: { ...state.routeParams }, storeScope: state.storeScope, reviewMode: state.reviewMode, pcTask: state.pcTask }),
+      nasDecision(task) { const pc = state.pcTasks.get(task.id); if (pc) { pc.locked = task.lock; pc.status = task.state; } },
+      replaceContext(params) {
+        if (storeScopes.some(s => s.id === params.storeScope)) state.storeScope = params.storeScope;
+        history.replaceState(null, '', prototype.route(state.mode, state.mode === 'pc' ? state.activePc : state.activeWeb, params));
+        parseHash();
+      }
+    });
     const badge = original ? prototype.badge(state.mode, original.id, state.routeParams) : '';
     const content = isPc ? renderPcPage(page) : renderWebPage(page);
     const extra = original && !isPc ? prototype.extraBusiness(original.id, state.routeParams.__currentId) : '';
-    app.innerHTML = `<div class="app-shell ${isPc ? 'pc-shell' : ''}">${renderSidebar()}${renderTopbar(page)}<main class="main"><div class="page-wrap">${badge}${content}${extra}<footer class="prototype-footer"><span>V9.1.1 · W8R2A-P1</span><span>设计演示 · 本人操作 · NAS 业务真源 · 开发与实平台验收分别标记</span></footer></div></main></div>`;
+    app.innerHTML = `<div class="app-shell ${isPc ? 'pc-shell' : ''}">${renderSidebar()}${renderTopbar(page)}<main class="main"><div class="page-wrap">${badge}${content}${extra}<footer class="prototype-footer"><span>V9.1.1 · W8R2A-P2</span><span>设计演示 · 本人操作 · NAS 业务真源 · 开发与实平台验收分别标记</span></footer></div></main></div>`;
     renderOverlay();
     annotateLocalControls(app, page?.id || 'UNKNOWN');
+    prototype.afterRender(app, page);
     loading?.classList.add('is-hidden');
   }
 
@@ -397,7 +406,7 @@ function renderPcNavigation() {
 function renderTopbar(page) {
     const isPc = state.mode === 'pc';
     const context = page && !isPc && isContextPage(page);
-    return `<header class="topbar"><div class="topbar-left"><div class="breadcrumb"><span>${isPc ? 'PC 执行端' : safe(moduleMeta[page?.module]?.label || '经营工作台')}</span><span class="slash">/</span>${context && state.routeParams.sourcePage ? `<button class="breadcrumb-link" data-return-context>${safe(pageMap.get(state.routeParams.sourcePage)?.name || state.routeParams.sourcePage)}</button><span class="slash">/</span>` : ''}<strong>${safe(page?.name || '页面不存在')}</strong>${reviewToolsVisible() ? `<code>${safe(state.routeParams.__currentId || '')}</code>` : ''}</div></div><div class="topbar-right"><button class="command-button" data-open-palette aria-label="搜索全部页面">${icon('search',16)}<span>查找页面</span><kbd>Ctrl K</kbd></button>${!isPc ? `<button class="top-control store-scope" data-store-scope>${icon('store',15)}<span>${safe(currentScope().label)}</span></button><button class="top-control" data-toggle-review title="切换字段、按钮及历史设计追踪显示">${icon('trace',15)}<span>${state.reviewMode ? '设计评审' : '业务视图'}</span></button>` : ''}<span class="freeze-pill">W8R2A-P1</span><span class="top-control role-control"><span class="role-avatar">我</span><strong>本人</strong></span></div></header>`;
+    return `<header class="topbar"><div class="topbar-left"><div class="breadcrumb"><span>${isPc ? 'PC 执行端' : safe(moduleMeta[page?.module]?.label || '经营工作台')}</span><span class="slash">/</span>${context && state.routeParams.sourcePage ? `<button class="breadcrumb-link" data-return-context>${safe(pageMap.get(state.routeParams.sourcePage)?.name || state.routeParams.sourcePage)}</button><span class="slash">/</span>` : ''}<strong>${safe(page?.name || '页面不存在')}</strong>${reviewToolsVisible() ? `<code>${safe(state.routeParams.__currentId || '')}</code>` : ''}</div></div><div class="topbar-right"><button class="command-button" data-open-palette aria-label="搜索全部页面">${icon('search',16)}<span>查找页面</span><kbd>Ctrl K</kbd></button>${!isPc ? `<button class="top-control store-scope" data-store-scope>${icon('store',15)}<span>${safe(currentScope().label)}</span></button><button class="top-control" data-toggle-review title="切换字段、按钮及历史设计追踪显示">${icon('trace',15)}<span>${state.reviewMode ? '设计评审' : '业务视图'}</span></button>` : ''}<span class="freeze-pill">W8R2A-P2</span><span class="top-control role-control"><span class="role-avatar">我</span><strong>本人</strong></span></div></header>`;
   }
 
   function renderPageHeader(page, actions = '') {
@@ -508,6 +517,8 @@ function renderTopbar(page) {
 
   function renderWebPage(page) {
     if (!page) return renderNotFound();
+    const improved = prototype.renderBusiness(page, { header: state.mode === 'pc' ? renderPcHeader : renderPageHeader });
+    if (improved !== undefined) return improved;
     if (page.id.startsWith('CUR-')) return prototype.renderCurrent(page, { header: state.mode === 'pc' ? renderPcHeader : renderPageHeader });
     if (!canViewPage(page)) return renderPermissionDenied(page);
     const object = state.routeParams.entityId ? genericRows(page).find(row => row.__id === state.routeParams.entityId) : null;
@@ -670,9 +681,7 @@ function renderTopbar(page) {
     return `${renderPageHeader(page, actions)}<section class="card detail-hero"><div class="detail-key"><small>${safe(page.businessObject)}</small><strong>${safe(row?.商品名称 || row?.店铺名称 || row?.供应商名称 || page.name)}</strong><span class="mono">${safe(row?.__id || state.routeParams.entityId)}</span></div><span class="status-tag ${statusClass(row?.商品状态中文 || row?.订单状态中文 || row?.__state || '正常')}">${safe(row?.商品状态中文 || row?.订单状态中文 || row?.__state || '正常')}</span></section><section class="detail-grid">${fields.map((field, index) => `<div class="detail-cell" data-field-id="${field.FieldID}"><span>${safe(field['中文名称'])}</span><strong class="${/ID|编号|Trace|版本/.test(field['中文名称']) ? 'mono' : ''}">${safe(row?.[field['中文名称']] ?? fieldValue(field, index, page))}</strong></div>`).join('')}</section>${renderAuditTrail(page)}${renderFieldCoverage(page)}${renderSpecStrip(page)}`;
   }
 
-  function renderAuditTrail(page) {
-    return `<section class="card audit-card"><div class="card-head"><div><h2>关联记录与操作留痕</h2><small>Actor / ButtonID / APIID / Before / After / TraceID / IdempotencyKey</small></div><span class="meta-tag">只读</span></div><div class="task-list"><div class="task-item"><span class="task-severity" style="background:var(--qn-ok)"></span><div><div class="task-title"><strong>资料已更新</strong></div><div class="task-detail">本人 · ${nowText()} · Trace ${traceId()}</div></div><span class="status-tag ok">已记录</span></div><div class="task-item"><span class="task-severity" style="background:var(--qn-lapis)"></span><div><div class="task-title"><strong>业务对象已创建</strong></div><div class="task-detail">运营成员 · IdempotencyKey idem_${page.id.toLowerCase()}_001</div></div><span class="status-tag neutral">历史</span></div></div></section>`;
-  }
+  function renderAuditTrail(page) { return prototype.auditSummary(page); }
 
   function renderPreviewPage(page) {
     const row = selectedRow(page);
@@ -784,7 +793,7 @@ function renderDashboard(page) {
 
   function renderOrderSync(page) {
     const results = [['新增', 6, 'ok'], ['更新', 3, 'running'], ['未变化', 18, 'neutral'], ['跳过', 1, 'warn'], ['失败', 1, 'danger']];
-    return `${renderPageHeader(page)}${renderWorkflowStrip(page.id)}<div class="sync-console"><section class="card"><div class="card-head"><div><h2>订单增量回流</h2><small>电商平台 API → NAS Server；外部订单号幂等</small></div><span class="status-tag ${state.workflow.orderSyncBatch === '待启动' ? 'warn' : 'running'}">${state.workflow.orderSyncBatch}</span></div><div class="card-body"><div class="form-grid"><div class="field"><label>目标店铺</label><select class="select"><option>小红书 · 青鸟生活馆</option><option>微信小店 · 青鸟优选</option></select></div><div class="field"><label>同步方式</label><select class="select"><option>增量游标</option><option>指定时间范围</option></select></div><div class="field"><label>起始水位</label><input class="input mono" value="cursor_20260920_1400" readonly></div><div class="field"><label>每批数量</label><input class="input" value="500"></div></div><div class="notice page-notice">${icon('info')}<div><strong>逐条结果与游标同批提交</strong><p>失败项可重放，但不得重复建单；游标保存失败时整批不得伪装成功。</p></div></div></div><div class="form-footer">${renderDesignAction('GAP-UI-005', '开始订单同步')}</div></section><aside class="card"><div class="card-head"><h2>最近批次结果</h2><span class="meta-tag">ACC-ORD-001</span></div><div class="card-body"><div class="result-grid">${results.map(item => `<div class="result-tile"><span>${item[0]}</span><strong>${item[1]}</strong><i class="${item[2]}"></i></div>`).join('')}</div><div class="context-list sync-meta"><div class="context-row"><span>批次</span><strong class="mono">BATCH-ORD-20260920-015</strong></div><div class="context-row"><span>保存水位</span><strong class="mono">cursor_20260920_1530</strong></div><div class="context-row"><span>幂等键</span><strong class="mono">store+externalOrderId</strong></div><div class="context-row"><span>TraceID</span><strong class="mono">tr_ord_sync_015</strong></div></div></div></aside></div>${renderTaskPage(page).replace(renderPageHeader(page), '').replace(renderWorkflowStrip(page.id), '').replace(renderFieldCoverage(page), '').replace(renderSpecStrip(page), '')}${renderFieldCoverage(page)}${renderSpecStrip(page)}`;
+    return `${renderPageHeader(page)}${renderWorkflowStrip(page.id)}<div class="sync-console"><section class="card"><div class="card-head"><div><h2>订单增量回流</h2><small>受控接入与观察回流；外部订单号幂等</small></div><span class="status-tag ${state.workflow.orderSyncBatch === '待启动' ? 'warn' : 'running'}">${state.workflow.orderSyncBatch}</span></div><div class="card-body"><div class="form-grid"><div class="field"><label>目标店铺</label><select class="select"><option>小红书 · 青鸟生活馆</option><option>微信小店 · 青鸟优选</option></select></div><div class="field"><label>同步方式</label><select class="select"><option>增量游标</option><option>指定时间范围</option></select></div><div class="field"><label>起始水位</label><input class="input mono" value="cursor_20260920_1400" readonly></div><div class="field"><label>每批数量</label><input class="input" value="500"></div></div><div class="notice page-notice">${icon('info')}<div><strong>逐条结果与游标同批提交</strong><p>失败项可重放，但不得重复建单；游标保存失败时整批不得伪装成功。</p></div></div></div><div class="form-footer">${renderDesignAction('GAP-UI-005', '开始订单同步')}</div></section><aside class="card"><div class="card-head"><h2>最近批次结果</h2><span class="meta-tag">ACC-ORD-001</span></div><div class="card-body"><div class="result-grid">${results.map(item => `<div class="result-tile"><span>${item[0]}</span><strong>${item[1]}</strong><i class="${item[2]}"></i></div>`).join('')}</div><div class="context-list sync-meta"><div class="context-row"><span>批次</span><strong class="mono">BATCH-ORD-20260920-015</strong></div><div class="context-row"><span>保存水位</span><strong class="mono">cursor_20260920_1530</strong></div><div class="context-row"><span>幂等键</span><strong class="mono">store+externalOrderId</strong></div><div class="context-row"><span>TraceID</span><strong class="mono">tr_ord_sync_015</strong></div></div></div></aside></div>${renderTaskPage(page).replace(renderPageHeader(page), '').replace(renderWorkflowStrip(page.id), '').replace(renderFieldCoverage(page), '').replace(renderSpecStrip(page), '')}${renderFieldCoverage(page)}${renderSpecStrip(page)}`;
   }
 
   function renderPurchaseConfirm(page) {
@@ -850,6 +859,8 @@ function renderDashboard(page) {
 
   function renderPcPage(page) {
     if (!page) return renderNotFound();
+    const improved = prototype.renderBusiness(page, { header: state.mode === 'pc' ? renderPcHeader : renderPageHeader });
+    if (improved !== undefined) return improved;
     if (page.id.startsWith('CUR-')) return prototype.renderCurrent(page, { header: state.mode === 'pc' ? renderPcHeader : renderPageHeader });
     if (page.id === 'PC-001') return renderPcHome(page);
     if (page.id === 'PC-002') return renderPcPairing(page);
@@ -978,6 +989,7 @@ function renderWorkerHero(status = '演示在线') {
     overlayRoot.innerHTML = blocks.join('');
     const activeId = state.mode === 'pc' ? state.activePc : state.activeWeb;
     annotateLocalControls(overlayRoot, activeId || 'OVERLAY');
+    prototype.afterOverlay(overlayRoot);
     if (state.paletteOpen) setTimeout(() => document.getElementById('palette-input')?.focus(), 0);
   }
 
@@ -1086,6 +1098,7 @@ function renderWorkerHero(status = '演示在线') {
     const found = buttonMap.get(id);
     if (!found) return;
     const { page, button } = found;
+    if (prototype.handleLegacyButton(page, button)) return;
     if (!canUseButton(page, button)) { showToast('无权执行', `PERMISSION_DENIED · 当前角色或店铺范围不满足 ${button['权限']} · TraceID ${traceId()}`, 'error'); return; }
     if (String(button['二次确认']).startsWith('是') || ['BTN-PUR-085-01','BTN-CHN-070-04'].includes(button.ButtonID)) { state.confirmAction = { page, button }; closeOtherOverlays('confirm'); renderOverlay(); return; }
     executeButton(page, button);
@@ -1122,6 +1135,8 @@ function renderWorkerHero(status = '演示在线') {
 
   function handlePcAction(action) {
     const pc = state.pcTask;
+    if (prototype.pcGate(action)) return;
+    if (action === 'resume' && !window.QNP2.state.login.verified) return showToast('身份待重新核验', '本人登录后仍须核验原卖家身份。', 'warn');
     if ((pc.locked || state.pcConflict) && !['refresh','pair'].includes(action)) return showToast('执行已阻断', 'UNKNOWN 或原任务身份不匹配；只允许原上下文只读对账。', 'warn');
     const now = new Date().toLocaleTimeString('zh-CN', { hour12: false });
     if (action === 'refresh') return showToast('队列已刷新', '任务仍由 Server 按能力、版本和租约调度。');
