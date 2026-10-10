@@ -38,8 +38,9 @@ app = app.replace('禁止自动外部下单', '本人确认后建单，不执行
 app = app.replace('电商平台 API → NAS Server', '受控接入与观察回流')
 path.write_text(app)
 index = (DIST/'index.html').read_text().replace('w8r2a-p1b','w8r2a-p2').replace('w8r2a-p1','w8r2a-p2').replace('W8R2A-P1','W8R2A-P2')
-index = index.replace('./prototype-extensions.js?', './prototype-p2.js?').replace('</head>', '  <link rel="stylesheet" href="./p2.css?v=w8r2a-p2">\n</head>')
+index = index.replace('./prototype-extensions.js?', './prototype-p2.js?').replace('</head>', '  <link rel="stylesheet" href="./p2.css?v=w8r2a-p2-visual2">\n</head>')
 index = index.replace('  <script src="./prototype-p2.js', '  <script src="./data/p2-assets.js?v=w8r2a-p2"></script>\n  <script src="./prototype-p2.js')
+index = index.replace('./prototype-p2.js?v=w8r2a-p2', './prototype-p2.js?v=w8r2a-p2-visual2')
 (DIST/'index.html').write_text(index)
 assets={name:hashlib.sha256((DIST/'assets'/('p2-'+name+'.svg')).read_bytes()).hexdigest() for name in ['product','package']}
 (DIST/'data/p2-assets.js').write_text('window.QNP2Assets=Object.freeze('+json.dumps(assets)+');\n')
