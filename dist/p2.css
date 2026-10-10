@@ -17,7 +17,8 @@
 .p2-table .field{min-width:130px;margin:0}
 .p2-table .field label{font-size:11px}
 .p2-table .field-help{font-size:10px}
-.p2-table .button{margin:3px 5px 3px 0}
+.p2-table .button{margin:3px 5px 3px 0;white-space:nowrap}
+.p2-table:has(th:nth-child(6)){min-width:820px}
 .p2-card .form-footer{display:flex;flex-wrap:wrap;gap:8px}
 .p2-note{margin:12px 0 0;padding:10px 12px;font-size:12px;line-height:1.7}
 .p2-checks{display:flex;flex-wrap:wrap;gap:12px;margin:14px 0}
