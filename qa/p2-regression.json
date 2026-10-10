@@ -1,6 +1,6 @@
 {
   "version": "9.1.1-w8r2a-p2",
-  "generatedAt": "2026-10-10T03:53:48.654Z",
+  "generatedAt": "2026-10-10T21:07:42.643Z",
   "runtime": "jsdom DOM interactions; visual evidence separate",
   "groups": [
     {
@@ -8,7 +8,7 @@
       "result": "PASS"
     },
     {
-      "name": "导航19模块158入口先业务后配置 PC7组23入口",
+      "name": "导航18模块158入口统一配置分类 PC7组23入口",
       "result": "PASS"
     },
     {

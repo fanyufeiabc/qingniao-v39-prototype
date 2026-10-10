@@ -1,3 +1,13 @@
+# 当前交付 V9.1.2-W8R2B-C1
+
+平台、账号与店铺新增编辑及本人登录核对流程已经本地实现和测试。登记平台不代表业务适配可用，PC观察为明确的演示工具。详情见docs/w8r2b-c1。
+
+发布记录：此前连接器写入返回403，浏览器授权曾被阻断，均未产生提交。用户已明确授权本次浏览器上传、GitHub权限及提交发布；本版按现有Pages工作流部署dist，最终状态以提交和部署核验记录为准。
+
+使用Node24–25，npm ci，npm run build，npm test，node scripts/test-configuration-c1.cjs。当前build只核对C1发布资产；历史build:baseline保留且可能覆盖当前资产，不用于发布。现有Pages工作流直接部署dist。
+
+## 历史原型说明
+
 # 青鸟 V9.1.1 / W8R2A-P2 完整双端原型
 
 在线入口：https://fanyufeiabc.github.io/qingniao-v39-prototype/#/web/DASH-001

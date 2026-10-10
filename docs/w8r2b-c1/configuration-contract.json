@@ -1,0 +1,211 @@
+{
+  "version": "V9.1.2-W8R2B-C1",
+  "baseline": "V9.1.1-W8R2B",
+  "implementation": "nas/src/application/configuration-flow.js",
+  "migration": "V037_configuration_flow.sql",
+  "apis": [
+    {
+      "method": "GET",
+      "path": "/api/v1/configuration",
+      "requestFields": [],
+      "purpose": "读取平台、账号、店铺、档案、设备和登录请求"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/configuration/platforms",
+      "requestFields": [
+        "code",
+        "roleCode",
+        "displayName",
+        "websiteUrl",
+        "loginUrl",
+        "accessMode"
+      ],
+      "fieldMapping": {
+        "code": "platform_definition.code",
+        "roleCode": "platform_definition.role_code",
+        "displayName": "platform_definition.display_name",
+        "websiteUrl": "platform_definition.website_url",
+        "loginUrl": "platform_definition.login_url",
+        "accessMode": "platform_definition.access_mode"
+      },
+      "purpose": "新增platforms"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/configuration/platforms/{id}",
+      "requestFields": [
+        "code",
+        "roleCode",
+        "displayName",
+        "websiteUrl",
+        "loginUrl",
+        "accessMode",
+        "expectedVersion"
+      ],
+      "fieldMapping": {
+        "code": "platform_definition.code",
+        "roleCode": "platform_definition.role_code",
+        "displayName": "platform_definition.display_name",
+        "websiteUrl": "platform_definition.website_url",
+        "loginUrl": "platform_definition.login_url",
+        "accessMode": "platform_definition.access_mode"
+      },
+      "purpose": "编辑platforms"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/configuration/accounts",
+      "requestFields": [
+        "platformCode",
+        "label",
+        "loginMethod",
+        "externalAccountId"
+      ],
+      "fieldMapping": {
+        "platformCode": "platform_account.platform_code",
+        "label": "platform_account.account_label",
+        "loginMethod": "platform_account.login_method",
+        "externalAccountId": "platform_account.external_account_id"
+      },
+      "purpose": "新增accounts"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/configuration/accounts/{id}",
+      "requestFields": [
+        "platformCode",
+        "label",
+        "loginMethod",
+        "externalAccountId",
+        "expectedVersion"
+      ],
+      "fieldMapping": {
+        "platformCode": "platform_account.platform_code",
+        "label": "platform_account.account_label",
+        "loginMethod": "platform_account.login_method",
+        "externalAccountId": "platform_account.external_account_id"
+      },
+      "purpose": "编辑accounts"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/configuration/stores",
+      "requestFields": [
+        "platformCode",
+        "accountId",
+        "displayName",
+        "externalStoreId"
+      ],
+      "fieldMapping": {
+        "platformCode": "store.platform_code",
+        "accountId": "store.platform_account_id",
+        "displayName": "store.display_name",
+        "externalStoreId": "store.external_store_id"
+      },
+      "purpose": "新增stores"
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/v1/configuration/stores/{id}",
+      "requestFields": [
+        "platformCode",
+        "accountId",
+        "displayName",
+        "externalStoreId",
+        "expectedVersion"
+      ],
+      "fieldMapping": {
+        "platformCode": "store.platform_code",
+        "accountId": "store.platform_account_id",
+        "displayName": "store.display_name",
+        "externalStoreId": "store.external_store_id"
+      },
+      "purpose": "编辑stores"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/configuration/accounts/{id}/login-requests",
+      "requestFields": [
+        "profileId",
+        "storeId",
+        "expectedVersion"
+      ],
+      "purpose": "本人发起固定 PC 登录"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/configuration/login-requests/{id}/confirm",
+      "requestFields": [
+        "externalAccountId",
+        "externalStoreId",
+        "checkedOwner"
+      ],
+      "purpose": "本人确认观察身份"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/configuration/login-requests/{id}/cancel",
+      "requestFields": [],
+      "purpose": "本人取消登录请求"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/worker/configuration/login-requests",
+      "requestFields": [],
+      "purpose": "固定 PC 获取本人发起的登录请求"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/worker/configuration/login-requests/{id}/observation",
+      "requestFields": [
+        "externalAccountId",
+        "externalStoreId",
+        "checkedOwner",
+        "evidenceRef"
+      ],
+      "purpose": "固定 PC 回传人工观察身份，不能直接核定状态"
+    }
+  ],
+  "fieldBindings": {
+    "platforms": {
+      "code": "platform_definition.code",
+      "roleCode": "platform_definition.role_code",
+      "displayName": "platform_definition.display_name",
+      "websiteUrl": "platform_definition.website_url",
+      "loginUrl": "platform_definition.login_url",
+      "accessMode": "platform_definition.access_mode"
+    },
+    "accounts": {
+      "platformCode": "platform_account.platform_code",
+      "label": "platform_account.account_label",
+      "loginMethod": "platform_account.login_method",
+      "externalAccountId": "platform_account.external_account_id"
+    },
+    "stores": {
+      "platformCode": "store.platform_code",
+      "accountId": "store.platform_account_id",
+      "displayName": "store.display_name",
+      "externalStoreId": "store.external_store_id"
+    }
+  },
+  "statusCodes": {
+    "VERSION_STALE": 412,
+    "CONFIG_DUPLICATE": 409,
+    "IDENTITY_MISMATCH": 409,
+    "CONFIG_ACCOUNT_BUSY": 409,
+    "STORE_HAS_BUSINESS_HISTORY": 409,
+    "LOGIN_REQUEST_EXPIRED": 409,
+    "PROFILE_DEVICE_NOT_PAIRED": 428,
+    "CONFIG_FIELDS_INVALID": 422,
+    "AUTH_REQUIRED": 401,
+    "CSRF_DENIED": 403
+  },
+  "security": {
+    "human": "ADMIN session and CSRF for writes",
+    "worker": "paired bearer and frozen device/profile",
+    "idempotency": "writes require 16-128 character key",
+    "secrets": "not accepted by any configuration DTO"
+  },
+  "externalAcceptance": "PENDING_UNIFIED_SIT"
+}

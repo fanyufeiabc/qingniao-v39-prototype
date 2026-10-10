@@ -16,8 +16,8 @@
 
   const moduleMeta = {
     DASH: { label: '经营总览', icon: 'home', description: '经营指标、待办、异常与系统健康' },
-    PLT: { label: '平台与路由', icon: 'layers', description: '货源/销售平台、API 与浏览器能力、版本和路由' },
-    ACC: { label: '账号授权', icon: 'key', description: '账号、SecretRef、登录会话和健康状态' },
+    PLT: { label: '平台资料与设置', icon: 'layers', description: '货源/销售平台、API 与浏览器能力、版本和路由' },
+    ACC: { label: '我的平台账号', icon: 'key', description: '账号、SecretRef、登录会话和健康状态' },
     STR: { label: '店铺管理', icon: 'store', description: '店铺、账号绑定、能力与数据范围' },
     SUP: { label: '供应商', icon: 'users', description: '供应商、来源商品与采购历史' },
     SRC: { label: '货源与采集', icon: 'search', description: '搜索探查、候选选择、正式采集与来源资产' },
@@ -38,9 +38,10 @@
 
   const navGroups = [
     { label: '今日经营', modules: ['DASH'] },
+    { label: '平台与店铺设置', modules: ['PLT', 'ACC', 'STR'] },
     { label: '商品供给', modules: ['SRC', 'PRD', 'SUP'] },
-    { label: '销售履约', modules: ['CHN', 'JD', 'ORD', 'PUR', 'LOGI', 'AS', 'FIN'] },
-    { label: '运行支撑', modules: ['PLT', 'ACC', 'STR', 'TSK', 'RTE', 'MED', 'STD', 'SYS'] }
+    { label: '销售履约', modules: ['CHN', 'ORD', 'PUR', 'LOGI', 'AS', 'FIN'] },
+    { label: '运行支撑', modules: ['TSK', 'RTE', 'MED', 'STD', 'SYS'] }
   ];
 
   const roleInfo = {
@@ -344,7 +345,7 @@ function render() {
     const isPc = state.mode === 'pc';
     const original = isPc ? pcPageMap.get(state.activePc) : pageMap.get(state.activeWeb);
     const page = original ? { ...original, name: prototype.title(original, state.routeParams) } : null;
-    document.title = `${page?.name || '青鸟'} · 青鸟 V9.1.1 W8R2A-P2`;
+    document.title = `${page?.name || '青鸟'} · 青鸟 V9.1.2 W8R2B-C1`;
     prototype.bind({ toast: showToast, render, close: closeOverlays, overlay: renderOverlay, navigatePc, domain,
       context: () => ({ mode: state.mode, params: { ...state.routeParams }, storeScope: state.storeScope, reviewMode: state.reviewMode, pcTask: state.pcTask }),
       nasDecision(task) { const pc = state.pcTasks.get(task.id); if (pc) { pc.locked = task.lock; pc.status = task.state; } },
@@ -357,7 +358,7 @@ function render() {
     const badge = original ? prototype.badge(state.mode, original.id, state.routeParams) : '';
     const content = isPc ? renderPcPage(page) : renderWebPage(page);
     const extra = original && !isPc ? prototype.extraBusiness(original.id, state.routeParams.__currentId) : '';
-    app.innerHTML = `<div class="app-shell ${isPc ? 'pc-shell' : ''}">${renderSidebar()}${renderTopbar(page)}<main class="main"><div class="page-wrap">${badge}${content}${extra}<footer class="prototype-footer"><span>V9.1.1 · W8R2A-P2</span><span>设计演示 · 本人操作 · NAS 业务真源 · 开发与实平台验收分别标记</span></footer></div></main></div>`;
+    app.innerHTML = `<div class="app-shell ${isPc ? 'pc-shell' : ''}">${renderSidebar()}${renderTopbar(page)}<main class="main"><div class="page-wrap">${badge}${content}${extra}<footer class="prototype-footer"><span>V9.1.2 · W8R2B-C1</span><span>设计演示 · 本人操作 · NAS 业务真源 · 开发与实平台验收分别标记</span></footer></div></main></div>`;
     renderOverlay();
     annotateLocalControls(app, page?.id || 'UNKNOWN');
     prototype.afterRender(app, page);
@@ -377,7 +378,7 @@ function render() {
 
 function renderWebNavigation() {
     return navGroups.map(group => `<section class="nav-section"><div class="nav-section-title">${safe(group.label)}</div>${group.modules.map(module => {
-      const meta = moduleMeta[module], all = requirements.pages.filter(p => p.module === module);
+      const meta = moduleMeta[module], all = requirements.pages.filter(p => p.module === module || p.module === 'JD' && (module === 'ORD' ? p.id === 'CUR-JD-006' : module === 'CHN' && p.id !== 'CUR-JD-006'));
       const entries = all.filter(p => !isContextPage(p)), contexts = all.filter(isContextPage);
       const active = state.expandedModule === module;
       const renderItem = p => `<button class="nav-page-button ${state.activeWeb === p.id ? 'active' : ''}" data-nav="${p.id}"><span>${safe(p.name)}</span>${state.reviewMode ? `<code>${safe(p.id)}</code>` : ''}</button>`;

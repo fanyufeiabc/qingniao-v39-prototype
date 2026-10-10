@@ -1,0 +1,35 @@
+{
+  "version": "9.1.2-w8r2b-c1",
+  "runtime": "jsdom explicit demo",
+  "networkCalls": 0,
+  "groups": [
+    {
+      "name": "统一入口5页签与我的店铺可见 京东从业务入口进入",
+      "result": "PASS"
+    },
+    {
+      "name": "平台新增编辑回读 资料登记不启用业务",
+      "result": "PASS"
+    },
+    {
+      "name": "重复旧版本非法网址和密码输入阻断",
+      "result": "PASS"
+    },
+    {
+      "name": "账号店铺同平台绑定和固定档案登录请求",
+      "result": "PASS"
+    },
+    {
+      "name": "错误本人确认阻断 正确确认后过期回读",
+      "result": "PASS"
+    },
+    {
+      "name": "平台登录入口变更使关联身份待重新核对",
+      "result": "PASS"
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0
+  }
+}
