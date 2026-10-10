@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>青鸟 P2 原型尺寸验收</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#edf2f4;color:#12232b;font:14px/1.6 Arial,"Microsoft YaHei",sans-serif}
+    header{padding:14px 18px;background:white;border-bottom:1px solid #d5dfe3;width:100%;position:sticky;left:0;max-width:100vw}
+    h1{font-size:18px;margin:0 0 8px}form{display:flex;gap:14px;align-items:end;flex-wrap:wrap}label{display:grid;gap:4px}
+    select{font:inherit;min-height:34px;padding:4px 8px;border:1px solid #bcc9cf;border-radius:5px;background:white}
+    a{color:#17647a}p{margin:8px 0 0;color:#52656f;font-size:12px}.stage{padding:14px;width:max-content;min-width:100%}
+    iframe{display:block;box-sizing:content-box;border:1px solid #becbd1;background:white;width:1366px;height:900px}
+    select:focus-visible,a:focus-visible{outline:3px solid #1c88a966;outline-offset:2px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>青鸟 P2 原型尺寸验收</h1>
+    <form id="controls">
+      <label for="page">验收页面<select id="page" name="page">
+        <option value="#/web/DASH-001">服务端 工作台</option>
+        <option value="#/web/PRD-001">服务端 商品列表</option>
+        <option value="#/web/PRD-002">服务端 商品编辑</option>
+        <option value="#/web/PKG-001">服务端 包装 OCR</option>
+        <option value="#/web/JD-002">服务端 京东类目与条件</option>
+        <option value="#/web/JD-004">服务端 本人确认发布</option>
+        <option value="#/web/PUR-001">服务端 采购列表</option>
+        <option value="#/web/PUR-002">服务端 采购本人确认</option>
+        <option value="#/web/LOG-002">服务端 物流明细</option>
+        <option value="#/web/AS-002">服务端 双侧售后分配</option>
+        <option value="#/web/FIN-001">服务端 费用与退款核算</option>
+        <option value="#/pc/PC-002">PC 首页与连接设置</option>
+        <option value="#/pc/PC-003">PC 登录中心</option>
+        <option value="#/pc/PC-005">PC 任务监控</option>
+        <option value="#/pc/PC-006">PC 连接配置</option>
+      </select></label>
+      <label for="width">页面宽度<select id="width" name="width">
+        <option value="1920">1920</option><option value="1366" selected>1366</option><option value="1280">1280</option><option value="1024">1024</option>
+      </select></label>
+      <label for="height">页面高度<select id="height" name="height"><option value="900">900</option><option value="1080">1080</option></select></label>
+      <a id="open" href="index.html#/web/DASH-001" target="_blank" rel="noopener">新窗口查看业务页面</a>
+    </form>
+    <p>独立验收预览框仅调整真实页面视口，不缩放或替换业务界面。可在框内操作完整原型；外层页面允许横向滚动以检查宽屏。Windows 系统缩放与真实平台继续统一 SIT。</p>
+    <p id="observed" role="status">等待页面加载</p>
+  </header>
+  <main class="stage"><iframe id="preview" title="青鸟原型验收页面" src="index.html#/web/DASH-001"></iframe></main>
+  <script>
+    const frame=document.getElementById('preview'),page=document.getElementById('page'),width=document.getElementById('width'),height=document.getElementById('height'),open=document.getElementById('open'),observed=document.getElementById('observed');
+    function describe(){observed.textContent='当前预览框 '+frame.contentWindow.innerWidth+' × '+frame.contentWindow.innerHeight+' CSS 像素；'+frame.contentDocument.title;}
+    function resize(){frame.style.width=width.value+'px';frame.style.height=height.value+'px';requestAnimationFrame(describe);}
+    document.getElementById('controls').addEventListener('submit',event=>event.preventDefault());
+    page.addEventListener('change',()=>{frame.src='index.html'+page.value;open.href=frame.src;});
+    width.addEventListener('change',resize);height.addEventListener('change',resize);frame.addEventListener('load',describe);
+  </script>
+</body>
+</html>
