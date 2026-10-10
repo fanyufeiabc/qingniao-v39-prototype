@@ -590,11 +590,12 @@ function renderTopbar(page) {
   }
 
   function renderFilters(page) {
-    const fields = queryFields(page);
+    const fields = queryFields(page).slice().sort((a,b)=>{const rank=f=>/名称|关键词|状态|时间/.test(f['中文名称'])?0:1;return rank(a)-rank(b);});
     const buttons = filterButtons(page).filter(button => canUseButton(page, button));
     if (!fields.length && !buttons.length) return '';
-    const primary = fields.slice(0, 4);
-    const rest = fields.slice(4);
+    const business = fields.filter(f=>/名称|关键词|状态|时间/.test(f['中文名称']));
+    const primary = page.module==='PRD'&&business.length ? business.slice(0,4) : fields.slice(0,4);
+    const rest = fields.filter(f=>!primary.includes(f));
     return `<section class="card filter-card" aria-label="${safe(page.name)}查询条件"><div class="filter-grid">${primary.map(field => renderQueryField(page, field)).join('')}<div class="filter-actions">${buttons.map(button => renderActionButton(page, button)).join('')}</div></div>
       ${rest.length ? `<details class="advanced-filters"><summary>更多条件（${rest.length}）</summary><div class="filter-grid expanded">${rest.map(field => renderQueryField(page, field)).join('')}</div></details>` : ''}</section>`;
   }

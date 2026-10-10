@@ -1,0 +1,10 @@
+/* Review supplement; original V3.9/P2 style sources and all fields are preserved. */
+.table-scroll{width:100%;max-width:100%;overflow-x:auto}
+.data-table{width:max-content;min-width:100%;table-layout:auto}
+.data-table th,.data-table td{min-width:92px;max-width:360px;white-space:normal}
+.data-table th:last-child,.data-table td:last-child{min-width:180px;max-width:260px}
+.data-table .ellipsis{max-width:250px;display:inline-block;overflow:hidden;text-overflow:ellipsis;vertical-align:middle}
+.data-table td .button{white-space:normal;max-width:100%;margin:2px}
+.data-table th,.data-table td{position:static}
+.filter-grid>.field{min-width:0}
+.workflow-strip{margin-bottom:12px}
