@@ -1,0 +1,4 @@
+node_modules/
+__pycache__/
+*.log
+qa/p2-regression-focused.json

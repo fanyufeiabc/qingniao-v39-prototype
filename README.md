@@ -1,8 +1,8 @@
-# 青鸟 V9.1.1 / W8R2A-P1 完整双端原型
+# 青鸟 V9.1.1 / W8R2A-P2 完整双端原型
 
 在线入口：https://fanyufeiabc.github.io/qingniao-v39-prototype/#/web/DASH-001
 
-W8R2A 主入口改为 61 条当前逻辑页面时，未完整承接旧版交互场景，并把旧场景放进了历史入口。P1 将完整设计恢复到主导航，同时保留当前页面编号和独立的开发状态标记。
+P2 按需求评审整改对象、版本、独立条件、本人确认及 UNKNOWN 的操作规则，补商品加工、订单履约、退款核算和 PC 的正反向场景。保留原完整双端设计及 A 品牌；实际界面和真实平台验收各自记录。
 
 | 内容 | 本次结果 |
 | --- | --- |
@@ -38,6 +38,8 @@ npm run preview
 
 需要 Node.js 20.19+、Python 3。构建脚本从保留的原始交互源码生成 `app-restored.js`；先校验原始文件 SHA-256。测试在本地 DOM 环境执行；原型不请求 NAS、UTP 或真实平台。
 
-`qa/restoration-regression.json` 记录 20 组通过、0 失败，181 场景、61 逻辑路由、原字段与按钮覆盖。它是原型检查，不是整个 NAS/PC 系统或真实平台验收。发布仍沿用 `.github/workflows/deploy-pages.yml` 的 `dist/` 目录。
+`qa/p2-regression.json` 记录本次正反向回归及181场景检查。`qa/restoration-*` 为P1保留证据；旧测试不能代表P2结论。发布沿用 `.github/workflows/deploy-pages.yml` 的 `dist/` 目录。
 
-参见 `W8R2A_P1_CHANGELOG.md` 与 `qa/restoration-source.json`。仓库只存静态设计、演示数据和验证脚本，不含真实订单、平台令牌或私有数据库。
+参见 `W8R2A_P2_CHANGELOG.md`、`docs/W8R2A_P2_SCENARIOS.md` 与 `docs/W8R2B_UI_ACCEPTANCE.md`。478个当前字段包含控件与组合明细绑定，后者需在实际UI阶段细化验收。浏览器本地文件预览被访问策略拒绝，浏览器布局证据另列待验；Windows缩放和实平台继续统一SIT。
+
+仓库只含静态设计与本地演示数据，不含真实平台令牌或数据库。P2构建先还原P1，再应用显式补丁；旧原型增量脚本仅保留历史源码，不加载到P2入口。
