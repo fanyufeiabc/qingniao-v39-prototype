@@ -39,18 +39,18 @@
         <option value="1920">1920</option><option value="1366" selected>1366</option><option value="1280">1280</option><option value="1024">1024</option>
       </select></label>
       <label for="height">页面高度<select id="height" name="height"><option value="900">900</option><option value="1080">1080</option></select></label>
-      <a id="open" href="index.html#/web/DASH-001" target="_blank" rel="noopener">新窗口查看业务页面</a>
+      <a id="open" href="index.html?v=w8r2a-p2-visual2#/web/DASH-001" target="_blank" rel="noopener">新窗口查看业务页面</a>
     </form>
     <p>独立验收预览框仅调整真实页面视口，不缩放或替换业务界面。可在框内操作完整原型；外层页面允许横向滚动以检查宽屏。Windows 系统缩放与真实平台继续统一 SIT。</p>
     <p id="observed" role="status">等待页面加载</p>
   </header>
-  <main class="stage"><iframe id="preview" title="青鸟原型验收页面" src="index.html#/web/DASH-001"></iframe></main>
+  <main class="stage"><iframe id="preview" title="青鸟原型验收页面" src="index.html?v=w8r2a-p2-visual2#/web/DASH-001"></iframe></main>
   <script>
     const frame=document.getElementById('preview'),page=document.getElementById('page'),width=document.getElementById('width'),height=document.getElementById('height'),open=document.getElementById('open'),observed=document.getElementById('observed');
     function describe(){observed.textContent='当前预览框 '+frame.contentWindow.innerWidth+' × '+frame.contentWindow.innerHeight+' CSS 像素；'+frame.contentDocument.title;}
     function resize(){frame.style.width=width.value+'px';frame.style.height=height.value+'px';requestAnimationFrame(describe);}
     document.getElementById('controls').addEventListener('submit',event=>event.preventDefault());
-    page.addEventListener('change',()=>{frame.src='index.html'+page.value;open.href=frame.src;});
+    page.addEventListener('change',()=>{frame.src='index.html?v=w8r2a-p2-visual2'+page.value;open.href=frame.src;});
     width.addEventListener('change',resize);height.addEventListener('change',resize);frame.addEventListener('load',describe);
   </script>
 </body>
