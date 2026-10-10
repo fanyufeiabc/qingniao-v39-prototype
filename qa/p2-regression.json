@@ -1,6 +1,6 @@
 {
   "version": "9.1.1-w8r2a-p2",
-  "generatedAt": "2026-10-10T00:09:23.987Z",
+  "generatedAt": "2026-10-10T03:53:48.654Z",
   "runtime": "jsdom DOM interactions; visual evidence separate",
   "groups": [
     {
@@ -25,6 +25,18 @@
     },
     {
       "name": "品牌和原样式冻结字节不变",
+      "result": "PASS"
+    },
+    {
+      "name": "列表按钮进入处理页并保留原订单上下文 purchase",
+      "result": "PASS"
+    },
+    {
+      "name": "列表按钮进入处理页并保留原订单上下文 shipment",
+      "result": "PASS"
+    },
+    {
+      "name": "列表按钮进入处理页并保留原订单上下文 aftersale",
       "result": "PASS"
     },
     {
@@ -1545,12 +1557,12 @@
     "originalButtonIds": 437,
     "logicalPages": 61,
     "contractFields": 478,
-    "groups": 111
+    "groups": 114
   },
   "networkCalls": 0,
   "errors": [],
   "summary": {
-    "passed": 111,
+    "passed": 114,
     "failed": 0,
     "skipped": 0
   }

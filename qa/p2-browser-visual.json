@@ -1,0 +1,1716 @@
+{
+  "version": "9.1.1-w8r2a-p2",
+  "checkedAt": "2026-10-10T04:22:15.127874+00:00",
+  "status": "PASS_BROWSER_PROTOTYPE",
+  "publishedUrl": "https://fanyufeiabc.github.io/qingniao-v39-prototype/#/web/DASH-001",
+  "verifiedRuntimeCommit": "2dd0852e7c3133d7cc4ef3f579220c2ceadacf88",
+  "pagesRunId": 38022653341,
+  "method": "在线 GitHub Pages 实际页面；验收辅助页以 iframe 提供实际 CSS 视口，未缩放应用。云浏览器自身固定1363x936，1920页面通过左右横向观察与DOM宽度核对。视口均高900；截图覆盖可见部分，不伪称1920整幅截图或Windows设备测试。",
+  "matrix": [
+    {
+      "page": "dashboard",
+      "width": 1024,
+      "height": 900,
+      "status": "PASS",
+      "screenshots": [
+        "p2-final-dashboard-w1024-1791605065292.jpg"
+      ]
+    },
+    {
+      "page": "dashboard",
+      "width": 1280,
+      "height": 900,
+      "status": "PASS",
+      "screenshots": [
+        "p2-final-dashboard-w1280-1791605079805.jpg"
+      ]
+    },
+    {
+      "page": "dashboard",
+      "width": 1366,
+      "height": 900,
+      "status": "PASS",
+      "screenshots": [
+        "p2-final-dashboard-w1366-1791605080014.jpg"
+      ]
+    },
+    {
+      "page": "dashboard",
+      "width": 1920,
+      "height": 900,
+      "status": "PASS",
+      "screenshots": [
+        "p2-final-dashboard-left-w1920-1791605080365.jpg",
+        "p2-final-dashboard-right-w1920-1791605080687.jpg"
+      ]
+    },
+    {
+      "page": "procurement",
+      "width": 1024,
+      "height": 900,
+      "status": "PASS",
+      "screenshots": [
+        "p2-final-procurement-w1024-1791605036351.jpg",
+        "p2-final-procurement-horizontal-keyboard-w1024-1791605880658.jpg",
+        "p2-final-procurement-right-controls-w1024-1791605895600.jpg"
+      ]
+    },
+    {
+      "page": "procurement",
+      "width": 1280,
+      "height": 900,
+      "status": "PASS",
+      "screenshots": [
+        "p2-final-procurement-w1280-1791605036570.jpg"
+      ]
+    },
+    {
+      "page": "procurement",
+      "width": 1366,
+      "height": 900,
+      "status": "PASS",
+      "screenshots": [
+        "p2-final-procurement-w1366-1791605036785.jpg"
+      ]
+    },
+    {
+      "page": "procurement",
+      "width": 1920,
+      "height": 900,
+      "status": "PASS",
+      "screenshots": [
+        "p2-final-procurement-left-w1920-1791605064654.jpg",
+        "p2-final-procurement-right-w1920-1791605065047.jpg"
+      ]
+    },
+    {
+      "page": "pc-home",
+      "width": 1024,
+      "height": 900,
+      "status": "PASS",
+      "screenshots": [
+        "p2-final-pc-home-w1024-1791605105304.jpg",
+        "p2-final-pc-home-bottom-w1024-1791605117664.jpg"
+      ]
+    },
+    {
+      "page": "pc-home",
+      "width": 1280,
+      "height": 900,
+      "status": "PASS",
+      "screenshots": [
+        "p2-final-pc-home-w1280-1791605105469.jpg"
+      ]
+    },
+    {
+      "page": "pc-home",
+      "width": 1366,
+      "height": 900,
+      "status": "PASS",
+      "screenshots": [
+        "p2-final-pc-home-w1366-1791605105641.jpg"
+      ]
+    },
+    {
+      "page": "pc-home",
+      "width": 1920,
+      "height": 900,
+      "status": "PASS",
+      "screenshots": [
+        "p2-final-pc-home-left-w1920-1791605117043.jpg",
+        "p2-final-pc-home-right-w1920-1791605117352.jpg"
+      ]
+    },
+    {
+      "page": "confirmation",
+      "width": 1024,
+      "height": 900,
+      "status": "PASS",
+      "screenshots": [
+        "p2-final-confirmation-w1024-1791605457587.jpg",
+        "p2-final-confirmation-footer-w1024-1791605743600.jpg"
+      ]
+    },
+    {
+      "page": "confirmation",
+      "width": 1280,
+      "height": 900,
+      "status": "PASS",
+      "screenshots": [
+        "p2-final-confirmation-w1280-1791605457928.jpg"
+      ]
+    },
+    {
+      "page": "confirmation",
+      "width": 1366,
+      "height": 900,
+      "status": "PASS",
+      "screenshots": [
+        "p2-final-confirmation-w1366-1791605715455.jpg"
+      ]
+    },
+    {
+      "page": "confirmation",
+      "width": 1920,
+      "height": 900,
+      "status": "PASS",
+      "screenshots": [
+        "p2-final-confirmation-centered-w1920-1791605727619.jpg",
+        "p2-final-confirmation-footer-w1920-1791605728262.jpg"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "bodyWidth": 1009,
+      "clientWidth": 1009,
+      "clippedCards": [],
+      "documentWidth": 1009,
+      "headings": [
+        "采购建议",
+        "订单采购草稿"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 771,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "PUR-001表格 可横向滚动",
+          "scrollWidth": 820,
+          "width": 685
+        }
+      ],
+      "title": "采购建议 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/PUR-001",
+      "width": 1024,
+      "caseId": "procurement",
+      "screenshot": "p2-final-procurement-w1024-1791605036351.jpg",
+      "outerScroll": {
+        "x": 0,
+        "y": 175
+      },
+      "sha256": "5cad11316268e60bb4edd8693d9243961d6ae53f378abf7d2a3e0132f95ac826"
+    },
+    {
+      "bodyWidth": 1265,
+      "clientWidth": 1265,
+      "clippedCards": [],
+      "documentWidth": 1265,
+      "headings": [
+        "采购建议",
+        "订单采购草稿"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 1001,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "PUR-001表格 可横向滚动",
+          "scrollWidth": 915,
+          "width": 915
+        }
+      ],
+      "title": "采购建议 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/PUR-001",
+      "width": 1280,
+      "caseId": "procurement",
+      "screenshot": "p2-final-procurement-w1280-1791605036570.jpg",
+      "outerScroll": {
+        "x": 0,
+        "y": 175
+      },
+      "sha256": "536d1213927cee1280760073fb489ca6e8d8e6a2e1066fa312eea99eee632c5b"
+    },
+    {
+      "bodyWidth": 1351,
+      "clientWidth": 1351,
+      "clippedCards": [],
+      "documentWidth": 1351,
+      "headings": [
+        "采购建议",
+        "订单采购草稿"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 1087,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "PUR-001表格 可横向滚动",
+          "scrollWidth": 1001,
+          "width": 1001
+        }
+      ],
+      "title": "采购建议 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/PUR-001",
+      "width": 1366,
+      "caseId": "procurement",
+      "screenshot": "p2-final-procurement-w1366-1791605036785.jpg",
+      "outerScroll": {
+        "x": 14,
+        "y": 185
+      },
+      "sha256": "68b46a6726d8425b6ab98ada6b379f5cf1f67f256209006372edb08d67b5fa0d"
+    },
+    {
+      "bodyWidth": 1905,
+      "clientWidth": 1905,
+      "clippedCards": [],
+      "documentWidth": 1905,
+      "headings": [
+        "采购建议",
+        "订单采购草稿"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 1641,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "PUR-001表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        }
+      ],
+      "title": "采购建议 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/PUR-001",
+      "width": 1920,
+      "caseId": "procurement-left",
+      "screenshot": "p2-final-procurement-left-w1920-1791605064654.jpg",
+      "outerScroll": {
+        "x": 14,
+        "y": 185
+      },
+      "sha256": "d607e6d4e64158a7f2a709a151873ca7a6a3ee7d1133b5746742a7fb2309c3f5"
+    },
+    {
+      "bodyWidth": 1905,
+      "clientWidth": 1905,
+      "clippedCards": [],
+      "documentWidth": 1905,
+      "headings": [
+        "采购建议",
+        "订单采购草稿"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 1641,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "PUR-001表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        }
+      ],
+      "title": "采购建议 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/PUR-001",
+      "width": 1920,
+      "caseId": "procurement-right",
+      "screenshot": "p2-final-procurement-right-w1920-1791605065047.jpg",
+      "outerScroll": {
+        "x": 588,
+        "y": 185
+      },
+      "sha256": "a833b2b846229cfc25949e92b676169e7efee3104c1012eef21635f91c7aef8c"
+    },
+    {
+      "bodyWidth": 1009,
+      "clientWidth": 1009,
+      "clippedCards": [],
+      "documentWidth": 1009,
+      "headings": [
+        "工作台",
+        "今天需要本人处理",
+        "经营观察与范围",
+        "经营流程"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 771,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "DASH-001表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        }
+      ],
+      "title": "工作台 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/DASH-001",
+      "width": 1024,
+      "caseId": "dashboard",
+      "screenshot": "p2-final-dashboard-w1024-1791605065292.jpg",
+      "outerScroll": {
+        "x": 0,
+        "y": 175
+      },
+      "sha256": "07540784e379717181c1236865ed31d2e105779ca3024182e02ededb4ee5193a"
+    },
+    {
+      "bodyWidth": 1265,
+      "clientWidth": 1265,
+      "clippedCards": [],
+      "documentWidth": 1265,
+      "headings": [
+        "工作台",
+        "今天需要本人处理",
+        "经营观察与范围",
+        "经营流程"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 1001,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "DASH-001表格 可横向滚动",
+          "scrollWidth": 915,
+          "width": 915
+        }
+      ],
+      "title": "工作台 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/DASH-001",
+      "width": 1280,
+      "caseId": "dashboard",
+      "screenshot": "p2-final-dashboard-w1280-1791605079805.jpg",
+      "outerScroll": {
+        "x": 0,
+        "y": 175
+      },
+      "sha256": "ee156f008e1ae2a6269d019ea1c9a18ad381800f1b35a588ba8faa271c8e4cbe"
+    },
+    {
+      "bodyWidth": 1351,
+      "clientWidth": 1351,
+      "clippedCards": [],
+      "documentWidth": 1351,
+      "headings": [
+        "工作台",
+        "今天需要本人处理",
+        "经营观察与范围",
+        "经营流程"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 1087,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "DASH-001表格 可横向滚动",
+          "scrollWidth": 1001,
+          "width": 1001
+        }
+      ],
+      "title": "工作台 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/DASH-001",
+      "width": 1366,
+      "caseId": "dashboard",
+      "screenshot": "p2-final-dashboard-w1366-1791605080014.jpg",
+      "outerScroll": {
+        "x": 14,
+        "y": 185
+      },
+      "sha256": "f8c8a3ffaba55b88645cf1d621f60a2b3630ad7b1bf21614da79c26f28e7d971"
+    },
+    {
+      "bodyWidth": 1905,
+      "clientWidth": 1905,
+      "clippedCards": [],
+      "documentWidth": 1905,
+      "headings": [
+        "工作台",
+        "今天需要本人处理",
+        "经营观察与范围",
+        "经营流程"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 1641,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "DASH-001表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        }
+      ],
+      "title": "工作台 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/DASH-001",
+      "width": 1920,
+      "caseId": "dashboard-left",
+      "screenshot": "p2-final-dashboard-left-w1920-1791605080365.jpg",
+      "outerScroll": {
+        "x": 14,
+        "y": 185
+      },
+      "sha256": "6f2655250932439cbf364ff02702dc26d1e73908b98fc06549a3d568e4f6ed4f"
+    },
+    {
+      "bodyWidth": 1905,
+      "clientWidth": 1905,
+      "clippedCards": [],
+      "documentWidth": 1905,
+      "headings": [
+        "工作台",
+        "今天需要本人处理",
+        "经营观察与范围",
+        "经营流程"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 1641,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "DASH-001表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        }
+      ],
+      "title": "工作台 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/DASH-001",
+      "width": 1920,
+      "caseId": "dashboard-right",
+      "screenshot": "p2-final-dashboard-right-w1920-1791605080687.jpg",
+      "outerScroll": {
+        "x": 588,
+        "y": 185
+      },
+      "sha256": "6bccf92c2ada53676cfaa0a8cb778b723cb743ef66ef53d81b981846521afb0d"
+    },
+    {
+      "bodyWidth": 1009,
+      "clientWidth": 1009,
+      "clippedCards": [],
+      "documentWidth": 1009,
+      "headings": [
+        "设备首页",
+        "NAS连接与固定设备",
+        "执行任务与原确认"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 771,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "PC-002表格 可横向滚动",
+          "scrollWidth": 820,
+          "width": 685
+        }
+      ],
+      "title": "设备首页 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/pc/PC-002",
+      "width": 1024,
+      "caseId": "pc-home",
+      "screenshot": "p2-final-pc-home-w1024-1791605105304.jpg",
+      "outerScroll": {
+        "x": 0,
+        "y": 175
+      },
+      "sha256": "62b786cc646f1a3e95d8348a2df4a25ebc8e812ddcce7b0009b297e0a715b8fe"
+    },
+    {
+      "bodyWidth": 1265,
+      "clientWidth": 1265,
+      "clippedCards": [],
+      "documentWidth": 1265,
+      "headings": [
+        "设备首页",
+        "NAS连接与固定设备",
+        "执行任务与原确认"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 1001,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 915,
+          "width": 915
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 915,
+          "width": 915
+        },
+        {
+          "label": "PC-002表格 可横向滚动",
+          "scrollWidth": 915,
+          "width": 915
+        }
+      ],
+      "title": "设备首页 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/pc/PC-002",
+      "width": 1280,
+      "caseId": "pc-home",
+      "screenshot": "p2-final-pc-home-w1280-1791605105469.jpg",
+      "outerScroll": {
+        "x": 0,
+        "y": 175
+      },
+      "sha256": "9746d9b95ca3a45e7db7748065d318cb119137aa12f18bbcd8b30ae0e4974b0a"
+    },
+    {
+      "bodyWidth": 1351,
+      "clientWidth": 1351,
+      "clippedCards": [],
+      "documentWidth": 1351,
+      "headings": [
+        "设备首页",
+        "NAS连接与固定设备",
+        "执行任务与原确认"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 1087,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 1001,
+          "width": 1001
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 1001,
+          "width": 1001
+        },
+        {
+          "label": "PC-002表格 可横向滚动",
+          "scrollWidth": 1001,
+          "width": 1001
+        }
+      ],
+      "title": "设备首页 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/pc/PC-002",
+      "width": 1366,
+      "caseId": "pc-home",
+      "screenshot": "p2-final-pc-home-w1366-1791605105641.jpg",
+      "outerScroll": {
+        "x": 14,
+        "y": 185
+      },
+      "sha256": "f255da939f0969393357ac439fa0705b05f558f82636f8142198de294cd3c20e"
+    },
+    {
+      "bodyWidth": 1905,
+      "clientWidth": 1905,
+      "clippedCards": [],
+      "documentWidth": 1905,
+      "headings": [
+        "设备首页",
+        "NAS连接与固定设备",
+        "执行任务与原确认"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 1641,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        },
+        {
+          "label": "PC-002表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        }
+      ],
+      "title": "设备首页 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/pc/PC-002",
+      "width": 1920,
+      "caseId": "pc-home-left",
+      "screenshot": "p2-final-pc-home-left-w1920-1791605117043.jpg",
+      "outerScroll": {
+        "x": 14,
+        "y": 185
+      },
+      "sha256": "402892d2025cafd78c1587dcedfc00645138d01f34735172ab4a6f44310d72f5"
+    },
+    {
+      "bodyWidth": 1905,
+      "clientWidth": 1905,
+      "clippedCards": [],
+      "documentWidth": 1905,
+      "headings": [
+        "设备首页",
+        "NAS连接与固定设备",
+        "执行任务与原确认"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 1641,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        },
+        {
+          "label": "PC-002表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        }
+      ],
+      "title": "设备首页 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/pc/PC-002",
+      "width": 1920,
+      "caseId": "pc-home-right",
+      "screenshot": "p2-final-pc-home-right-w1920-1791605117352.jpg",
+      "outerScroll": {
+        "x": 588,
+        "y": 185
+      },
+      "sha256": "9358b81cefbd8c8ddf89deb51f41d7298c60aa9fa678d08aad6d4daa4e067c13"
+    },
+    {
+      "bodyWidth": 1009,
+      "clientWidth": 1009,
+      "clippedCards": [],
+      "documentWidth": 1009,
+      "headings": [
+        "设备首页",
+        "NAS连接与固定设备",
+        "执行任务与原确认"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 771,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "PC-002表格 可横向滚动",
+          "scrollWidth": 820,
+          "width": 685
+        }
+      ],
+      "title": "设备首页 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/pc/PC-002",
+      "width": 1024,
+      "caseId": "pc-home-bottom",
+      "screenshot": "p2-final-pc-home-bottom-w1024-1791605117664.jpg",
+      "outerScroll": {
+        "x": 0,
+        "y": 175
+      },
+      "sha256": "298e40e87ad2af24760fd3f3b21e3bd9926275d16a17cb91d7265f36300cb62b"
+    },
+    {
+      "bodyWidth": 1009,
+      "clientWidth": 1009,
+      "clippedCards": [],
+      "documentWidth": 1009,
+      "headings": [
+        "商品编辑",
+        "商品资料与销售规格",
+        "图片与包装"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 771,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        }
+      ],
+      "title": "商品编辑 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/PRD-002?view=PRD-052&entityId=JD-DEMO-PRODUCT-001&version=1&storeScope=STORE-JD-001&account=ACC-JD-001",
+      "width": 1024,
+      "caseId": "product-editor-top",
+      "screenshot": "p2-final-product-editor-top-w1024-1791605195888.jpg",
+      "outerScroll": {
+        "x": 0,
+        "y": 175
+      },
+      "sha256": "5cc1cbb7a9a5a37584ca52f43ab971b5001db80df5c6af56f08e9787d24a59e9"
+    },
+    {
+      "bodyWidth": 1009,
+      "clientWidth": 1009,
+      "clippedCards": [],
+      "documentWidth": 1009,
+      "headings": [
+        "商品编辑",
+        "商品资料与销售规格",
+        "图片与包装"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 771,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        }
+      ],
+      "title": "商品编辑 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/PRD-002?view=PRD-052&entityId=JD-DEMO-PRODUCT-001&version=1&storeScope=STORE-JD-001&account=ACC-JD-001",
+      "width": 1024,
+      "caseId": "product-editor-bottom",
+      "screenshot": "p2-final-product-editor-bottom-w1024-1791605196346.jpg",
+      "outerScroll": {
+        "x": 0,
+        "y": 175
+      },
+      "sha256": "db476f2ed6083c5711bae759428b2885c5ab7468e16b6f9908f5b8237c03b5e2"
+    },
+    {
+      "bodyWidth": 1009,
+      "clientWidth": 1009,
+      "clippedCards": [],
+      "documentWidth": 1009,
+      "headings": [
+        "包装 OCR 核对",
+        "包装原图与文字证据",
+        "逐字段采纳与拒绝"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 771,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "PKG-001表格 可横向滚动",
+          "scrollWidth": 820,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        }
+      ],
+      "title": "包装 OCR 核对 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/PKG-001?entityId=JD-DEMO-PRODUCT-001&version=1&storeScope=STORE-JD-001&account=ACC-JD-001",
+      "width": 1024,
+      "caseId": "ocr-decisions",
+      "screenshot": "p2-final-ocr-decisions-w1024-1791605216710.jpg",
+      "outerScroll": {
+        "x": 0,
+        "y": 175
+      },
+      "sha256": "596effc76b7efe743c640d21fa9f65e8766f5e605a2babf3e6c7bd4247b5df6d"
+    },
+    {
+      "bodyWidth": 1009,
+      "clientWidth": 1009,
+      "clippedCards": [],
+      "documentWidth": 1009,
+      "headings": [
+        "售后详情",
+        "本人逐商品关联与双侧退款分配",
+        "分配与冲销记录"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 771,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "AS-002表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "AS-002表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        }
+      ],
+      "title": "售后详情 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/AS-002?view=AS-094&entityId=AS-DEMO-3&version=1&storeScope=STORE-JD-001&account=ACC-JD-001",
+      "width": 1024,
+      "caseId": "aftersale-negative",
+      "screenshot": "p2-final-aftersale-negative-w1024-1791605287073.jpg",
+      "outerScroll": {
+        "x": 0,
+        "y": 175
+      },
+      "sha256": "6944ac329fd538129c863b7bfa715e94668c9305096e888d7c8817948e40ba34"
+    },
+    {
+      "bodyWidth": 1009,
+      "clientWidth": 1009,
+      "clippedCards": [],
+      "documentWidth": 1009,
+      "headings": [
+        "售后详情",
+        "本人逐商品关联与双侧退款分配",
+        "分配与冲销记录"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 771,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "AS-002表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "AS-002表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        }
+      ],
+      "title": "售后详情 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/AS-002?view=AS-094&entityId=AS-DEMO-3&version=2&storeScope=STORE-JD-001&account=ACC-JD-001",
+      "width": 1024,
+      "caseId": "aftersale-partial",
+      "screenshot": "p2-final-aftersale-partial-w1024-1791605339832.jpg",
+      "outerScroll": {
+        "x": 0,
+        "y": 175
+      },
+      "sha256": "9e9f662c6ca1cde2182af9332dea55416064ed1ee2483e80ae689816dbf8cef4"
+    },
+    {
+      "bodyWidth": 1009,
+      "clientWidth": 1009,
+      "clippedCards": [],
+      "documentWidth": 1009,
+      "headings": [
+        "京东草稿同步与回读",
+        "同步与发布条件",
+        "草稿同步与同账号回读"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 771,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "JD-003表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        }
+      ],
+      "title": "京东草稿同步与回读 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/JD-003?entityId=JD-DEMO-PRODUCT-001&version=2&storeScope=STORE-JD-001&account=ACC-JD-001",
+      "width": 1024,
+      "caseId": "draft-wrong-account",
+      "screenshot": "p2-final-draft-wrong-account-w1024-1791605430464.jpg",
+      "outerScroll": {
+        "x": 0,
+        "y": 175
+      },
+      "sha256": "e0e542b583f9c94e76e8f29357a4f70cd8b274eaac03895a2b848860b2600db4"
+    },
+    {
+      "bodyWidth": 1009,
+      "clientWidth": 1009,
+      "clippedCards": [],
+      "documentWidth": 1009,
+      "headings": [
+        "京东审核与发布确认",
+        "本人确认提交审核与发布",
+        "同步与发布条件",
+        "草稿同步与同账号回读",
+        "本人确认提交审核"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 771,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "JD-004表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "JD-004表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 0
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 795,
+          "width": 795
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 795,
+          "width": 795
+        }
+      ],
+      "title": "京东审核与发布确认 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/JD-004?entityId=JD-DEMO-PRODUCT-001&version=2&storeScope=STORE-JD-001&account=ACC-JD-001",
+      "width": 1024,
+      "caseId": "confirmation",
+      "screenshot": "p2-final-confirmation-w1024-1791605457587.jpg",
+      "outerScroll": {
+        "x": 0,
+        "y": 175
+      },
+      "sha256": "da99b40e77f167621e6b5f6cb78df04ff7156cc67567f2d6f1cddde82da0f857"
+    },
+    {
+      "bodyWidth": 1265,
+      "clientWidth": 1265,
+      "clippedCards": [],
+      "documentWidth": 1265,
+      "headings": [
+        "京东审核与发布确认",
+        "本人确认提交审核与发布",
+        "同步与发布条件",
+        "草稿同步与同账号回读",
+        "本人确认提交审核"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 1001,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "JD-004表格 可横向滚动",
+          "scrollWidth": 915,
+          "width": 915
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 915,
+          "width": 915
+        },
+        {
+          "label": "JD-004表格 可横向滚动",
+          "scrollWidth": 915,
+          "width": 915
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 915,
+          "width": 915
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 915,
+          "width": 915
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 915,
+          "width": 915
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 795,
+          "width": 795
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 795,
+          "width": 795
+        }
+      ],
+      "title": "京东审核与发布确认 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/JD-004?entityId=JD-DEMO-PRODUCT-001&version=2&storeScope=STORE-JD-001&account=ACC-JD-001",
+      "width": 1280,
+      "caseId": "confirmation",
+      "screenshot": "p2-final-confirmation-w1280-1791605457928.jpg",
+      "outerScroll": {
+        "x": 0,
+        "y": 175
+      },
+      "sha256": "aa3912efed9ef086e77f6db4ecdc9e61e6be0191c577917af8f565322ca283ef"
+    },
+    {
+      "bodyWidth": 1351,
+      "clientWidth": 1351,
+      "clippedCards": [],
+      "documentWidth": 1351,
+      "headings": [
+        "京东审核与发布确认",
+        "本人确认提交审核与发布",
+        "同步与发布条件",
+        "草稿同步与同账号回读",
+        "本人确认提交审核"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 1087,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "JD-004表格 可横向滚动",
+          "scrollWidth": 1001,
+          "width": 1001
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 1001,
+          "width": 1001
+        },
+        {
+          "label": "JD-004表格 可横向滚动",
+          "scrollWidth": 1001,
+          "width": 1001
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 1001,
+          "width": 1001
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 1001,
+          "width": 1001
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 1001,
+          "width": 1001
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 795,
+          "width": 795
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 795,
+          "width": 795
+        }
+      ],
+      "title": "京东审核与发布确认 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/JD-004?entityId=JD-DEMO-PRODUCT-001&version=2&storeScope=STORE-JD-001&account=ACC-JD-001",
+      "width": 1366,
+      "caseId": "confirmation",
+      "screenshot": "p2-final-confirmation-w1366-1791605715455.jpg",
+      "outerScroll": {
+        "x": 14,
+        "y": 185
+      },
+      "sha256": "91ebef5f1b3833f13a411e544dfce1e41767e31328afd9ac5bed70361ad61601"
+    },
+    {
+      "bodyWidth": 1905,
+      "clientWidth": 1905,
+      "clippedCards": [],
+      "documentWidth": 1905,
+      "headings": [
+        "京东审核与发布确认",
+        "本人确认提交审核与发布",
+        "同步与发布条件",
+        "草稿同步与同账号回读",
+        "本人确认提交审核"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 1641,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "JD-004表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        },
+        {
+          "label": "JD-004表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 795,
+          "width": 795
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 795,
+          "width": 795
+        }
+      ],
+      "title": "京东审核与发布确认 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/JD-004?entityId=JD-DEMO-PRODUCT-001&version=2&storeScope=STORE-JD-001&account=ACC-JD-001",
+      "width": 1920,
+      "caseId": "confirmation-centered",
+      "screenshot": "p2-final-confirmation-centered-w1920-1791605727619.jpg",
+      "outerScroll": {
+        "x": 351,
+        "y": 185
+      },
+      "sha256": "519b03c96a29dd8583fdbc535be37723a7f10c62bbbeeed63b898e309f356189"
+    },
+    {
+      "bodyWidth": 1905,
+      "clientWidth": 1905,
+      "clippedCards": [],
+      "documentWidth": 1905,
+      "headings": [
+        "京东审核与发布确认",
+        "本人确认提交审核与发布",
+        "同步与发布条件",
+        "草稿同步与同账号回读",
+        "本人确认提交审核"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 1641,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "JD-004表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        },
+        {
+          "label": "JD-004表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 1462,
+          "width": 1462
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 795,
+          "width": 795
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 795,
+          "width": 795
+        }
+      ],
+      "title": "京东审核与发布确认 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/JD-004?entityId=JD-DEMO-PRODUCT-001&version=2&storeScope=STORE-JD-001&account=ACC-JD-001",
+      "width": 1920,
+      "caseId": "confirmation-footer",
+      "screenshot": "p2-final-confirmation-footer-w1920-1791605728262.jpg",
+      "outerScroll": {
+        "x": 351,
+        "y": 185
+      },
+      "sha256": "1988b0d1d5f1f3da103340c54c858a07c10fb3e66091a5769437c755908f490d"
+    },
+    {
+      "bodyWidth": 1009,
+      "clientWidth": 1009,
+      "clippedCards": [],
+      "documentWidth": 1009,
+      "headings": [
+        "京东审核与发布确认",
+        "本人确认提交审核与发布",
+        "同步与发布条件",
+        "草稿同步与同账号回读",
+        "本人确认提交审核"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 771,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "JD-004表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "JD-004表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 795,
+          "width": 795
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 795,
+          "width": 795
+        }
+      ],
+      "title": "京东审核与发布确认 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/JD-004?entityId=JD-DEMO-PRODUCT-001&version=2&storeScope=STORE-JD-001&account=ACC-JD-001",
+      "width": 1024,
+      "caseId": "confirmation-footer",
+      "screenshot": "p2-final-confirmation-footer-w1024-1791605743600.jpg",
+      "outerScroll": {
+        "x": 0,
+        "y": 175
+      },
+      "sha256": "80e1ced1fa7220345fdcd63988f5bb5472f5e36acf65514d5db1510a05752860"
+    },
+    {
+      "bodyWidth": 1009,
+      "clientWidth": 1009,
+      "clippedCards": [],
+      "documentWidth": 1009,
+      "headings": [
+        "京东发布对账恢复",
+        "原确认与UNKNOWN写入锁"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 771,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        }
+      ],
+      "title": "京东发布对账恢复 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/JD-005?entityId=JD-DEMO-PRODUCT-001&version=2&storeScope=STORE-JD-001&account=ACC-JD-001",
+      "width": 1024,
+      "caseId": "unknown-wrong-account-locked",
+      "screenshot": "p2-final-unknown-wrong-account-locked-w1024-1791605812431.jpg",
+      "outerScroll": {
+        "x": 0,
+        "y": 175
+      },
+      "sha256": "c2a0749ff1b0f91bd4cee2bb428f6ed6cf3ea721e2a7fc920344414d6356b272"
+    },
+    {
+      "bodyWidth": 1009,
+      "clientWidth": 1009,
+      "clippedCards": [],
+      "documentWidth": 1009,
+      "headings": [
+        "京东审核与发布确认",
+        "本人确认提交审核与发布",
+        "同步与发布条件",
+        "草稿同步与同账号回读"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 771,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "JD-004表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "JD-004表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        },
+        {
+          "label": "业务明细表格 可横向滚动",
+          "scrollWidth": 685,
+          "width": 685
+        }
+      ],
+      "title": "京东审核与发布确认 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/JD-004?entityId=JD-DEMO-PRODUCT-001&version=2&storeScope=STORE-JD-001&account=ACC-JD-001",
+      "width": 1024,
+      "caseId": "unknown-recovered",
+      "screenshot": "p2-final-unknown-recovered-w1024-1791605852714.jpg",
+      "outerScroll": {
+        "x": 0,
+        "y": 175
+      },
+      "sha256": "52001e7e40322aefd032b0e614f43f6cba46b10d532465da2e42b8ef05f9ac1a"
+    },
+    {
+      "bodyWidth": 1024,
+      "clientWidth": 1024,
+      "clippedCards": [],
+      "documentWidth": 1024,
+      "headings": [
+        "采购建议",
+        "订单采购草稿"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 786,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "PUR-001表格 可横向滚动",
+          "scrollWidth": 820,
+          "width": 700
+        }
+      ],
+      "title": "采购建议 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/PUR-001",
+      "width": 1024,
+      "caseId": "procurement-horizontal-keyboard",
+      "screenshot": "p2-final-procurement-horizontal-keyboard-w1024-1791605880658.jpg",
+      "outerScroll": {
+        "x": 0,
+        "y": 175
+      },
+      "sha256": "e9085d078dcbcff8bc4f81f26a199eddd0fd9724c226363192246c83801fb36a"
+    },
+    {
+      "bodyWidth": 1024,
+      "clientWidth": 1024,
+      "clippedCards": [],
+      "documentWidth": 1024,
+      "headings": [
+        "采购建议",
+        "订单采购草稿"
+      ],
+      "height": 900,
+      "imagesLoaded": true,
+      "mainWidth": 786,
+      "resources": [
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/p2.css?v=w8r2a-p2-visual2",
+        "https://fanyufeiabc.github.io/qingniao-v39-prototype/prototype-p2.js?v=w8r2a-p2-visual2"
+      ],
+      "tables": [
+        {
+          "label": "PUR-001表格 可横向滚动",
+          "scrollWidth": 820,
+          "width": 700
+        }
+      ],
+      "title": "采购建议 · 青鸟 V9.1.1 W8R2A-P2",
+      "url": "https://fanyufeiabc.github.io/qingniao-v39-prototype/index.html?v=w8r2a-p2-visual2#/web/PUR-001",
+      "width": 1024,
+      "caseId": "procurement-right-controls",
+      "screenshot": "p2-final-procurement-right-controls-w1024-1791605895600.jpg",
+      "outerScroll": {
+        "x": 0,
+        "y": 175
+      },
+      "sha256": "d83c2949740e332018311a99bbdf434166c17a1d733eccdeb448c014a7a9ab71"
+    }
+  ],
+  "interactions": [
+    {
+      "case": "confirmation_acknowledgement",
+      "result": "PASS",
+      "observed": "未勾选时执行禁用；勾选后启用；审核演示受理后待回读，未显示在售"
+    },
+    {
+      "case": "confirmation_keyboard",
+      "result": "PASS",
+      "observed": "Tab 从核对框进入弹窗按钮；Escape 关闭后返回原确认按钮；1024 底部按钮通过弹窗滚动可达"
+    },
+    {
+      "case": "draft_wrong_account",
+      "result": "PASS",
+      "observed": "账号不匹配回读不能取得发布准入；随后唯一完整同账号回读通过"
+    },
+    {
+      "case": "unknown_wrong_account",
+      "result": "PASS",
+      "observed": "原任务 TASK-P2-0009 绑定 v2/ACC-JD-001；错账号观察和回传后原锁保持，NAS裁决及重复写入禁用"
+    },
+    {
+      "case": "unknown_trusted_evidence",
+      "result": "PASS",
+      "observed": "可信观察回传后原锁保持；NAS演示裁决后返回原对象，状态审核中、无写锁"
+    },
+    {
+      "case": "manual_aftersale",
+      "result": "PASS",
+      "observed": "错商品行关联和负金额阻断；正确逐行关联后部分保存 v2，店铺30分10余20、采购18分6余12，均为CNY"
+    },
+    {
+      "case": "wide_table_reachability",
+      "result": "PASS",
+      "observed": "1024 下表格范围内部横滚，scrollLeft=120/clientWidth=700/scrollWidth=820；右侧核对按钮完整可见；容器可键盘聚焦"
+    },
+    {
+      "case": "list_detail_navigation",
+      "result": "PASS",
+      "observed": "真实采购、物流、售后列表按钮分别进入 PUR-002/LOG-002/AS-002，保留原对象、版本、店铺、账号、订单与来源页；新增三个按钮路由回归"
+    }
+  ],
+  "screenshots": {
+    "count": 32,
+    "location": "核验与收口资料.zip/browser-visual/",
+    "directViews": [
+      "P2_已发布NAS工作台.jpg",
+      "P2_已发布PC首页.jpg"
+    ]
+  },
+  "excludedEvidence": "初版CSS、滚动或交互后未完成绘制的截图不作为验收证据；原始工作记录留在本次核验目录。",
+  "limits": [
+    "181个设计场景与61个逻辑入口全部本地DOM检查，浏览器视觉按代表页面及正反向交互抽样",
+    "实际NAS/PC界面待W8R2B至W8R2D",
+    "固定Windows缩放、NAS部署、目标PostgreSQL和真实平台统一SIT"
+  ]
+}

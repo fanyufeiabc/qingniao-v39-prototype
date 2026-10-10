@@ -4,10 +4,10 @@
   "sourceHead": "4aec42b1a4a9a42adf0a7cb816839c3cb17a7919",
   "summary": {
     "p0Closed": 4,
-    "prototypeFindingsClosed": 17,
-    "visualPending": 1,
+    "prototypeFindingsClosed": 18,
+    "visualPending": 0,
     "localRegression": {
-      "passed": 111,
+      "passed": 114,
       "failed": 0,
       "skipped": 0
     }
@@ -296,7 +296,10 @@
       "passingGroups": [
         "JD订单逐行来源生成两采购 保持原订单店铺行身份",
         "物流确认本批商品和数量 回读减少可发数量",
-        "PC采购任务展示原对象且无原任务时执行禁用"
+        "PC采购任务展示原对象且无原任务时执行禁用",
+        "列表按钮进入处理页并保留原订单上下文 purchase",
+        "列表按钮进入处理页并保留原订单上下文 shipment",
+        "列表按钮进入处理页并保留原订单上下文 aftersale"
       ],
       "actualUiAcceptance": "PENDING_W8R2B_TO_W8R2D",
       "realPlatformAcceptance": "PENDING_UNIFIED_SIT"
@@ -475,23 +478,38 @@
         "PC-002",
         "ALL"
       ],
-      "prototypeStatus": "VISUAL_PENDING",
-      "change": "布局代码已补换行与表内滚动；浏览器多宽度证据尚待核验",
+      "prototypeStatus": "CLOSED_BROWSER_PROTOTYPE",
+      "change": "四种CSS视口验收通过；宽表内部滚动且卡片不溢出；窄屏操作按钮不逐字折行；确认弹窗与长表单可滚动",
       "passingGroups": [],
       "actualUiAcceptance": "PENDING_W8R2B_TO_W8R2D",
-      "realPlatformAcceptance": "PENDING_UNIFIED_SIT"
+      "realPlatformAcceptance": "PENDING_UNIFIED_SIT",
+      "browserEvidence": "qa/p2-browser-visual.json"
     }
   ],
   "browserVerification": {
-    "status": "BLOCKED_LOCAL_FILE_POLICY",
-    "attempt": "file protocol preview refused; no circumventing access attempted",
-    "freshP2Screenshots": 0,
-    "next": "Verify approved HTTP hosted P2 version at common desktop widths; fixed Windows zoom remains SIT"
+    "status": "PASS_BROWSER_PROTOTYPE",
+    "widths": [
+      1024,
+      1280,
+      1366,
+      1920
+    ],
+    "height": 900,
+    "freshP2Screenshots": 34,
+    "evidence": "qa/p2-browser-visual.json",
+    "actualWindowsScaling": "PENDING_UNIFIED_SIT"
   },
   "githubPublication": {
-    "status": "PENDING_WRITE_PERMISSION",
-    "error": "403 Resource not accessible by integration",
-    "branchChanged": false,
-    "browserFallbackRequiresUserAuthorization": true
-  }
+    "status": "PUBLISHED_VIA_AUTHORIZED_BROWSER",
+    "publishedUrl": "https://fanyufeiabc.github.io/qingniao-v39-prototype/#/web/DASH-001",
+    "pullRequest": "https://github.com/fanyufeiabc/qingniao-v39-prototype/pull/1",
+    "mergeCommit": "f6d97697adf2fc6c86d92be800553426fbf50881",
+    "verifiedRuntimeCommit": "2dd0852e7c3133d7cc4ef3f579220c2ceadacf88",
+    "pagesRunId": 38022653341,
+    "pagesConclusion": "success",
+    "authorization": "用户明确允许通过浏览器发布本次P2",
+    "history": "连接写入403后使用已单独授权的浏览器；本地file预览拒绝后验收已发布HTTPS页面。"
+  },
+  "reviewBaselineHead": "4aec42b1a4a9a42adf0a7cb816839c3cb17a7919",
+  "verifiedRuntimeCommit": "2dd0852e7c3133d7cc4ef3f579220c2ceadacf88"
 }
