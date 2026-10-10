@@ -40,6 +40,6 @@ npm run preview
 
 `qa/p2-regression.json` 记录本次正反向回归及181场景检查。`qa/restoration-*` 为P1保留证据；旧测试不能代表P2结论。发布沿用 `.github/workflows/deploy-pages.yml` 的 `dist/` 目录。
 
-参见 `W8R2A_P2_CHANGELOG.md`、`docs/W8R2A_P2_SCENARIOS.md` 与 `docs/W8R2B_UI_ACCEPTANCE.md`。478个当前字段包含控件与组合明细绑定，后者需在实际UI阶段细化验收。浏览器本地文件预览被访问策略拒绝，浏览器布局证据另列待验；Windows缩放和实平台继续统一SIT。
+参见 `W8R2A_P2_CHANGELOG.md`、`docs/W8R2A_P2_SCENARIOS.md` 与 `docs/W8R2B_UI_ACCEPTANCE.md`。478个当前字段包含控件与组合明细绑定，后者需在实际UI阶段细化验收。P2 已通过授权浏览器发布到原入口；114组本地回归通过，18项原型评审关闭。工作台、采购列表、PC首页及本人确认弹窗在1024、1280、1366、1920四种CSS视口通过视觉验收，详见 `docs/W8R2A_P2_VISUAL_ACCEPTANCE.md` 与 `qa/p2-browser-visual.json`。固定Windows缩放和实平台继续统一SIT。
 
 仓库只含静态设计与本地演示数据，不含真实平台令牌或数据库。P2构建先还原P1，再应用显式补丁；旧原型增量脚本仅保留历史源码，不加载到P2入口。
