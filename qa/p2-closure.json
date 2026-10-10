@@ -1,0 +1,497 @@
+{
+  "version": "9.1.1-w8r2a-p2",
+  "date": "2026-10-10",
+  "sourceHead": "4aec42b1a4a9a42adf0a7cb816839c3cb17a7919",
+  "summary": {
+    "p0Closed": 4,
+    "prototypeFindingsClosed": 17,
+    "visualPending": 1,
+    "localRegression": {
+      "passed": 111,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "findings": [
+    {
+      "id": "REV-001",
+      "priority": "P0",
+      "title": "商品改动后旧回读快照仍允许确认",
+      "requirements": [
+        "REQ-911-009",
+        "REQ-911-016",
+        "REQ-911-017"
+      ],
+      "pages": [
+        "JD-001",
+        "JD-003",
+        "JD-004"
+      ],
+      "prototypeStatus": "CLOSED_LOCAL_PROTOTYPE",
+      "change": "编辑或采纳生成新版本；旧草稿回读与确认失效；冻结旧内容",
+      "passingGroups": [
+        "REV001售价19.90改29.90旧草稿和确认失效"
+      ],
+      "actualUiAcceptance": "PENDING_W8R2B_TO_W8R2D",
+      "realPlatformAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "REV-002",
+      "priority": "P0",
+      "title": "新增表单绕过业务对象和店铺范围准入",
+      "requirements": [
+        "REQ-911-001",
+        "REQ-911-002",
+        "REQ-911-024",
+        "REQ-911-027"
+      ],
+      "pages": [
+        "AS-002",
+        "JD-001",
+        "JD-003",
+        "JD-004",
+        "LOG-002"
+      ],
+      "prototypeStatus": "CLOSED_LOCAL_PROTOTYPE",
+      "change": "店铺账号对象版本统一准入；空对象和错店错账号禁止保存",
+      "passingGroups": [
+        "无对象禁保存 AS-002",
+        "无对象禁保存 LOG-002",
+        "无对象禁保存 PUR-002",
+        "无对象禁保存 JD-001",
+        "无对象禁保存 JD-004",
+        "错店铺版本账号与JD页跨平台对象拒绝"
+      ],
+      "actualUiAcceptance": "PENDING_W8R2B_TO_W8R2D",
+      "realPlatformAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "REV-003",
+      "priority": "P0",
+      "title": "类目属性和媒体授权缺少独立阻断场景",
+      "requirements": [
+        "REQ-911-010",
+        "REQ-911-015",
+        "REQ-911-016"
+      ],
+      "pages": [
+        "JD-002",
+        "JD-003",
+        "PRD-005",
+        "STORE-004"
+      ],
+      "prototypeStatus": "CLOSED_LOCAL_PROTOTYPE",
+      "change": "类目属性SKU授权质量能力及身份七项独立阻断",
+      "passingGroups": [
+        "单一能力勾选不等于草稿准入",
+        "独立必需条件阻断 category",
+        "独立必需条件阻断 attributes",
+        "独立必需条件阻断 sku",
+        "独立必需条件阻断 rights",
+        "独立必需条件阻断 quality",
+        "独立必需条件阻断 capability",
+        "独立必需条件阻断 identity",
+        "内衣类型必填阻断"
+      ],
+      "actualUiAcceptance": "PENDING_W8R2B_TO_W8R2D",
+      "realPlatformAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "REV-004",
+      "priority": "P0",
+      "title": "确认缺少本次实际明细且空运单可以确认",
+      "requirements": [
+        "REQ-911-017",
+        "REQ-911-020",
+        "REQ-911-021",
+        "REQ-911-023"
+      ],
+      "pages": [
+        "PUR-002",
+        "STORE-004",
+        "LOG-002",
+        "JD-004"
+      ],
+      "prototypeStatus": "CLOSED_LOCAL_PROTOTYPE",
+      "change": "确认展示本笔实值与SHA256有效期；运单及数量验证",
+      "passingGroups": [
+        "确认弹窗实值商品账号金额版本摘要内容不可变",
+        "确认过期拒绝执行 不产生任务",
+        "物流输入反向 shipment.waybill=",
+        "物流输入反向 shipment.waybill=A",
+        "物流输入反向 shipment.qty.0=0",
+        "物流输入反向 shipment.qty.0=999",
+        "物流输入反向 shipment.qty.0=1.5"
+      ],
+      "actualUiAcceptance": "PENDING_W8R2B_TO_W8R2D",
+      "realPlatformAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "REV-005",
+      "priority": "P1",
+      "title": "商品编辑保存后修改丢失",
+      "requirements": [
+        "REQ-911-009"
+      ],
+      "pages": [
+        "PRD-002",
+        "PRD-004"
+      ],
+      "prototypeStatus": "CLOSED_LOCAL_PROTOTYPE",
+      "change": "标题价格库存规格校验保存后回读，版本记录可查",
+      "passingGroups": [
+        "本人保存标题价格新版回读保留",
+        "商品输入反向 product.title=",
+        "商品输入反向 product.price=-1",
+        "商品输入反向 product.price=1.001",
+        "商品输入反向 product.stock=1.5",
+        "商品输入反向 product.shipDays=31"
+      ],
+      "actualUiAcceptance": "PENDING_W8R2B_TO_W8R2D",
+      "realPlatformAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "REV-006",
+      "priority": "P1",
+      "title": "当前规格与运行页面的追踪映射未统一",
+      "requirements": [
+        "REQ-911-027"
+      ],
+      "pages": [
+        "ALL"
+      ],
+      "prototypeStatus": "CLOSED_LOCAL_PROTOTYPE",
+      "change": "运行映射同步165旧路由；61页具体REQ；478字段控件或组合绑定",
+      "passingGroups": [
+        "注册表165旧编号映射同步 全页具体REQ与字段合同",
+        "字段绑定到控件或组合明细 不使用历史覆盖chip"
+      ],
+      "actualUiAcceptance": "PENDING_W8R2B_TO_W8R2D",
+      "realPlatformAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "REV-007",
+      "priority": "P1",
+      "title": "批量采集上限与逐项处理未落实",
+      "requirements": [
+        "REQ-911-007"
+      ],
+      "pages": [
+        "SRC-006",
+        "SRC-003",
+        "SRC-004"
+      ],
+      "prototypeStatus": "CLOSED_LOCAL_PROTOTYPE",
+      "change": "1至50范围、保序去重、恶意URL拒绝、逐项失败重试",
+      "passingGroups": [
+        "批量范围边界 0",
+        "批量范围边界 1",
+        "批量范围边界 50",
+        "批量范围边界 51",
+        "批量保序去重 超时仅重试失败项任务不重复",
+        "恶意URL私网凭证脚本域名和端口拒绝"
+      ],
+      "actualUiAcceptance": "PENDING_W8R2B_TO_W8R2D",
+      "realPlatformAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "REV-008",
+      "priority": "P1",
+      "title": "OCR和AI加工缺少逐项采纳与版本结果",
+      "requirements": [
+        "REQ-911-010",
+        "REQ-911-011",
+        "REQ-911-012",
+        "REQ-911-013"
+      ],
+      "pages": [
+        "PKG-001",
+        "PRD-003",
+        "MED-002",
+        "PRD-004"
+      ],
+      "prototypeStatus": "CLOSED_LOCAL_PROTOTYPE",
+      "change": "OCR原文坐标置信冲突及逐项决定；AI和媒体采纳产生新版",
+      "passingGroups": [
+        "OCR原文文本框置信冲突 低置信须人工确认",
+        "OCR逐字段采纳拒绝 部分回填生成新版本",
+        "AI CLEAN INSPECT建议不自动改写 采纳才新版",
+        "媒体原件hash不变 授权质量校验 包装模糊禁派生"
+      ],
+      "actualUiAcceptance": "PENDING_W8R2B_TO_W8R2D",
+      "realPlatformAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "REV-009",
+      "priority": "P1",
+      "title": "核算总览和待分配页使用了错误的通用流水语义",
+      "requirements": [
+        "REQ-911-014",
+        "REQ-911-020",
+        "REQ-911-025"
+      ],
+      "pages": [
+        "FIN-001",
+        "FIN-002",
+        "FIN-003"
+      ],
+      "prototypeStatus": "CLOSED_LOCAL_PROTOTYPE",
+      "change": "财务收入成本运费及退款分开；未知估算不显示最终利润",
+      "passingGroups": [
+        "财务未知估算待分配不显示最终净利 跨币种不合并",
+        "财务实值且当前店铺退款已分才有最终值"
+      ],
+      "actualUiAcceptance": "PENDING_W8R2B_TO_W8R2D",
+      "realPlatformAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "REV-010",
+      "priority": "P1",
+      "title": "退款手工分配缺少余额币种和修改冲销记录",
+      "requirements": [
+        "REQ-911-024",
+        "REQ-911-025"
+      ],
+      "pages": [
+        "AS-002",
+        "FIN-003"
+      ],
+      "prototypeStatus": "CLOSED_LOCAL_PROTOTYPE",
+      "change": "手工分配上限币种余额修订冲销；历史可追溯",
+      "passingGroups": [
+        "售后逐商品两采购 手工部分分配和余额明确",
+        "退款金额或币种反向 allocation.shop.0=30.01",
+        "退款金额或币种反向 allocation.source.0=18.01",
+        "退款金额或币种反向 allocation.shop.0=-1",
+        "退款金额或币种反向 allocation.shop.0=1.001",
+        "退款金额或币种反向 allocation.currency=USD",
+        "错误商品行采购关联拒绝",
+        "退款修订冲销保留历史不累计 完整分配后撤销",
+        "财务实值且当前店铺退款已分才有最终值"
+      ],
+      "actualUiAcceptance": "PENDING_W8R2B_TO_W8R2D",
+      "realPlatformAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "REV-011",
+      "priority": "P1",
+      "title": "订单到采购和履约的跨页上下文未带入",
+      "requirements": [
+        "REQ-911-018",
+        "REQ-911-019",
+        "REQ-911-022",
+        "REQ-911-023",
+        "REQ-911-027"
+      ],
+      "pages": [
+        "JD-006",
+        "ORD-001-D",
+        "PUR-001",
+        "PUR-002",
+        "LOG-001",
+        "AS-001"
+      ],
+      "prototypeStatus": "CLOSED_LOCAL_PROTOTYPE",
+      "change": "原订单项到采购和物流售后保留店铺订单及商品身份",
+      "passingGroups": [
+        "JD订单逐行来源生成两采购 保持原订单店铺行身份",
+        "物流确认本批商品和数量 回读减少可发数量",
+        "PC采购任务展示原对象且无原任务时执行禁用"
+      ],
+      "actualUiAcceptance": "PENDING_W8R2B_TO_W8R2D",
+      "realPlatformAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "REV-012",
+      "priority": "P1",
+      "title": "PC登录恢复和配置缺少完整结果场景",
+      "requirements": [
+        "REQ-911-003",
+        "REQ-911-004",
+        "REQ-911-026",
+        "REQ-911-029"
+      ],
+      "pages": [
+        "PC-001",
+        "PC-003",
+        "PC-004",
+        "PC-006",
+        "PC-007",
+        "SYS-004",
+        "INST-001"
+      ],
+      "prototypeStatus": "CLOSED_LOCAL_PROTOTYPE",
+      "change": "首次配对、配置启停、离线协议、错卖家会话风控和重核验",
+      "passingGroups": [
+        "PC未配对入口 一次性码连接启动停止正向",
+        "配对反向 config.nasUrl",
+        "配对反向 config.nasUrl",
+        "配对反向 config.pairCode",
+        "配对码不可重复 地址变更连接失效",
+        "PC连接反向 offline",
+        "PC连接反向 protocol",
+        "登录重核验反向 wrong-seller",
+        "登录重核验反向 expired",
+        "登录重核验反向 risk",
+        "登录完成仍核验才恢复 变更平台再次失效",
+        "UTP和AI独立配置 错地址隐私字段阻断",
+        "原PC浏览器档案会话适配Fixture媒体和正式采集场景保留"
+      ],
+      "actualUiAcceptance": "PENDING_W8R2B_TO_W8R2D",
+      "realPlatformAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "REV-013",
+      "priority": "P1",
+      "title": "UNKNOWN对账页与实际演示任务状态不一致",
+      "requirements": [
+        "REQ-911-005",
+        "REQ-911-017",
+        "REQ-911-022"
+      ],
+      "pages": [
+        "JD-004",
+        "JD-005",
+        "PUR-003",
+        "PC-005"
+      ],
+      "prototypeStatus": "CLOSED_LOCAL_PROTOTYPE",
+      "change": "UNKNOWN来自原确认任务；只读证据保持锁；NAS可信裁决才恢复",
+      "passingGroups": [
+        "未提交对象没有固定UNKNOWN记录",
+        "UNKNOWN不可信对账保持原锁 wrong-account",
+        "UNKNOWN不可信对账保持原锁 ambiguous",
+        "UNKNOWN不可信对账保持原锁 partial",
+        "UNKNOWN不可信对账保持原锁 wrong-version",
+        "UNKNOWN可信观察提交不自动解锁 NAS采纳才恢复",
+        "UNKNOWN禁止编辑 原商品版本和确认保持",
+        "采购UNKNOWN锁 原快照可信对账恢复",
+        "物流UNKNOWN禁止重复回填 对账恢复",
+        "PC原UNKNOWN锁不能通过切换页面解除",
+        "PC只读回传不解锁 NAS原对账采纳才恢复",
+        "PC错账号档案版本不能观察不同原任务"
+      ],
+      "actualUiAcceptance": "PENDING_W8R2B_TO_W8R2D",
+      "realPlatformAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "REV-014",
+      "priority": "P1",
+      "title": "菜单需经营优先分层并统一京东入口定位",
+      "requirements": [
+        "REQ-911-026",
+        "REQ-911-029"
+      ],
+      "pages": [
+        "DASH-001",
+        "ALL"
+      ],
+      "prototypeStatus": "CLOSED_LOCAL_PROTOTYPE",
+      "change": "四组19模块经营优先；PC七组保留完整原设计入口",
+      "passingGroups": [
+        "导航19模块158入口先业务后配置 PC7组23入口",
+        "全181场景渲染 历史2030字段437按钮追踪保留",
+        "61逻辑标题保留 无效路径与跨端混用拒绝"
+      ],
+      "actualUiAcceptance": "PENDING_W8R2B_TO_W8R2D",
+      "realPlatformAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "REV-015",
+      "priority": "P1",
+      "title": "工作台信息层级与指标可信度不足",
+      "requirements": [
+        "REQ-911-020",
+        "REQ-911-025",
+        "REQ-911-027"
+      ],
+      "pages": [
+        "DASH-001",
+        "DASH-002",
+        "DASH-003"
+      ],
+      "prototypeStatus": "CLOSED_LOCAL_PROTOTYPE",
+      "change": "待办先于指标；范围时间未观察零值过期分别显示",
+      "passingGroups": [
+        "工作台待办优先 范围时间未观察零过期区分"
+      ],
+      "actualUiAcceptance": "PENDING_W8R2B_TO_W8R2D",
+      "realPlatformAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "REV-016",
+      "priority": "P2",
+      "title": "业务文案仍有角色残留和技术噪声",
+      "requirements": [
+        "REQ-911-002",
+        "REQ-911-027"
+      ],
+      "pages": [
+        "PRD-001",
+        "STORE-004",
+        "PUR-001",
+        "PC-002",
+        "SYS-010"
+      ],
+      "prototypeStatus": "CLOSED_LOCAL_PROTOTYPE",
+      "change": "本人文案；无渲染伪审计；私密字段脱敏；设计追踪折叠",
+      "passingGroups": [
+        "确认地址可核对 私密地址不进入审计",
+        "真实演示动作审计 渲染刷新不产生伪留痕"
+      ],
+      "actualUiAcceptance": "PENDING_W8R2B_TO_W8R2D",
+      "realPlatformAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "REV-017",
+      "priority": "P2",
+      "title": "表单无障碍关联与键盘验收需补齐",
+      "requirements": [
+        "REQ-911-009",
+        "REQ-911-026",
+        "REQ-911-029"
+      ],
+      "pages": [
+        "PC-006",
+        "JD-001",
+        "LOG-002"
+      ],
+      "prototypeStatus": "CLOSED_LOCAL_PROTOTYPE",
+      "change": "label关联；确认焦点约束、Tab回环及Escape返回",
+      "passingGroups": [
+        "label关联 键盘焦点约束 Escape回到确认来源按钮"
+      ],
+      "actualUiAcceptance": "PENDING_W8R2B_TO_W8R2D",
+      "realPlatformAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "REV-018",
+      "priority": "P2",
+      "title": "桌面布局密度和长流程展示需优化",
+      "requirements": [],
+      "pages": [
+        "DASH-001",
+        "PUR-001",
+        "PC-002",
+        "ALL"
+      ],
+      "prototypeStatus": "VISUAL_PENDING",
+      "change": "布局代码已补换行与表内滚动；浏览器多宽度证据尚待核验",
+      "passingGroups": [],
+      "actualUiAcceptance": "PENDING_W8R2B_TO_W8R2D",
+      "realPlatformAcceptance": "PENDING_UNIFIED_SIT"
+    }
+  ],
+  "browserVerification": {
+    "status": "BLOCKED_LOCAL_FILE_POLICY",
+    "attempt": "file protocol preview refused; no circumventing access attempted",
+    "freshP2Screenshots": 0,
+    "next": "Verify approved HTTP hosted P2 version at common desktop widths; fixed Windows zoom remains SIT"
+  },
+  "githubPublication": {
+    "status": "PENDING_WRITE_PERMISSION",
+    "error": "403 Resource not accessible by integration",
+    "branchChanged": false,
+    "browserFallbackRequiresUserAuthorization": true
+  }
+}

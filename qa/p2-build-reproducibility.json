@@ -1,0 +1,12 @@
+{
+  "version": "9.1.1-w8r2a-p2",
+  "stable": true,
+  "sha256": {
+    "dist/app-restored.js": "9164e0f1a32947e151ec65a5803698afd160494bdb4e6aac06c27bf160b3b84b",
+    "dist/index.html": "b968e01420f9391f1cd9b4c41040acfd6fe64639ec4abb54ee5b55ceba937675",
+    "dist/prototype-map.js": "54062b5be205ca735ef29b7851744c9238f749c75d362a1116e299ff906f4441",
+    "dist/ui/page-registry.js": "967fa364234edcc035b85863c8131261ea8acc412d36cd4e8b59d8eeea964f83",
+    "dist/data/p2-contract.json": "2a0410fa058eb2ef1ac06bbe64eea5e620696b2fce423946dd45a6e01f3b8423",
+    "dist/data/p2-assets.js": "1befb163fe2a1ce85aec43bdb200e47f925053a4bae2233a8f8364149502f4b8"
+  }
+}
