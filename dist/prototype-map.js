@@ -44,7 +44,7 @@
   p.fields.forEach(f=>{if(f['中文名称']==='角色ID')f['中文名称']='操作范围';if(f['中文名称']==='角色名称')f['中文名称']='本人操作说明';});
  }
  for(const p of requirements.pcPages)if(titles[p.id])p.name=titles[p.id];
- requirements.meta.currentVersion='V9.1.1 / W8R2A-P1';
+ requirements.meta.currentVersion='V9.1.1 / W8R2A-P2';
  const modules={JD:'JD',PKG:'PRD',INST:'SYS','SYS-004':'RTE','SYS-005':'RTE','SYS-008':'SYS','SRC-006':'SRC','LOG-002':'LOGI'};
  const customIds=Object.keys(defaultViews).filter(id=>defaultViews[id].startsWith('CUR-'));
  for(const id of customIds){
@@ -88,6 +88,6 @@
   {label:'订单与履约',ids:['PC-016','PC-017','PC-018','PC-019']},
   {label:'适配与诊断',ids:['PC-006','PC-007','PC-008','PC-020']}
  ];
- window.QNPrototype={version:'9.1.1-w8r2a-p1',defaultViews,sceneTargets,scenes,route,resolve,title,badge,pcGroups,byId,originalWeb,originalPc,
+ window.QNPrototype={version:'9.1.1-w8r2a-p2',defaultViews,sceneTargets,scenes,route,resolve,title,badge,pcGroups,byId,originalWeb,originalPc,
   canonicalRoute(id,params={}){const p=byId.get(id);if(!p)throw Error('Unknown current page');const q=queryString(params);return '#/'+p.surface+'/'+id+(q?'?'+q:'');}};
 })();

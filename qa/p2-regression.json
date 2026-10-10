@@ -1,0 +1,1557 @@
+{
+  "version": "9.1.1-w8r2a-p2",
+  "generatedAt": "2026-10-10T00:09:23.987Z",
+  "runtime": "jsdom DOM interactions; visual evidence separate",
+  "groups": [
+    {
+      "name": "基线145 NAS20 PC及2030字段437按钮逐编号保留",
+      "result": "PASS"
+    },
+    {
+      "name": "导航19模块158入口先业务后配置 PC7组23入口",
+      "result": "PASS"
+    },
+    {
+      "name": "全181场景渲染 历史2030字段437按钮追踪保留",
+      "result": "PASS"
+    },
+    {
+      "name": "61逻辑标题保留 无效路径与跨端混用拒绝",
+      "result": "PASS"
+    },
+    {
+      "name": "注册表165旧编号映射同步 全页具体REQ与字段合同",
+      "result": "PASS"
+    },
+    {
+      "name": "品牌和原样式冻结字节不变",
+      "result": "PASS"
+    },
+    {
+      "name": "SHA256中文与边界符合Node加密库",
+      "result": "PASS"
+    },
+    {
+      "name": "无对象禁保存 AS-002",
+      "result": "PASS"
+    },
+    {
+      "name": "无对象禁保存 LOG-002",
+      "result": "PASS"
+    },
+    {
+      "name": "无对象禁保存 PUR-002",
+      "result": "PASS"
+    },
+    {
+      "name": "无对象禁保存 JD-001",
+      "result": "PASS"
+    },
+    {
+      "name": "无对象禁保存 JD-004",
+      "result": "PASS"
+    },
+    {
+      "name": "错店铺版本账号与JD页跨平台对象拒绝",
+      "result": "PASS"
+    },
+    {
+      "name": "本人保存标题价格新版回读保留",
+      "result": "PASS"
+    },
+    {
+      "name": "商品输入反向 product.title=",
+      "result": "PASS"
+    },
+    {
+      "name": "商品输入反向 product.price=-1",
+      "result": "PASS"
+    },
+    {
+      "name": "商品输入反向 product.price=1.001",
+      "result": "PASS"
+    },
+    {
+      "name": "商品输入反向 product.stock=1.5",
+      "result": "PASS"
+    },
+    {
+      "name": "商品输入反向 product.shipDays=31",
+      "result": "PASS"
+    },
+    {
+      "name": "单一能力勾选不等于草稿准入",
+      "result": "PASS"
+    },
+    {
+      "name": "独立必需条件阻断 category",
+      "result": "PASS"
+    },
+    {
+      "name": "独立必需条件阻断 attributes",
+      "result": "PASS"
+    },
+    {
+      "name": "独立必需条件阻断 sku",
+      "result": "PASS"
+    },
+    {
+      "name": "独立必需条件阻断 rights",
+      "result": "PASS"
+    },
+    {
+      "name": "独立必需条件阻断 quality",
+      "result": "PASS"
+    },
+    {
+      "name": "独立必需条件阻断 capability",
+      "result": "PASS"
+    },
+    {
+      "name": "独立必需条件阻断 identity",
+      "result": "PASS"
+    },
+    {
+      "name": "内衣类型必填阻断",
+      "result": "PASS"
+    },
+    {
+      "name": "草稿回读反向 wrong-account",
+      "result": "PASS"
+    },
+    {
+      "name": "草稿回读反向 partial",
+      "result": "PASS"
+    },
+    {
+      "name": "草稿回读反向 ambiguous",
+      "result": "PASS"
+    },
+    {
+      "name": "草稿回读反向 mismatch",
+      "result": "PASS"
+    },
+    {
+      "name": "REV001售价19.90改29.90旧草稿和确认失效",
+      "result": "PASS"
+    },
+    {
+      "name": "确认弹窗实值商品账号金额版本摘要内容不可变",
+      "result": "PASS"
+    },
+    {
+      "name": "确认过期拒绝执行 不产生任务",
+      "result": "PASS"
+    },
+    {
+      "name": "有未保存修改拒绝打开旧确认",
+      "result": "PASS"
+    },
+    {
+      "name": "审核发布两次本人确认 受理与在售分别显示",
+      "result": "PASS"
+    },
+    {
+      "name": "未提交对象没有固定UNKNOWN记录",
+      "result": "PASS"
+    },
+    {
+      "name": "UNKNOWN不可信对账保持原锁 wrong-account",
+      "result": "PASS"
+    },
+    {
+      "name": "UNKNOWN不可信对账保持原锁 ambiguous",
+      "result": "PASS"
+    },
+    {
+      "name": "UNKNOWN不可信对账保持原锁 partial",
+      "result": "PASS"
+    },
+    {
+      "name": "UNKNOWN不可信对账保持原锁 wrong-version",
+      "result": "PASS"
+    },
+    {
+      "name": "UNKNOWN可信观察提交不自动解锁 NAS采纳才恢复",
+      "result": "PASS"
+    },
+    {
+      "name": "UNKNOWN禁止编辑 原商品版本和确认保持",
+      "result": "PASS"
+    },
+    {
+      "name": "JD订单逐行来源生成两采购 保持原订单店铺行身份",
+      "result": "PASS"
+    },
+    {
+      "name": "订单关联错规格不生成采购",
+      "result": "PASS"
+    },
+    {
+      "name": "采购费用待补与报价变更重新核验",
+      "result": "PASS"
+    },
+    {
+      "name": "采购输入反向 purchase.unitPrice",
+      "result": "PASS"
+    },
+    {
+      "name": "采购输入反向 purchase.freight",
+      "result": "PASS"
+    },
+    {
+      "name": "采购输入反向 purchase.receiver",
+      "result": "PASS"
+    },
+    {
+      "name": "采购输入反向 purchase.address",
+      "result": "PASS"
+    },
+    {
+      "name": "采购输入反向 purchase.currency",
+      "result": "PASS"
+    },
+    {
+      "name": "采购快照商品费用账号地址 精确回读不自动支付",
+      "result": "PASS"
+    },
+    {
+      "name": "采购回读反向 wrong-account",
+      "result": "PASS"
+    },
+    {
+      "name": "采购回读反向 ambiguous",
+      "result": "PASS"
+    },
+    {
+      "name": "采购回读反向 partial",
+      "result": "PASS"
+    },
+    {
+      "name": "采购UNKNOWN锁 原快照可信对账恢复",
+      "result": "PASS"
+    },
+    {
+      "name": "物流输入反向 shipment.waybill=",
+      "result": "PASS"
+    },
+    {
+      "name": "物流输入反向 shipment.waybill=A",
+      "result": "PASS"
+    },
+    {
+      "name": "物流输入反向 shipment.qty.0=0",
+      "result": "PASS"
+    },
+    {
+      "name": "物流输入反向 shipment.qty.0=999",
+      "result": "PASS"
+    },
+    {
+      "name": "物流输入反向 shipment.qty.0=1.5",
+      "result": "PASS"
+    },
+    {
+      "name": "未映射运单冲突非待发均阻断物流",
+      "result": "PASS"
+    },
+    {
+      "name": "物流确认本批商品和数量 回读减少可发数量",
+      "result": "PASS"
+    },
+    {
+      "name": "物流UNKNOWN禁止重复回填 对账恢复",
+      "result": "PASS"
+    },
+    {
+      "name": "售后逐商品两采购 手工部分分配和余额明确",
+      "result": "PASS"
+    },
+    {
+      "name": "退款金额或币种反向 allocation.shop.0=30.01",
+      "result": "PASS"
+    },
+    {
+      "name": "退款金额或币种反向 allocation.source.0=18.01",
+      "result": "PASS"
+    },
+    {
+      "name": "退款金额或币种反向 allocation.shop.0=-1",
+      "result": "PASS"
+    },
+    {
+      "name": "退款金额或币种反向 allocation.shop.0=1.001",
+      "result": "PASS"
+    },
+    {
+      "name": "退款金额或币种反向 allocation.currency=USD",
+      "result": "PASS"
+    },
+    {
+      "name": "错误商品行采购关联拒绝",
+      "result": "PASS"
+    },
+    {
+      "name": "退款修订冲销保留历史不累计 完整分配后撤销",
+      "result": "PASS"
+    },
+    {
+      "name": "财务未知估算待分配不显示最终净利 跨币种不合并",
+      "result": "PASS"
+    },
+    {
+      "name": "财务实值且当前店铺退款已分才有最终值",
+      "result": "PASS"
+    },
+    {
+      "name": "批量范围边界 0",
+      "result": "PASS"
+    },
+    {
+      "name": "批量范围边界 1",
+      "result": "PASS"
+    },
+    {
+      "name": "批量范围边界 50",
+      "result": "PASS"
+    },
+    {
+      "name": "批量范围边界 51",
+      "result": "PASS"
+    },
+    {
+      "name": "批量保序去重 超时仅重试失败项任务不重复",
+      "result": "PASS"
+    },
+    {
+      "name": "恶意URL私网凭证脚本域名和端口拒绝",
+      "result": "PASS"
+    },
+    {
+      "name": "OCR原文文本框置信冲突 低置信须人工确认",
+      "result": "PASS"
+    },
+    {
+      "name": "OCR逐字段采纳拒绝 部分回填生成新版本",
+      "result": "PASS"
+    },
+    {
+      "name": "AI CLEAN INSPECT建议不自动改写 采纳才新版",
+      "result": "PASS"
+    },
+    {
+      "name": "媒体原件hash不变 授权质量校验 包装模糊禁派生",
+      "result": "PASS"
+    },
+    {
+      "name": "PC未配对入口 一次性码连接启动停止正向",
+      "result": "PASS"
+    },
+    {
+      "name": "配对反向 config.nasUrl",
+      "result": "PASS"
+    },
+    {
+      "name": "配对反向 config.nasUrl",
+      "result": "PASS"
+    },
+    {
+      "name": "配对反向 config.pairCode",
+      "result": "PASS"
+    },
+    {
+      "name": "配对码不可重复 地址变更连接失效",
+      "result": "PASS"
+    },
+    {
+      "name": "PC连接反向 offline",
+      "result": "PASS"
+    },
+    {
+      "name": "PC连接反向 protocol",
+      "result": "PASS"
+    },
+    {
+      "name": "登录重核验反向 wrong-seller",
+      "result": "PASS"
+    },
+    {
+      "name": "登录重核验反向 expired",
+      "result": "PASS"
+    },
+    {
+      "name": "登录重核验反向 risk",
+      "result": "PASS"
+    },
+    {
+      "name": "登录完成仍核验才恢复 变更平台再次失效",
+      "result": "PASS"
+    },
+    {
+      "name": "UTP和AI独立配置 错地址隐私字段阻断",
+      "result": "PASS"
+    },
+    {
+      "name": "PC原UNKNOWN锁不能通过切换页面解除",
+      "result": "PASS"
+    },
+    {
+      "name": "已受理写请求未证实前内容和再次同步只读",
+      "result": "PASS"
+    },
+    {
+      "name": "独立店铺草稿审核发布正向 STORE-XHS-001",
+      "result": "PASS"
+    },
+    {
+      "name": "独立店铺草稿审核发布正向 STORE-WX-001",
+      "result": "PASS"
+    },
+    {
+      "name": "不同店铺条件不共享 小红书通过不开放微信",
+      "result": "PASS"
+    },
+    {
+      "name": "确认地址可核对 私密地址不进入审计",
+      "result": "PASS"
+    },
+    {
+      "name": "PC只读回传不解锁 NAS原对账采纳才恢复",
+      "result": "PASS"
+    },
+    {
+      "name": "PC错账号档案版本不能观察不同原任务",
+      "result": "PASS"
+    },
+    {
+      "name": "字段绑定到控件或组合明细 不使用历史覆盖chip",
+      "result": "PASS"
+    },
+    {
+      "name": "原PC浏览器档案会话适配Fixture媒体和正式采集场景保留",
+      "result": "PASS"
+    },
+    {
+      "name": "PC采购任务展示原对象且无原任务时执行禁用",
+      "result": "PASS"
+    },
+    {
+      "name": "工作台待办优先 范围时间未观察零过期区分",
+      "result": "PASS"
+    },
+    {
+      "name": "真实演示动作审计 渲染刷新不产生伪留痕",
+      "result": "PASS"
+    },
+    {
+      "name": "label关联 键盘焦点约束 Escape回到确认来源按钮",
+      "result": "PASS"
+    }
+  ],
+  "routes": [
+    {
+      "surface": "web",
+      "scene": "DASH-001",
+      "currentId": "DASH-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "DASH-002",
+      "currentId": "DASH-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "DASH-003",
+      "currentId": "DASH-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "DASH-004",
+      "currentId": "DASH-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "DASH-005",
+      "currentId": "DASH-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "DASH-006",
+      "currentId": "DASH-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "DASH-007",
+      "currentId": "DASH-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "DASH-008",
+      "currentId": "DASH-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PLT-009",
+      "currentId": "SYS-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PLT-010",
+      "currentId": "SYS-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PLT-011",
+      "currentId": "SYS-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PLT-012",
+      "currentId": "SYS-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PLT-013",
+      "currentId": "SYS-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PLT-014",
+      "currentId": "SYS-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PLT-015",
+      "currentId": "SYS-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PLT-016",
+      "currentId": "SYS-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ACC-017",
+      "currentId": "SYS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ACC-018",
+      "currentId": "SYS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ACC-019",
+      "currentId": "SYS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ACC-020",
+      "currentId": "SYS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ACC-021",
+      "currentId": "SYS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ACC-022",
+      "currentId": "SYS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ACC-023",
+      "currentId": "SYS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ACC-024",
+      "currentId": "SYS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STR-025",
+      "currentId": "STORE-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STR-026",
+      "currentId": "STORE-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STR-027",
+      "currentId": "STORE-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STR-028",
+      "currentId": "STORE-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STR-029",
+      "currentId": "STORE-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STR-030",
+      "currentId": "STORE-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STR-031",
+      "currentId": "STORE-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SUP-032",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SUP-033",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SUP-034",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SUP-035",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SUP-036",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-037",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-038",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-039",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-040",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-041",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-042",
+      "currentId": "SRC-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-043",
+      "currentId": "SRC-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-044",
+      "currentId": "SRC-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-045",
+      "currentId": "SRC-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-046",
+      "currentId": "SRC-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-047",
+      "currentId": "SRC-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-048",
+      "currentId": "SRC-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-049",
+      "currentId": "SRC-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-050",
+      "currentId": "PRD-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-051",
+      "currentId": "PRD-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-052",
+      "currentId": "PRD-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-053",
+      "currentId": "PRD-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-054",
+      "currentId": "PRD-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-055",
+      "currentId": "PRD-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-056",
+      "currentId": "MED-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-057",
+      "currentId": "PRD-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-058",
+      "currentId": "PRD-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-059",
+      "currentId": "PRD-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-060",
+      "currentId": "PRD-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-061",
+      "currentId": "PRD-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-062",
+      "currentId": "PRD-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-063",
+      "currentId": "PRD-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-064",
+      "currentId": "STORE-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-065",
+      "currentId": "STORE-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-066",
+      "currentId": "SYS-007",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-067",
+      "currentId": "PRD-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-068",
+      "currentId": "PRD-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-069",
+      "currentId": "PRD-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-070",
+      "currentId": "STORE-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-071",
+      "currentId": "STORE-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-072",
+      "currentId": "STORE-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-073",
+      "currentId": "STORE-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ORD-074",
+      "currentId": "ORD-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ORD-075",
+      "currentId": "ORD-001-D",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ORD-076",
+      "currentId": "ORD-001-D",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ORD-077",
+      "currentId": "ORD-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ORD-078",
+      "currentId": "ORD-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ORD-079",
+      "currentId": "PUR-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ORD-080",
+      "currentId": "LOG-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ORD-081",
+      "currentId": "FIN-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PUR-082",
+      "currentId": "PUR-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PUR-083",
+      "currentId": "PUR-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PUR-084",
+      "currentId": "PUR-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PUR-085",
+      "currentId": "PUR-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PUR-086",
+      "currentId": "PUR-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PUR-087",
+      "currentId": "PUR-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PUR-088",
+      "currentId": "PUR-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "LOGI-089",
+      "currentId": "LOG-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "LOGI-090",
+      "currentId": "LOG-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "LOGI-091",
+      "currentId": "LOG-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "LOGI-092",
+      "currentId": "LOG-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "AS-093",
+      "currentId": "AS-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "AS-094",
+      "currentId": "AS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "AS-095",
+      "currentId": "AS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "FIN-096",
+      "currentId": "FIN-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "FIN-097",
+      "currentId": "FIN-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "TSK-098",
+      "currentId": "SYS-009",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "TSK-099",
+      "currentId": "SYS-009",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "TSK-100",
+      "currentId": "SYS-009",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "TSK-101",
+      "currentId": "SYS-009",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "TSK-102",
+      "currentId": "SYS-009",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STD-103",
+      "currentId": "CAT-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STD-104",
+      "currentId": "CAT-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STD-105",
+      "currentId": "CAT-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STD-106",
+      "currentId": "CAT-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STD-107",
+      "currentId": "SYS-007",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STD-108",
+      "currentId": "SYS-007",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "MED-109",
+      "currentId": "SYS-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "MED-110",
+      "currentId": "SYS-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "MED-111",
+      "currentId": "MED-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "MED-112",
+      "currentId": "MED-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "MED-113",
+      "currentId": "MED-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-114",
+      "currentId": "SYS-010",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-115",
+      "currentId": "SYS-010",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-116",
+      "currentId": "SYS-010",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-117",
+      "currentId": "SYS-010",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-118",
+      "currentId": "SYS-011",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-119",
+      "currentId": "SYS-010",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-120",
+      "currentId": "SYS-012",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-121",
+      "currentId": "SYS-011",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-122",
+      "currentId": "SYS-011",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "RTE-123",
+      "currentId": "SYS-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "RTE-124",
+      "currentId": "SYS-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "RTE-125",
+      "currentId": "SYS-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-126",
+      "currentId": "PRD-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-127",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SRC-128",
+      "currentId": "SRC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-129",
+      "currentId": "SYS-011",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-130",
+      "currentId": "SYS-011",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-131",
+      "currentId": "SYS-010",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-132",
+      "currentId": "SYS-010",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-133",
+      "currentId": "SYS-010",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-134",
+      "currentId": "SYS-011",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-135",
+      "currentId": "SYS-011",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-136",
+      "currentId": "SYS-011",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "MED-137",
+      "currentId": "SYS-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "MED-138",
+      "currentId": "SYS-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "STD-139",
+      "currentId": "SYS-007",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "SYS-140",
+      "currentId": "SYS-012",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CHN-141",
+      "currentId": "STORE-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "PRD-142",
+      "currentId": "PRD-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "ORD-143",
+      "currentId": "ORD-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "AS-144",
+      "currentId": "AS-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "TSK-145",
+      "currentId": "SYS-009",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-SRC-006",
+      "currentId": "SRC-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-LOG-002",
+      "currentId": "LOG-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-SYS-004",
+      "currentId": "SYS-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-SYS-005",
+      "currentId": "SYS-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-SYS-008",
+      "currentId": "SYS-008",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-PKG-001",
+      "currentId": "PKG-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-JD-001",
+      "currentId": "JD-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-JD-002",
+      "currentId": "JD-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-JD-003",
+      "currentId": "JD-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-JD-004",
+      "currentId": "JD-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-JD-005",
+      "currentId": "JD-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-JD-006",
+      "currentId": "JD-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "web",
+      "scene": "CUR-INST-001",
+      "currentId": "INST-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-001",
+      "currentId": "PC-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-002",
+      "currentId": "PC-001",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-003",
+      "currentId": "PC-002",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-004",
+      "currentId": "PC-007",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-005",
+      "currentId": "PC-007",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-006",
+      "currentId": "PC-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-007",
+      "currentId": "PC-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-008",
+      "currentId": "PC-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-009",
+      "currentId": "PC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-010",
+      "currentId": "PC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-011",
+      "currentId": "PC-004",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-012",
+      "currentId": "PC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-013",
+      "currentId": "PC-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-014",
+      "currentId": "PC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-015",
+      "currentId": "PC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-016",
+      "currentId": "PC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-017",
+      "currentId": "PC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-018",
+      "currentId": "PC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-019",
+      "currentId": "PC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "PC-020",
+      "currentId": "PC-006",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "CUR-PC-LOGIN",
+      "currentId": "PC-003",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "CUR-PC-MONITOR",
+      "currentId": "PC-005",
+      "result": "PASS"
+    },
+    {
+      "surface": "pc",
+      "scene": "CUR-PC-SETTINGS",
+      "currentId": "PC-006",
+      "result": "PASS"
+    }
+  ],
+  "coverage": {
+    "originalNas": 145,
+    "originalPc": 20,
+    "totalNas": 158,
+    "totalPc": 23,
+    "originalFieldIds": 2030,
+    "originalButtonIds": 437,
+    "logicalPages": 61,
+    "contractFields": 478,
+    "groups": 111
+  },
+  "networkCalls": 0,
+  "errors": [],
+  "summary": {
+    "passed": 111,
+    "failed": 0,
+    "skipped": 0
+  }
+}
