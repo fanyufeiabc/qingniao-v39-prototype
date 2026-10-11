@@ -14,14 +14,20 @@
     },
     "roles": [
       "OWNER",
+      "PC_WORKER"
+    ],
+    "businessScope": "个人/家庭经营工作空间；非企业级多租户 SaaS",
+    "truthSource": "NAS Server",
+    "workerBoundary": "PC Worker 仅执行授权浏览器任务并回传 Progress/Result/Evidence，不写业务数据库、不裁决业务状态。",
+    "currentVersion": "V9.2.0",
+    "historicalRoles": [
+      "OWNER",
       "OPS",
       "HUMAN",
       "AUDITOR",
       "PC_WORKER"
     ],
-    "businessScope": "个人/家庭经营工作空间；非企业级多租户 SaaS",
-    "truthSource": "NAS Server",
-    "workerBoundary": "PC Worker 仅执行授权浏览器任务并回传 Progress/Result/Evidence，不写业务数据库、不裁决业务状态。"
+    "currentPolicy": "本人为唯一业务角色；PC仅执行，不裁决。旧V3.9原件在legacy/frozen-data保留。"
   },
   "pages": [
     {
@@ -32,7 +38,7 @@
       "scenario": "DASH业务域 / 工作台",
       "purpose": "承载“工作台”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "指标名称、更新时间范围",
       "apiIds": [
@@ -208,7 +214,9 @@
           "TestID": "TST-DASH-001-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "DASH-002",
@@ -218,7 +226,7 @@
       "scenario": "DASH业务域 / 待办/人工任务",
       "purpose": "承载“待办/人工任务”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 状态摘要 + 任务表格 + 详情Drawer",
       "query": "任务ID、状态中文、时间范围",
       "apiIds": [
@@ -434,7 +442,11 @@
           "TestID": "TST-DASH-002-04"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-07"
+      ]
     },
     {
       "id": "DASH-003",
@@ -444,7 +456,7 @@
       "scenario": "DASH业务域 / 异常中心",
       "purpose": "承载“异常中心”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "指标名称、更新时间范围",
       "apiIds": [
@@ -620,7 +632,11 @@
           "TestID": "TST-DASH-003-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-07"
+      ]
     },
     {
       "id": "DASH-004",
@@ -630,7 +646,7 @@
       "scenario": "DASH业务域 / 任务概览",
       "purpose": "承载“任务概览”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 状态摘要 + 任务表格 + 详情Drawer",
       "query": "任务ID、状态中文、时间范围",
       "apiIds": [
@@ -846,7 +862,9 @@
           "TestID": "TST-DASH-004-04"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "DASH-005",
@@ -856,7 +874,7 @@
       "scenario": "DASH业务域 / 订单概览",
       "purpose": "承载“订单概览”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "指标名称、更新时间范围",
       "apiIds": [
@@ -1032,7 +1050,9 @@
           "TestID": "TST-DASH-005-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "DASH-006",
@@ -1042,7 +1062,7 @@
       "scenario": "DASH业务域 / 采集概览",
       "purpose": "承载“采集概览”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "指标名称、更新时间范围",
       "apiIds": [
@@ -1218,7 +1238,9 @@
           "TestID": "TST-DASH-006-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "DASH-007",
@@ -1228,7 +1250,7 @@
       "scenario": "DASH业务域 / 发布概览",
       "purpose": "承载“发布概览”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "指标名称、更新时间范围",
       "apiIds": [
@@ -1404,7 +1426,9 @@
           "TestID": "TST-DASH-007-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "DASH-008",
@@ -1414,7 +1438,7 @@
       "scenario": "DASH业务域 / 系统健康",
       "purpose": "承载“系统健康”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "指标名称、更新时间范围",
       "apiIds": [
@@ -1590,7 +1614,9 @@
           "TestID": "TST-DASH-008-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PLT-009",
@@ -1600,7 +1626,7 @@
       "scenario": "PLT业务域 / 货源平台",
       "purpose": "承载“货源平台”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "平台ID、平台名称、平台状态中文、默认EndpointID、当前平台版本ID、更新时间范围",
       "apiIds": [
@@ -1787,7 +1813,15 @@
           "TestID": "TST-PLT-009-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "PLT-010",
@@ -1797,7 +1831,7 @@
       "scenario": "PLT业务域 / 货源平台新增/编辑",
       "purpose": "承载“货源平台新增/编辑”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header + 分组表单 + Footer操作区",
       "query": "业务ID/名称（编辑时）",
       "apiIds": [
@@ -2008,7 +2042,15 @@
           "SYS-002",
           "STORE-001"
         ]
-      }
+      },
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "PLT-011",
@@ -2018,7 +2060,7 @@
       "scenario": "PLT业务域 / 平台地址",
       "purpose": "承载“平台地址”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "平台ID、平台名称、平台状态中文、默认EndpointID、当前平台版本ID、更新时间范围",
       "apiIds": [
@@ -2205,7 +2247,15 @@
           "TestID": "TST-PLT-011-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "PLT-012",
@@ -2215,7 +2265,7 @@
       "scenario": "PLT业务域 / 平台能力",
       "purpose": "承载“平台能力”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "平台ID、平台名称、平台状态中文、默认EndpointID、当前平台版本ID、更新时间范围",
       "apiIds": [
@@ -2402,7 +2452,15 @@
           "TestID": "TST-PLT-012-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "PLT-013",
@@ -2412,7 +2470,7 @@
       "scenario": "PLT业务域 / 销售平台",
       "purpose": "承载“销售平台”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "平台ID、平台名称、平台状态中文、默认EndpointID、当前平台版本ID、更新时间范围",
       "apiIds": [
@@ -2599,7 +2657,15 @@
           "TestID": "TST-PLT-013-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "PLT-014",
@@ -2609,7 +2675,7 @@
       "scenario": "PLT业务域 / 销售平台新增/编辑",
       "purpose": "承载“销售平台新增/编辑”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header + 分组表单 + Footer操作区",
       "query": "业务ID/名称（编辑时）",
       "apiIds": [
@@ -2820,7 +2886,15 @@
           "SYS-002",
           "STORE-001"
         ]
-      }
+      },
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "PLT-015",
@@ -2830,7 +2904,7 @@
       "scenario": "PLT业务域 / 销售平台能力",
       "purpose": "承载“销售平台能力”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "平台ID、平台名称、平台状态中文、默认EndpointID、当前平台版本ID、更新时间范围",
       "apiIds": [
@@ -3017,7 +3091,15 @@
           "TestID": "TST-PLT-015-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "PLT-016",
@@ -3027,7 +3109,7 @@
       "scenario": "PLT业务域 / 平台版本",
       "purpose": "承载“平台版本”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "平台ID、平台名称、平台状态中文、默认EndpointID、当前平台版本ID、更新时间范围",
       "apiIds": [
@@ -3214,7 +3296,15 @@
           "TestID": "TST-PLT-016-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "ACC-017",
@@ -3224,7 +3314,7 @@
       "scenario": "ACC业务域 / 货源账号",
       "purpose": "承载“货源账号”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "账号ID、平台ID、平台名称、账号名称、凭据状态中文、BrowserProfileID、更新时间范围",
       "apiIds": [
@@ -3433,7 +3523,15 @@
           "TestID": "TST-ACC-017-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "ACC-018",
@@ -3443,7 +3541,7 @@
       "scenario": "ACC业务域 / 货源账号新增/编辑",
       "purpose": "承载“货源账号新增/编辑”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header + 分组表单 + Footer操作区",
       "query": "业务ID/名称（编辑时）",
       "apiIds": [
@@ -3676,7 +3774,15 @@
           "SYS-002",
           "STORE-001"
         ]
-      }
+      },
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "ACC-019",
@@ -3686,7 +3792,7 @@
       "scenario": "ACC业务域 / 货源账号登录",
       "purpose": "承载“货源账号登录”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "账号ID、平台ID、平台名称、账号名称、凭据状态中文、BrowserProfileID、更新时间范围",
       "apiIds": [
@@ -3913,7 +4019,15 @@
           "TestID": "TST-ACC-019-04"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "ACC-020",
@@ -3923,7 +4037,7 @@
       "scenario": "ACC业务域 / 货源账号Endpoint",
       "purpose": "承载“货源账号Endpoint”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "账号ID、平台ID、平台名称、账号名称、凭据状态中文、BrowserProfileID、更新时间范围",
       "apiIds": [
@@ -4132,7 +4246,15 @@
           "TestID": "TST-ACC-020-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "ACC-021",
@@ -4142,7 +4264,7 @@
       "scenario": "ACC业务域 / 销售账号",
       "purpose": "承载“销售账号”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "账号ID、平台ID、平台名称、账号名称、凭据状态中文、BrowserProfileID、更新时间范围",
       "apiIds": [
@@ -4351,7 +4473,15 @@
           "TestID": "TST-ACC-021-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "ACC-022",
@@ -4361,7 +4491,7 @@
       "scenario": "ACC业务域 / 销售账号新增/编辑",
       "purpose": "承载“销售账号新增/编辑”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header + 分组表单 + Footer操作区",
       "query": "业务ID/名称（编辑时）",
       "apiIds": [
@@ -4594,7 +4724,15 @@
           "SYS-002",
           "STORE-001"
         ]
-      }
+      },
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "ACC-023",
@@ -4604,7 +4742,7 @@
       "scenario": "ACC业务域 / 销售账号登录",
       "purpose": "承载“销售账号登录”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "账号ID、平台ID、平台名称、账号名称、凭据状态中文、BrowserProfileID、更新时间范围",
       "apiIds": [
@@ -4831,7 +4969,15 @@
           "TestID": "TST-ACC-023-04"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "ACC-024",
@@ -4841,7 +4987,7 @@
       "scenario": "ACC业务域 / 销售账号Endpoint",
       "purpose": "承载“销售账号Endpoint”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "账号ID、平台ID、平台名称、账号名称、凭据状态中文、BrowserProfileID、更新时间范围",
       "apiIds": [
@@ -5050,7 +5196,15 @@
           "TestID": "TST-ACC-024-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "STR-025",
@@ -5060,7 +5214,7 @@
       "scenario": "STR业务域 / 店铺列表",
       "purpose": "承载“店铺列表”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "店铺ID、平台ID、平台名称、账号ID、账号名称、店铺名称、更新时间范围",
       "apiIds": [
@@ -5269,7 +5423,15 @@
           "TestID": "TST-STR-025-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "STR-026",
@@ -5279,7 +5441,7 @@
       "scenario": "STR业务域 / 店铺新增/编辑",
       "purpose": "承载“店铺新增/编辑”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header + 分组表单 + Footer操作区",
       "query": "业务ID/名称（编辑时）",
       "apiIds": [
@@ -5512,7 +5674,15 @@
           "SYS-002",
           "STORE-001"
         ]
-      }
+      },
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "STR-027",
@@ -5522,7 +5692,7 @@
       "scenario": "STR业务域 / 店铺Endpoint",
       "purpose": "承载“店铺Endpoint”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "店铺ID、平台ID、平台名称、账号ID、账号名称、店铺名称、更新时间范围",
       "apiIds": [
@@ -5731,7 +5901,15 @@
           "TestID": "TST-STR-027-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "STR-028",
@@ -5741,7 +5919,7 @@
       "scenario": "STR业务域 / 店铺工作台地址",
       "purpose": "承载“店铺工作台地址”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "店铺ID、平台ID、平台名称、账号ID、账号名称、店铺名称、更新时间范围",
       "apiIds": [
@@ -5950,7 +6128,15 @@
           "TestID": "TST-STR-028-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "STR-029",
@@ -5960,7 +6146,7 @@
       "scenario": "STR业务域 / 店铺账号关联",
       "purpose": "承载“店铺账号关联”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "店铺ID、平台ID、平台名称、账号ID、账号名称、店铺名称、更新时间范围",
       "apiIds": [
@@ -6204,7 +6390,15 @@
           "TestID": "TST-STR-029-05"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "STR-030",
@@ -6214,7 +6408,7 @@
       "scenario": "STR业务域 / 店铺状态",
       "purpose": "承载“店铺状态”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "店铺ID、平台ID、平台名称、账号ID、账号名称、店铺名称、更新时间范围",
       "apiIds": [
@@ -6423,7 +6617,15 @@
           "TestID": "TST-STR-030-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "STR-031",
@@ -6433,7 +6635,7 @@
       "scenario": "STR业务域 / 店铺路由测试",
       "purpose": "承载“店铺路由测试”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "店铺ID、平台ID、平台名称、账号ID、账号名称、店铺名称、更新时间范围",
       "apiIds": [
@@ -6642,7 +6844,15 @@
           "TestID": "TST-STR-031-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": [
+        "R920-01",
+        "R920-02",
+        "R920-03",
+        "R920-04",
+        "R920-06"
+      ]
     },
     {
       "id": "SUP-032",
@@ -6652,7 +6862,7 @@
       "scenario": "SUP业务域 / 供应商",
       "purpose": "承载“供应商”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "供应商ID、供应商名称、货源平台ID、货源平台名称、供应状态中文、更新时间范围",
       "apiIds": [
@@ -6839,7 +7049,9 @@
           "TestID": "TST-SUP-032-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SUP-033",
@@ -6849,7 +7061,7 @@
       "scenario": "SUP业务域 / 供应商新增/编辑",
       "purpose": "承载“供应商新增/编辑”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header + 分组表单 + Footer操作区",
       "query": "业务ID/名称（编辑时）",
       "apiIds": [
@@ -7020,7 +7232,9 @@
           "TestID": "TST-SUP-033-02"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SUP-034",
@@ -7030,7 +7244,7 @@
       "scenario": "SUP业务域 / 供应商详情",
       "purpose": "承载“供应商详情”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header摘要 + 分组详情 + 关联对象/日志区",
       "query": "无独立查询项",
       "apiIds": [
@@ -7200,7 +7414,9 @@
           "TestID": "TST-SUP-034-02"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SUP-035",
@@ -7210,7 +7426,7 @@
       "scenario": "SUP业务域 / 供应商商品",
       "purpose": "承载“供应商商品”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "供应商ID、供应商名称、货源平台ID、货源平台名称、供应状态中文、更新时间范围",
       "apiIds": [
@@ -7397,7 +7613,9 @@
           "TestID": "TST-SUP-035-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SUP-036",
@@ -7407,7 +7625,7 @@
       "scenario": "SUP业务域 / 供应商采购记录",
       "purpose": "承载“供应商采购记录”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "供应商ID、供应商名称、货源平台ID、货源平台名称、供应状态中文、更新时间范围",
       "apiIds": [
@@ -7594,7 +7812,9 @@
           "TestID": "TST-SUP-036-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SRC-037",
@@ -7604,7 +7824,7 @@
       "scenario": "SRC业务域 / 来源商品",
       "purpose": "承载“来源商品”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "来源商品ID、外部商品ID、商品名称、来源SKU ID、平台ID、平台名称、更新时间范围",
       "apiIds": [
@@ -7846,7 +8066,9 @@
           "TestID": "TST-SRC-037-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SRC-038",
@@ -7856,7 +8078,7 @@
       "scenario": "SRC业务域 / 来源商品详情",
       "purpose": "承载“来源商品详情”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header摘要 + 分组详情 + 关联对象/日志区",
       "query": "无独立查询项",
       "apiIds": [
@@ -8081,7 +8303,9 @@
           "TestID": "TST-SRC-038-02"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SRC-039",
@@ -8091,7 +8315,7 @@
       "scenario": "SRC业务域 / 来源SKU",
       "purpose": "承载“来源SKU”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "来源商品ID、外部商品ID、商品名称、来源SKU ID、平台ID、平台名称、更新时间范围",
       "apiIds": [
@@ -8333,7 +8557,9 @@
           "TestID": "TST-SRC-039-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SRC-040",
@@ -8343,7 +8569,7 @@
       "scenario": "SRC业务域 / 来源快照",
       "purpose": "承载“来源快照”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "来源商品ID、外部商品ID、商品名称、来源SKU ID、平台ID、平台名称、更新时间范围",
       "apiIds": [
@@ -8585,7 +8811,9 @@
           "TestID": "TST-SRC-040-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SRC-041",
@@ -8595,7 +8823,7 @@
       "scenario": "SRC业务域 / 来源媒体",
       "purpose": "承载“来源媒体”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "来源商品ID、外部商品ID、商品名称、来源SKU ID、平台ID、平台名称、更新时间范围",
       "apiIds": [
@@ -8837,7 +9065,9 @@
           "TestID": "TST-SRC-041-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SRC-042",
@@ -8847,7 +9077,7 @@
       "scenario": "SRC业务域 / 探查任务",
       "purpose": "承载“探查任务”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 状态摘要 + 任务表格 + 详情Drawer",
       "query": "任务ID、状态中文、时间范围",
       "apiIds": [
@@ -9129,7 +9359,9 @@
           "TestID": "TST-SRC-042-04"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SRC-043",
@@ -9139,7 +9371,7 @@
       "scenario": "SRC业务域 / 探查结果",
       "purpose": "承载“探查结果”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "来源商品ID、外部商品ID、商品名称、来源SKU ID、平台ID、平台名称、更新时间范围",
       "apiIds": [
@@ -9381,7 +9613,9 @@
           "TestID": "TST-SRC-043-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SRC-044",
@@ -9391,7 +9625,7 @@
       "scenario": "SRC业务域 / 候选商品",
       "purpose": "承载“候选商品”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "来源商品ID、外部商品ID、商品名称、来源SKU ID、平台ID、平台名称、更新时间范围",
       "apiIds": [
@@ -9633,7 +9867,9 @@
           "TestID": "TST-SRC-044-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SRC-045",
@@ -9643,7 +9879,7 @@
       "scenario": "SRC业务域 / 候选确认",
       "purpose": "承载“候选确认”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "来源商品ID、外部商品ID、商品名称、来源SKU ID、平台ID、平台名称、更新时间范围",
       "apiIds": [
@@ -9885,7 +10121,9 @@
           "TestID": "TST-SRC-045-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SRC-046",
@@ -9895,7 +10133,7 @@
       "scenario": "SRC业务域 / 正式采集任务",
       "purpose": "承载“正式采集任务”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 状态摘要 + 任务表格 + 详情Drawer",
       "query": "任务ID、状态中文、时间范围",
       "apiIds": [
@@ -10177,7 +10415,9 @@
           "TestID": "TST-SRC-046-04"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SRC-047",
@@ -10187,7 +10427,7 @@
       "scenario": "SRC业务域 / 采集记录",
       "purpose": "承载“采集记录”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "来源商品ID、外部商品ID、商品名称、来源SKU ID、平台ID、平台名称、更新时间范围",
       "apiIds": [
@@ -10429,7 +10669,9 @@
           "TestID": "TST-SRC-047-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SRC-048",
@@ -10439,7 +10681,7 @@
       "scenario": "SRC业务域 / Excel导入采集",
       "purpose": "承载“Excel导入采集”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "来源商品ID、外部商品ID、商品名称、来源SKU ID、平台ID、平台名称、更新时间范围",
       "apiIds": [
@@ -10681,7 +10923,9 @@
           "TestID": "TST-SRC-048-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SRC-049",
@@ -10691,7 +10935,7 @@
       "scenario": "SRC业务域 / 采集失败处理",
       "purpose": "承载“采集失败处理”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 状态摘要 + 任务表格 + 详情Drawer",
       "query": "任务ID、状态中文、时间范围",
       "apiIds": [
@@ -10955,7 +11199,9 @@
           "TestID": "TST-SRC-049-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PRD-050",
@@ -10965,7 +11211,7 @@
       "scenario": "PRD业务域 / 商品列表",
       "purpose": "承载“商品列表”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "商品ID、商品名称、草稿ID、当前版本ID、商品状态中文、标准分类ID、更新时间范围",
       "apiIds": [
@@ -11207,7 +11453,9 @@
           "TestID": "TST-PRD-050-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PRD-051",
@@ -11217,7 +11465,7 @@
       "scenario": "PRD业务域 / 商品详情",
       "purpose": "承载“商品详情”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header摘要 + 分组详情 + 关联对象/日志区",
       "query": "无独立查询项",
       "apiIds": [
@@ -11442,7 +11690,9 @@
           "TestID": "TST-PRD-051-02"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PRD-052",
@@ -11452,7 +11702,7 @@
       "scenario": "PRD业务域 / 商品编辑",
       "purpose": "承载“商品编辑”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header + 分组表单 + Footer操作区",
       "query": "业务ID/名称（编辑时）",
       "apiIds": [
@@ -11695,7 +11945,9 @@
           "TestID": "TST-PRD-052-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PRD-053",
@@ -11705,7 +11957,7 @@
       "scenario": "PRD业务域 / 商品SKU",
       "purpose": "承载“商品SKU”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "商品ID、商品名称、草稿ID、当前版本ID、商品状态中文、标准分类ID、更新时间范围",
       "apiIds": [
@@ -11947,7 +12199,9 @@
           "TestID": "TST-PRD-053-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PRD-054",
@@ -11957,7 +12211,7 @@
       "scenario": "PRD业务域 / 商品版本",
       "purpose": "承载“商品版本”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "商品ID、商品名称、草稿ID、当前版本ID、商品状态中文、标准分类ID、更新时间范围",
       "apiIds": [
@@ -12199,7 +12453,9 @@
           "TestID": "TST-PRD-054-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PRD-055",
@@ -12209,7 +12465,7 @@
       "scenario": "PRD业务域 / 商品版本对比",
       "purpose": "承载“商品版本对比”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "商品ID、商品名称、草稿ID、当前版本ID、商品状态中文、标准分类ID、更新时间范围",
       "apiIds": [
@@ -12451,7 +12707,9 @@
           "TestID": "TST-PRD-055-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PRD-056",
@@ -12461,7 +12719,7 @@
       "scenario": "PRD业务域 / 商品媒体",
       "purpose": "承载“商品媒体”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "商品ID、商品名称、草稿ID、当前版本ID、商品状态中文、标准分类ID、更新时间范围",
       "apiIds": [
@@ -12703,7 +12961,9 @@
           "TestID": "TST-PRD-056-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PRD-057",
@@ -12713,7 +12973,7 @@
       "scenario": "PRD业务域 / 商品分类属性",
       "purpose": "承载“商品分类属性”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "商品ID、商品名称、草稿ID、当前版本ID、商品状态中文、标准分类ID、更新时间范围",
       "apiIds": [
@@ -12955,7 +13215,9 @@
           "TestID": "TST-PRD-057-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PRD-058",
@@ -12965,7 +13227,7 @@
       "scenario": "PRD业务域 / 商品成本利润",
       "purpose": "承载“商品成本利润”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "商品ID、商品名称、草稿ID、当前版本ID、商品状态中文、标准分类ID、更新时间范围",
       "apiIds": [
@@ -13207,7 +13469,9 @@
           "TestID": "TST-PRD-058-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PRD-059",
@@ -13217,7 +13481,7 @@
       "scenario": "PRD业务域 / AI清洗",
       "purpose": "承载“AI清洗”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "商品ID、商品名称、草稿ID、当前版本ID、商品状态中文、标准分类ID、更新时间范围",
       "apiIds": [
@@ -13460,7 +13724,9 @@
           "TestID": "TST-PRD-059-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PRD-060",
@@ -13470,7 +13736,7 @@
       "scenario": "PRD业务域 / AI清洗结果",
       "purpose": "承载“AI清洗结果”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "商品ID、商品名称、草稿ID、当前版本ID、商品状态中文、标准分类ID、更新时间范围",
       "apiIds": [
@@ -13747,7 +14013,9 @@
           "TestID": "TST-PRD-060-05"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PRD-061",
@@ -13757,7 +14025,7 @@
       "scenario": "PRD业务域 / 商品发布准备",
       "purpose": "承载“商品发布准备”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "商品ID、商品名称、草稿ID、当前版本ID、商品状态中文、标准分类ID、更新时间范围",
       "apiIds": [
@@ -13999,7 +14267,9 @@
           "TestID": "TST-PRD-061-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PRD-062",
@@ -14009,7 +14279,7 @@
       "scenario": "PRD业务域 / 商品关联来源",
       "purpose": "承载“商品关联来源”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "商品ID、商品名称、草稿ID、当前版本ID、商品状态中文、标准分类ID、更新时间范围",
       "apiIds": [
@@ -14251,7 +14521,9 @@
           "TestID": "TST-PRD-062-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PRD-063",
@@ -14261,7 +14533,7 @@
       "scenario": "PRD业务域 / 商品关联渠道",
       "purpose": "承载“商品关联渠道”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "商品ID、商品名称、草稿ID、当前版本ID、商品状态中文、标准分类ID、更新时间范围",
       "apiIds": [
@@ -14503,7 +14775,9 @@
           "TestID": "TST-PRD-063-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "CHN-064",
@@ -14513,7 +14787,7 @@
       "scenario": "CHN业务域 / 渠道商品",
       "purpose": "承载“渠道商品”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "渠道商品ID、商品ID、商品名称、商品版本ID、平台ID、平台名称、更新时间范围",
       "apiIds": [
@@ -14744,7 +15018,9 @@
           "TestID": "TST-CHN-064-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "CHN-065",
@@ -14754,7 +15030,7 @@
       "scenario": "CHN业务域 / 渠道商品详情",
       "purpose": "承载“渠道商品详情”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header摘要 + 分组详情 + 关联对象/日志区",
       "query": "无独立查询项",
       "apiIds": [
@@ -14968,7 +15244,9 @@
           "TestID": "TST-CHN-065-02"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "CHN-066",
@@ -14978,7 +15256,7 @@
       "scenario": "CHN业务域 / 渠道映射",
       "purpose": "承载“渠道映射”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "渠道商品ID、商品ID、商品名称、商品版本ID、平台ID、平台名称、更新时间范围",
       "apiIds": [
@@ -15210,7 +15488,9 @@
           "TestID": "TST-CHN-066-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "CHN-067",
@@ -15220,7 +15500,7 @@
       "scenario": "CHN业务域 / 渠道分类映射",
       "purpose": "承载“渠道分类映射”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "渠道商品ID、商品ID、商品名称、商品版本ID、平台ID、平台名称、更新时间范围",
       "apiIds": [
@@ -15451,7 +15731,9 @@
           "TestID": "TST-CHN-067-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "CHN-068",
@@ -15461,7 +15743,7 @@
       "scenario": "CHN业务域 / 渠道属性映射",
       "purpose": "承载“渠道属性映射”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "渠道商品ID、商品ID、商品名称、商品版本ID、平台ID、平台名称、更新时间范围",
       "apiIds": [
@@ -15692,7 +15974,9 @@
           "TestID": "TST-CHN-068-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "CHN-069",
@@ -15702,7 +15986,7 @@
       "scenario": "CHN业务域 / 渠道SKU映射",
       "purpose": "承载“渠道SKU映射”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "渠道商品ID、商品ID、商品名称、商品版本ID、平台ID、平台名称、更新时间范围",
       "apiIds": [
@@ -15933,7 +16217,9 @@
           "TestID": "TST-CHN-069-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "CHN-070",
@@ -15943,7 +16229,7 @@
       "scenario": "CHN业务域 / 渠道预览",
       "purpose": "承载“渠道预览”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header上下文 + 主预览区 + 校验/差异区 + Footer确认区",
       "query": "无独立查询项",
       "apiIds": [
@@ -16191,7 +16477,9 @@
           "TestID": "TST-CHN-070-04"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "CHN-071",
@@ -16201,7 +16489,7 @@
       "scenario": "CHN业务域 / 发布任务",
       "purpose": "承载“发布任务”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 状态摘要 + 任务表格 + 详情Drawer",
       "query": "任务ID、状态中文、时间范围",
       "apiIds": [
@@ -16472,7 +16760,9 @@
           "TestID": "TST-CHN-071-04"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "CHN-072",
@@ -16482,7 +16772,7 @@
       "scenario": "CHN业务域 / 发布记录",
       "purpose": "承载“发布记录”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "渠道商品ID、商品ID、商品名称、商品版本ID、平台ID、平台名称、更新时间范围",
       "apiIds": [
@@ -16713,7 +17003,9 @@
           "TestID": "TST-CHN-072-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "CHN-073",
@@ -16723,7 +17015,7 @@
       "scenario": "CHN业务域 / 发布失败处理",
       "purpose": "承载“发布失败处理”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 状态摘要 + 任务表格 + 详情Drawer",
       "query": "任务ID、状态中文、时间范围",
       "apiIds": [
@@ -16994,7 +17286,9 @@
           "TestID": "TST-CHN-073-04"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "ORD-074",
@@ -17004,7 +17298,7 @@
       "scenario": "ORD业务域 / 订单列表",
       "purpose": "承载“订单列表”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "订单ID、平台ID、平台名称、店铺ID、店铺名称、订单状态中文、更新时间范围",
       "apiIds": [
@@ -17268,7 +17562,9 @@
           "TestID": "TST-ORD-074-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "ORD-075",
@@ -17278,7 +17574,7 @@
       "scenario": "ORD业务域 / 订单详情",
       "purpose": "承载“订单详情”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header摘要 + 分组详情 + 关联对象/日志区",
       "query": "无独立查询项",
       "apiIds": [
@@ -17525,7 +17821,9 @@
           "TestID": "TST-ORD-075-02"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "ORD-076",
@@ -17535,7 +17833,7 @@
       "scenario": "ORD业务域 / 订单明细/SKU",
       "purpose": "承载“订单明细/SKU”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "订单ID、平台ID、平台名称、店铺ID、店铺名称、订单状态中文、更新时间范围",
       "apiIds": [
@@ -17799,7 +18097,9 @@
           "TestID": "TST-ORD-076-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "ORD-077",
@@ -17809,7 +18109,7 @@
       "scenario": "ORD业务域 / 订单同步",
       "purpose": "承载“订单同步”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 状态摘要 + 任务表格 + 详情Drawer",
       "query": "任务ID、状态中文、时间范围",
       "apiIds": [
@@ -18113,7 +18413,9 @@
           "TestID": "TST-ORD-077-04"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "ORD-078",
@@ -18123,7 +18425,7 @@
       "scenario": "ORD业务域 / SKU匹配",
       "purpose": "承载“SKU匹配”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "订单ID、平台ID、平台名称、店铺ID、店铺名称、订单状态中文、更新时间范围",
       "apiIds": [
@@ -18388,7 +18690,9 @@
           "TestID": "TST-ORD-078-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "ORD-079",
@@ -18398,7 +18702,7 @@
       "scenario": "ORD业务域 / 采购建议",
       "purpose": "承载“采购建议”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "订单ID、平台ID、平台名称、店铺ID、店铺名称、订单状态中文、更新时间范围",
       "apiIds": [
@@ -18662,7 +18966,9 @@
           "TestID": "TST-ORD-079-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "ORD-080",
@@ -18672,7 +18978,7 @@
       "scenario": "ORD业务域 / 订单履约跟踪",
       "purpose": "承载“订单履约跟踪”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "订单ID、平台ID、平台名称、店铺ID、店铺名称、订单状态中文、更新时间范围",
       "apiIds": [
@@ -18936,7 +19242,9 @@
           "TestID": "TST-ORD-080-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "ORD-081",
@@ -18946,7 +19254,7 @@
       "scenario": "ORD业务域 / 订单财务",
       "purpose": "承载“订单财务”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "订单ID、平台ID、平台名称、店铺ID、店铺名称、订单状态中文、更新时间范围",
       "apiIds": [
@@ -19210,7 +19518,9 @@
           "TestID": "TST-ORD-081-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PUR-082",
@@ -19220,7 +19530,7 @@
       "scenario": "PUR业务域 / 采购建议",
       "purpose": "承载“采购建议”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "采购单ID、采购建议ID、订单ID、供应商ID、供应商名称、采购状态中文、更新时间范围",
       "apiIds": [
@@ -19440,7 +19750,9 @@
           "TestID": "TST-PUR-082-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PUR-083",
@@ -19450,7 +19762,7 @@
       "scenario": "PUR业务域 / 采购单列表",
       "purpose": "承载“采购单列表”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "采购单ID、采购建议ID、订单ID、供应商ID、供应商名称、采购状态中文、更新时间范围",
       "apiIds": [
@@ -19670,7 +19982,9 @@
           "TestID": "TST-PUR-083-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PUR-084",
@@ -19680,7 +19994,7 @@
       "scenario": "PUR业务域 / 采购单详情",
       "purpose": "承载“采购单详情”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header摘要 + 分组详情 + 关联对象/日志区",
       "query": "无独立查询项",
       "apiIds": [
@@ -19883,7 +20197,9 @@
           "TestID": "TST-PUR-084-02"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PUR-085",
@@ -19893,7 +20209,7 @@
       "scenario": "PUR业务域 / 采购确认",
       "purpose": "承载“采购确认”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "采购单ID、采购建议ID、订单ID、供应商ID、供应商名称、采购状态中文、更新时间范围",
       "apiIds": [
@@ -20113,7 +20429,9 @@
           "TestID": "TST-PUR-085-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PUR-086",
@@ -20123,7 +20441,7 @@
       "scenario": "PUR业务域 / 采购商品明细",
       "purpose": "承载“采购商品明细”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "采购单ID、采购建议ID、订单ID、供应商ID、供应商名称、采购状态中文、更新时间范围",
       "apiIds": [
@@ -20343,7 +20661,9 @@
           "TestID": "TST-PUR-086-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PUR-087",
@@ -20353,7 +20673,7 @@
       "scenario": "PUR业务域 / 采购供应商",
       "purpose": "承载“采购供应商”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "采购单ID、采购建议ID、订单ID、供应商ID、供应商名称、采购状态中文、更新时间范围",
       "apiIds": [
@@ -20573,7 +20893,9 @@
           "TestID": "TST-PUR-087-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PUR-088",
@@ -20583,7 +20905,7 @@
       "scenario": "PUR业务域 / 采购失败/异常",
       "purpose": "承载“采购失败/异常”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "采购单ID、采购建议ID、订单ID、供应商ID、供应商名称、采购状态中文、更新时间范围",
       "apiIds": [
@@ -20803,7 +21125,9 @@
           "TestID": "TST-PUR-088-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "LOGI-089",
@@ -20813,7 +21137,7 @@
       "scenario": "LOGI业务域 / 物流列表",
       "purpose": "承载“物流列表”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "物流ID、订单ID、采购单ID、物流商名称、外部物流状态中文、青鸟物流状态中文、更新时间范围",
       "apiIds": [
@@ -21011,7 +21335,9 @@
           "TestID": "TST-LOGI-089-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "LOGI-090",
@@ -21021,7 +21347,7 @@
       "scenario": "LOGI业务域 / 物流详情",
       "purpose": "承载“物流详情”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header摘要 + 分组详情 + 关联对象/日志区",
       "query": "无独立查询项",
       "apiIds": [
@@ -21202,7 +21528,9 @@
           "TestID": "TST-LOGI-090-02"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "LOGI-091",
@@ -21212,7 +21540,7 @@
       "scenario": "LOGI业务域 / 发货记录",
       "purpose": "承载“发货记录”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "物流ID、订单ID、采购单ID、物流商名称、外部物流状态中文、青鸟物流状态中文、更新时间范围",
       "apiIds": [
@@ -21410,7 +21738,9 @@
           "TestID": "TST-LOGI-091-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "LOGI-092",
@@ -21420,7 +21750,7 @@
       "scenario": "LOGI业务域 / 物流轨迹",
       "purpose": "承载“物流轨迹”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "物流ID、订单ID、采购单ID、物流商名称、外部物流状态中文、青鸟物流状态中文、更新时间范围",
       "apiIds": [
@@ -21618,7 +21948,9 @@
           "TestID": "TST-LOGI-092-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "AS-093",
@@ -21628,7 +21960,7 @@
       "scenario": "AS业务域 / 售后列表",
       "purpose": "承载“售后列表”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "售后单ID、外部售后ID、订单ID、外部状态中文、青鸟状态中文、决策状态中文、更新时间范围",
       "apiIds": [
@@ -21826,7 +22158,9 @@
           "TestID": "TST-AS-093-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "AS-094",
@@ -21836,7 +22170,7 @@
       "scenario": "AS业务域 / 售后详情",
       "purpose": "承载“售后详情”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header摘要 + 分组详情 + 关联对象/日志区",
       "query": "无独立查询项",
       "apiIds": [
@@ -22017,7 +22351,9 @@
           "TestID": "TST-AS-094-02"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "AS-095",
@@ -22027,7 +22363,7 @@
       "scenario": "AS业务域 / 售后处理/退款",
       "purpose": "承载“售后处理/退款”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 状态摘要 + 任务表格 + 详情Drawer",
       "query": "任务ID、状态中文、时间范围",
       "apiIds": [
@@ -22299,7 +22635,9 @@
           "TestID": "TST-AS-095-06"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "FIN-096",
@@ -22309,7 +22647,7 @@
       "scenario": "FIN业务域 / 财务流水",
       "purpose": "承载“财务流水”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "财务流水ID、订单ID、订单行ID、商品ID、商品名称、SKU ID、更新时间范围",
       "apiIds": [
@@ -22551,7 +22889,9 @@
           "TestID": "TST-FIN-096-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "FIN-097",
@@ -22561,7 +22901,7 @@
       "scenario": "FIN业务域 / 利润汇总",
       "purpose": "承载“利润汇总”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "财务流水ID、订单ID、订单行ID、商品ID、商品名称、SKU ID、更新时间范围",
       "apiIds": [
@@ -22803,7 +23143,9 @@
           "TestID": "TST-FIN-097-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "TSK-098",
@@ -22813,7 +23155,7 @@
       "scenario": "TSK业务域 / 任务列表",
       "purpose": "承载“任务列表”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 状态摘要 + 任务表格 + 详情Drawer",
       "query": "任务ID、状态中文、时间范围",
       "apiIds": [
@@ -23082,7 +23424,9 @@
           "TestID": "TST-TSK-098-04"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "TSK-099",
@@ -23092,7 +23436,7 @@
       "scenario": "TSK业务域 / 任务详情",
       "purpose": "承载“任务详情”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header摘要 + 分组详情 + 关联对象/日志区",
       "query": "无独立查询项",
       "apiIds": [
@@ -23317,7 +23661,9 @@
           "TestID": "TST-TSK-099-02"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "TSK-100",
@@ -23327,7 +23673,7 @@
       "scenario": "TSK业务域 / 任务执行日志",
       "purpose": "承载“任务执行日志”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 状态摘要 + 任务表格 + 详情Drawer",
       "query": "任务ID、状态中文、时间范围",
       "apiIds": [
@@ -23598,7 +23944,9 @@
           "TestID": "TST-TSK-100-04"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "TSK-101",
@@ -23608,7 +23956,7 @@
       "scenario": "TSK业务域 / Worker Lease",
       "purpose": "承载“Worker Lease”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "任务ID、业务ID、任务状态中文、WorkerID、AttemptID、TraceID、更新时间范围",
       "apiIds": [
@@ -23850,7 +24198,9 @@
           "TestID": "TST-TSK-101-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "TSK-102",
@@ -23860,7 +24210,7 @@
       "scenario": "TSK业务域 / 调度计划",
       "purpose": "承载“调度计划”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "任务ID、业务ID、任务状态中文、WorkerID、AttemptID、TraceID、更新时间范围",
       "apiIds": [
@@ -24102,7 +24452,9 @@
           "TestID": "TST-TSK-102-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "STD-103",
@@ -24112,7 +24464,7 @@
       "scenario": "STD业务域 / 标准分类树",
       "purpose": "承载“标准分类树”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "标准对象ID、标准名称、父级ID、版本ID、状态中文、更新时间范围",
       "apiIds": [
@@ -24321,7 +24673,9 @@
           "TestID": "TST-STD-103-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "STD-104",
@@ -24331,7 +24685,7 @@
       "scenario": "STD业务域 / 标准分类编辑",
       "purpose": "承载“标准分类编辑”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header + 分组表单 + Footer操作区",
       "query": "业务ID/名称（编辑时）",
       "apiIds": [
@@ -24524,7 +24878,9 @@
           "TestID": "TST-STD-104-02"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "STD-105",
@@ -24534,7 +24890,7 @@
       "scenario": "STD业务域 / 标准属性库",
       "purpose": "承载“标准属性库”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "标准对象ID、标准名称、父级ID、版本ID、状态中文、更新时间范围",
       "apiIds": [
@@ -24743,7 +25099,9 @@
           "TestID": "TST-STD-105-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "STD-106",
@@ -24753,7 +25111,7 @@
       "scenario": "STD业务域 / 分类属性绑定",
       "purpose": "承载“分类属性绑定”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "标准对象ID、标准名称、父级ID、版本ID、状态中文、更新时间范围",
       "apiIds": [
@@ -24962,7 +25320,9 @@
           "TestID": "TST-STD-106-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "STD-107",
@@ -24972,7 +25332,7 @@
       "scenario": "STD业务域 / 标准码值管理",
       "purpose": "承载“标准码值管理”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "标准对象ID、标准名称、父级ID、版本ID、状态中文、更新时间范围",
       "apiIds": [
@@ -25181,7 +25541,9 @@
           "TestID": "TST-STD-107-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "STD-108",
@@ -25191,7 +25553,7 @@
       "scenario": "STD业务域 / 标准码版本",
       "purpose": "承载“标准码版本”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "标准对象ID、标准名称、父级ID、版本ID、状态中文、更新时间范围",
       "apiIds": [
@@ -25400,7 +25762,9 @@
           "TestID": "TST-STD-108-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "MED-109",
@@ -25410,7 +25774,7 @@
       "scenario": "MED业务域 / 存储提供方",
       "purpose": "承载“存储提供方”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "媒体对象ID、存储提供方ID、存储状态中文、健康状态中文、更新时间范围",
       "apiIds": [
@@ -25652,7 +26016,9 @@
           "TestID": "TST-MED-109-05"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "MED-110",
@@ -25662,7 +26028,7 @@
       "scenario": "MED业务域 / 存储策略",
       "purpose": "承载“存储策略”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "媒体对象ID、存储提供方ID、存储状态中文、健康状态中文、更新时间范围",
       "apiIds": [
@@ -25871,7 +26237,9 @@
           "TestID": "TST-MED-110-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "MED-111",
@@ -25881,7 +26249,7 @@
       "scenario": "MED业务域 / 媒体对象列表",
       "purpose": "承载“媒体对象列表”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "媒体对象ID、存储提供方ID、存储状态中文、健康状态中文、更新时间范围",
       "apiIds": [
@@ -26090,7 +26458,9 @@
           "TestID": "TST-MED-111-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "MED-112",
@@ -26100,7 +26470,7 @@
       "scenario": "MED业务域 / 媒体上传/恢复",
       "purpose": "承载“媒体上传/恢复”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "媒体对象ID、存储提供方ID、存储状态中文、健康状态中文、更新时间范围",
       "apiIds": [
@@ -26309,7 +26679,9 @@
           "TestID": "TST-MED-112-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "MED-113",
@@ -26319,7 +26691,7 @@
       "scenario": "MED业务域 / 媒体引用关系",
       "purpose": "承载“媒体引用关系”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "媒体对象ID、存储提供方ID、存储状态中文、健康状态中文、更新时间范围",
       "apiIds": [
@@ -26528,7 +26900,9 @@
           "TestID": "TST-MED-113-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SYS-114",
@@ -26538,7 +26912,7 @@
       "scenario": "SYS业务域 / 用户与权限",
       "purpose": "承载“用户与权限”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "配置/对象ID、对象名称、状态中文、启用状态中文、TraceID、更新时间范围",
       "apiIds": [
@@ -26736,7 +27110,9 @@
           "TestID": "TST-SYS-114-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SYS-115",
@@ -26746,7 +27122,7 @@
       "scenario": "SYS业务域 / 角色权限矩阵",
       "purpose": "承载“角色权限矩阵”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "配置/对象ID、对象名称、状态中文、启用状态中文、TraceID、更新时间范围",
       "apiIds": [
@@ -26944,7 +27320,9 @@
           "TestID": "TST-SYS-115-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SYS-116",
@@ -26954,7 +27332,7 @@
       "scenario": "SYS业务域 / SecretRef",
       "purpose": "承载“SecretRef”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "配置/对象ID、对象名称、状态中文、启用状态中文、TraceID、更新时间范围",
       "apiIds": [
@@ -27152,7 +27530,9 @@
           "TestID": "TST-SYS-116-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SYS-117",
@@ -27162,7 +27542,7 @@
       "scenario": "SYS业务域 / 审计日志",
       "purpose": "承载“审计日志”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "配置/对象ID、对象名称、状态中文、启用状态中文、TraceID、更新时间范围",
       "apiIds": [
@@ -27360,7 +27740,9 @@
           "TestID": "TST-SYS-117-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SYS-118",
@@ -27370,7 +27752,7 @@
       "scenario": "SYS业务域 / 运行日志",
       "purpose": "承载“运行日志”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "配置/对象ID、对象名称、状态中文、启用状态中文、TraceID、更新时间范围",
       "apiIds": [
@@ -27568,7 +27950,9 @@
           "TestID": "TST-SYS-118-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SYS-119",
@@ -27578,7 +27962,7 @@
       "scenario": "SYS业务域 / 安全事件",
       "purpose": "承载“安全事件”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "配置/对象ID、对象名称、状态中文、启用状态中文、TraceID、更新时间范围",
       "apiIds": [
@@ -27776,7 +28160,9 @@
           "TestID": "TST-SYS-119-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SYS-120",
@@ -27786,7 +28172,7 @@
       "scenario": "SYS业务域 / 备份恢复",
       "purpose": "承载“备份恢复”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "配置/对象ID、对象名称、状态中文、启用状态中文、TraceID、更新时间范围",
       "apiIds": [
@@ -27984,7 +28370,9 @@
           "TestID": "TST-SYS-120-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SYS-121",
@@ -27994,7 +28382,7 @@
       "scenario": "SYS业务域 / 系统参数",
       "purpose": "承载“系统参数”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "配置/对象ID、对象名称、状态中文、启用状态中文、TraceID、更新时间范围",
       "apiIds": [
@@ -28192,7 +28580,9 @@
           "TestID": "TST-SYS-121-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SYS-122",
@@ -28202,7 +28592,7 @@
       "scenario": "SYS业务域 / 诊断中心",
       "purpose": "承载“诊断中心”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "配置/对象ID、对象名称、状态中文、启用状态中文、TraceID、更新时间范围",
       "apiIds": [
@@ -28400,7 +28790,9 @@
           "TestID": "TST-SYS-122-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "RTE-123",
@@ -28410,7 +28802,7 @@
       "scenario": "RTE业务域 / Worker管理",
       "purpose": "承载“Worker管理”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "WorkerID、BrowserProfileID、BrowserSessionID、平台ID、平台名称、账号ID、更新时间范围",
       "apiIds": [
@@ -28652,7 +29044,9 @@
           "TestID": "TST-RTE-123-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "RTE-124",
@@ -28662,7 +29056,7 @@
       "scenario": "RTE业务域 / BrowserSession",
       "purpose": "承载“BrowserSession”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "WorkerID、BrowserProfileID、BrowserSessionID、平台ID、平台名称、账号ID、更新时间范围",
       "apiIds": [
@@ -28904,7 +29298,9 @@
           "TestID": "TST-RTE-124-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "RTE-125",
@@ -28914,7 +29310,7 @@
       "scenario": "RTE业务域 / RouteResolver/路由预览",
       "purpose": "承载“RouteResolver/路由预览”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header上下文 + 主预览区 + 校验/差异区 + Footer确认区",
       "query": "无独立查询项",
       "apiIds": [
@@ -29156,7 +29552,9 @@
           "TestID": "TST-RTE-125-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PRD-126",
@@ -29166,7 +29564,7 @@
       "scenario": "PRD业务域 / 商品编辑后预览",
       "purpose": "承载“商品编辑后预览”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header + 分组表单 + Footer操作区",
       "query": "业务ID/名称（编辑时）",
       "apiIds": [
@@ -29408,7 +29806,9 @@
           "TestID": "TST-PRD-126-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SRC-127",
@@ -29418,7 +29818,7 @@
       "scenario": "SRC业务域 / 采集预览",
       "purpose": "承载“采集预览”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header上下文 + 主预览区 + 校验/差异区 + Footer确认区",
       "query": "无独立查询项",
       "apiIds": [
@@ -29660,7 +30060,9 @@
           "TestID": "TST-SRC-127-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SRC-128",
@@ -29670,7 +30072,7 @@
       "scenario": "SRC业务域 / 来源版本差异",
       "purpose": "承载“来源版本差异”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "来源商品ID、外部商品ID、商品名称、来源SKU ID、平台ID、平台名称、更新时间范围",
       "apiIds": [
@@ -29912,7 +30314,9 @@
           "TestID": "TST-SRC-128-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SYS-129",
@@ -29922,7 +30326,7 @@
       "scenario": "SYS业务域 / 系统设置",
       "purpose": "承载“系统设置”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "配置/对象ID、对象名称、状态中文、启用状态中文、TraceID、更新时间范围",
       "apiIds": [
@@ -30120,7 +30524,9 @@
           "TestID": "TST-SYS-129-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SYS-130",
@@ -30130,7 +30536,7 @@
       "scenario": "SYS业务域 / 品牌设置",
       "purpose": "承载“品牌设置”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "配置/对象ID、对象名称、状态中文、启用状态中文、TraceID、更新时间范围",
       "apiIds": [
@@ -30328,7 +30734,9 @@
           "TestID": "TST-SYS-130-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SYS-131",
@@ -30338,7 +30746,7 @@
       "scenario": "SYS业务域 / 用户列表",
       "purpose": "承载“用户列表”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "配置/对象ID、对象名称、状态中文、启用状态中文、TraceID、更新时间范围",
       "apiIds": [
@@ -30536,7 +30944,9 @@
           "TestID": "TST-SYS-131-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SYS-132",
@@ -30546,7 +30956,7 @@
       "scenario": "SYS业务域 / 用户详情/编辑",
       "purpose": "承载“用户详情/编辑”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header + 分组表单 + Footer操作区",
       "query": "业务ID/名称（编辑时）",
       "apiIds": [
@@ -30728,7 +31138,9 @@
           "TestID": "TST-SYS-132-02"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SYS-133",
@@ -30738,7 +31150,7 @@
       "scenario": "SYS业务域 / 角色列表/编辑",
       "purpose": "承载“角色列表/编辑”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header + 分组表单 + Footer操作区",
       "query": "业务ID/名称（编辑时）",
       "apiIds": [
@@ -30920,7 +31332,9 @@
           "TestID": "TST-SYS-133-02"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SYS-134",
@@ -30930,7 +31344,7 @@
       "scenario": "SYS业务域 / 菜单管理",
       "purpose": "承载“菜单管理”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "配置/对象ID、对象名称、状态中文、启用状态中文、TraceID、更新时间范围",
       "apiIds": [
@@ -31128,7 +31542,9 @@
           "TestID": "TST-SYS-134-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SYS-135",
@@ -31138,7 +31554,7 @@
       "scenario": "SYS业务域 / 日志中心",
       "purpose": "承载“日志中心”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "配置/对象ID、对象名称、状态中文、启用状态中文、TraceID、更新时间范围",
       "apiIds": [
@@ -31336,7 +31752,9 @@
           "TestID": "TST-SYS-135-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SYS-136",
@@ -31346,7 +31764,7 @@
       "scenario": "SYS业务域 / 日志详情",
       "purpose": "承载“日志详情”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header摘要 + 分组详情 + 关联对象/日志区",
       "query": "无独立查询项",
       "apiIds": [
@@ -31527,7 +31945,9 @@
           "TestID": "TST-SYS-136-02"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "MED-137",
@@ -31537,7 +31957,7 @@
       "scenario": "MED业务域 / 存储健康与测试",
       "purpose": "承载“存储健康与测试”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "媒体对象ID、存储提供方ID、存储状态中文、健康状态中文、更新时间范围",
       "apiIds": [
@@ -31746,7 +32166,9 @@
           "TestID": "TST-MED-137-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "MED-138",
@@ -31756,7 +32178,7 @@
       "scenario": "MED业务域 / 存储迁移",
       "purpose": "承载“存储迁移”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "媒体对象ID、存储提供方ID、存储状态中文、健康状态中文、更新时间范围",
       "apiIds": [
@@ -31965,7 +32387,9 @@
           "TestID": "TST-MED-138-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "STD-139",
@@ -31975,7 +32399,7 @@
       "scenario": "STD业务域 / 数据字典",
       "purpose": "承载“数据字典”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "标准对象ID、标准名称、父级ID、版本ID、状态中文、更新时间范围",
       "apiIds": [
@@ -32184,7 +32608,9 @@
           "TestID": "TST-STD-139-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "SYS-140",
@@ -32194,7 +32620,7 @@
       "scenario": "SYS业务域 / 系统版本/升级",
       "purpose": "承载“系统版本/升级”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "配置/对象ID、对象名称、状态中文、启用状态中文、TraceID、更新时间范围",
       "apiIds": [
@@ -32392,7 +32818,9 @@
           "TestID": "TST-SYS-140-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "CHN-141",
@@ -32402,7 +32830,7 @@
       "scenario": "CHN业务域 / 发布回执对账",
       "purpose": "承载“发布回执对账”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "渠道商品ID、商品ID、商品名称、商品版本ID、平台ID、平台名称、更新时间范围",
       "apiIds": [
@@ -32634,7 +33062,9 @@
           "TestID": "TST-CHN-141-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "PRD-142",
@@ -32644,7 +33074,7 @@
       "scenario": "PRD业务域 / 商品编辑冲突",
       "purpose": "承载“商品编辑冲突”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "Header + 分组表单 + Footer操作区",
       "query": "业务ID/名称（编辑时）",
       "apiIds": [
@@ -32870,7 +33300,9 @@
           "TestID": "TST-PRD-142-02"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "ORD-143",
@@ -32880,7 +33312,7 @@
       "scenario": "ORD业务域 / 订单异常/冲突",
       "purpose": "承载“订单异常/冲突”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "订单ID、平台ID、平台名称、店铺ID、店铺名称、订单状态中文、更新时间范围",
       "apiIds": [
@@ -33144,7 +33576,9 @@
           "TestID": "TST-ORD-143-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "AS-144",
@@ -33154,7 +33588,7 @@
       "scenario": "AS业务域 / 售后异常/冲突",
       "purpose": "承载“售后异常/冲突”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 工具栏 + 真实业务字段表格 + 分页",
       "query": "售后单ID、外部售后ID、订单ID、外部状态中文、青鸟状态中文、决策状态中文、更新时间范围",
       "apiIds": [
@@ -33352,7 +33786,9 @@
           "TestID": "TST-AS-144-03"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     },
     {
       "id": "TSK-145",
@@ -33362,7 +33798,7 @@
       "scenario": "TSK业务域 / 人工任务中心",
       "purpose": "承载“人工任务中心”业务操作；只使用本页已确认BusinessObject、Field、Button和API事实。",
       "entry": "菜单或已列明TargetPageID；详情返回恢复QueryContext",
-      "permission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "permission": "本人经营及核对；PC_WORKER仅执行授权任务，不写业务数据库",
       "layout": "查询区 + 状态摘要 + 任务表格 + 详情Drawer",
       "query": "任务ID、状态中文、时间范围",
       "apiIds": [
@@ -33632,7 +34068,9 @@
           "TestID": "TST-TSK-145-04"
         }
       ],
-      "freeze": "V3.9-FROZEN"
+      "freeze": "V3.9-FROZEN",
+      "v920HistoricalPermission": "OWNER全量；OPS按业务域；HUMAN仅人工任务；AUDITOR只读审计；PC_WORKER无Web业务写权限；最终按PermissionCode计算",
+      "v920Requirements": []
     }
   ],
   "pcPages": [
@@ -39234,5 +39672,293 @@
       "判定依据": "TBD=0，未决标记=0",
       "结果": "PASS"
     }
-  ]
+  ],
+  "v920Revision": {
+    "rules": [
+      {
+        "id": "R920-01",
+        "feature": "平台和账号分别管理",
+        "pages": [
+          "SYS-001",
+          "SYS-002",
+          "STORE-001"
+        ],
+        "rule": "多个货源/销售平台、各平台多个账号；配置登记不开放适配。平台、账号和店铺均可新增、编辑及停用，身份历史不删。配置停用须先处理活动任务或UNKNOWN锁。",
+        "implementation": "configuration-flow.js; V038; configuration-ui.js",
+        "localTests": [
+          "v920-login-endpoints.test.js",
+          "w8r2b-c1-configuration.test.js",
+          "w8r2b-c1-ui-pc.test.js",
+          "v911v11-platform-setup.test.js",
+          "multi-profile.test.js",
+          "pc-console.test.js"
+        ],
+        "externalAcceptance": "PENDING_UNIFIED_SIT",
+        "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+      },
+      {
+        "id": "R920-02",
+        "feature": "指定店铺后台地址",
+        "pages": [
+          "STORE-001",
+          "PC-003"
+        ],
+        "rule": "本人维护店铺managementUrl。登录请求优先店铺后台地址，其次明确配置的平台loginUrl；无地址则阻断，禁止推测平台官网。地址、方式、账号、店铺、档案和设备按当前版本冻结。",
+        "implementation": "configuration-flow.js; V038",
+        "localTests": [
+          "v920-login-endpoints.test.js",
+          "w8r2b-c1-configuration.test.js",
+          "w8r2b-c1-ui-pc.test.js",
+          "v911v11-platform-setup.test.js",
+          "multi-profile.test.js",
+          "pc-console.test.js"
+        ],
+        "externalAcceptance": "PENDING_UNIFIED_SIT",
+        "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+      },
+      {
+        "id": "R920-03",
+        "feature": "扫码和账号密码",
+        "pages": [
+          "SYS-002",
+          "PC-003"
+        ],
+        "rule": "本人在固定PC的独立平台网页扫码或输入账号密码。青鸟不采集密码或验证码。是否支持扫码由平台实际页面决定；不支持时本人改选支持方式。扫码完成仅为动作，成功需身份核对，不自动设linked=true。",
+        "implementation": "configuration-login.js; configuration-login UI",
+        "localTests": [
+          "v920-login-endpoints.test.js",
+          "w8r2b-c1-configuration.test.js",
+          "w8r2b-c1-ui-pc.test.js",
+          "v911v11-platform-setup.test.js",
+          "multi-profile.test.js",
+          "pc-console.test.js"
+        ],
+        "externalAcceptance": "PENDING_UNIFIED_SIT",
+        "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+      },
+      {
+        "id": "R920-04",
+        "feature": "本机Cookie登录状态",
+        "pages": [
+          "SYS-002",
+          "PC-003"
+        ],
+        "rule": "优先复用同账号独立浏览器档案的登录状态；高级导入仅在本机控制台选择64KB以内JSON，本人确认后校验平台域名、到期、格式与重复项，注入指定档案并回读页面。内容不传NAS、不写青鸟配置或日志；失效或串号需重登并核对。不同账号不共享档案。",
+        "implementation": "local-cookie-import.js; configuration-login.js; PC console",
+        "localTests": [
+          "v920-login-endpoints.test.js",
+          "w8r2b-c1-configuration.test.js",
+          "w8r2b-c1-ui-pc.test.js",
+          "v911v11-platform-setup.test.js",
+          "multi-profile.test.js",
+          "pc-console.test.js"
+        ],
+        "externalAcceptance": "PENDING_UNIFIED_SIT",
+        "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+      },
+      {
+        "id": "R920-05",
+        "feature": "区分UTP和浏览器授权",
+        "pages": [
+          "SYS-001",
+          "SYS-002",
+          "SRC-001",
+          "PUR-003",
+          "PC-003"
+        ],
+        "rule": "1688 UTP授权会话与PC浏览器Cookie分别管理。UTP session_status及能力合同决定UTP身份/可执行性，不能把网页登录或扫码当成UTP授权成功。历史linked=false时只读能力可用，不写死所有能力必须Login+Link；采购按独立买家身份与写合同核验。登录/Link关系仍待真实SIT。",
+        "implementation": "existing UTP adapters; operation-specific contracts",
+        "localTests": [
+          "v920-login-endpoints.test.js",
+          "w8r2b-c1-configuration.test.js",
+          "w8r2b-c1-ui-pc.test.js",
+          "v911v11-platform-setup.test.js",
+          "multi-profile.test.js",
+          "pc-console.test.js"
+        ],
+        "externalAcceptance": "PENDING_UNIFIED_SIT",
+        "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+      },
+      {
+        "id": "R920-06",
+        "feature": "PC连接状态",
+        "pages": [
+          "SYS-003",
+          "PC-001",
+          "PC-002",
+          "PC-003"
+        ],
+        "rule": "配对令牌一次展示且不落盘；每账号独立档案及目录，固定配对设备。设备配对、最近心跳、Windows交互会话、平台会话、本人身份核对与业务适配分别显示。NAS页面打开127.0.0.1控制台须在本人固定PC上访问。停Agent后登录，关闭登录浏览器再启动，不能同时占用档案。",
+        "implementation": "platform-setup.js; console.js; profiles.js; configuration-ui.js",
+        "localTests": [
+          "v920-login-endpoints.test.js",
+          "w8r2b-c1-configuration.test.js",
+          "w8r2b-c1-ui-pc.test.js",
+          "v911v11-platform-setup.test.js",
+          "multi-profile.test.js",
+          "pc-console.test.js"
+        ],
+        "externalAcceptance": "PENDING_UNIFIED_SIT",
+        "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+      },
+      {
+        "id": "R920-07",
+        "feature": "人工处理和恢复",
+        "pages": [
+          "DASH-002",
+          "DASH-003",
+          "SYS-009",
+          "PC-003",
+          "PC-006"
+        ],
+        "rule": "登录、验证码、风控和身份异常等待本人；人工在固定PC完成处理，再观察身份并回NAS确认。身份确认不代替发布、采购或物流关键确认。任务等待人工与写入后结果未知分别恢复；结果未知保留锁、原确认和外部身份，只允许只读对账，不重放原写入。",
+        "implementation": "existing service.js/sweeper/domain operations/executors",
+        "localTests": [
+          "pglite.integration.test.js",
+          "nas-http.integration.test.js",
+          "lease-keeper.test.js",
+          "w8r1-installation-workflow.test.js",
+          "w8r1-installation-http.test.js",
+          "w8r1-pc-installation.test.js"
+        ],
+        "externalAcceptance": "PENDING_UNIFIED_SIT",
+        "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+      },
+      {
+        "id": "R920-08",
+        "feature": "商品全流程",
+        "pages": [
+          "SRC-001",
+          "PRD-001",
+          "PRD-002",
+          "PKG-001",
+          "CAT-001"
+        ],
+        "rule": "搜索/链接/店铺采集→选择→落库→商品列表→编辑保存回读。原始证据、商品/SKU身份、分页去重、币种金额单位、价格/库存观察时间、媒体来源授权和质量均保留。包装字段先人工核对，旧版本阻断覆盖。AI CLEAN/INSPECT和OCR仅提供可追溯建议。袜子内衣的材质、成分、尺码、包装等不得由模型猜测。",
+        "implementation": "source adapters/workspace/workbench/packaging OCR/category/media",
+        "localTests": [
+          "w4-workbench.integration.test.js",
+          "w8r2b-ui.test.js",
+          "packaging-ocr.test.js",
+          "product-ai.integration.test.js",
+          "local-ai.test.js",
+          "w3-media.integration.test.js"
+        ],
+        "externalAcceptance": "PENDING_UNIFIED_SIT",
+        "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+      },
+      {
+        "id": "R920-09",
+        "feature": "投影草稿及发布",
+        "pages": [
+          "STORE-002",
+          "STORE-003",
+          "STORE-004",
+          "JD-001",
+          "JD-005"
+        ],
+        "rule": "每个商品版本向指定店铺投影；类目、SKU和媒体映射通过后同步草稿并回读。本人核对快照和当前版本后提交审核/发布。提交回执、审核中/驳回、在售分别回读，禁止把点击成功当成在售。",
+        "implementation": "store-publication/jd-native-draft/jd-publication and existing executors",
+        "localTests": [
+          "w5-publication.integration.test.js",
+          "w5-publication-verifier.test.js",
+          "publication-executor.test.js",
+          "xhs-publication-adapter.test.js",
+          "w7r2-wechat-publication.integration.test.js",
+          "w7r6b-jd-native.test.js",
+          "w7r6c-jd-publication.test.js"
+        ],
+        "externalAcceptance": "PENDING_UNIFIED_SIT",
+        "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+      },
+      {
+        "id": "R920-10",
+        "feature": "订单回流及采购",
+        "pages": [
+          "ORD-001",
+          "ORD-001-D",
+          "PUR-001",
+          "PUR-002",
+          "PUR-003",
+          "JD-006"
+        ],
+        "rule": "店铺、订单、订单项、SKU和包裹身份分别保存，分页重叠去重并回读。销售明细按货源SKU映射生成采购草稿，本人核对价格、数量、地址和平台身份后建单，外部订单编号回读。支付本人在外部平台执行；缺明细不得推断采购数量。",
+        "implementation": "store-order-sync/wechat-order-read/jd-order-read/purchase-workflow",
+        "localTests": [
+          "store-order-sync.integration.test.js",
+          "xhs-orders.test.js",
+          "w7r1-wechat-orders.integration.test.js",
+          "w7r7-jd-orders.test.js",
+          "w6-purchase.integration.test.js",
+          "purchase-readback.integration.test.js",
+          "utp-purchase.test.js",
+          "w7r3-wechat-purchase.integration.test.js",
+          "w7r8-jd-purchase.integration.test.js"
+        ],
+        "externalAcceptance": "PENDING_UNIFIED_SIT",
+        "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+      },
+      {
+        "id": "R920-11",
+        "feature": "采购及店铺物流",
+        "pages": [
+          "LOG-001",
+          "LOG-002"
+        ],
+        "rule": "采购包裹与销售订单项按明细关联，处理多采购单、多包裹、部分发货、拆合包。本人核对承运商、运单及配送身份，确认同步后回读；同承运商+运单不得重复发货，UNKNOWN先对账。缺真实多包裹样本标待验证。",
+        "implementation": "fulfillment-workflow; platform origin/adapters",
+        "localTests": [
+          "w6r2-fulfillment.integration.test.js",
+          "w6r2-fulfillment.test.js",
+          "w7r4-wechat-fulfillment.integration.test.js",
+          "w7r9-jd-fulfillment.integration.test.js"
+        ],
+        "externalAcceptance": "PENDING_UNIFIED_SIT",
+        "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+      },
+      {
+        "id": "R920-12",
+        "feature": "售后费用及退款",
+        "pages": [
+          "AS-001",
+          "AS-002",
+          "FIN-003"
+        ],
+        "rule": "一笔店铺售后涉及多采购单，由本人按商品明细分别关联，退款金额本人手工分配。两侧售后、费用、退款分别核对，缺失显示待补/估算/待分配；不自动支付退款或裁决。不把两侧退款抵销当成结算完成。",
+        "implementation": "aftercare-workflow/aftersale/finance and platform origins",
+        "localTests": [
+          "w6r3-aftercare.integration.test.js",
+          "w6r3-aftercare.test.js",
+          "w6r3-ui.test.js",
+          "w7r5-wechat-aftercare.integration.test.js",
+          "w7r10-jd-aftercare.integration.test.js",
+          "human-finance.integration.test.js"
+        ],
+        "externalAcceptance": "PENDING_UNIFIED_SIT",
+        "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+      },
+      {
+        "id": "R920-13",
+        "feature": "证据与版本",
+        "pages": [
+          "all"
+        ],
+        "rule": "设计支持、源码实现、本地模拟/HTTP回归、真实平台验证分别记录。保留原需求与字段按钮编号；V001–V037原SQL不改，仅加V038。空开发库用38迁移；现库先备份、账本及重复项检查，生产后置SIT。原型不包含真实Cookie、密码、订单个人信息。",
+        "implementation": "release/audit/contract/tests/installation workflow",
+        "localTests": [
+          "pglite.integration.test.js",
+          "nas-http.integration.test.js",
+          "lease-keeper.test.js",
+          "w8r1-installation-workflow.test.js",
+          "w8r1-installation-http.test.js",
+          "w8r1-pc-installation.test.js"
+        ],
+        "externalAcceptance": "PENDING_UNIFIED_SIT",
+        "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+      }
+    ],
+    "contract": "data/configuration-contract.json",
+    "externalAcceptance": "PENDING_UNIFIED_SIT",
+    "legacyRouteDifferences": 67
+  }
 }

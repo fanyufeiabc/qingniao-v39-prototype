@@ -1,0 +1,283 @@
+[
+  {
+    "id": "R920-01",
+    "feature": "平台和账号分别管理",
+    "pages": [
+      "SYS-001",
+      "SYS-002",
+      "STORE-001"
+    ],
+    "rule": "多个货源/销售平台、各平台多个账号；配置登记不开放适配。平台、账号和店铺均可新增、编辑及停用，身份历史不删。配置停用须先处理活动任务或UNKNOWN锁。",
+    "implementation": "configuration-flow.js; V038; configuration-ui.js",
+    "localTests": [
+      "v920-login-endpoints.test.js",
+      "w8r2b-c1-configuration.test.js",
+      "w8r2b-c1-ui-pc.test.js",
+      "v911v11-platform-setup.test.js",
+      "multi-profile.test.js",
+      "pc-console.test.js"
+    ],
+    "externalAcceptance": "PENDING_UNIFIED_SIT",
+    "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+  },
+  {
+    "id": "R920-02",
+    "feature": "指定店铺后台地址",
+    "pages": [
+      "STORE-001",
+      "PC-003"
+    ],
+    "rule": "本人维护店铺managementUrl。登录请求优先店铺后台地址，其次明确配置的平台loginUrl；无地址则阻断，禁止推测平台官网。地址、方式、账号、店铺、档案和设备按当前版本冻结。",
+    "implementation": "configuration-flow.js; V038",
+    "localTests": [
+      "v920-login-endpoints.test.js",
+      "w8r2b-c1-configuration.test.js",
+      "w8r2b-c1-ui-pc.test.js",
+      "v911v11-platform-setup.test.js",
+      "multi-profile.test.js",
+      "pc-console.test.js"
+    ],
+    "externalAcceptance": "PENDING_UNIFIED_SIT",
+    "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+  },
+  {
+    "id": "R920-03",
+    "feature": "扫码和账号密码",
+    "pages": [
+      "SYS-002",
+      "PC-003"
+    ],
+    "rule": "本人在固定PC的独立平台网页扫码或输入账号密码。青鸟不采集密码或验证码。是否支持扫码由平台实际页面决定；不支持时本人改选支持方式。扫码完成仅为动作，成功需身份核对，不自动设linked=true。",
+    "implementation": "configuration-login.js; configuration-login UI",
+    "localTests": [
+      "v920-login-endpoints.test.js",
+      "w8r2b-c1-configuration.test.js",
+      "w8r2b-c1-ui-pc.test.js",
+      "v911v11-platform-setup.test.js",
+      "multi-profile.test.js",
+      "pc-console.test.js"
+    ],
+    "externalAcceptance": "PENDING_UNIFIED_SIT",
+    "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+  },
+  {
+    "id": "R920-04",
+    "feature": "本机Cookie登录状态",
+    "pages": [
+      "SYS-002",
+      "PC-003"
+    ],
+    "rule": "优先复用同账号独立浏览器档案的登录状态；高级导入仅在本机控制台选择64KB以内JSON，本人确认后校验平台域名、到期、格式与重复项，注入指定档案并回读页面。内容不传NAS、不写青鸟配置或日志；失效或串号需重登并核对。不同账号不共享档案。",
+    "implementation": "local-cookie-import.js; configuration-login.js; PC console",
+    "localTests": [
+      "v920-login-endpoints.test.js",
+      "w8r2b-c1-configuration.test.js",
+      "w8r2b-c1-ui-pc.test.js",
+      "v911v11-platform-setup.test.js",
+      "multi-profile.test.js",
+      "pc-console.test.js"
+    ],
+    "externalAcceptance": "PENDING_UNIFIED_SIT",
+    "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+  },
+  {
+    "id": "R920-05",
+    "feature": "区分UTP和浏览器授权",
+    "pages": [
+      "SYS-001",
+      "SYS-002",
+      "SRC-001",
+      "PUR-003",
+      "PC-003"
+    ],
+    "rule": "1688 UTP授权会话与PC浏览器Cookie分别管理。UTP session_status及能力合同决定UTP身份/可执行性，不能把网页登录或扫码当成UTP授权成功。历史linked=false时只读能力可用，不写死所有能力必须Login+Link；采购按独立买家身份与写合同核验。登录/Link关系仍待真实SIT。",
+    "implementation": "existing UTP adapters; operation-specific contracts",
+    "localTests": [
+      "v920-login-endpoints.test.js",
+      "w8r2b-c1-configuration.test.js",
+      "w8r2b-c1-ui-pc.test.js",
+      "v911v11-platform-setup.test.js",
+      "multi-profile.test.js",
+      "pc-console.test.js"
+    ],
+    "externalAcceptance": "PENDING_UNIFIED_SIT",
+    "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+  },
+  {
+    "id": "R920-06",
+    "feature": "PC连接状态",
+    "pages": [
+      "SYS-003",
+      "PC-001",
+      "PC-002",
+      "PC-003"
+    ],
+    "rule": "配对令牌一次展示且不落盘；每账号独立档案及目录，固定配对设备。设备配对、最近心跳、Windows交互会话、平台会话、本人身份核对与业务适配分别显示。NAS页面打开127.0.0.1控制台须在本人固定PC上访问。停Agent后登录，关闭登录浏览器再启动，不能同时占用档案。",
+    "implementation": "platform-setup.js; console.js; profiles.js; configuration-ui.js",
+    "localTests": [
+      "v920-login-endpoints.test.js",
+      "w8r2b-c1-configuration.test.js",
+      "w8r2b-c1-ui-pc.test.js",
+      "v911v11-platform-setup.test.js",
+      "multi-profile.test.js",
+      "pc-console.test.js"
+    ],
+    "externalAcceptance": "PENDING_UNIFIED_SIT",
+    "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+  },
+  {
+    "id": "R920-07",
+    "feature": "人工处理和恢复",
+    "pages": [
+      "DASH-002",
+      "DASH-003",
+      "SYS-009",
+      "PC-003",
+      "PC-006"
+    ],
+    "rule": "登录、验证码、风控和身份异常等待本人；人工在固定PC完成处理，再观察身份并回NAS确认。身份确认不代替发布、采购或物流关键确认。任务等待人工与写入后结果未知分别恢复；结果未知保留锁、原确认和外部身份，只允许只读对账，不重放原写入。",
+    "implementation": "existing service.js/sweeper/domain operations/executors",
+    "localTests": [
+      "pglite.integration.test.js",
+      "nas-http.integration.test.js",
+      "lease-keeper.test.js",
+      "w8r1-installation-workflow.test.js",
+      "w8r1-installation-http.test.js",
+      "w8r1-pc-installation.test.js"
+    ],
+    "externalAcceptance": "PENDING_UNIFIED_SIT",
+    "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+  },
+  {
+    "id": "R920-08",
+    "feature": "商品全流程",
+    "pages": [
+      "SRC-001",
+      "PRD-001",
+      "PRD-002",
+      "PKG-001",
+      "CAT-001"
+    ],
+    "rule": "搜索/链接/店铺采集→选择→落库→商品列表→编辑保存回读。原始证据、商品/SKU身份、分页去重、币种金额单位、价格/库存观察时间、媒体来源授权和质量均保留。包装字段先人工核对，旧版本阻断覆盖。AI CLEAN/INSPECT和OCR仅提供可追溯建议。袜子内衣的材质、成分、尺码、包装等不得由模型猜测。",
+    "implementation": "source adapters/workspace/workbench/packaging OCR/category/media",
+    "localTests": [
+      "w4-workbench.integration.test.js",
+      "w8r2b-ui.test.js",
+      "packaging-ocr.test.js",
+      "product-ai.integration.test.js",
+      "local-ai.test.js",
+      "w3-media.integration.test.js"
+    ],
+    "externalAcceptance": "PENDING_UNIFIED_SIT",
+    "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+  },
+  {
+    "id": "R920-09",
+    "feature": "投影草稿及发布",
+    "pages": [
+      "STORE-002",
+      "STORE-003",
+      "STORE-004",
+      "JD-001",
+      "JD-005"
+    ],
+    "rule": "每个商品版本向指定店铺投影；类目、SKU和媒体映射通过后同步草稿并回读。本人核对快照和当前版本后提交审核/发布。提交回执、审核中/驳回、在售分别回读，禁止把点击成功当成在售。",
+    "implementation": "store-publication/jd-native-draft/jd-publication and existing executors",
+    "localTests": [
+      "w5-publication.integration.test.js",
+      "w5-publication-verifier.test.js",
+      "publication-executor.test.js",
+      "xhs-publication-adapter.test.js",
+      "w7r2-wechat-publication.integration.test.js",
+      "w7r6b-jd-native.test.js",
+      "w7r6c-jd-publication.test.js"
+    ],
+    "externalAcceptance": "PENDING_UNIFIED_SIT",
+    "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+  },
+  {
+    "id": "R920-10",
+    "feature": "订单回流及采购",
+    "pages": [
+      "ORD-001",
+      "ORD-001-D",
+      "PUR-001",
+      "PUR-002",
+      "PUR-003",
+      "JD-006"
+    ],
+    "rule": "店铺、订单、订单项、SKU和包裹身份分别保存，分页重叠去重并回读。销售明细按货源SKU映射生成采购草稿，本人核对价格、数量、地址和平台身份后建单，外部订单编号回读。支付本人在外部平台执行；缺明细不得推断采购数量。",
+    "implementation": "store-order-sync/wechat-order-read/jd-order-read/purchase-workflow",
+    "localTests": [
+      "store-order-sync.integration.test.js",
+      "xhs-orders.test.js",
+      "w7r1-wechat-orders.integration.test.js",
+      "w7r7-jd-orders.test.js",
+      "w6-purchase.integration.test.js",
+      "purchase-readback.integration.test.js",
+      "utp-purchase.test.js",
+      "w7r3-wechat-purchase.integration.test.js",
+      "w7r8-jd-purchase.integration.test.js"
+    ],
+    "externalAcceptance": "PENDING_UNIFIED_SIT",
+    "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+  },
+  {
+    "id": "R920-11",
+    "feature": "采购及店铺物流",
+    "pages": [
+      "LOG-001",
+      "LOG-002"
+    ],
+    "rule": "采购包裹与销售订单项按明细关联，处理多采购单、多包裹、部分发货、拆合包。本人核对承运商、运单及配送身份，确认同步后回读；同承运商+运单不得重复发货，UNKNOWN先对账。缺真实多包裹样本标待验证。",
+    "implementation": "fulfillment-workflow; platform origin/adapters",
+    "localTests": [
+      "w6r2-fulfillment.integration.test.js",
+      "w6r2-fulfillment.test.js",
+      "w7r4-wechat-fulfillment.integration.test.js",
+      "w7r9-jd-fulfillment.integration.test.js"
+    ],
+    "externalAcceptance": "PENDING_UNIFIED_SIT",
+    "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+  },
+  {
+    "id": "R920-12",
+    "feature": "售后费用及退款",
+    "pages": [
+      "AS-001",
+      "AS-002",
+      "FIN-003"
+    ],
+    "rule": "一笔店铺售后涉及多采购单，由本人按商品明细分别关联，退款金额本人手工分配。两侧售后、费用、退款分别核对，缺失显示待补/估算/待分配；不自动支付退款或裁决。不把两侧退款抵销当成结算完成。",
+    "implementation": "aftercare-workflow/aftersale/finance and platform origins",
+    "localTests": [
+      "w6r3-aftercare.integration.test.js",
+      "w6r3-aftercare.test.js",
+      "w6r3-ui.test.js",
+      "w7r5-wechat-aftercare.integration.test.js",
+      "w7r10-jd-aftercare.integration.test.js",
+      "human-finance.integration.test.js"
+    ],
+    "externalAcceptance": "PENDING_UNIFIED_SIT",
+    "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+  },
+  {
+    "id": "R920-13",
+    "feature": "证据与版本",
+    "pages": [
+      "all"
+    ],
+    "rule": "设计支持、源码实现、本地模拟/HTTP回归、真实平台验证分别记录。保留原需求与字段按钮编号；V001–V037原SQL不改，仅加V038。空开发库用38迁移；现库先备份、账本及重复项检查，生产后置SIT。原型不包含真实Cookie、密码、订单个人信息。",
+    "implementation": "release/audit/contract/tests/installation workflow",
+    "localTests": [
+      "pglite.integration.test.js",
+      "nas-http.integration.test.js",
+      "lease-keeper.test.js",
+      "w8r1-installation-workflow.test.js",
+      "w8r1-installation-http.test.js",
+      "w8r1-pc-installation.test.js"
+    ],
+    "externalAcceptance": "PENDING_UNIFIED_SIT",
+    "localTestInterpretation": "对应场景测试文件；以本版最终日志逐项结果为准，不表示该需求的所有真实场景通过"
+  }
+]

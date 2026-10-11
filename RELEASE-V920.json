@@ -1,0 +1,24 @@
+{
+  "version": "V9.2.0",
+  "baselineCommit": "4a29e46456453006c6cf82b0305853ca0c65aa0e",
+  "scope": "configuration-login endpoints Cookie owner review and full business audit",
+  "regression": {
+    "tests": 530,
+    "pass": 529,
+    "fail": 0,
+    "skipped": 1,
+    "skipReason": "target PostgreSQL unavailable"
+  },
+  "postRegressionLifecycleTargeted": {
+    "pass": 17,
+    "fail": 0
+  },
+  "prototype": {
+    "baselinePass": 114,
+    "C1Pass": 6,
+    "V920Pass": 4,
+    "networkCalls": 0
+  },
+  "realPlatform": "PENDING_UNIFIED_SIT",
+  "wholeW8R2BComplete": false
+}

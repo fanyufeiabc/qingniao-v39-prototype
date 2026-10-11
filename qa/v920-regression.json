@@ -1,0 +1,27 @@
+{
+  "version": "V9.2.0",
+  "type": "explicit prototype mock, not real platform",
+  "groups": [
+    {
+      "name": "页面真实装载、完整历史字段按钮保留、独立PC及Cookie边界提示",
+      "status": "PASS"
+    },
+    {
+      "name": "Cookie方式、店铺后台保存回读及登录优先使用指定后台",
+      "status": "PASS"
+    },
+    {
+      "name": "后台编辑取消旧登录、停用阻断及旧版本、重复、凭据、错平台反向场景",
+      "status": "PASS"
+    },
+    {
+      "name": "旧调用未传后台字段保留数据、启用后身份仍待核对",
+      "status": "PASS"
+    }
+  ],
+  "networkCalls": 0,
+  "summary": {
+    "pass": 4,
+    "fail": 0
+  }
+}

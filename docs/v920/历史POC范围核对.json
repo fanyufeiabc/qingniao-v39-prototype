@@ -1,0 +1,27 @@
+[
+  {
+    "evidence": "POC-D01-1688-catalog-search-readonly-v1.2.json",
+    "result": "商品编号/详情同一编号、分页游标、100条去重及跨页无重叠已捕获",
+    "limit": "请求10返回100；价格语义、MOQ、库存、供应商、计量及SKU信息仍不完整。只读，不证明采购或发布。"
+  },
+  {
+    "evidence": "POC-S04-1688-order-readback-readonly.json",
+    "result": "已有订单编号回读同一编号",
+    "limit": "不证明新采购建单或支付；订单字段语义仍待核验。"
+  },
+  {
+    "evidence": "XHS-09-07C",
+    "result": "包裹与订单归属一致性已捕获",
+    "limit": "增量端点为候选；同订单多商品/多包裹、独立明细ID、物流真实样本不足。"
+  },
+  {
+    "evidence": "XHS-09-07D",
+    "result": "明确阻断：两包裹来自不同订单",
+    "limit": "不得将不同订单样本当成同订单多包裹验证。"
+  },
+  {
+    "evidence": "历史本人扫码记录",
+    "result": "本人曾在1688 App扫码，UTP linked=false",
+    "limit": "网页登录、扫码、UTP授权及业务能力分别验证；Login/Link关系待SIT。"
+  }
+]

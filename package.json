@@ -1,6 +1,6 @@
 {
   "name": "qingniao-v39-prototype",
-  "version": "9.1.2-w8r2b-c1",
+  "version": "9.2.0",
   "private": true,
   "description": "Complete NAS and PC design prototype with current logical page mapping",
   "scripts": {
