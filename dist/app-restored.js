@@ -358,7 +358,7 @@ function render() {
     const badge = original ? prototype.badge(state.mode, original.id, state.routeParams) : '';
     const content = isPc ? renderPcPage(page) : renderWebPage(page);
     const extra = original && !isPc ? prototype.extraBusiness(original.id, state.routeParams.__currentId) : '';
-    app.innerHTML = `<div class="app-shell ${isPc ? 'pc-shell' : ''}">${renderSidebar()}${renderTopbar(page)}<main class="main"><div class="page-wrap">${badge}${content}${extra}<footer class="prototype-footer"><span>V9.1.2 · V9.2.0</span><span>设计演示 · 本人操作 · NAS 业务真源 · 开发与实平台验收分别标记</span></footer></div></main></div>`;
+    app.innerHTML = `<div class="app-shell ${isPc ? 'pc-shell' : ''}">${renderSidebar()}${renderTopbar(page)}<main class="main"><div class="page-wrap">${badge}${content}${extra}<footer class="prototype-footer"><span>V9.2.0</span><span>设计演示 · 本人操作 · NAS 业务真源 · 开发与实平台验收分别标记</span></footer></div></main></div>`;
     renderOverlay();
     annotateLocalControls(app, page?.id || 'UNKNOWN');
     prototype.afterRender(app, page);
