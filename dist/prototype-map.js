@@ -44,7 +44,7 @@
   p.fields.forEach(f=>{if(f['中文名称']==='角色ID')f['中文名称']='操作范围';if(f['中文名称']==='角色名称')f['中文名称']='本人操作说明';});
  }
  for(const p of requirements.pcPages)if(titles[p.id])p.name=titles[p.id];
- requirements.meta.currentVersion='V9.2.0';
+ requirements.meta.currentVersion='V9.2.1';
  const modules={JD:'JD',PKG:'PRD',INST:'SYS','SYS-004':'RTE','SYS-005':'RTE','SYS-008':'SYS','SRC-006':'SRC','LOG-002':'LOGI'};
  const customIds=Object.keys(defaultViews).filter(id=>defaultViews[id].startsWith('CUR-'));
  for(const id of customIds){

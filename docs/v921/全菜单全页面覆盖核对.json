@@ -1,0 +1,8058 @@
+{
+  "version": "V9.2.1",
+  "logicalPages": [
+    {
+      "id": "SRC-001",
+      "name": "货源搜索",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "货源与采集",
+      "group": "商品供给",
+      "route": "#/web/SRC-001",
+      "renderer": "workspace",
+      "phase": "W8R2B",
+      "frontend": "LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/product-workspace.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R2B_REGRESSION",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "SRC-001-F-006",
+        "SRC-001-F-007",
+        "SRC-001-F-008",
+        "SRC-001-F-009",
+        "SRC-001-F-010",
+        "SRC-001-F-011",
+        "SRC-001-F-012",
+        "SRC-001-F-013",
+        "SRC-001-F-014"
+      ],
+      "fields": [
+        {
+          "id": "SRC-001-F-006",
+          "label": "搜索结果列 externalProductId"
+        },
+        {
+          "id": "SRC-001-F-007",
+          "label": "搜索结果列 title"
+        },
+        {
+          "id": "SRC-001-F-008",
+          "label": "搜索结果列 priceAndCurrency"
+        },
+        {
+          "id": "SRC-001-F-009",
+          "label": "搜索结果列 moq"
+        },
+        {
+          "id": "SRC-001-F-010",
+          "label": "搜索结果列 stockObservation"
+        },
+        {
+          "id": "SRC-001-F-011",
+          "label": "搜索结果列 supplier"
+        },
+        {
+          "id": "SRC-001-F-012",
+          "label": "搜索结果列 skuPreview"
+        },
+        {
+          "id": "SRC-001-F-013",
+          "label": "搜索结果列 candidateState"
+        },
+        {
+          "id": "SRC-001-F-014",
+          "label": "搜索结果列 observedAt"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "SRC-002",
+      "name": "候选商品",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "货源与采集",
+      "group": "商品供给",
+      "route": "#/web/SRC-002",
+      "renderer": "workspace",
+      "phase": "W8R2B",
+      "frontend": "LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/product-workspace.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R2B_REGRESSION",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "SRC-002-F-001",
+        "SRC-002-F-002",
+        "SRC-002-F-003",
+        "SRC-002-F-004",
+        "SRC-002-F-005",
+        "SRC-002-F-006"
+      ],
+      "fields": [
+        {
+          "id": "SRC-002-F-001",
+          "label": "商品"
+        },
+        {
+          "id": "SRC-002-F-002",
+          "label": "价格/起批"
+        },
+        {
+          "id": "SRC-002-F-003",
+          "label": "SKU"
+        },
+        {
+          "id": "SRC-002-F-004",
+          "label": "供应商"
+        },
+        {
+          "id": "SRC-002-F-005",
+          "label": "库存"
+        },
+        {
+          "id": "SRC-002-F-006",
+          "label": "状态"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "SRC-003",
+      "name": "采集任务",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "货源与采集",
+      "group": "商品供给",
+      "route": "#/web/SRC-003",
+      "renderer": "workspace",
+      "phase": "W8R2B",
+      "frontend": "LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/product-workspace.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R2B_REGRESSION",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "SRC-003-F-001",
+        "SRC-003-F-002",
+        "SRC-003-F-003",
+        "SRC-003-F-004",
+        "SRC-003-F-005"
+      ],
+      "fields": [
+        {
+          "id": "SRC-003-F-001",
+          "label": "任务"
+        },
+        {
+          "id": "SRC-003-F-002",
+          "label": "商品"
+        },
+        {
+          "id": "SRC-003-F-003",
+          "label": "状态"
+        },
+        {
+          "id": "SRC-003-F-004",
+          "label": "当前阶段"
+        },
+        {
+          "id": "SRC-003-F-005",
+          "label": "进度"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "SRC-004",
+      "name": "采集详情",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "货源与采集",
+      "group": "商品供给",
+      "route": "#/web/SRC-004",
+      "renderer": "workspace",
+      "phase": "W8R2B",
+      "frontend": "LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/product-workspace.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R2B_REGRESSION",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "SRC-004-F-001",
+        "SRC-004-F-002",
+        "SRC-004-F-003",
+        "SRC-004-F-004",
+        "SRC-004-F-005",
+        "SRC-004-F-006",
+        "SRC-004-F-007",
+        "SRC-004-F-008",
+        "SRC-004-F-009"
+      ],
+      "fields": [
+        {
+          "id": "SRC-004-F-001",
+          "label": "采集任务"
+        },
+        {
+          "id": "SRC-004-F-002",
+          "label": "采集结果"
+        },
+        {
+          "id": "SRC-004-F-003",
+          "label": "落库"
+        },
+        {
+          "id": "SRC-004-F-004",
+          "label": "ProductDraft"
+        },
+        {
+          "id": "SRC-004-F-005",
+          "label": "P0 必需字段"
+        },
+        {
+          "id": "SRC-004-F-006",
+          "label": "P1 重要字段"
+        },
+        {
+          "id": "SRC-004-F-007",
+          "label": "P2 增强字段"
+        },
+        {
+          "id": "SRC-004-F-008",
+          "label": "主图原图身份"
+        },
+        {
+          "id": "SRC-004-F-009",
+          "label": "主图采集状态"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "SRC-005",
+      "name": "已采集货源",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "货源与采集",
+      "group": "商品供给",
+      "route": "#/web/SRC-005",
+      "renderer": "workspace",
+      "phase": "W8R2B",
+      "frontend": "LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/product-workspace.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R2B_REGRESSION",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "SRC-005-F-001",
+        "SRC-005-F-002",
+        "SRC-005-F-003",
+        "SRC-005-F-004",
+        "SRC-005-F-005",
+        "SRC-005-F-006",
+        "SRC-005-F-007",
+        "SRC-005-X-F-001",
+        "SRC-005-X-F-002",
+        "SRC-005-X-F-003",
+        "SRC-005-X-F-004"
+      ],
+      "fields": [
+        {
+          "id": "SRC-005-F-001",
+          "label": "货源商品"
+        },
+        {
+          "id": "SRC-005-F-002",
+          "label": "供应商"
+        },
+        {
+          "id": "SRC-005-F-003",
+          "label": "当前价格"
+        },
+        {
+          "id": "SRC-005-F-004",
+          "label": "MOQ"
+        },
+        {
+          "id": "SRC-005-F-005",
+          "label": "SKU"
+        },
+        {
+          "id": "SRC-005-F-006",
+          "label": "当前快照"
+        },
+        {
+          "id": "SRC-005-F-007",
+          "label": "状态"
+        },
+        {
+          "id": "SRC-005-X-F-001",
+          "label": "仅已绑定 1688 SourceSKU 显示监测设置"
+        },
+        {
+          "id": "SRC-005-X-F-002",
+          "label": "当前与上次价格、币种、计价单位、观察时间、来源"
+        },
+        {
+          "id": "SRC-005-X-F-003",
+          "label": "库存数/库存状态、观察时间与未知原因"
+        },
+        {
+          "id": "SRC-005-X-F-004",
+          "label": "监测开关、周期策略、最近执行状态、变化提示和待核状态。"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "PRD-001",
+      "name": "商品列表",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "商品中心",
+      "group": "商品供给",
+      "route": "#/web/PRD-001",
+      "renderer": "workspace",
+      "phase": "W8R2B",
+      "frontend": "LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/product-workspace.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R2B_REGRESSION",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "PRD-001-F-001",
+        "PRD-001-F-002",
+        "PRD-001-F-003",
+        "PRD-001-F-004",
+        "PRD-001-F-005",
+        "PRD-001-F-006",
+        "PRD-001-F-007"
+      ],
+      "fields": [
+        {
+          "id": "PRD-001-F-001",
+          "label": "商品"
+        },
+        {
+          "id": "PRD-001-F-002",
+          "label": "售价"
+        },
+        {
+          "id": "PRD-001-F-003",
+          "label": "最近采集成本"
+        },
+        {
+          "id": "PRD-001-F-004",
+          "label": "SKU"
+        },
+        {
+          "id": "PRD-001-F-005",
+          "label": "店铺状态"
+        },
+        {
+          "id": "PRD-001-F-006",
+          "label": "检测"
+        },
+        {
+          "id": "PRD-001-F-007",
+          "label": "更新时间"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "PRD-002",
+      "name": "商品编辑",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "商品中心",
+      "group": "商品供给",
+      "route": "#/web/PRD-002",
+      "renderer": "workspace",
+      "phase": "W8R2B",
+      "frontend": "LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/product-workspace.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R2B_REGRESSION",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "PRD-002-F-001",
+        "PRD-002-F-002",
+        "PRD-002-F-003",
+        "PRD-002-F-004",
+        "PRD-002-F-005",
+        "PRD-002-F-006",
+        "PRD-002-F-007",
+        "PRD-002-F-008",
+        "PRD-002-F-009",
+        "PRD-002-F-010",
+        "PRD-002-F-011",
+        "PRD-002-F-012",
+        "PRD-002-F-013",
+        "PRD-002-F-014",
+        "PRD-002-F-015",
+        "PRD-002-F-016"
+      ],
+      "fields": [
+        {
+          "id": "PRD-002-F-001",
+          "label": "商品标题"
+        },
+        {
+          "id": "PRD-002-F-002",
+          "label": "销售价格"
+        },
+        {
+          "id": "PRD-002-F-003",
+          "label": "销售库存"
+        },
+        {
+          "id": "PRD-002-F-004",
+          "label": "当前草稿"
+        },
+        {
+          "id": "PRD-002-F-005",
+          "label": "AI检测"
+        },
+        {
+          "id": "PRD-002-F-006",
+          "label": "小红书"
+        },
+        {
+          "id": "PRD-002-F-007",
+          "label": "微信小店"
+        },
+        {
+          "id": "PRD-002-F-008",
+          "label": "颜色"
+        },
+        {
+          "id": "PRD-002-F-009",
+          "label": "尺码"
+        },
+        {
+          "id": "PRD-002-F-010",
+          "label": "售价"
+        },
+        {
+          "id": "PRD-002-F-011",
+          "label": "来源绑定"
+        },
+        {
+          "id": "PRD-002-F-012",
+          "label": "状态"
+        },
+        {
+          "id": "PRD-002-F-013",
+          "label": "文本内容"
+        },
+        {
+          "id": "PRD-002-F-014",
+          "label": "主图 SHA-256"
+        },
+        {
+          "id": "PRD-002-F-015",
+          "label": "原图来源与存储"
+        },
+        {
+          "id": "PRD-002-F-016",
+          "label": "媒体派生版本"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "PRD-003",
+      "name": "AI清洗与检测",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "商品中心",
+      "group": "商品供给",
+      "route": "#/web/PRD-003",
+      "renderer": "workspace",
+      "phase": "W8R2B",
+      "frontend": "LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/product-workspace.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R2B_REGRESSION",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "PRD-003-F-001",
+        "PRD-003-F-002",
+        "PRD-003-F-003",
+        "PRD-003-F-004",
+        "PRD-003-F-005",
+        "PRD-003-F-006",
+        "PRD-003-F-007",
+        "PRD-003-F-008",
+        "PRD-003-F-009",
+        "PRD-003-F-010"
+      ],
+      "fields": [
+        {
+          "id": "PRD-003-F-001",
+          "label": "BLOCK"
+        },
+        {
+          "id": "PRD-003-F-002",
+          "label": "WARN"
+        },
+        {
+          "id": "PRD-003-F-003",
+          "label": "INFO"
+        },
+        {
+          "id": "PRD-003-F-004",
+          "label": "标题"
+        },
+        {
+          "id": "PRD-003-F-005",
+          "label": "详情"
+        },
+        {
+          "id": "PRD-003-F-006",
+          "label": "规格"
+        },
+        {
+          "id": "PRD-003-F-007",
+          "label": "标题与部分SKU“修身版”描述存在语义冲突"
+        },
+        {
+          "id": "PRD-003-F-008",
+          "label": "主图3含较小供应商水印，建议替换"
+        },
+        {
+          "id": "PRD-003-F-009",
+          "label": "未发现手机号、微信号或外链"
+        },
+        {
+          "id": "PRD-003-F-010",
+          "label": "价格与SKU范围一致"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "PRD-004",
+      "name": "商品版本",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "商品中心",
+      "group": "商品供给",
+      "route": "#/web/PRD-004",
+      "renderer": "workspace",
+      "phase": "W8R2B",
+      "frontend": "LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/product-workspace.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R2B_REGRESSION",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "PRD-004-F-001",
+        "PRD-004-F-002",
+        "PRD-004-F-003",
+        "PRD-004-F-004",
+        "PRD-004-F-005"
+      ],
+      "fields": [
+        {
+          "id": "PRD-004-F-001",
+          "label": "对象"
+        },
+        {
+          "id": "PRD-004-F-002",
+          "label": "状态"
+        },
+        {
+          "id": "PRD-004-F-003",
+          "label": "主要变化"
+        },
+        {
+          "id": "PRD-004-F-004",
+          "label": "AI检测"
+        },
+        {
+          "id": "PRD-004-F-005",
+          "label": "创建时间"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "PRD-005",
+      "name": "平台适配",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "商品中心",
+      "group": "商品供给",
+      "route": "#/web/PRD-005",
+      "renderer": "workspace",
+      "phase": "W8R2B",
+      "frontend": "LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/product-workspace.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R2B_REGRESSION",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "PRD-005-F-001",
+        "PRD-005-F-002",
+        "PRD-005-F-003",
+        "PRD-005-F-004",
+        "PRD-005-F-005",
+        "PRD-005-F-006"
+      ],
+      "fields": [
+        {
+          "id": "PRD-005-F-001",
+          "label": "类目"
+        },
+        {
+          "id": "PRD-005-F-002",
+          "label": "属性"
+        },
+        {
+          "id": "PRD-005-F-003",
+          "label": "SKU"
+        },
+        {
+          "id": "PRD-005-F-004",
+          "label": "图片"
+        },
+        {
+          "id": "PRD-005-F-005",
+          "label": "标题/详情"
+        },
+        {
+          "id": "PRD-005-F-006",
+          "label": "店铺媒体映射"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "STORE-001",
+      "name": "我的店铺",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "平台与账号店铺",
+      "group": "商品供给",
+      "route": "#/web/STORE-001",
+      "renderer": "configuration",
+      "phase": "V9.2.0",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/configuration-flow.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "v920-login-endpoints.test.js + C1 retained tests",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "STORE-001-F-001",
+        "STORE-001-F-002",
+        "STORE-001-F-003",
+        "STORE-001-F-004"
+      ],
+      "fields": [
+        {
+          "id": "STORE-001-F-001",
+          "label": "执行通道"
+        },
+        {
+          "id": "STORE-001-F-002",
+          "label": "绑定PC"
+        },
+        {
+          "id": "STORE-001-F-003",
+          "label": "Profile"
+        },
+        {
+          "id": "STORE-001-F-004",
+          "label": "能力"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "扫码/密码由本人输入平台页；本机Cookie导入；店铺后台地址及配置停用。真实SIT待验证。",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "STORE-002",
+      "name": "渠道商品",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "店铺商品与草稿",
+      "group": "销售履约",
+      "route": "#/web/STORE-002",
+      "renderer": "product",
+      "phase": "W8R2B",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/store-publication.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "STORE-002-F-001",
+        "STORE-002-F-002",
+        "STORE-002-F-003",
+        "STORE-002-F-004",
+        "STORE-002-F-005",
+        "STORE-002-F-006"
+      ],
+      "fields": [
+        {
+          "id": "STORE-002-F-001",
+          "label": "商品"
+        },
+        {
+          "id": "STORE-002-F-002",
+          "label": "店铺"
+        },
+        {
+          "id": "STORE-002-F-003",
+          "label": "外部状态"
+        },
+        {
+          "id": "STORE-002-F-004",
+          "label": "映射"
+        },
+        {
+          "id": "STORE-002-F-005",
+          "label": "与当前版本"
+        },
+        {
+          "id": "STORE-002-F-006",
+          "label": "最近同步"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2B",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "STORE-003",
+      "name": "同步任务",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "店铺商品与草稿",
+      "group": "销售履约",
+      "route": "#/web/STORE-003",
+      "renderer": "tasks",
+      "phase": "W8R2B",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/store-publication.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "STORE-003-F-001",
+        "STORE-003-F-002",
+        "STORE-003-F-003",
+        "STORE-003-F-004",
+        "STORE-003-F-005",
+        "STORE-003-F-006",
+        "STORE-003-F-007",
+        "STORE-003-F-008",
+        "STORE-003-F-009"
+      ],
+      "fields": [
+        {
+          "id": "STORE-003-F-001",
+          "label": "店铺"
+        },
+        {
+          "id": "STORE-003-F-002",
+          "label": "适配检查"
+        },
+        {
+          "id": "STORE-003-F-003",
+          "label": "本次动作"
+        },
+        {
+          "id": "STORE-003-F-004",
+          "label": "执行通道"
+        },
+        {
+          "id": "STORE-003-F-005",
+          "label": "状态"
+        },
+        {
+          "id": "STORE-003-F-006",
+          "label": "任务"
+        },
+        {
+          "id": "STORE-003-F-007",
+          "label": "阶段"
+        },
+        {
+          "id": "STORE-003-F-008",
+          "label": "结果"
+        },
+        {
+          "id": "STORE-003-F-009",
+          "label": "外部身份"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2B",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "ORD-001",
+      "name": "销售订单",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "订单中心",
+      "group": "销售履约",
+      "route": "#/web/ORD-001",
+      "renderer": "orders",
+      "phase": "W8R2C",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/store-order-sync.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "ORD-001-F-001",
+        "ORD-001-F-002",
+        "ORD-001-F-003",
+        "ORD-001-F-004",
+        "ORD-001-F-005",
+        "ORD-001-F-006",
+        "ORD-001-F-007"
+      ],
+      "fields": [
+        {
+          "id": "ORD-001-F-001",
+          "label": "订单"
+        },
+        {
+          "id": "ORD-001-F-002",
+          "label": "店铺"
+        },
+        {
+          "id": "ORD-001-F-003",
+          "label": "商品/数量"
+        },
+        {
+          "id": "ORD-001-F-004",
+          "label": "实收"
+        },
+        {
+          "id": "ORD-001-F-005",
+          "label": "状态"
+        },
+        {
+          "id": "ORD-001-F-006",
+          "label": "采购"
+        },
+        {
+          "id": "ORD-001-F-007",
+          "label": "物流"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "ORD-001-D",
+      "name": "订单详情弹窗",
+      "surface": "web",
+      "kind": "detail",
+      "baseline": "V9.1.1",
+      "menu": "订单中心",
+      "group": "销售履约",
+      "route": "#/web/ORD-001-D",
+      "renderer": "orders",
+      "phase": "W8R2C",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/store-order-sync.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "ORD-001-D-F-001",
+        "ORD-001-D-F-002",
+        "ORD-001-D-F-003",
+        "ORD-001-D-F-004",
+        "ORD-001-D-F-005",
+        "ORD-001-D-F-006",
+        "ORD-001-D-F-007",
+        "ORD-001-D-F-008",
+        "ORD-001-D-F-009",
+        "ORD-001-D-F-010",
+        "ORD-001-D-F-011",
+        "ORD-001-D-F-012",
+        "ORD-001-D-F-013",
+        "ORD-001-D-F-014",
+        "ORD-001-D-F-015",
+        "ORD-001-D-F-016",
+        "ORD-001-D-F-017",
+        "ORD-001-D-F-018",
+        "ORD-001-D-F-019",
+        "ORD-001-D-F-020"
+      ],
+      "fields": [
+        {
+          "id": "ORD-001-D-F-001",
+          "label": "外部订单号"
+        },
+        {
+          "id": "ORD-001-D-F-002",
+          "label": "店铺及账号"
+        },
+        {
+          "id": "ORD-001-D-F-003",
+          "label": "订单原始状态"
+        },
+        {
+          "id": "ORD-001-D-F-004",
+          "label": "下单时间"
+        },
+        {
+          "id": "ORD-001-D-F-005",
+          "label": "外部更新时间"
+        },
+        {
+          "id": "ORD-001-D-F-006",
+          "label": "实收金额与币种"
+        },
+        {
+          "id": "ORD-001-D-F-007",
+          "label": "订单项外部 ID"
+        },
+        {
+          "id": "ORD-001-D-F-008",
+          "label": "店铺 SKU 身份"
+        },
+        {
+          "id": "ORD-001-D-F-009",
+          "label": "购买数量"
+        },
+        {
+          "id": "ORD-001-D-F-010",
+          "label": "商品标题"
+        },
+        {
+          "id": "ORD-001-D-F-011",
+          "label": "项级金额与币种"
+        },
+        {
+          "id": "ORD-001-D-F-012",
+          "label": "SKU 映射状态"
+        },
+        {
+          "id": "ORD-001-D-F-013",
+          "label": "青鸟 ProductSKU"
+        },
+        {
+          "id": "ORD-001-D-F-014",
+          "label": "货源绑定"
+        },
+        {
+          "id": "ORD-001-D-F-015",
+          "label": "采购组与采购单"
+        },
+        {
+          "id": "ORD-001-D-F-016",
+          "label": "物流包裹"
+        },
+        {
+          "id": "ORD-001-D-F-017",
+          "label": "店铺与货源售后"
+        },
+        {
+          "id": "ORD-001-D-F-018",
+          "label": "费用与退款状态"
+        },
+        {
+          "id": "ORD-001-D-F-019",
+          "label": "页面签名"
+        },
+        {
+          "id": "ORD-001-D-F-020",
+          "label": "观察时间"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "ORD-002",
+      "name": "订单同步任务",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "订单中心",
+      "group": "销售履约",
+      "route": "#/web/ORD-002",
+      "renderer": "orders",
+      "phase": "W8R2C",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/store-order-sync.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "ORD-002-F-001",
+        "ORD-002-F-002",
+        "ORD-002-F-003",
+        "ORD-002-F-004",
+        "ORD-002-F-005",
+        "ORD-002-F-006"
+      ],
+      "fields": [
+        {
+          "id": "ORD-002-F-001",
+          "label": "同步批次"
+        },
+        {
+          "id": "ORD-002-F-002",
+          "label": "店铺"
+        },
+        {
+          "id": "ORD-002-F-003",
+          "label": "范围"
+        },
+        {
+          "id": "ORD-002-F-004",
+          "label": "结果"
+        },
+        {
+          "id": "ORD-002-F-005",
+          "label": "处理方式"
+        },
+        {
+          "id": "ORD-002-F-006",
+          "label": "耗时"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "PUR-001",
+      "name": "采购建议",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "采购中心",
+      "group": "销售履约",
+      "route": "#/web/PUR-001",
+      "renderer": "purchases",
+      "phase": "W8R2C",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/purchase-workflow.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "PUR-001-F-001",
+        "PUR-001-F-002",
+        "PUR-001-F-003",
+        "PUR-001-F-004",
+        "PUR-001-F-005",
+        "PUR-001-F-006",
+        "PUR-001-F-007"
+      ],
+      "fields": [
+        {
+          "id": "PUR-001-F-001",
+          "label": "销售订单"
+        },
+        {
+          "id": "PUR-001-F-002",
+          "label": "订单项/数量"
+        },
+        {
+          "id": "PUR-001-F-003",
+          "label": "采购分组"
+        },
+        {
+          "id": "PUR-001-F-004",
+          "label": "货源映射"
+        },
+        {
+          "id": "PUR-001-F-005",
+          "label": "采集价"
+        },
+        {
+          "id": "PUR-001-F-006",
+          "label": "当前状态"
+        },
+        {
+          "id": "PUR-001-F-007",
+          "label": "建议"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "PUR-002",
+      "name": "采购确认",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "采购中心",
+      "group": "销售履约",
+      "route": "#/web/PUR-002",
+      "renderer": "purchases",
+      "phase": "W8R2C",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/purchase-workflow.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "PUR-002-F-001",
+        "PUR-002-F-002",
+        "PUR-002-F-003",
+        "PUR-002-F-004",
+        "PUR-002-F-005",
+        "PUR-002-F-006",
+        "PUR-002-F-007",
+        "PUR-002-F-008",
+        "PUR-002-F-009",
+        "PUR-002-F-010",
+        "PUR-002-F-011",
+        "PUR-002-F-012",
+        "PUR-002-F-013",
+        "PUR-002-F-014"
+      ],
+      "fields": [
+        {
+          "id": "PUR-002-F-001",
+          "label": "检查项"
+        },
+        {
+          "id": "PUR-002-F-002",
+          "label": "采集时"
+        },
+        {
+          "id": "PUR-002-F-003",
+          "label": "当前"
+        },
+        {
+          "id": "PUR-002-F-004",
+          "label": "结果"
+        },
+        {
+          "id": "PUR-002-F-005",
+          "label": "销售订单"
+        },
+        {
+          "id": "PUR-002-F-006",
+          "label": "销售商品"
+        },
+        {
+          "id": "PUR-002-F-007",
+          "label": "销售数量"
+        },
+        {
+          "id": "PUR-002-F-008",
+          "label": "1688货源"
+        },
+        {
+          "id": "PUR-002-F-009",
+          "label": "规格绑定"
+        },
+        {
+          "id": "PUR-002-F-010",
+          "label": "建议采购"
+        },
+        {
+          "id": "PUR-002-F-011",
+          "label": "当前单价"
+        },
+        {
+          "id": "PUR-002-F-012",
+          "label": "商品金额"
+        },
+        {
+          "id": "PUR-002-F-013",
+          "label": "预估运费"
+        },
+        {
+          "id": "PUR-002-F-014",
+          "label": "预计合计"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "PUR-003",
+      "name": "采购订单",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "采购中心",
+      "group": "销售履约",
+      "route": "#/web/PUR-003",
+      "renderer": "purchases",
+      "phase": "W8R2C",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/purchase-workflow.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "PUR-003-F-001",
+        "PUR-003-F-002",
+        "PUR-003-F-003",
+        "PUR-003-F-004",
+        "PUR-003-F-005",
+        "PUR-003-F-006",
+        "PUR-003-F-007",
+        "PUR-003-F-008",
+        "PUR-003-F-009",
+        "PUR-003-F-010",
+        "PUR-003-F-011"
+      ],
+      "fields": [
+        {
+          "id": "PUR-003-F-001",
+          "label": "采购订单"
+        },
+        {
+          "id": "PUR-003-F-002",
+          "label": "对应销售订单"
+        },
+        {
+          "id": "PUR-003-F-003",
+          "label": "供应商"
+        },
+        {
+          "id": "PUR-003-F-004",
+          "label": "金额"
+        },
+        {
+          "id": "PUR-003-F-005",
+          "label": "支付"
+        },
+        {
+          "id": "PUR-003-F-006",
+          "label": "履约"
+        },
+        {
+          "id": "PUR-003-F-007",
+          "label": "最近同步"
+        },
+        {
+          "id": "PUR-003-F-008",
+          "label": "回读路线"
+        },
+        {
+          "id": "PUR-003-F-009",
+          "label": "采购外部身份核对"
+        },
+        {
+          "id": "PUR-003-F-010",
+          "label": "订单项与规格核对"
+        },
+        {
+          "id": "PUR-003-F-011",
+          "label": "金额分项与币种核对"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "LOG-001",
+      "name": "物流中心",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "物流中心",
+      "group": "销售履约",
+      "route": "#/web/LOG-001",
+      "renderer": "fulfillment",
+      "phase": "W8R2C",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/fulfillment-workflow.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "LOG-001-F-001",
+        "LOG-001-F-002",
+        "LOG-001-F-003",
+        "LOG-001-F-004",
+        "LOG-001-F-005",
+        "LOG-001-F-006",
+        "LOG-001-F-009",
+        "LOG-001-F-010",
+        "LOG-001-F-011"
+      ],
+      "fields": [
+        {
+          "id": "LOG-001-F-001",
+          "label": "销售订单"
+        },
+        {
+          "id": "LOG-001-F-002",
+          "label": "采购订单/包裹"
+        },
+        {
+          "id": "LOG-001-F-003",
+          "label": "承运商/单号"
+        },
+        {
+          "id": "LOG-001-F-004",
+          "label": "映射"
+        },
+        {
+          "id": "LOG-001-F-005",
+          "label": "商城状态"
+        },
+        {
+          "id": "LOG-001-F-006",
+          "label": "最近获取"
+        },
+        {
+          "id": "LOG-001-F-009",
+          "label": "供应商已发货"
+        },
+        {
+          "id": "LOG-001-F-010",
+          "label": "待回填商城"
+        },
+        {
+          "id": "LOG-001-F-011",
+          "label": "需人工确认"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "LOG-002",
+      "name": "物流回填确认",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "物流中心",
+      "group": "销售履约",
+      "route": "#/web/LOG-002",
+      "renderer": "fulfillment",
+      "phase": "W8R2C",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/fulfillment-workflow.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "LOG-002-F-001",
+        "LOG-002-F-002",
+        "LOG-002-F-003",
+        "LOG-002-F-004",
+        "LOG-002-F-005",
+        "LOG-002-F-006",
+        "LOG-002-F-007",
+        "LOG-002-F-008",
+        "LOG-002-F-009",
+        "LOG-002-F-010",
+        "LOG-002-F-011",
+        "LOG-002-F-012",
+        "LOG-002-F-013",
+        "LOG-002-F-014",
+        "LOG-002-F-015",
+        "LOG-002-F-016"
+      ],
+      "fields": [
+        {
+          "id": "LOG-002-F-001",
+          "label": "供应商包裹"
+        },
+        {
+          "id": "LOG-002-F-002",
+          "label": "采购订单"
+        },
+        {
+          "id": "LOG-002-F-003",
+          "label": "销售订单项"
+        },
+        {
+          "id": "LOG-002-F-004",
+          "label": "数量"
+        },
+        {
+          "id": "LOG-002-F-005",
+          "label": "映射"
+        },
+        {
+          "id": "LOG-002-F-006",
+          "label": "店铺"
+        },
+        {
+          "id": "LOG-002-F-007",
+          "label": "订单"
+        },
+        {
+          "id": "LOG-002-F-008",
+          "label": "承运商"
+        },
+        {
+          "id": "LOG-002-F-009",
+          "label": "运单号"
+        },
+        {
+          "id": "LOG-002-F-010",
+          "label": "本次发货"
+        },
+        {
+          "id": "LOG-002-F-011",
+          "label": "订单身份明确"
+        },
+        {
+          "id": "LOG-002-F-012",
+          "label": "包裹与订单项数量一致"
+        },
+        {
+          "id": "LOG-002-F-013",
+          "label": "承运商已映射"
+        },
+        {
+          "id": "LOG-002-F-014",
+          "label": "店铺订单仍为待发货"
+        },
+        {
+          "id": "LOG-002-F-015",
+          "label": "不存在不同运单冲突"
+        },
+        {
+          "id": "LOG-002-F-016",
+          "label": "当前绑定设备在线且目标店铺登录身份有效"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "AS-001",
+      "name": "售后中心",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "售后中心",
+      "group": "销售履约",
+      "route": "#/web/AS-001",
+      "renderer": "aftersale",
+      "phase": "W8R2C",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/aftercare-workflow.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "AS-001-F-001",
+        "AS-001-F-002",
+        "AS-001-F-003",
+        "AS-001-F-004",
+        "AS-001-F-005",
+        "AS-001-F-006"
+      ],
+      "fields": [
+        {
+          "id": "AS-001-F-001",
+          "label": "售后"
+        },
+        {
+          "id": "AS-001-F-002",
+          "label": "店铺订单"
+        },
+        {
+          "id": "AS-001-F-003",
+          "label": "类型"
+        },
+        {
+          "id": "AS-001-F-004",
+          "label": "店铺侧"
+        },
+        {
+          "id": "AS-001-F-005",
+          "label": "货源侧"
+        },
+        {
+          "id": "AS-001-F-006",
+          "label": "关联"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "AS-002",
+      "name": "售后详情",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "售后中心",
+      "group": "销售履约",
+      "route": "#/web/AS-002",
+      "renderer": "aftersale",
+      "phase": "W8R2C",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/aftercare-workflow.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "AS-002-F-001",
+        "AS-002-F-002",
+        "AS-002-F-003",
+        "AS-002-F-004",
+        "AS-002-F-005",
+        "AS-002-F-006",
+        "AS-002-F-007",
+        "AS-002-F-008",
+        "AS-002-F-009",
+        "AS-002-F-010"
+      ],
+      "fields": [
+        {
+          "id": "AS-002-F-001",
+          "label": "处理决定（待保存）"
+        },
+        {
+          "id": "AS-002-F-002",
+          "label": "平台"
+        },
+        {
+          "id": "AS-002-F-003",
+          "label": "订单"
+        },
+        {
+          "id": "AS-002-F-004",
+          "label": "类型"
+        },
+        {
+          "id": "AS-002-F-005",
+          "label": "原因"
+        },
+        {
+          "id": "AS-002-F-006",
+          "label": "状态"
+        },
+        {
+          "id": "AS-002-F-007",
+          "label": "1688采购单"
+        },
+        {
+          "id": "AS-002-F-008",
+          "label": "货源商品"
+        },
+        {
+          "id": "AS-002-F-009",
+          "label": "采购数量"
+        },
+        {
+          "id": "AS-002-F-010",
+          "label": "货源售后"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "FIN-001",
+      "name": "经营核算总览",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "费用与核算",
+      "group": "销售履约",
+      "route": "#/web/FIN-001",
+      "renderer": "finance",
+      "phase": "W8R2C",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/finance.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "FIN-001-F-004",
+        "FIN-001-F-005",
+        "FIN-001-F-006",
+        "FIN-001-F-007",
+        "FIN-001-F-008",
+        "FIN-001-F-009",
+        "FIN-001-F-010",
+        "FIN-001-F-011",
+        "FIN-001-F-012",
+        "FIN-001-F-013",
+        "FIN-001-F-014"
+      ],
+      "fields": [
+        {
+          "id": "FIN-001-F-004",
+          "label": "已归属销售收入"
+        },
+        {
+          "id": "FIN-001-F-005",
+          "label": "已归属商品毛利"
+        },
+        {
+          "id": "FIN-001-F-006",
+          "label": "待分配费用"
+        },
+        {
+          "id": "FIN-001-F-007",
+          "label": "待分配退款"
+        },
+        {
+          "id": "FIN-001-F-008",
+          "label": "订单号"
+        },
+        {
+          "id": "FIN-001-F-009",
+          "label": "店铺"
+        },
+        {
+          "id": "FIN-001-F-010",
+          "label": "订单项数"
+        },
+        {
+          "id": "FIN-001-F-011",
+          "label": "已归属金额"
+        },
+        {
+          "id": "FIN-001-F-012",
+          "label": "待补项数（金额未知）"
+        },
+        {
+          "id": "FIN-001-F-013",
+          "label": "待分配金额"
+        },
+        {
+          "id": "FIN-001-F-014",
+          "label": "核算版本与状态"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "FIN-002",
+      "name": "订单项核算明细",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "费用与核算",
+      "group": "销售履约",
+      "route": "#/web/FIN-002",
+      "renderer": "finance",
+      "phase": "W8R2C",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/finance.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "FIN-002-F-001",
+        "FIN-002-F-002",
+        "FIN-002-F-003",
+        "FIN-002-F-004",
+        "FIN-002-F-005",
+        "FIN-002-F-006",
+        "FIN-002-F-007",
+        "FIN-002-F-008",
+        "FIN-002-F-009",
+        "FIN-002-F-010",
+        "FIN-002-F-011",
+        "FIN-002-F-012",
+        "FIN-002-F-013"
+      ],
+      "fields": [
+        {
+          "id": "FIN-002-F-001",
+          "label": "销售订单项与商品SKU"
+        },
+        {
+          "id": "FIN-002-F-002",
+          "label": "销售商品金额"
+        },
+        {
+          "id": "FIN-002-F-003",
+          "label": "优惠分摊"
+        },
+        {
+          "id": "FIN-002-F-004",
+          "label": "确认退款"
+        },
+        {
+          "id": "FIN-002-F-005",
+          "label": "采购商品成本"
+        },
+        {
+          "id": "FIN-002-F-006",
+          "label": "采购运费"
+        },
+        {
+          "id": "FIN-002-F-007",
+          "label": "平台费用"
+        },
+        {
+          "id": "FIN-002-F-008",
+          "label": "履约费用"
+        },
+        {
+          "id": "FIN-002-F-009",
+          "label": "人工调整"
+        },
+        {
+          "id": "FIN-002-F-010",
+          "label": "已归属毛利"
+        },
+        {
+          "id": "FIN-002-F-011",
+          "label": "经营净利状态"
+        },
+        {
+          "id": "FIN-002-F-012",
+          "label": "凭证来源与观察时间"
+        },
+        {
+          "id": "FIN-002-F-013",
+          "label": "ProfitSnapshot版本"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "FIN-003",
+      "name": "待补与待分配处理",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "费用与核算",
+      "group": "销售履约",
+      "route": "#/web/FIN-003",
+      "renderer": "finance",
+      "phase": "W8R2C",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/finance.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "FIN-003-F-004",
+        "FIN-003-F-005",
+        "FIN-003-F-006",
+        "FIN-003-F-007",
+        "FIN-003-F-008",
+        "FIN-003-F-009",
+        "FIN-003-F-010",
+        "FIN-003-F-011"
+      ],
+      "fields": [
+        {
+          "id": "FIN-003-F-004",
+          "label": "原始凭证与金额"
+        },
+        {
+          "id": "FIN-003-F-005",
+          "label": "已归属金额"
+        },
+        {
+          "id": "FIN-003-F-006",
+          "label": "待分配余额"
+        },
+        {
+          "id": "FIN-003-F-007",
+          "label": "目标销售订单项"
+        },
+        {
+          "id": "FIN-003-F-008",
+          "label": "本次分配金额"
+        },
+        {
+          "id": "FIN-003-F-009",
+          "label": "分配依据"
+        },
+        {
+          "id": "FIN-003-F-010",
+          "label": "备注"
+        },
+        {
+          "id": "FIN-003-F-011",
+          "label": "历史分配与冲正"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "SYS-001",
+      "name": "平台与账号设置",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "平台与账号店铺",
+      "group": "商品供给",
+      "route": "#/web/SYS-001",
+      "renderer": "configuration",
+      "phase": "V9.2.0",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/configuration-flow.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "v920-login-endpoints.test.js + C1 retained tests",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "SYS-001-F-001",
+        "SYS-001-F-002",
+        "SYS-001-F-003",
+        "SYS-001-F-004",
+        "SYS-001-F-005",
+        "SYS-001-F-006"
+      ],
+      "fields": [
+        {
+          "id": "SYS-001-F-001",
+          "label": "平台"
+        },
+        {
+          "id": "SYS-001-F-002",
+          "label": "类型"
+        },
+        {
+          "id": "SYS-001-F-003",
+          "label": "接入模式"
+        },
+        {
+          "id": "SYS-001-F-004",
+          "label": "Endpoint"
+        },
+        {
+          "id": "SYS-001-F-005",
+          "label": "能力"
+        },
+        {
+          "id": "SYS-001-F-006",
+          "label": "运行状态"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "扫码/密码由本人输入平台页；本机Cookie导入；店铺后台地址及配置停用。真实SIT待验证。 V9.2.1补独立UTP授权，不能据此关闭本页全部历史字段与按钮。",
+      "v921Review": "UTP_AUTHORIZATION_RELATED_LOCAL_IMPLEMENTATION_AND_TESTED",
+      "v921Evidence": [
+        "test/v921-utp-authorization.test.js",
+        "test/v921-transport-recovery.test.js",
+        "qa/v921-regression.json"
+      ]
+    },
+    {
+      "id": "SYS-002",
+      "name": "我的货源账号",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "平台与账号店铺",
+      "group": "商品供给",
+      "route": "#/web/SYS-002",
+      "renderer": "configuration",
+      "phase": "V9.2.0",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/configuration-flow.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "v920-login-endpoints.test.js + C1 retained tests",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "SYS-002-F-001",
+        "SYS-002-F-002",
+        "SYS-002-F-003",
+        "SYS-002-F-004",
+        "SYS-002-F-005"
+      ],
+      "fields": [
+        {
+          "id": "SYS-002-F-001",
+          "label": "对象"
+        },
+        {
+          "id": "SYS-002-F-002",
+          "label": "平台"
+        },
+        {
+          "id": "SYS-002-F-003",
+          "label": "认证通道"
+        },
+        {
+          "id": "SYS-002-F-004",
+          "label": "执行绑定"
+        },
+        {
+          "id": "SYS-002-F-005",
+          "label": "认证状态"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "扫码/密码由本人输入平台页；本机Cookie导入；店铺后台地址及配置停用。真实SIT待验证。 V9.2.1补独立UTP授权，不能据此关闭本页全部历史字段与按钮。",
+      "v921Review": "UTP_AUTHORIZATION_RELATED_LOCAL_IMPLEMENTATION_AND_TESTED",
+      "v921Evidence": [
+        "test/v921-utp-authorization.test.js",
+        "test/v921-transport-recovery.test.js",
+        "qa/v921-regression.json"
+      ]
+    },
+    {
+      "id": "SYS-004",
+      "name": "浏览器配置",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "执行节点",
+      "group": "运行支撑",
+      "route": "#/web/SYS-004",
+      "renderer": "setup",
+      "phase": "W8R2D",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/platform-setup.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "SYS-004-F-001",
+        "SYS-004-F-002",
+        "SYS-004-F-003",
+        "SYS-004-F-004",
+        "SYS-004-F-005",
+        "SYS-004-F-006"
+      ],
+      "fields": [
+        {
+          "id": "SYS-004-F-001",
+          "label": "Profile"
+        },
+        {
+          "id": "SYS-004-F-002",
+          "label": "设备"
+        },
+        {
+          "id": "SYS-004-F-003",
+          "label": "平台对象"
+        },
+        {
+          "id": "SYS-004-F-004",
+          "label": "登录"
+        },
+        {
+          "id": "SYS-004-F-005",
+          "label": "最近验证"
+        },
+        {
+          "id": "SYS-004-F-006",
+          "label": "占用"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "SYS-005",
+      "name": "UTP管理",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "系统管理",
+      "group": "运行支撑",
+      "route": "#/web/SYS-005",
+      "renderer": "pending",
+      "phase": "W8R2D",
+      "frontend": "FRAMEWORK_ONLY",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/platform-setup.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "SYS-005-F-001",
+        "SYS-005-F-002",
+        "SYS-005-F-003",
+        "SYS-005-F-004",
+        "SYS-005-F-005",
+        "SYS-005-F-006"
+      ],
+      "fields": [
+        {
+          "id": "SYS-005-F-001",
+          "label": "能力"
+        },
+        {
+          "id": "SYS-005-F-002",
+          "label": "状态"
+        },
+        {
+          "id": "SYS-005-F-003",
+          "label": "生产用途"
+        },
+        {
+          "id": "SYS-005-F-004",
+          "label": "UTP Host"
+        },
+        {
+          "id": "SYS-005-F-005",
+          "label": "授权状态"
+        },
+        {
+          "id": "SYS-005-F-006",
+          "label": "能力"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "SYS-008",
+      "name": "AI配置",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "系统管理",
+      "group": "运行支撑",
+      "route": "#/web/SYS-008",
+      "renderer": "pending",
+      "phase": "W8R2D",
+      "frontend": "FRAMEWORK_ONLY",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/platform-setup.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "SYS-008-F-001",
+        "SYS-008-F-002",
+        "SYS-008-F-003",
+        "SYS-008-F-004",
+        "SYS-008-F-005",
+        "SYS-008-F-006",
+        "SYS-008-F-007",
+        "SYS-008-F-008",
+        "SYS-008-X-F-001",
+        "SYS-008-X-F-002",
+        "SYS-008-X-F-003"
+      ],
+      "fields": [
+        {
+          "id": "SYS-008-F-001",
+          "label": "Provider"
+        },
+        {
+          "id": "SYS-008-F-002",
+          "label": "模型"
+        },
+        {
+          "id": "SYS-008-F-003",
+          "label": "API Secret"
+        },
+        {
+          "id": "SYS-008-F-004",
+          "label": "每日预算"
+        },
+        {
+          "id": "SYS-008-F-005",
+          "label": "AI CLEAN"
+        },
+        {
+          "id": "SYS-008-F-006",
+          "label": "规则引擎"
+        },
+        {
+          "id": "SYS-008-F-007",
+          "label": "语义检测"
+        },
+        {
+          "id": "SYS-008-F-008",
+          "label": "BLOCK策略"
+        },
+        {
+          "id": "SYS-008-X-F-001",
+          "label": "通道类型、本地连接地址、外部提供方/模型代号、状态"
+        },
+        {
+          "id": "SYS-008-X-F-002",
+          "label": "外发字段白名单及商品图片单独开关。"
+        },
+        {
+          "id": "SYS-008-X-F-003",
+          "label": "预算、超时、最近连接测试、降级状态及配置版本。"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "PC-003",
+      "name": "登录中心",
+      "surface": "pc",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "PC 客户端",
+      "group": "固定 Windows PC",
+      "route": "#/pc/PC-003",
+      "renderer": "pc",
+      "phase": "V9.2.0",
+      "frontend": "FRAMEWORK_ONLY",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "pc-agent/src/configuration-login.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "v920-login-endpoints.test.js + C1 retained tests",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "PC-003-F-001",
+        "PC-003-F-002",
+        "PC-003-F-003",
+        "PC-003-F-004"
+      ],
+      "fields": [
+        {
+          "id": "PC-003-F-001",
+          "label": "对象"
+        },
+        {
+          "id": "PC-003-F-002",
+          "label": "Profile"
+        },
+        {
+          "id": "PC-003-F-003",
+          "label": "登录状态"
+        },
+        {
+          "id": "PC-003-F-004",
+          "label": "最近验证"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "扫码/密码由本人输入平台页；本机Cookie导入；店铺后台地址及配置停用。真实SIT待验证。 V9.2.1补独立UTP授权，不能据此关闭本页全部历史字段与按钮。",
+      "v921Review": "UTP_AUTHORIZATION_RELATED_LOCAL_IMPLEMENTATION_AND_TESTED",
+      "v921Evidence": [
+        "test/v921-utp-authorization.test.js",
+        "test/v921-transport-recovery.test.js",
+        "qa/v921-regression.json"
+      ]
+    },
+    {
+      "id": "PC-004",
+      "name": "人工接管",
+      "surface": "pc",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "PC 客户端",
+      "group": "固定 Windows PC",
+      "route": "#/pc/PC-004",
+      "renderer": "pc",
+      "phase": "W8R2D",
+      "frontend": "FRAMEWORK_ONLY",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "pc-agent/src/console.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "PC-004-F-001",
+        "PC-004-F-002",
+        "PC-004-F-003",
+        "PC-004-F-004"
+      ],
+      "fields": [
+        {
+          "id": "PC-004-F-001",
+          "label": "业务任务"
+        },
+        {
+          "id": "PC-004-F-002",
+          "label": "平台"
+        },
+        {
+          "id": "PC-004-F-003",
+          "label": "Profile"
+        },
+        {
+          "id": "PC-004-F-004",
+          "label": "原因"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "导航与框架已建立，执行型字段与动作在 W8R2D 收口",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "DASH-001",
+      "name": "工作台",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "工作台",
+      "group": "今日经营",
+      "route": "#/web/DASH-001",
+      "renderer": "dashboard",
+      "phase": "W8R2A",
+      "frontend": "LOCAL_DATA",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/operations-dashboard.js",
+      "worker": "NAS_READ_ONLY",
+      "localTests": "test/w8r2a-operations.test.js + test/w8r2a-ui.test.js",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "DASH-001-F-001",
+        "DASH-001-F-002",
+        "DASH-001-F-003",
+        "DASH-001-F-004",
+        "DASH-001-F-005",
+        "DASH-001-F-006",
+        "DASH-001-F-007",
+        "DASH-001-F-008",
+        "DASH-001-F-009",
+        "DASH-001-F-010",
+        "DASH-001-F-011",
+        "DASH-001-F-012"
+      ],
+      "fields": [
+        {
+          "id": "DASH-001-F-001",
+          "label": "待处理"
+        },
+        {
+          "id": "DASH-001-F-002",
+          "label": "今日新增订单"
+        },
+        {
+          "id": "DASH-001-F-003",
+          "label": "待采购"
+        },
+        {
+          "id": "DASH-001-F-004",
+          "label": "待回填物流"
+        },
+        {
+          "id": "DASH-001-F-005",
+          "label": "1688货源"
+        },
+        {
+          "id": "DASH-001-F-006",
+          "label": "设备健康状态"
+        },
+        {
+          "id": "DASH-001-F-007",
+          "label": "小红书执行待处理"
+        },
+        {
+          "id": "DASH-001-F-008",
+          "label": "微信小店执行待处理"
+        },
+        {
+          "id": "DASH-001-F-009",
+          "label": "档案登录核验状态"
+        },
+        {
+          "id": "DASH-001-F-010",
+          "label": "采购建议重新核对"
+        },
+        {
+          "id": "DASH-001-F-011",
+          "label": "待分配回填包裹"
+        },
+        {
+          "id": "DASH-001-F-012",
+          "label": "店铺投影待处理"
+        }
+      ],
+      "requirementIds": [
+        "REQ-911-005",
+        "REQ-911-025",
+        "REQ-911-027"
+      ],
+      "notes": "本批接通本地数据；真实环境与平台后置统一 SIT",
+      "specComplete": false,
+      "remainingControls": "诊断导出与完整跨模块对象工作区在后续批次收口",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "DASH-002",
+      "name": "待处理",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "待处理",
+      "group": "今日经营",
+      "route": "#/web/DASH-002",
+      "renderer": "todo",
+      "phase": "W8R2A",
+      "frontend": "LOCAL_DATA",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/operations-dashboard.js",
+      "worker": "NAS_READ_ONLY",
+      "localTests": "test/w8r2a-operations.test.js + test/w8r2a-ui.test.js",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "DASH-002-F-001",
+        "DASH-002-F-002",
+        "DASH-002-F-003",
+        "DASH-002-F-004"
+      ],
+      "fields": [
+        {
+          "id": "DASH-002-F-001",
+          "label": "类型"
+        },
+        {
+          "id": "DASH-002-F-002",
+          "label": "业务对象"
+        },
+        {
+          "id": "DASH-002-F-003",
+          "label": "原因"
+        },
+        {
+          "id": "DASH-002-F-004",
+          "label": "优先级"
+        }
+      ],
+      "requirementIds": [
+        "REQ-911-005",
+        "REQ-911-025",
+        "REQ-911-027"
+      ],
+      "notes": "本批接通本地数据；真实环境与平台后置统一 SIT",
+      "specComplete": false,
+      "remainingControls": "诊断导出与完整跨模块对象工作区在后续批次收口",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "DASH-003",
+      "name": "异常中心",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "异常中心",
+      "group": "今日经营",
+      "route": "#/web/DASH-003",
+      "renderer": "exceptions",
+      "phase": "W8R2A",
+      "frontend": "LOCAL_DATA",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/operations-dashboard.js",
+      "worker": "NAS_READ_ONLY",
+      "localTests": "test/w8r2a-operations.test.js + test/w8r2a-ui.test.js",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "DASH-003-F-001",
+        "DASH-003-F-002",
+        "DASH-003-F-003",
+        "DASH-003-F-004",
+        "DASH-003-F-005"
+      ],
+      "fields": [
+        {
+          "id": "DASH-003-F-001",
+          "label": "来源"
+        },
+        {
+          "id": "DASH-003-F-002",
+          "label": "异常"
+        },
+        {
+          "id": "DASH-003-F-003",
+          "label": "影响"
+        },
+        {
+          "id": "DASH-003-F-004",
+          "label": "建议处理"
+        },
+        {
+          "id": "DASH-003-F-005",
+          "label": "状态"
+        }
+      ],
+      "requirementIds": [
+        "REQ-911-005",
+        "REQ-911-025",
+        "REQ-911-027"
+      ],
+      "notes": "本批接通本地数据；真实环境与平台后置统一 SIT",
+      "specComplete": false,
+      "remainingControls": "诊断导出与完整跨模块对象工作区在后续批次收口",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "SYS-003",
+      "name": "PC客户端",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "执行节点",
+      "group": "运行支撑",
+      "route": "#/web/SYS-003",
+      "renderer": "setup",
+      "phase": "W8R2D",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/platform-setup.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "SYS-003-F-001",
+        "SYS-003-F-002",
+        "SYS-003-F-003",
+        "SYS-003-F-004",
+        "SYS-003-F-005",
+        "SYS-003-F-006"
+      ],
+      "fields": [
+        {
+          "id": "SYS-003-F-001",
+          "label": "设备"
+        },
+        {
+          "id": "SYS-003-F-002",
+          "label": "连接"
+        },
+        {
+          "id": "SYS-003-F-003",
+          "label": "客户端"
+        },
+        {
+          "id": "SYS-003-F-004",
+          "label": "Browser Worker"
+        },
+        {
+          "id": "SYS-003-F-005",
+          "label": "Profiles"
+        },
+        {
+          "id": "SYS-003-F-006",
+          "label": "当前任务"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "SYS-006",
+      "name": "存储管理",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "媒体与存储",
+      "group": "运行支撑",
+      "route": "#/web/SYS-006",
+      "renderer": "pending",
+      "phase": "W8R2D",
+      "frontend": "FRAMEWORK_ONLY",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/platform-setup.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "SYS-006-F-001",
+        "SYS-006-F-002",
+        "SYS-006-F-003",
+        "SYS-006-F-004",
+        "SYS-006-F-005",
+        "SYS-006-F-006",
+        "SYS-006-F-007",
+        "SYS-006-F-008",
+        "SYS-006-F-009",
+        "SYS-006-F-010",
+        "SYS-006-F-011",
+        "SYS-006-F-012",
+        "SYS-006-F-013",
+        "SYS-006-F-014"
+      ],
+      "fields": [
+        {
+          "id": "SYS-006-F-001",
+          "label": "数据类型"
+        },
+        {
+          "id": "SYS-006-F-002",
+          "label": "位置"
+        },
+        {
+          "id": "SYS-006-F-003",
+          "label": "保留"
+        },
+        {
+          "id": "SYS-006-F-004",
+          "label": "说明"
+        },
+        {
+          "id": "SYS-006-F-005",
+          "label": "类型"
+        },
+        {
+          "id": "SYS-006-F-006",
+          "label": "根路径"
+        },
+        {
+          "id": "SYS-006-F-007",
+          "label": "媒体目录"
+        },
+        {
+          "id": "SYS-006-F-008",
+          "label": "Evidence目录"
+        },
+        {
+          "id": "SYS-006-F-009",
+          "label": "主存储"
+        },
+        {
+          "id": "SYS-006-F-010",
+          "label": "使用率"
+        },
+        {
+          "id": "SYS-006-F-011",
+          "label": "临时缓存"
+        },
+        {
+          "id": "SYS-006-F-012",
+          "label": "采集原图进入 MediaAsset"
+        },
+        {
+          "id": "SYS-006-F-013",
+          "label": "平台适配生成派生图"
+        },
+        {
+          "id": "SYS-006-F-014",
+          "label": "内容去重"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "SYS-007",
+      "name": "映射规则",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "标准数据",
+      "group": "商品供给",
+      "route": "#/web/SYS-007",
+      "renderer": "pending",
+      "phase": "W8R2D",
+      "frontend": "FRAMEWORK_ONLY",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/platform-setup.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "SYS-007-F-001",
+        "SYS-007-F-002",
+        "SYS-007-F-003",
+        "SYS-007-F-004",
+        "SYS-007-F-005"
+      ],
+      "fields": [
+        {
+          "id": "SYS-007-F-001",
+          "label": "内部值"
+        },
+        {
+          "id": "SYS-007-F-002",
+          "label": "目标平台"
+        },
+        {
+          "id": "SYS-007-F-003",
+          "label": "外部值"
+        },
+        {
+          "id": "SYS-007-F-004",
+          "label": "状态"
+        },
+        {
+          "id": "SYS-007-F-005",
+          "label": "版本"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "SYS-009",
+      "name": "任务与执行",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "任务与执行",
+      "group": "运行支撑",
+      "route": "#/web/SYS-009",
+      "renderer": "tasks",
+      "phase": "W8R2D",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/platform-setup.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "SYS-009-F-001",
+        "SYS-009-F-002",
+        "SYS-009-F-003",
+        "SYS-009-F-004",
+        "SYS-009-F-005",
+        "SYS-009-F-006",
+        "SYS-009-F-007",
+        "SYS-009-F-008",
+        "SYS-009-F-009",
+        "SYS-009-F-010",
+        "SYS-009-F-011",
+        "SYS-009-F-012"
+      ],
+      "fields": [
+        {
+          "id": "SYS-009-F-001",
+          "label": "单PC浏览器并发"
+        },
+        {
+          "id": "SYS-009-F-002",
+          "label": "同Profile并发"
+        },
+        {
+          "id": "SYS-009-F-003",
+          "label": "任务超时"
+        },
+        {
+          "id": "SYS-009-F-004",
+          "label": "写结果未知"
+        },
+        {
+          "id": "SYS-009-F-005",
+          "label": "店铺订单"
+        },
+        {
+          "id": "SYS-009-F-006",
+          "label": "供应商物流"
+        },
+        {
+          "id": "SYS-009-F-007",
+          "label": "商城物流回填"
+        },
+        {
+          "id": "SYS-009-F-008",
+          "label": "读取失败"
+        },
+        {
+          "id": "SYS-009-F-009",
+          "label": "登录失效"
+        },
+        {
+          "id": "SYS-009-F-010",
+          "label": "验证码/风控"
+        },
+        {
+          "id": "SYS-009-F-011",
+          "label": "身份不一致"
+        },
+        {
+          "id": "SYS-009-F-012",
+          "label": "页面未知版本"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "SYS-010",
+      "name": "安全与审计",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "系统管理",
+      "group": "运行支撑",
+      "route": "#/web/SYS-010",
+      "renderer": "pending",
+      "phase": "W8R2D",
+      "frontend": "FRAMEWORK_ONLY",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/platform-setup.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "SYS-010-F-001",
+        "SYS-010-F-002",
+        "SYS-010-F-003",
+        "SYS-010-F-004",
+        "SYS-010-F-005",
+        "SYS-010-F-006",
+        "SYS-010-F-007",
+        "SYS-010-F-008"
+      ],
+      "fields": [
+        {
+          "id": "SYS-010-F-001",
+          "label": "时间"
+        },
+        {
+          "id": "SYS-010-F-002",
+          "label": "操作者/设备"
+        },
+        {
+          "id": "SYS-010-F-003",
+          "label": "动作"
+        },
+        {
+          "id": "SYS-010-F-004",
+          "label": "业务对象"
+        },
+        {
+          "id": "SYS-010-F-005",
+          "label": "结果"
+        },
+        {
+          "id": "SYS-010-F-006",
+          "label": "高风险写操作"
+        },
+        {
+          "id": "SYS-010-F-007",
+          "label": "敏感日志"
+        },
+        {
+          "id": "SYS-010-F-008",
+          "label": "设备凭据"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "SYS-011",
+      "name": "系统诊断",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "系统管理",
+      "group": "运行支撑",
+      "route": "#/web/SYS-011",
+      "renderer": "pending",
+      "phase": "W8R2D",
+      "frontend": "FRAMEWORK_ONLY",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/platform-setup.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "SYS-011-F-001",
+        "SYS-011-F-002",
+        "SYS-011-F-003",
+        "SYS-011-F-004",
+        "SYS-011-F-005",
+        "SYS-011-F-006",
+        "SYS-011-F-007",
+        "SYS-011-F-008",
+        "SYS-011-F-009"
+      ],
+      "fields": [
+        {
+          "id": "SYS-011-F-001",
+          "label": "Server"
+        },
+        {
+          "id": "SYS-011-F-002",
+          "label": "数据库"
+        },
+        {
+          "id": "SYS-011-F-003",
+          "label": "存储"
+        },
+        {
+          "id": "SYS-011-F-004",
+          "label": "UTP"
+        },
+        {
+          "id": "SYS-011-F-005",
+          "label": "设备健康状态"
+        },
+        {
+          "id": "SYS-011-F-006",
+          "label": "Browser Worker"
+        },
+        {
+          "id": "SYS-011-F-007",
+          "label": "小红书Profile"
+        },
+        {
+          "id": "SYS-011-F-008",
+          "label": "微信小店Profile"
+        },
+        {
+          "id": "SYS-011-F-009",
+          "label": "AI Service"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "SYS-012",
+      "name": "备份与维护",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "系统管理",
+      "group": "运行支撑",
+      "route": "#/web/SYS-012",
+      "renderer": "installation",
+      "phase": "W8R2D",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/platform-setup.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "SYS-012-F-001",
+        "SYS-012-F-002",
+        "SYS-012-F-003",
+        "SYS-012-F-004",
+        "SYS-012-F-005",
+        "SYS-012-F-006",
+        "SYS-012-F-007",
+        "SYS-012-F-008",
+        "SYS-012-F-009",
+        "SYS-012-F-010",
+        "SYS-012-F-011"
+      ],
+      "fields": [
+        {
+          "id": "SYS-012-F-001",
+          "label": "数据库"
+        },
+        {
+          "id": "SYS-012-F-002",
+          "label": "商品媒体"
+        },
+        {
+          "id": "SYS-012-F-003",
+          "label": "系统配置"
+        },
+        {
+          "id": "SYS-012-F-004",
+          "label": "BrowserProfile"
+        },
+        {
+          "id": "SYS-012-F-005",
+          "label": "Server"
+        },
+        {
+          "id": "SYS-012-F-006",
+          "label": "PC最低版本"
+        },
+        {
+          "id": "SYS-012-F-007",
+          "label": "协议"
+        },
+        {
+          "id": "SYS-012-F-008",
+          "label": "恢复演练"
+        },
+        {
+          "id": "SYS-012-F-009",
+          "label": "最近数据库备份"
+        },
+        {
+          "id": "SYS-012-F-010",
+          "label": "媒体增量备份"
+        },
+        {
+          "id": "SYS-012-F-011",
+          "label": "最近恢复验证"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "SRC-006",
+      "name": "链接采集批次",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "货源与采集",
+      "group": "商品供给",
+      "route": "#/web/SRC-006",
+      "renderer": "workspace",
+      "phase": "W8R2B",
+      "frontend": "LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/product-workspace.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R2B_REGRESSION",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "SRC-006-F-001",
+        "SRC-006-F-002",
+        "SRC-006-F-003",
+        "SRC-006-F-004",
+        "SRC-006-F-005",
+        "SRC-006-F-006",
+        "SRC-006-F-007"
+      ],
+      "fields": [
+        {
+          "id": "SRC-006-F-001",
+          "label": "输入序号"
+        },
+        {
+          "id": "SRC-006-F-002",
+          "label": "原始链接"
+        },
+        {
+          "id": "SRC-006-F-003",
+          "label": "规范化链接"
+        },
+        {
+          "id": "SRC-006-F-004",
+          "label": "1688 商品 ID"
+        },
+        {
+          "id": "SRC-006-F-005",
+          "label": "处理状态"
+        },
+        {
+          "id": "SRC-006-F-006",
+          "label": "错误码"
+        },
+        {
+          "id": "SRC-006-F-007",
+          "label": "来源观察时间"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "MED-001",
+      "name": "媒体清单",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "媒体与存储",
+      "group": "运行支撑",
+      "route": "#/web/MED-001",
+      "renderer": "workspace",
+      "phase": "W8R2B",
+      "frontend": "LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/product-workspace.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R2B_REGRESSION",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "MED-001-F-001",
+        "MED-001-F-002",
+        "MED-001-F-003",
+        "MED-001-F-004",
+        "MED-001-F-005",
+        "MED-001-F-006",
+        "MED-001-F-007",
+        "MED-001-F-008",
+        "MED-001-F-009"
+      ],
+      "fields": [
+        {
+          "id": "MED-001-F-001",
+          "label": "原图预览"
+        },
+        {
+          "id": "MED-001-F-002",
+          "label": "角色"
+        },
+        {
+          "id": "MED-001-F-003",
+          "label": "图片类别"
+        },
+        {
+          "id": "MED-001-F-004",
+          "label": "原始尺寸"
+        },
+        {
+          "id": "MED-001-F-005",
+          "label": "格式及大小"
+        },
+        {
+          "id": "MED-001-F-006",
+          "label": "原图哈希"
+        },
+        {
+          "id": "MED-001-F-007",
+          "label": "授权状态"
+        },
+        {
+          "id": "MED-001-F-008",
+          "label": "来源快照"
+        },
+        {
+          "id": "MED-001-F-009",
+          "label": "入库状态"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "MED-002",
+      "name": "图片加工与来源",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "媒体与存储",
+      "group": "运行支撑",
+      "route": "#/web/MED-002",
+      "renderer": "workspace",
+      "phase": "W8R2B",
+      "frontend": "LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/product-workspace.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R2B_REGRESSION",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "MED-002-F-001",
+        "MED-002-F-002",
+        "MED-002-F-003",
+        "MED-002-F-004",
+        "MED-002-F-005",
+        "MED-002-F-006",
+        "MED-002-F-007"
+      ],
+      "fields": [
+        {
+          "id": "MED-002-F-001",
+          "label": "原图哈希"
+        },
+        {
+          "id": "MED-002-F-002",
+          "label": "原图尺寸"
+        },
+        {
+          "id": "MED-002-F-003",
+          "label": "派生图"
+        },
+        {
+          "id": "MED-002-F-004",
+          "label": "操作链"
+        },
+        {
+          "id": "MED-002-F-005",
+          "label": "模型版本"
+        },
+        {
+          "id": "MED-002-F-006",
+          "label": "质量判断"
+        },
+        {
+          "id": "MED-002-F-007",
+          "label": "采纳记录"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "PKG-001",
+      "name": "包装 OCR 核对",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "商品中心",
+      "group": "商品供给",
+      "route": "#/web/PKG-001",
+      "renderer": "workspace",
+      "phase": "W8R2B",
+      "frontend": "LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/packaging-ocr.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R2B_REGRESSION",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "PKG-001-F-001",
+        "PKG-001-F-002",
+        "PKG-001-F-003",
+        "PKG-001-F-004",
+        "PKG-001-F-005",
+        "PKG-001-F-006",
+        "PKG-001-F-007",
+        "PKG-001-F-008"
+      ],
+      "fields": [
+        {
+          "id": "PKG-001-F-001",
+          "label": "包装原图"
+        },
+        {
+          "id": "PKG-001-F-002",
+          "label": "OCR 原文"
+        },
+        {
+          "id": "PKG-001-F-003",
+          "label": "文本框坐标"
+        },
+        {
+          "id": "PKG-001-F-004",
+          "label": "字段候选"
+        },
+        {
+          "id": "PKG-001-F-005",
+          "label": "标准值"
+        },
+        {
+          "id": "PKG-001-F-006",
+          "label": "置信度"
+        },
+        {
+          "id": "PKG-001-F-007",
+          "label": "冲突"
+        },
+        {
+          "id": "PKG-001-F-008",
+          "label": "人工决定"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "CAT-001",
+      "name": "类目与属性字典",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "标准数据",
+      "group": "商品供给",
+      "route": "#/web/CAT-001",
+      "renderer": "workspace",
+      "phase": "W8R2B",
+      "frontend": "LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/product-workspace.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R2B_REGRESSION",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "CAT-001-F-001",
+        "CAT-001-F-002",
+        "CAT-001-F-003",
+        "CAT-001-F-004",
+        "CAT-001-F-005",
+        "CAT-001-F-006",
+        "CAT-001-F-007"
+      ],
+      "fields": [
+        {
+          "id": "CAT-001-F-001",
+          "label": "青鸟类目编码"
+        },
+        {
+          "id": "CAT-001-F-002",
+          "label": "中文名称"
+        },
+        {
+          "id": "CAT-001-F-003",
+          "label": "父类目"
+        },
+        {
+          "id": "CAT-001-F-004",
+          "label": "店铺叶子类目"
+        },
+        {
+          "id": "CAT-001-F-005",
+          "label": "必填属性"
+        },
+        {
+          "id": "CAT-001-F-006",
+          "label": "映射状态"
+        },
+        {
+          "id": "CAT-001-F-007",
+          "label": "规则版本"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "STORE-004",
+      "name": "草稿与发布确认",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "店铺商品与草稿",
+      "group": "销售履约",
+      "route": "#/web/STORE-004",
+      "renderer": "product",
+      "phase": "W8R2B",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/store-publication.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "STORE-004-F-001",
+        "STORE-004-F-002",
+        "STORE-004-F-003",
+        "STORE-004-F-004",
+        "STORE-004-F-005",
+        "STORE-004-F-006",
+        "STORE-004-F-007",
+        "STORE-004-F-008"
+      ],
+      "fields": [
+        {
+          "id": "STORE-004-F-001",
+          "label": "最终标题"
+        },
+        {
+          "id": "STORE-004-F-002",
+          "label": "最终文案"
+        },
+        {
+          "id": "STORE-004-F-003",
+          "label": "规格价格库存"
+        },
+        {
+          "id": "STORE-004-F-004",
+          "label": "目标叶子类目"
+        },
+        {
+          "id": "STORE-004-F-005",
+          "label": "图片顺序"
+        },
+        {
+          "id": "STORE-004-F-006",
+          "label": "授权与质量"
+        },
+        {
+          "id": "STORE-004-F-007",
+          "label": "草稿回读"
+        },
+        {
+          "id": "STORE-004-F-008",
+          "label": "差异与缺项"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2B",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "PC-001",
+      "name": "首次配对",
+      "surface": "pc",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "PC 客户端",
+      "group": "固定 Windows PC",
+      "route": "#/pc/PC-001",
+      "renderer": "pc",
+      "phase": "W8R2D",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "pc-agent/src/console.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "PC-001-F-001",
+        "PC-001-F-002",
+        "PC-001-F-003"
+      ],
+      "fields": [
+        {
+          "id": "PC-001-F-001",
+          "label": "服务端地址"
+        },
+        {
+          "id": "PC-001-F-002",
+          "label": "设备名称"
+        },
+        {
+          "id": "PC-001-F-003",
+          "label": "一次性配对码"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "PC-002",
+      "name": "设备首页",
+      "surface": "pc",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "PC 客户端",
+      "group": "固定 Windows PC",
+      "route": "#/pc/PC-002",
+      "renderer": "pc",
+      "phase": "W8R2D",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "pc-agent/src/console.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "PC-002-F-001",
+        "PC-002-F-002",
+        "PC-002-F-003"
+      ],
+      "fields": [
+        {
+          "id": "PC-002-F-001",
+          "label": "Server连接"
+        },
+        {
+          "id": "PC-002-F-002",
+          "label": "Browser Profiles"
+        },
+        {
+          "id": "PC-002-F-003",
+          "label": "当前任务"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "PC-005",
+      "name": "任务监控",
+      "surface": "pc",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "PC 客户端",
+      "group": "固定 Windows PC",
+      "route": "#/pc/PC-005",
+      "renderer": "pc",
+      "phase": "W8R2D",
+      "frontend": "FRAMEWORK_ONLY",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "pc-agent/src/console.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "PC-005-F-001",
+        "PC-005-F-002",
+        "PC-005-F-003",
+        "PC-005-F-004",
+        "PC-005-F-005",
+        "PC-005-F-006",
+        "PC-005-F-007",
+        "PC-005-F-008"
+      ],
+      "fields": [
+        {
+          "id": "PC-005-F-001",
+          "label": "任务"
+        },
+        {
+          "id": "PC-005-F-002",
+          "label": "平台/Profile"
+        },
+        {
+          "id": "PC-005-F-003",
+          "label": "阶段"
+        },
+        {
+          "id": "PC-005-F-004",
+          "label": "状态"
+        },
+        {
+          "id": "PC-005-F-005",
+          "label": "时间"
+        },
+        {
+          "id": "PC-005-F-006",
+          "label": "动作"
+        },
+        {
+          "id": "PC-005-F-007",
+          "label": "结果"
+        },
+        {
+          "id": "PC-005-F-008",
+          "label": "说明"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "导航与框架已建立，执行型字段与动作在 W8R2D 收口",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "PC-006",
+      "name": "连接与设置",
+      "surface": "pc",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "PC 客户端",
+      "group": "固定 Windows PC",
+      "route": "#/pc/PC-006",
+      "renderer": "pc",
+      "phase": "W8R2D",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "pc-agent/src/console.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "PC-006-F-001",
+        "PC-006-F-002",
+        "PC-006-F-003",
+        "PC-006-F-004",
+        "PC-006-F-005",
+        "PC-006-F-006",
+        "PC-006-F-007",
+        "PC-006-F-008",
+        "PC-006-F-009"
+      ],
+      "fields": [
+        {
+          "id": "PC-006-F-001",
+          "label": "Server"
+        },
+        {
+          "id": "PC-006-F-002",
+          "label": "设备ID"
+        },
+        {
+          "id": "PC-006-F-003",
+          "label": "连接"
+        },
+        {
+          "id": "PC-006-F-004",
+          "label": "最近心跳"
+        },
+        {
+          "id": "PC-006-F-005",
+          "label": "PC UI"
+        },
+        {
+          "id": "PC-006-F-006",
+          "label": "Worker.Service"
+        },
+        {
+          "id": "PC-006-F-007",
+          "label": "Browser.Worker"
+        },
+        {
+          "id": "PC-006-F-008",
+          "label": "Chrome"
+        },
+        {
+          "id": "PC-006-F-009",
+          "label": "协议版本"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D V9.2.1补独立UTP授权，不能据此关闭本页全部历史字段与按钮。",
+      "v921Review": "UTP_AUTHORIZATION_RELATED_LOCAL_IMPLEMENTATION_AND_TESTED",
+      "v921Evidence": [
+        "test/v921-utp-authorization.test.js",
+        "test/v921-transport-recovery.test.js",
+        "qa/v921-regression.json"
+      ]
+    },
+    {
+      "id": "PC-007",
+      "name": "账号档案与登录核验",
+      "surface": "pc",
+      "kind": "logical",
+      "baseline": "V9.1.1",
+      "menu": "PC 客户端",
+      "group": "固定 Windows PC",
+      "route": "#/pc/PC-007",
+      "renderer": "pc",
+      "phase": "W8R2D",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "pc-agent/src/console.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [
+        "PC-007-F-001",
+        "PC-007-F-002",
+        "PC-007-F-003",
+        "PC-007-F-004",
+        "PC-007-F-005",
+        "PC-007-F-006"
+      ],
+      "fields": [
+        {
+          "id": "PC-007-F-001",
+          "label": "账号标签"
+        },
+        {
+          "id": "PC-007-F-002",
+          "label": "Profile 别名"
+        },
+        {
+          "id": "PC-007-F-003",
+          "label": "设备绑定"
+        },
+        {
+          "id": "PC-007-F-004",
+          "label": "会话状态"
+        },
+        {
+          "id": "PC-007-F-005",
+          "label": "卖家身份指纹"
+        },
+        {
+          "id": "PC-007-F-006",
+          "label": "最近核验"
+        }
+      ],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "JD-001",
+      "name": "京东商品准备",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "W7/W8_INCREMENT",
+      "menu": "店铺商品与草稿",
+      "group": "销售履约",
+      "route": "#/web/JD-001",
+      "renderer": "jd",
+      "phase": "W8R2B",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/jd-publication.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [],
+      "fields": [],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2B",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "JD-002",
+      "name": "京东类目与属性",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "W7/W8_INCREMENT",
+      "menu": "店铺商品与草稿",
+      "group": "销售履约",
+      "route": "#/web/JD-002",
+      "renderer": "jd",
+      "phase": "W8R2B",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/jd-publication.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [],
+      "fields": [],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2B",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "JD-003",
+      "name": "京东草稿同步与回读",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "W7/W8_INCREMENT",
+      "menu": "店铺商品与草稿",
+      "group": "销售履约",
+      "route": "#/web/JD-003",
+      "renderer": "jd",
+      "phase": "W8R2B",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/jd-publication.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [],
+      "fields": [],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2B",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "JD-004",
+      "name": "京东审核与发布确认",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "W7/W8_INCREMENT",
+      "menu": "店铺商品与草稿",
+      "group": "销售履约",
+      "route": "#/web/JD-004",
+      "renderer": "jd",
+      "phase": "W8R2B",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/jd-publication.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [],
+      "fields": [],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2B",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "JD-005",
+      "name": "京东发布对账恢复",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "W7/W8_INCREMENT",
+      "menu": "店铺商品与草稿",
+      "group": "销售履约",
+      "route": "#/web/JD-005",
+      "renderer": "jd",
+      "phase": "W8R2B",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/jd-publication.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [],
+      "fields": [],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2B",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "JD-006",
+      "name": "京东订单详情",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "W7/W8_INCREMENT",
+      "menu": "订单中心",
+      "group": "销售履约",
+      "route": "#/web/JD-006",
+      "renderer": "jdOrderDetail",
+      "phase": "W8R2B",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/application/jd-publication.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [],
+      "fields": [],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2B",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    },
+    {
+      "id": "INST-001",
+      "name": "安装与运行管理",
+      "surface": "web",
+      "kind": "logical",
+      "baseline": "W7/W8_INCREMENT",
+      "menu": "系统管理",
+      "group": "运行支撑",
+      "route": "#/web/INST-001",
+      "renderer": "installation",
+      "phase": "W8R2D",
+      "frontend": "EXISTING_COMPOSITE_PARTIAL",
+      "backend": "EXISTING_IMPLEMENTATION_REUSED",
+      "backendEvidence": "nas/src/manager.js",
+      "worker": "SEE_INCREMENT_CONTRACT",
+      "localTests": "W8R1_REGRESSION_REFERENCE",
+      "externalAcceptance": "PENDING_UNIFIED_SIT",
+      "fieldIds": [],
+      "fields": [],
+      "requirementIds": [
+        "SEE_V911_RTM_AND_INCREMENT"
+      ],
+      "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+    }
+  ],
+  "counts": {
+    "v911Logical": 54,
+    "incrementLogical": 7,
+    "nasLogical": 54,
+    "pcLogical": 7,
+    "menuEntries": 18,
+    "legacyWeb": 145,
+    "legacyPc": 20
+  },
+  "statusMeaning": "frontend/backend entries are implementation declarations; actual verification requires test logs. External always pending unless scoped POC.",
+  "legacyRouteDifferences": 67,
+  "designScenes": [
+    {
+      "surface": "web",
+      "id": "DASH-001",
+      "name": "工作台",
+      "fieldIds": [
+        "FLD-DASH-001-01",
+        "FLD-DASH-001-02",
+        "FLD-DASH-001-03",
+        "FLD-DASH-001-04",
+        "FLD-DASH-001-05",
+        "FLD-DASH-001-06",
+        "FLD-DASH-001-07",
+        "FLD-DASH-001-08",
+        "FLD-DASH-001-09",
+        "FLD-DASH-001-10"
+      ],
+      "buttonIds": [
+        "BTN-DASH-001-01",
+        "BTN-DASH-001-02",
+        "BTN-DASH-001-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "DASH-002",
+      "name": "待办/人工任务",
+      "fieldIds": [
+        "FLD-DASH-002-01",
+        "FLD-DASH-002-02",
+        "FLD-DASH-002-03",
+        "FLD-DASH-002-04",
+        "FLD-DASH-002-05",
+        "FLD-DASH-002-06",
+        "FLD-DASH-002-07",
+        "FLD-DASH-002-08",
+        "FLD-DASH-002-09",
+        "FLD-DASH-002-10",
+        "FLD-DASH-002-11",
+        "FLD-DASH-002-12"
+      ],
+      "buttonIds": [
+        "BTN-DASH-002-01",
+        "BTN-DASH-002-02",
+        "BTN-DASH-002-03",
+        "BTN-DASH-002-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "DASH-003",
+      "name": "异常中心",
+      "fieldIds": [
+        "FLD-DASH-003-01",
+        "FLD-DASH-003-02",
+        "FLD-DASH-003-03",
+        "FLD-DASH-003-04",
+        "FLD-DASH-003-05",
+        "FLD-DASH-003-06",
+        "FLD-DASH-003-07",
+        "FLD-DASH-003-08",
+        "FLD-DASH-003-09",
+        "FLD-DASH-003-10"
+      ],
+      "buttonIds": [
+        "BTN-DASH-003-01",
+        "BTN-DASH-003-02",
+        "BTN-DASH-003-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "DASH-004",
+      "name": "任务概览",
+      "fieldIds": [
+        "FLD-DASH-004-01",
+        "FLD-DASH-004-02",
+        "FLD-DASH-004-03",
+        "FLD-DASH-004-04",
+        "FLD-DASH-004-05",
+        "FLD-DASH-004-06",
+        "FLD-DASH-004-07",
+        "FLD-DASH-004-08",
+        "FLD-DASH-004-09",
+        "FLD-DASH-004-10",
+        "FLD-DASH-004-11",
+        "FLD-DASH-004-12"
+      ],
+      "buttonIds": [
+        "BTN-DASH-004-01",
+        "BTN-DASH-004-02",
+        "BTN-DASH-004-03",
+        "BTN-DASH-004-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "DASH-005",
+      "name": "订单概览",
+      "fieldIds": [
+        "FLD-DASH-005-01",
+        "FLD-DASH-005-02",
+        "FLD-DASH-005-03",
+        "FLD-DASH-005-04",
+        "FLD-DASH-005-05",
+        "FLD-DASH-005-06",
+        "FLD-DASH-005-07",
+        "FLD-DASH-005-08",
+        "FLD-DASH-005-09",
+        "FLD-DASH-005-10"
+      ],
+      "buttonIds": [
+        "BTN-DASH-005-01",
+        "BTN-DASH-005-02",
+        "BTN-DASH-005-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "DASH-006",
+      "name": "采集概览",
+      "fieldIds": [
+        "FLD-DASH-006-01",
+        "FLD-DASH-006-02",
+        "FLD-DASH-006-03",
+        "FLD-DASH-006-04",
+        "FLD-DASH-006-05",
+        "FLD-DASH-006-06",
+        "FLD-DASH-006-07",
+        "FLD-DASH-006-08",
+        "FLD-DASH-006-09",
+        "FLD-DASH-006-10"
+      ],
+      "buttonIds": [
+        "BTN-DASH-006-01",
+        "BTN-DASH-006-02",
+        "BTN-DASH-006-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "DASH-007",
+      "name": "发布概览",
+      "fieldIds": [
+        "FLD-DASH-007-01",
+        "FLD-DASH-007-02",
+        "FLD-DASH-007-03",
+        "FLD-DASH-007-04",
+        "FLD-DASH-007-05",
+        "FLD-DASH-007-06",
+        "FLD-DASH-007-07",
+        "FLD-DASH-007-08",
+        "FLD-DASH-007-09",
+        "FLD-DASH-007-10"
+      ],
+      "buttonIds": [
+        "BTN-DASH-007-01",
+        "BTN-DASH-007-02",
+        "BTN-DASH-007-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "DASH-008",
+      "name": "系统健康",
+      "fieldIds": [
+        "FLD-DASH-008-01",
+        "FLD-DASH-008-02",
+        "FLD-DASH-008-03",
+        "FLD-DASH-008-04",
+        "FLD-DASH-008-05",
+        "FLD-DASH-008-06",
+        "FLD-DASH-008-07",
+        "FLD-DASH-008-08",
+        "FLD-DASH-008-09",
+        "FLD-DASH-008-10"
+      ],
+      "buttonIds": [
+        "BTN-DASH-008-01",
+        "BTN-DASH-008-02",
+        "BTN-DASH-008-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PLT-009",
+      "name": "货源平台",
+      "fieldIds": [
+        "FLD-PLT-009-01",
+        "FLD-PLT-009-02",
+        "FLD-PLT-009-03",
+        "FLD-PLT-009-04",
+        "FLD-PLT-009-05",
+        "FLD-PLT-009-06",
+        "FLD-PLT-009-07",
+        "FLD-PLT-009-08",
+        "FLD-PLT-009-09",
+        "FLD-PLT-009-10",
+        "FLD-PLT-009-11"
+      ],
+      "buttonIds": [
+        "BTN-PLT-009-01",
+        "BTN-PLT-009-02",
+        "BTN-PLT-009-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PLT-010",
+      "name": "货源平台新增/编辑",
+      "fieldIds": [
+        "FLD-PLT-010-01",
+        "FLD-PLT-010-02",
+        "FLD-PLT-010-03",
+        "FLD-PLT-010-04",
+        "FLD-PLT-010-05",
+        "FLD-PLT-010-06",
+        "FLD-PLT-010-07",
+        "FLD-PLT-010-08",
+        "FLD-PLT-010-09",
+        "FLD-PLT-010-10",
+        "FLD-PLT-010-11"
+      ],
+      "buttonIds": [
+        "BTN-PLT-010-01",
+        "BTN-PLT-010-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PLT-011",
+      "name": "平台地址",
+      "fieldIds": [
+        "FLD-PLT-011-01",
+        "FLD-PLT-011-02",
+        "FLD-PLT-011-03",
+        "FLD-PLT-011-04",
+        "FLD-PLT-011-05",
+        "FLD-PLT-011-06",
+        "FLD-PLT-011-07",
+        "FLD-PLT-011-08",
+        "FLD-PLT-011-09",
+        "FLD-PLT-011-10",
+        "FLD-PLT-011-11"
+      ],
+      "buttonIds": [
+        "BTN-PLT-011-01",
+        "BTN-PLT-011-02",
+        "BTN-PLT-011-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PLT-012",
+      "name": "平台能力",
+      "fieldIds": [
+        "FLD-PLT-012-01",
+        "FLD-PLT-012-02",
+        "FLD-PLT-012-03",
+        "FLD-PLT-012-04",
+        "FLD-PLT-012-05",
+        "FLD-PLT-012-06",
+        "FLD-PLT-012-07",
+        "FLD-PLT-012-08",
+        "FLD-PLT-012-09",
+        "FLD-PLT-012-10",
+        "FLD-PLT-012-11"
+      ],
+      "buttonIds": [
+        "BTN-PLT-012-01",
+        "BTN-PLT-012-02",
+        "BTN-PLT-012-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PLT-013",
+      "name": "销售平台",
+      "fieldIds": [
+        "FLD-PLT-013-01",
+        "FLD-PLT-013-02",
+        "FLD-PLT-013-03",
+        "FLD-PLT-013-04",
+        "FLD-PLT-013-05",
+        "FLD-PLT-013-06",
+        "FLD-PLT-013-07",
+        "FLD-PLT-013-08",
+        "FLD-PLT-013-09",
+        "FLD-PLT-013-10",
+        "FLD-PLT-013-11"
+      ],
+      "buttonIds": [
+        "BTN-PLT-013-01",
+        "BTN-PLT-013-02",
+        "BTN-PLT-013-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PLT-014",
+      "name": "销售平台新增/编辑",
+      "fieldIds": [
+        "FLD-PLT-014-01",
+        "FLD-PLT-014-02",
+        "FLD-PLT-014-03",
+        "FLD-PLT-014-04",
+        "FLD-PLT-014-05",
+        "FLD-PLT-014-06",
+        "FLD-PLT-014-07",
+        "FLD-PLT-014-08",
+        "FLD-PLT-014-09",
+        "FLD-PLT-014-10",
+        "FLD-PLT-014-11"
+      ],
+      "buttonIds": [
+        "BTN-PLT-014-01",
+        "BTN-PLT-014-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PLT-015",
+      "name": "销售平台能力",
+      "fieldIds": [
+        "FLD-PLT-015-01",
+        "FLD-PLT-015-02",
+        "FLD-PLT-015-03",
+        "FLD-PLT-015-04",
+        "FLD-PLT-015-05",
+        "FLD-PLT-015-06",
+        "FLD-PLT-015-07",
+        "FLD-PLT-015-08",
+        "FLD-PLT-015-09",
+        "FLD-PLT-015-10",
+        "FLD-PLT-015-11"
+      ],
+      "buttonIds": [
+        "BTN-PLT-015-01",
+        "BTN-PLT-015-02",
+        "BTN-PLT-015-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PLT-016",
+      "name": "平台版本",
+      "fieldIds": [
+        "FLD-PLT-016-01",
+        "FLD-PLT-016-02",
+        "FLD-PLT-016-03",
+        "FLD-PLT-016-04",
+        "FLD-PLT-016-05",
+        "FLD-PLT-016-06",
+        "FLD-PLT-016-07",
+        "FLD-PLT-016-08",
+        "FLD-PLT-016-09",
+        "FLD-PLT-016-10",
+        "FLD-PLT-016-11"
+      ],
+      "buttonIds": [
+        "BTN-PLT-016-01",
+        "BTN-PLT-016-02",
+        "BTN-PLT-016-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "ACC-017",
+      "name": "货源账号",
+      "fieldIds": [
+        "FLD-ACC-017-01",
+        "FLD-ACC-017-02",
+        "FLD-ACC-017-03",
+        "FLD-ACC-017-04",
+        "FLD-ACC-017-05",
+        "FLD-ACC-017-06",
+        "FLD-ACC-017-07",
+        "FLD-ACC-017-08",
+        "FLD-ACC-017-09",
+        "FLD-ACC-017-10",
+        "FLD-ACC-017-11",
+        "FLD-ACC-017-12",
+        "FLD-ACC-017-13"
+      ],
+      "buttonIds": [
+        "BTN-ACC-017-01",
+        "BTN-ACC-017-02",
+        "BTN-ACC-017-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "ACC-018",
+      "name": "货源账号新增/编辑",
+      "fieldIds": [
+        "FLD-ACC-018-01",
+        "FLD-ACC-018-02",
+        "FLD-ACC-018-03",
+        "FLD-ACC-018-04",
+        "FLD-ACC-018-05",
+        "FLD-ACC-018-06",
+        "FLD-ACC-018-07",
+        "FLD-ACC-018-08",
+        "FLD-ACC-018-09",
+        "FLD-ACC-018-10",
+        "FLD-ACC-018-11",
+        "FLD-ACC-018-12",
+        "FLD-ACC-018-13"
+      ],
+      "buttonIds": [
+        "BTN-ACC-018-01",
+        "BTN-ACC-018-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "ACC-019",
+      "name": "1688 账号登录与核验",
+      "fieldIds": [
+        "FLD-ACC-019-01",
+        "FLD-ACC-019-02",
+        "FLD-ACC-019-03",
+        "FLD-ACC-019-04",
+        "FLD-ACC-019-05",
+        "FLD-ACC-019-06",
+        "FLD-ACC-019-07",
+        "FLD-ACC-019-08",
+        "FLD-ACC-019-09",
+        "FLD-ACC-019-10",
+        "FLD-ACC-019-11",
+        "FLD-ACC-019-12",
+        "FLD-ACC-019-13"
+      ],
+      "buttonIds": [
+        "BTN-ACC-019-01",
+        "BTN-ACC-019-02",
+        "BTN-ACC-019-03",
+        "BTN-ACC-019-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "ACC-020",
+      "name": "货源账号Endpoint",
+      "fieldIds": [
+        "FLD-ACC-020-01",
+        "FLD-ACC-020-02",
+        "FLD-ACC-020-03",
+        "FLD-ACC-020-04",
+        "FLD-ACC-020-05",
+        "FLD-ACC-020-06",
+        "FLD-ACC-020-07",
+        "FLD-ACC-020-08",
+        "FLD-ACC-020-09",
+        "FLD-ACC-020-10",
+        "FLD-ACC-020-11",
+        "FLD-ACC-020-12",
+        "FLD-ACC-020-13"
+      ],
+      "buttonIds": [
+        "BTN-ACC-020-01",
+        "BTN-ACC-020-02",
+        "BTN-ACC-020-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "ACC-021",
+      "name": "销售账号",
+      "fieldIds": [
+        "FLD-ACC-021-01",
+        "FLD-ACC-021-02",
+        "FLD-ACC-021-03",
+        "FLD-ACC-021-04",
+        "FLD-ACC-021-05",
+        "FLD-ACC-021-06",
+        "FLD-ACC-021-07",
+        "FLD-ACC-021-08",
+        "FLD-ACC-021-09",
+        "FLD-ACC-021-10",
+        "FLD-ACC-021-11",
+        "FLD-ACC-021-12",
+        "FLD-ACC-021-13"
+      ],
+      "buttonIds": [
+        "BTN-ACC-021-01",
+        "BTN-ACC-021-02",
+        "BTN-ACC-021-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "ACC-022",
+      "name": "销售账号新增/编辑",
+      "fieldIds": [
+        "FLD-ACC-022-01",
+        "FLD-ACC-022-02",
+        "FLD-ACC-022-03",
+        "FLD-ACC-022-04",
+        "FLD-ACC-022-05",
+        "FLD-ACC-022-06",
+        "FLD-ACC-022-07",
+        "FLD-ACC-022-08",
+        "FLD-ACC-022-09",
+        "FLD-ACC-022-10",
+        "FLD-ACC-022-11",
+        "FLD-ACC-022-12",
+        "FLD-ACC-022-13"
+      ],
+      "buttonIds": [
+        "BTN-ACC-022-01",
+        "BTN-ACC-022-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "ACC-023",
+      "name": "店铺账号登录与核验",
+      "fieldIds": [
+        "FLD-ACC-023-01",
+        "FLD-ACC-023-02",
+        "FLD-ACC-023-03",
+        "FLD-ACC-023-04",
+        "FLD-ACC-023-05",
+        "FLD-ACC-023-06",
+        "FLD-ACC-023-07",
+        "FLD-ACC-023-08",
+        "FLD-ACC-023-09",
+        "FLD-ACC-023-10",
+        "FLD-ACC-023-11",
+        "FLD-ACC-023-12",
+        "FLD-ACC-023-13"
+      ],
+      "buttonIds": [
+        "BTN-ACC-023-01",
+        "BTN-ACC-023-02",
+        "BTN-ACC-023-03",
+        "BTN-ACC-023-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "ACC-024",
+      "name": "销售账号Endpoint",
+      "fieldIds": [
+        "FLD-ACC-024-01",
+        "FLD-ACC-024-02",
+        "FLD-ACC-024-03",
+        "FLD-ACC-024-04",
+        "FLD-ACC-024-05",
+        "FLD-ACC-024-06",
+        "FLD-ACC-024-07",
+        "FLD-ACC-024-08",
+        "FLD-ACC-024-09",
+        "FLD-ACC-024-10",
+        "FLD-ACC-024-11",
+        "FLD-ACC-024-12",
+        "FLD-ACC-024-13"
+      ],
+      "buttonIds": [
+        "BTN-ACC-024-01",
+        "BTN-ACC-024-02",
+        "BTN-ACC-024-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "STR-025",
+      "name": "店铺列表",
+      "fieldIds": [
+        "FLD-STR-025-01",
+        "FLD-STR-025-02",
+        "FLD-STR-025-03",
+        "FLD-STR-025-04",
+        "FLD-STR-025-05",
+        "FLD-STR-025-06",
+        "FLD-STR-025-07",
+        "FLD-STR-025-08",
+        "FLD-STR-025-09",
+        "FLD-STR-025-10",
+        "FLD-STR-025-11",
+        "FLD-STR-025-12",
+        "FLD-STR-025-13"
+      ],
+      "buttonIds": [
+        "BTN-STR-025-01",
+        "BTN-STR-025-02",
+        "BTN-STR-025-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "STR-026",
+      "name": "店铺新增/编辑",
+      "fieldIds": [
+        "FLD-STR-026-01",
+        "FLD-STR-026-02",
+        "FLD-STR-026-03",
+        "FLD-STR-026-04",
+        "FLD-STR-026-05",
+        "FLD-STR-026-06",
+        "FLD-STR-026-07",
+        "FLD-STR-026-08",
+        "FLD-STR-026-09",
+        "FLD-STR-026-10",
+        "FLD-STR-026-11",
+        "FLD-STR-026-12",
+        "FLD-STR-026-13"
+      ],
+      "buttonIds": [
+        "BTN-STR-026-01",
+        "BTN-STR-026-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "STR-027",
+      "name": "店铺Endpoint",
+      "fieldIds": [
+        "FLD-STR-027-01",
+        "FLD-STR-027-02",
+        "FLD-STR-027-03",
+        "FLD-STR-027-04",
+        "FLD-STR-027-05",
+        "FLD-STR-027-06",
+        "FLD-STR-027-07",
+        "FLD-STR-027-08",
+        "FLD-STR-027-09",
+        "FLD-STR-027-10",
+        "FLD-STR-027-11",
+        "FLD-STR-027-12",
+        "FLD-STR-027-13"
+      ],
+      "buttonIds": [
+        "BTN-STR-027-01",
+        "BTN-STR-027-02",
+        "BTN-STR-027-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "STR-028",
+      "name": "店铺工作台地址",
+      "fieldIds": [
+        "FLD-STR-028-01",
+        "FLD-STR-028-02",
+        "FLD-STR-028-03",
+        "FLD-STR-028-04",
+        "FLD-STR-028-05",
+        "FLD-STR-028-06",
+        "FLD-STR-028-07",
+        "FLD-STR-028-08",
+        "FLD-STR-028-09",
+        "FLD-STR-028-10",
+        "FLD-STR-028-11",
+        "FLD-STR-028-12",
+        "FLD-STR-028-13"
+      ],
+      "buttonIds": [
+        "BTN-STR-028-01",
+        "BTN-STR-028-02",
+        "BTN-STR-028-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "STR-029",
+      "name": "店铺账号关联",
+      "fieldIds": [
+        "FLD-STR-029-01",
+        "FLD-STR-029-02",
+        "FLD-STR-029-03",
+        "FLD-STR-029-04",
+        "FLD-STR-029-05",
+        "FLD-STR-029-06",
+        "FLD-STR-029-07",
+        "FLD-STR-029-08",
+        "FLD-STR-029-09",
+        "FLD-STR-029-10",
+        "FLD-STR-029-11",
+        "FLD-STR-029-12",
+        "FLD-STR-029-13"
+      ],
+      "buttonIds": [
+        "BTN-STR-029-01",
+        "BTN-STR-029-02",
+        "BTN-STR-029-03",
+        "BTN-STR-029-04",
+        "BTN-STR-029-05"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "STR-030",
+      "name": "店铺状态",
+      "fieldIds": [
+        "FLD-STR-030-01",
+        "FLD-STR-030-02",
+        "FLD-STR-030-03",
+        "FLD-STR-030-04",
+        "FLD-STR-030-05",
+        "FLD-STR-030-06",
+        "FLD-STR-030-07",
+        "FLD-STR-030-08",
+        "FLD-STR-030-09",
+        "FLD-STR-030-10",
+        "FLD-STR-030-11",
+        "FLD-STR-030-12",
+        "FLD-STR-030-13"
+      ],
+      "buttonIds": [
+        "BTN-STR-030-01",
+        "BTN-STR-030-02",
+        "BTN-STR-030-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "STR-031",
+      "name": "店铺路由测试",
+      "fieldIds": [
+        "FLD-STR-031-01",
+        "FLD-STR-031-02",
+        "FLD-STR-031-03",
+        "FLD-STR-031-04",
+        "FLD-STR-031-05",
+        "FLD-STR-031-06",
+        "FLD-STR-031-07",
+        "FLD-STR-031-08",
+        "FLD-STR-031-09",
+        "FLD-STR-031-10",
+        "FLD-STR-031-11",
+        "FLD-STR-031-12",
+        "FLD-STR-031-13"
+      ],
+      "buttonIds": [
+        "BTN-STR-031-01",
+        "BTN-STR-031-02",
+        "BTN-STR-031-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SUP-032",
+      "name": "供应商",
+      "fieldIds": [
+        "FLD-SUP-032-01",
+        "FLD-SUP-032-02",
+        "FLD-SUP-032-03",
+        "FLD-SUP-032-04",
+        "FLD-SUP-032-05",
+        "FLD-SUP-032-06",
+        "FLD-SUP-032-07",
+        "FLD-SUP-032-08",
+        "FLD-SUP-032-09",
+        "FLD-SUP-032-10",
+        "FLD-SUP-032-11"
+      ],
+      "buttonIds": [
+        "BTN-SUP-032-01",
+        "BTN-SUP-032-02",
+        "BTN-SUP-032-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SUP-033",
+      "name": "供应商新增/编辑",
+      "fieldIds": [
+        "FLD-SUP-033-01",
+        "FLD-SUP-033-02",
+        "FLD-SUP-033-03",
+        "FLD-SUP-033-04",
+        "FLD-SUP-033-05",
+        "FLD-SUP-033-06",
+        "FLD-SUP-033-07",
+        "FLD-SUP-033-08",
+        "FLD-SUP-033-09",
+        "FLD-SUP-033-10",
+        "FLD-SUP-033-11"
+      ],
+      "buttonIds": [
+        "BTN-SUP-033-01",
+        "BTN-SUP-033-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SUP-034",
+      "name": "供应商详情",
+      "fieldIds": [
+        "FLD-SUP-034-01",
+        "FLD-SUP-034-02",
+        "FLD-SUP-034-03",
+        "FLD-SUP-034-04",
+        "FLD-SUP-034-05",
+        "FLD-SUP-034-06",
+        "FLD-SUP-034-07",
+        "FLD-SUP-034-08",
+        "FLD-SUP-034-09",
+        "FLD-SUP-034-10",
+        "FLD-SUP-034-11"
+      ],
+      "buttonIds": [
+        "BTN-SUP-034-01",
+        "BTN-SUP-034-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SUP-035",
+      "name": "供应商商品",
+      "fieldIds": [
+        "FLD-SUP-035-01",
+        "FLD-SUP-035-02",
+        "FLD-SUP-035-03",
+        "FLD-SUP-035-04",
+        "FLD-SUP-035-05",
+        "FLD-SUP-035-06",
+        "FLD-SUP-035-07",
+        "FLD-SUP-035-08",
+        "FLD-SUP-035-09",
+        "FLD-SUP-035-10",
+        "FLD-SUP-035-11"
+      ],
+      "buttonIds": [
+        "BTN-SUP-035-01",
+        "BTN-SUP-035-02",
+        "BTN-SUP-035-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SUP-036",
+      "name": "供应商采购记录",
+      "fieldIds": [
+        "FLD-SUP-036-01",
+        "FLD-SUP-036-02",
+        "FLD-SUP-036-03",
+        "FLD-SUP-036-04",
+        "FLD-SUP-036-05",
+        "FLD-SUP-036-06",
+        "FLD-SUP-036-07",
+        "FLD-SUP-036-08",
+        "FLD-SUP-036-09",
+        "FLD-SUP-036-10",
+        "FLD-SUP-036-11"
+      ],
+      "buttonIds": [
+        "BTN-SUP-036-01",
+        "BTN-SUP-036-02",
+        "BTN-SUP-036-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SRC-037",
+      "name": "来源商品",
+      "fieldIds": [
+        "FLD-SRC-037-01",
+        "FLD-SRC-037-02",
+        "FLD-SRC-037-03",
+        "FLD-SRC-037-04",
+        "FLD-SRC-037-05",
+        "FLD-SRC-037-06",
+        "FLD-SRC-037-07",
+        "FLD-SRC-037-08",
+        "FLD-SRC-037-09",
+        "FLD-SRC-037-10",
+        "FLD-SRC-037-11",
+        "FLD-SRC-037-12",
+        "FLD-SRC-037-13",
+        "FLD-SRC-037-14",
+        "FLD-SRC-037-15",
+        "FLD-SRC-037-16"
+      ],
+      "buttonIds": [
+        "BTN-SRC-037-01",
+        "BTN-SRC-037-02",
+        "BTN-SRC-037-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SRC-038",
+      "name": "来源商品详情",
+      "fieldIds": [
+        "FLD-SRC-038-01",
+        "FLD-SRC-038-02",
+        "FLD-SRC-038-03",
+        "FLD-SRC-038-04",
+        "FLD-SRC-038-05",
+        "FLD-SRC-038-06",
+        "FLD-SRC-038-07",
+        "FLD-SRC-038-08",
+        "FLD-SRC-038-09",
+        "FLD-SRC-038-10",
+        "FLD-SRC-038-11",
+        "FLD-SRC-038-12",
+        "FLD-SRC-038-13",
+        "FLD-SRC-038-14",
+        "FLD-SRC-038-15",
+        "FLD-SRC-038-16"
+      ],
+      "buttonIds": [
+        "BTN-SRC-038-01",
+        "BTN-SRC-038-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SRC-039",
+      "name": "来源SKU",
+      "fieldIds": [
+        "FLD-SRC-039-01",
+        "FLD-SRC-039-02",
+        "FLD-SRC-039-03",
+        "FLD-SRC-039-04",
+        "FLD-SRC-039-05",
+        "FLD-SRC-039-06",
+        "FLD-SRC-039-07",
+        "FLD-SRC-039-08",
+        "FLD-SRC-039-09",
+        "FLD-SRC-039-10",
+        "FLD-SRC-039-11",
+        "FLD-SRC-039-12",
+        "FLD-SRC-039-13",
+        "FLD-SRC-039-14",
+        "FLD-SRC-039-15",
+        "FLD-SRC-039-16"
+      ],
+      "buttonIds": [
+        "BTN-SRC-039-01",
+        "BTN-SRC-039-02",
+        "BTN-SRC-039-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SRC-040",
+      "name": "来源快照",
+      "fieldIds": [
+        "FLD-SRC-040-01",
+        "FLD-SRC-040-02",
+        "FLD-SRC-040-03",
+        "FLD-SRC-040-04",
+        "FLD-SRC-040-05",
+        "FLD-SRC-040-06",
+        "FLD-SRC-040-07",
+        "FLD-SRC-040-08",
+        "FLD-SRC-040-09",
+        "FLD-SRC-040-10",
+        "FLD-SRC-040-11",
+        "FLD-SRC-040-12",
+        "FLD-SRC-040-13",
+        "FLD-SRC-040-14",
+        "FLD-SRC-040-15",
+        "FLD-SRC-040-16"
+      ],
+      "buttonIds": [
+        "BTN-SRC-040-01",
+        "BTN-SRC-040-02",
+        "BTN-SRC-040-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SRC-041",
+      "name": "来源媒体",
+      "fieldIds": [
+        "FLD-SRC-041-01",
+        "FLD-SRC-041-02",
+        "FLD-SRC-041-03",
+        "FLD-SRC-041-04",
+        "FLD-SRC-041-05",
+        "FLD-SRC-041-06",
+        "FLD-SRC-041-07",
+        "FLD-SRC-041-08",
+        "FLD-SRC-041-09",
+        "FLD-SRC-041-10",
+        "FLD-SRC-041-11",
+        "FLD-SRC-041-12",
+        "FLD-SRC-041-13",
+        "FLD-SRC-041-14",
+        "FLD-SRC-041-15",
+        "FLD-SRC-041-16"
+      ],
+      "buttonIds": [
+        "BTN-SRC-041-01",
+        "BTN-SRC-041-02",
+        "BTN-SRC-041-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SRC-042",
+      "name": "探查任务",
+      "fieldIds": [
+        "FLD-SRC-042-01",
+        "FLD-SRC-042-02",
+        "FLD-SRC-042-03",
+        "FLD-SRC-042-04",
+        "FLD-SRC-042-05",
+        "FLD-SRC-042-06",
+        "FLD-SRC-042-07",
+        "FLD-SRC-042-08",
+        "FLD-SRC-042-09",
+        "FLD-SRC-042-10",
+        "FLD-SRC-042-11",
+        "FLD-SRC-042-12",
+        "FLD-SRC-042-13",
+        "FLD-SRC-042-14",
+        "FLD-SRC-042-15",
+        "FLD-SRC-042-16",
+        "FLD-SRC-042-17",
+        "FLD-SRC-042-18"
+      ],
+      "buttonIds": [
+        "BTN-SRC-042-01",
+        "BTN-SRC-042-02",
+        "BTN-SRC-042-03",
+        "BTN-SRC-042-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SRC-043",
+      "name": "探查结果",
+      "fieldIds": [
+        "FLD-SRC-043-01",
+        "FLD-SRC-043-02",
+        "FLD-SRC-043-03",
+        "FLD-SRC-043-04",
+        "FLD-SRC-043-05",
+        "FLD-SRC-043-06",
+        "FLD-SRC-043-07",
+        "FLD-SRC-043-08",
+        "FLD-SRC-043-09",
+        "FLD-SRC-043-10",
+        "FLD-SRC-043-11",
+        "FLD-SRC-043-12",
+        "FLD-SRC-043-13",
+        "FLD-SRC-043-14",
+        "FLD-SRC-043-15",
+        "FLD-SRC-043-16"
+      ],
+      "buttonIds": [
+        "BTN-SRC-043-01",
+        "BTN-SRC-043-02",
+        "BTN-SRC-043-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SRC-044",
+      "name": "候选商品",
+      "fieldIds": [
+        "FLD-SRC-044-01",
+        "FLD-SRC-044-02",
+        "FLD-SRC-044-03",
+        "FLD-SRC-044-04",
+        "FLD-SRC-044-05",
+        "FLD-SRC-044-06",
+        "FLD-SRC-044-07",
+        "FLD-SRC-044-08",
+        "FLD-SRC-044-09",
+        "FLD-SRC-044-10",
+        "FLD-SRC-044-11",
+        "FLD-SRC-044-12",
+        "FLD-SRC-044-13",
+        "FLD-SRC-044-14",
+        "FLD-SRC-044-15",
+        "FLD-SRC-044-16"
+      ],
+      "buttonIds": [
+        "BTN-SRC-044-01",
+        "BTN-SRC-044-02",
+        "BTN-SRC-044-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SRC-045",
+      "name": "候选确认",
+      "fieldIds": [
+        "FLD-SRC-045-01",
+        "FLD-SRC-045-02",
+        "FLD-SRC-045-03",
+        "FLD-SRC-045-04",
+        "FLD-SRC-045-05",
+        "FLD-SRC-045-06",
+        "FLD-SRC-045-07",
+        "FLD-SRC-045-08",
+        "FLD-SRC-045-09",
+        "FLD-SRC-045-10",
+        "FLD-SRC-045-11",
+        "FLD-SRC-045-12",
+        "FLD-SRC-045-13",
+        "FLD-SRC-045-14",
+        "FLD-SRC-045-15",
+        "FLD-SRC-045-16"
+      ],
+      "buttonIds": [
+        "BTN-SRC-045-01",
+        "BTN-SRC-045-02",
+        "BTN-SRC-045-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SRC-046",
+      "name": "正式采集任务",
+      "fieldIds": [
+        "FLD-SRC-046-01",
+        "FLD-SRC-046-02",
+        "FLD-SRC-046-03",
+        "FLD-SRC-046-04",
+        "FLD-SRC-046-05",
+        "FLD-SRC-046-06",
+        "FLD-SRC-046-07",
+        "FLD-SRC-046-08",
+        "FLD-SRC-046-09",
+        "FLD-SRC-046-10",
+        "FLD-SRC-046-11",
+        "FLD-SRC-046-12",
+        "FLD-SRC-046-13",
+        "FLD-SRC-046-14",
+        "FLD-SRC-046-15",
+        "FLD-SRC-046-16",
+        "FLD-SRC-046-17",
+        "FLD-SRC-046-18"
+      ],
+      "buttonIds": [
+        "BTN-SRC-046-01",
+        "BTN-SRC-046-02",
+        "BTN-SRC-046-03",
+        "BTN-SRC-046-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SRC-047",
+      "name": "采集记录",
+      "fieldIds": [
+        "FLD-SRC-047-01",
+        "FLD-SRC-047-02",
+        "FLD-SRC-047-03",
+        "FLD-SRC-047-04",
+        "FLD-SRC-047-05",
+        "FLD-SRC-047-06",
+        "FLD-SRC-047-07",
+        "FLD-SRC-047-08",
+        "FLD-SRC-047-09",
+        "FLD-SRC-047-10",
+        "FLD-SRC-047-11",
+        "FLD-SRC-047-12",
+        "FLD-SRC-047-13",
+        "FLD-SRC-047-14",
+        "FLD-SRC-047-15",
+        "FLD-SRC-047-16"
+      ],
+      "buttonIds": [
+        "BTN-SRC-047-01",
+        "BTN-SRC-047-02",
+        "BTN-SRC-047-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SRC-048",
+      "name": "Excel导入采集",
+      "fieldIds": [
+        "FLD-SRC-048-01",
+        "FLD-SRC-048-02",
+        "FLD-SRC-048-03",
+        "FLD-SRC-048-04",
+        "FLD-SRC-048-05",
+        "FLD-SRC-048-06",
+        "FLD-SRC-048-07",
+        "FLD-SRC-048-08",
+        "FLD-SRC-048-09",
+        "FLD-SRC-048-10",
+        "FLD-SRC-048-11",
+        "FLD-SRC-048-12",
+        "FLD-SRC-048-13",
+        "FLD-SRC-048-14",
+        "FLD-SRC-048-15",
+        "FLD-SRC-048-16"
+      ],
+      "buttonIds": [
+        "BTN-SRC-048-01",
+        "BTN-SRC-048-02",
+        "BTN-SRC-048-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SRC-049",
+      "name": "采集失败处理",
+      "fieldIds": [
+        "FLD-SRC-049-01",
+        "FLD-SRC-049-02",
+        "FLD-SRC-049-03",
+        "FLD-SRC-049-04",
+        "FLD-SRC-049-05",
+        "FLD-SRC-049-06",
+        "FLD-SRC-049-07",
+        "FLD-SRC-049-08",
+        "FLD-SRC-049-09",
+        "FLD-SRC-049-10",
+        "FLD-SRC-049-11",
+        "FLD-SRC-049-12",
+        "FLD-SRC-049-13",
+        "FLD-SRC-049-14",
+        "FLD-SRC-049-15",
+        "FLD-SRC-049-16",
+        "FLD-SRC-049-17",
+        "FLD-SRC-049-18"
+      ],
+      "buttonIds": [
+        "BTN-SRC-049-01",
+        "BTN-SRC-049-02",
+        "BTN-SRC-049-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PRD-050",
+      "name": "商品列表",
+      "fieldIds": [
+        "FLD-PRD-050-01",
+        "FLD-PRD-050-02",
+        "FLD-PRD-050-03",
+        "FLD-PRD-050-04",
+        "FLD-PRD-050-05",
+        "FLD-PRD-050-06",
+        "FLD-PRD-050-07",
+        "FLD-PRD-050-08",
+        "FLD-PRD-050-09",
+        "FLD-PRD-050-10",
+        "FLD-PRD-050-11",
+        "FLD-PRD-050-12",
+        "FLD-PRD-050-13",
+        "FLD-PRD-050-14",
+        "FLD-PRD-050-15",
+        "FLD-PRD-050-16"
+      ],
+      "buttonIds": [
+        "BTN-PRD-050-01",
+        "BTN-PRD-050-02",
+        "BTN-PRD-050-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PRD-051",
+      "name": "商品详情",
+      "fieldIds": [
+        "FLD-PRD-051-01",
+        "FLD-PRD-051-02",
+        "FLD-PRD-051-03",
+        "FLD-PRD-051-04",
+        "FLD-PRD-051-05",
+        "FLD-PRD-051-06",
+        "FLD-PRD-051-07",
+        "FLD-PRD-051-08",
+        "FLD-PRD-051-09",
+        "FLD-PRD-051-10",
+        "FLD-PRD-051-11",
+        "FLD-PRD-051-12",
+        "FLD-PRD-051-13",
+        "FLD-PRD-051-14",
+        "FLD-PRD-051-15",
+        "FLD-PRD-051-16"
+      ],
+      "buttonIds": [
+        "BTN-PRD-051-01",
+        "BTN-PRD-051-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PRD-052",
+      "name": "商品编辑",
+      "fieldIds": [
+        "FLD-PRD-052-01",
+        "FLD-PRD-052-02",
+        "FLD-PRD-052-03",
+        "FLD-PRD-052-04",
+        "FLD-PRD-052-05",
+        "FLD-PRD-052-06",
+        "FLD-PRD-052-07",
+        "FLD-PRD-052-08",
+        "FLD-PRD-052-09",
+        "FLD-PRD-052-10",
+        "FLD-PRD-052-11",
+        "FLD-PRD-052-12",
+        "FLD-PRD-052-13",
+        "FLD-PRD-052-14",
+        "FLD-PRD-052-15",
+        "FLD-PRD-052-16"
+      ],
+      "buttonIds": [
+        "BTN-PRD-052-01",
+        "BTN-PRD-052-02",
+        "BTN-PRD-052-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PRD-053",
+      "name": "商品SKU",
+      "fieldIds": [
+        "FLD-PRD-053-01",
+        "FLD-PRD-053-02",
+        "FLD-PRD-053-03",
+        "FLD-PRD-053-04",
+        "FLD-PRD-053-05",
+        "FLD-PRD-053-06",
+        "FLD-PRD-053-07",
+        "FLD-PRD-053-08",
+        "FLD-PRD-053-09",
+        "FLD-PRD-053-10",
+        "FLD-PRD-053-11",
+        "FLD-PRD-053-12",
+        "FLD-PRD-053-13",
+        "FLD-PRD-053-14",
+        "FLD-PRD-053-15",
+        "FLD-PRD-053-16"
+      ],
+      "buttonIds": [
+        "BTN-PRD-053-01",
+        "BTN-PRD-053-02",
+        "BTN-PRD-053-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PRD-054",
+      "name": "商品版本",
+      "fieldIds": [
+        "FLD-PRD-054-01",
+        "FLD-PRD-054-02",
+        "FLD-PRD-054-03",
+        "FLD-PRD-054-04",
+        "FLD-PRD-054-05",
+        "FLD-PRD-054-06",
+        "FLD-PRD-054-07",
+        "FLD-PRD-054-08",
+        "FLD-PRD-054-09",
+        "FLD-PRD-054-10",
+        "FLD-PRD-054-11",
+        "FLD-PRD-054-12",
+        "FLD-PRD-054-13",
+        "FLD-PRD-054-14",
+        "FLD-PRD-054-15",
+        "FLD-PRD-054-16"
+      ],
+      "buttonIds": [
+        "BTN-PRD-054-01",
+        "BTN-PRD-054-02",
+        "BTN-PRD-054-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PRD-055",
+      "name": "商品版本对比",
+      "fieldIds": [
+        "FLD-PRD-055-01",
+        "FLD-PRD-055-02",
+        "FLD-PRD-055-03",
+        "FLD-PRD-055-04",
+        "FLD-PRD-055-05",
+        "FLD-PRD-055-06",
+        "FLD-PRD-055-07",
+        "FLD-PRD-055-08",
+        "FLD-PRD-055-09",
+        "FLD-PRD-055-10",
+        "FLD-PRD-055-11",
+        "FLD-PRD-055-12",
+        "FLD-PRD-055-13",
+        "FLD-PRD-055-14",
+        "FLD-PRD-055-15",
+        "FLD-PRD-055-16"
+      ],
+      "buttonIds": [
+        "BTN-PRD-055-01",
+        "BTN-PRD-055-02",
+        "BTN-PRD-055-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PRD-056",
+      "name": "商品媒体",
+      "fieldIds": [
+        "FLD-PRD-056-01",
+        "FLD-PRD-056-02",
+        "FLD-PRD-056-03",
+        "FLD-PRD-056-04",
+        "FLD-PRD-056-05",
+        "FLD-PRD-056-06",
+        "FLD-PRD-056-07",
+        "FLD-PRD-056-08",
+        "FLD-PRD-056-09",
+        "FLD-PRD-056-10",
+        "FLD-PRD-056-11",
+        "FLD-PRD-056-12",
+        "FLD-PRD-056-13",
+        "FLD-PRD-056-14",
+        "FLD-PRD-056-15",
+        "FLD-PRD-056-16"
+      ],
+      "buttonIds": [
+        "BTN-PRD-056-01",
+        "BTN-PRD-056-02",
+        "BTN-PRD-056-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PRD-057",
+      "name": "商品分类属性",
+      "fieldIds": [
+        "FLD-PRD-057-01",
+        "FLD-PRD-057-02",
+        "FLD-PRD-057-03",
+        "FLD-PRD-057-04",
+        "FLD-PRD-057-05",
+        "FLD-PRD-057-06",
+        "FLD-PRD-057-07",
+        "FLD-PRD-057-08",
+        "FLD-PRD-057-09",
+        "FLD-PRD-057-10",
+        "FLD-PRD-057-11",
+        "FLD-PRD-057-12",
+        "FLD-PRD-057-13",
+        "FLD-PRD-057-14",
+        "FLD-PRD-057-15",
+        "FLD-PRD-057-16"
+      ],
+      "buttonIds": [
+        "BTN-PRD-057-01",
+        "BTN-PRD-057-02",
+        "BTN-PRD-057-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PRD-058",
+      "name": "商品成本利润",
+      "fieldIds": [
+        "FLD-PRD-058-01",
+        "FLD-PRD-058-02",
+        "FLD-PRD-058-03",
+        "FLD-PRD-058-04",
+        "FLD-PRD-058-05",
+        "FLD-PRD-058-06",
+        "FLD-PRD-058-07",
+        "FLD-PRD-058-08",
+        "FLD-PRD-058-09",
+        "FLD-PRD-058-10",
+        "FLD-PRD-058-11",
+        "FLD-PRD-058-12",
+        "FLD-PRD-058-13",
+        "FLD-PRD-058-14",
+        "FLD-PRD-058-15",
+        "FLD-PRD-058-16"
+      ],
+      "buttonIds": [
+        "BTN-PRD-058-01",
+        "BTN-PRD-058-02",
+        "BTN-PRD-058-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PRD-059",
+      "name": "AI清洗",
+      "fieldIds": [
+        "FLD-PRD-059-01",
+        "FLD-PRD-059-02",
+        "FLD-PRD-059-03",
+        "FLD-PRD-059-04",
+        "FLD-PRD-059-05",
+        "FLD-PRD-059-06",
+        "FLD-PRD-059-07",
+        "FLD-PRD-059-08",
+        "FLD-PRD-059-09",
+        "FLD-PRD-059-10",
+        "FLD-PRD-059-11",
+        "FLD-PRD-059-12",
+        "FLD-PRD-059-13",
+        "FLD-PRD-059-14",
+        "FLD-PRD-059-15",
+        "FLD-PRD-059-16"
+      ],
+      "buttonIds": [
+        "BTN-PRD-059-01",
+        "BTN-PRD-059-02",
+        "BTN-PRD-059-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PRD-060",
+      "name": "AI清洗结果",
+      "fieldIds": [
+        "FLD-PRD-060-01",
+        "FLD-PRD-060-02",
+        "FLD-PRD-060-03",
+        "FLD-PRD-060-04",
+        "FLD-PRD-060-05",
+        "FLD-PRD-060-06",
+        "FLD-PRD-060-07",
+        "FLD-PRD-060-08",
+        "FLD-PRD-060-09",
+        "FLD-PRD-060-10",
+        "FLD-PRD-060-11",
+        "FLD-PRD-060-12",
+        "FLD-PRD-060-13",
+        "FLD-PRD-060-14",
+        "FLD-PRD-060-15",
+        "FLD-PRD-060-16"
+      ],
+      "buttonIds": [
+        "BTN-PRD-060-01",
+        "BTN-PRD-060-02",
+        "BTN-PRD-060-03",
+        "BTN-PRD-060-04",
+        "BTN-PRD-060-05"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PRD-061",
+      "name": "商品发布准备",
+      "fieldIds": [
+        "FLD-PRD-061-01",
+        "FLD-PRD-061-02",
+        "FLD-PRD-061-03",
+        "FLD-PRD-061-04",
+        "FLD-PRD-061-05",
+        "FLD-PRD-061-06",
+        "FLD-PRD-061-07",
+        "FLD-PRD-061-08",
+        "FLD-PRD-061-09",
+        "FLD-PRD-061-10",
+        "FLD-PRD-061-11",
+        "FLD-PRD-061-12",
+        "FLD-PRD-061-13",
+        "FLD-PRD-061-14",
+        "FLD-PRD-061-15",
+        "FLD-PRD-061-16"
+      ],
+      "buttonIds": [
+        "BTN-PRD-061-01",
+        "BTN-PRD-061-02",
+        "BTN-PRD-061-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PRD-062",
+      "name": "商品关联来源",
+      "fieldIds": [
+        "FLD-PRD-062-01",
+        "FLD-PRD-062-02",
+        "FLD-PRD-062-03",
+        "FLD-PRD-062-04",
+        "FLD-PRD-062-05",
+        "FLD-PRD-062-06",
+        "FLD-PRD-062-07",
+        "FLD-PRD-062-08",
+        "FLD-PRD-062-09",
+        "FLD-PRD-062-10",
+        "FLD-PRD-062-11",
+        "FLD-PRD-062-12",
+        "FLD-PRD-062-13",
+        "FLD-PRD-062-14",
+        "FLD-PRD-062-15",
+        "FLD-PRD-062-16"
+      ],
+      "buttonIds": [
+        "BTN-PRD-062-01",
+        "BTN-PRD-062-02",
+        "BTN-PRD-062-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PRD-063",
+      "name": "商品关联渠道",
+      "fieldIds": [
+        "FLD-PRD-063-01",
+        "FLD-PRD-063-02",
+        "FLD-PRD-063-03",
+        "FLD-PRD-063-04",
+        "FLD-PRD-063-05",
+        "FLD-PRD-063-06",
+        "FLD-PRD-063-07",
+        "FLD-PRD-063-08",
+        "FLD-PRD-063-09",
+        "FLD-PRD-063-10",
+        "FLD-PRD-063-11",
+        "FLD-PRD-063-12",
+        "FLD-PRD-063-13",
+        "FLD-PRD-063-14",
+        "FLD-PRD-063-15",
+        "FLD-PRD-063-16"
+      ],
+      "buttonIds": [
+        "BTN-PRD-063-01",
+        "BTN-PRD-063-02",
+        "BTN-PRD-063-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "CHN-064",
+      "name": "渠道商品",
+      "fieldIds": [
+        "FLD-CHN-064-01",
+        "FLD-CHN-064-02",
+        "FLD-CHN-064-03",
+        "FLD-CHN-064-04",
+        "FLD-CHN-064-05",
+        "FLD-CHN-064-06",
+        "FLD-CHN-064-07",
+        "FLD-CHN-064-08",
+        "FLD-CHN-064-09",
+        "FLD-CHN-064-10",
+        "FLD-CHN-064-11",
+        "FLD-CHN-064-12",
+        "FLD-CHN-064-13",
+        "FLD-CHN-064-14",
+        "FLD-CHN-064-15"
+      ],
+      "buttonIds": [
+        "BTN-CHN-064-01",
+        "BTN-CHN-064-02",
+        "BTN-CHN-064-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "CHN-065",
+      "name": "渠道商品详情",
+      "fieldIds": [
+        "FLD-CHN-065-01",
+        "FLD-CHN-065-02",
+        "FLD-CHN-065-03",
+        "FLD-CHN-065-04",
+        "FLD-CHN-065-05",
+        "FLD-CHN-065-06",
+        "FLD-CHN-065-07",
+        "FLD-CHN-065-08",
+        "FLD-CHN-065-09",
+        "FLD-CHN-065-10",
+        "FLD-CHN-065-11",
+        "FLD-CHN-065-12",
+        "FLD-CHN-065-13",
+        "FLD-CHN-065-14",
+        "FLD-CHN-065-15"
+      ],
+      "buttonIds": [
+        "BTN-CHN-065-01",
+        "BTN-CHN-065-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "CHN-066",
+      "name": "渠道映射",
+      "fieldIds": [
+        "FLD-CHN-066-01",
+        "FLD-CHN-066-02",
+        "FLD-CHN-066-03",
+        "FLD-CHN-066-04",
+        "FLD-CHN-066-05",
+        "FLD-CHN-066-06",
+        "FLD-CHN-066-07",
+        "FLD-CHN-066-08",
+        "FLD-CHN-066-09",
+        "FLD-CHN-066-10",
+        "FLD-CHN-066-11",
+        "FLD-CHN-066-12",
+        "FLD-CHN-066-13",
+        "FLD-CHN-066-14",
+        "FLD-CHN-066-15"
+      ],
+      "buttonIds": [
+        "BTN-CHN-066-01",
+        "BTN-CHN-066-02",
+        "BTN-CHN-066-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "CHN-067",
+      "name": "渠道分类映射",
+      "fieldIds": [
+        "FLD-CHN-067-01",
+        "FLD-CHN-067-02",
+        "FLD-CHN-067-03",
+        "FLD-CHN-067-04",
+        "FLD-CHN-067-05",
+        "FLD-CHN-067-06",
+        "FLD-CHN-067-07",
+        "FLD-CHN-067-08",
+        "FLD-CHN-067-09",
+        "FLD-CHN-067-10",
+        "FLD-CHN-067-11",
+        "FLD-CHN-067-12",
+        "FLD-CHN-067-13",
+        "FLD-CHN-067-14",
+        "FLD-CHN-067-15"
+      ],
+      "buttonIds": [
+        "BTN-CHN-067-01",
+        "BTN-CHN-067-02",
+        "BTN-CHN-067-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "CHN-068",
+      "name": "渠道属性映射",
+      "fieldIds": [
+        "FLD-CHN-068-01",
+        "FLD-CHN-068-02",
+        "FLD-CHN-068-03",
+        "FLD-CHN-068-04",
+        "FLD-CHN-068-05",
+        "FLD-CHN-068-06",
+        "FLD-CHN-068-07",
+        "FLD-CHN-068-08",
+        "FLD-CHN-068-09",
+        "FLD-CHN-068-10",
+        "FLD-CHN-068-11",
+        "FLD-CHN-068-12",
+        "FLD-CHN-068-13",
+        "FLD-CHN-068-14",
+        "FLD-CHN-068-15"
+      ],
+      "buttonIds": [
+        "BTN-CHN-068-01",
+        "BTN-CHN-068-02",
+        "BTN-CHN-068-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "CHN-069",
+      "name": "渠道SKU映射",
+      "fieldIds": [
+        "FLD-CHN-069-01",
+        "FLD-CHN-069-02",
+        "FLD-CHN-069-03",
+        "FLD-CHN-069-04",
+        "FLD-CHN-069-05",
+        "FLD-CHN-069-06",
+        "FLD-CHN-069-07",
+        "FLD-CHN-069-08",
+        "FLD-CHN-069-09",
+        "FLD-CHN-069-10",
+        "FLD-CHN-069-11",
+        "FLD-CHN-069-12",
+        "FLD-CHN-069-13",
+        "FLD-CHN-069-14",
+        "FLD-CHN-069-15"
+      ],
+      "buttonIds": [
+        "BTN-CHN-069-01",
+        "BTN-CHN-069-02",
+        "BTN-CHN-069-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "CHN-070",
+      "name": "渠道预览",
+      "fieldIds": [
+        "FLD-CHN-070-01",
+        "FLD-CHN-070-02",
+        "FLD-CHN-070-03",
+        "FLD-CHN-070-04",
+        "FLD-CHN-070-05",
+        "FLD-CHN-070-06",
+        "FLD-CHN-070-07",
+        "FLD-CHN-070-08",
+        "FLD-CHN-070-09",
+        "FLD-CHN-070-10",
+        "FLD-CHN-070-11",
+        "FLD-CHN-070-12",
+        "FLD-CHN-070-13",
+        "FLD-CHN-070-14",
+        "FLD-CHN-070-15"
+      ],
+      "buttonIds": [
+        "BTN-CHN-070-01",
+        "BTN-CHN-070-02",
+        "BTN-CHN-070-03",
+        "BTN-CHN-070-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "CHN-071",
+      "name": "发布任务",
+      "fieldIds": [
+        "FLD-CHN-071-01",
+        "FLD-CHN-071-02",
+        "FLD-CHN-071-03",
+        "FLD-CHN-071-04",
+        "FLD-CHN-071-05",
+        "FLD-CHN-071-06",
+        "FLD-CHN-071-07",
+        "FLD-CHN-071-08",
+        "FLD-CHN-071-09",
+        "FLD-CHN-071-10",
+        "FLD-CHN-071-11",
+        "FLD-CHN-071-12",
+        "FLD-CHN-071-13",
+        "FLD-CHN-071-14",
+        "FLD-CHN-071-15",
+        "FLD-CHN-071-16",
+        "FLD-CHN-071-17"
+      ],
+      "buttonIds": [
+        "BTN-CHN-071-01",
+        "BTN-CHN-071-02",
+        "BTN-CHN-071-03",
+        "BTN-CHN-071-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "CHN-072",
+      "name": "发布记录",
+      "fieldIds": [
+        "FLD-CHN-072-01",
+        "FLD-CHN-072-02",
+        "FLD-CHN-072-03",
+        "FLD-CHN-072-04",
+        "FLD-CHN-072-05",
+        "FLD-CHN-072-06",
+        "FLD-CHN-072-07",
+        "FLD-CHN-072-08",
+        "FLD-CHN-072-09",
+        "FLD-CHN-072-10",
+        "FLD-CHN-072-11",
+        "FLD-CHN-072-12",
+        "FLD-CHN-072-13",
+        "FLD-CHN-072-14",
+        "FLD-CHN-072-15"
+      ],
+      "buttonIds": [
+        "BTN-CHN-072-01",
+        "BTN-CHN-072-02",
+        "BTN-CHN-072-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "CHN-073",
+      "name": "发布失败处理",
+      "fieldIds": [
+        "FLD-CHN-073-01",
+        "FLD-CHN-073-02",
+        "FLD-CHN-073-03",
+        "FLD-CHN-073-04",
+        "FLD-CHN-073-05",
+        "FLD-CHN-073-06",
+        "FLD-CHN-073-07",
+        "FLD-CHN-073-08",
+        "FLD-CHN-073-09",
+        "FLD-CHN-073-10",
+        "FLD-CHN-073-11",
+        "FLD-CHN-073-12",
+        "FLD-CHN-073-13",
+        "FLD-CHN-073-14",
+        "FLD-CHN-073-15",
+        "FLD-CHN-073-16",
+        "FLD-CHN-073-17"
+      ],
+      "buttonIds": [
+        "BTN-CHN-073-01",
+        "BTN-CHN-073-02",
+        "BTN-CHN-073-03",
+        "BTN-CHN-073-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "ORD-074",
+      "name": "订单列表",
+      "fieldIds": [
+        "FLD-ORD-074-01",
+        "FLD-ORD-074-02",
+        "FLD-ORD-074-03",
+        "FLD-ORD-074-04",
+        "FLD-ORD-074-05",
+        "FLD-ORD-074-06",
+        "FLD-ORD-074-07",
+        "FLD-ORD-074-08",
+        "FLD-ORD-074-09",
+        "FLD-ORD-074-10",
+        "FLD-ORD-074-11",
+        "FLD-ORD-074-12",
+        "FLD-ORD-074-13",
+        "FLD-ORD-074-14",
+        "FLD-ORD-074-15",
+        "FLD-ORD-074-16",
+        "FLD-ORD-074-17",
+        "FLD-ORD-074-18"
+      ],
+      "buttonIds": [
+        "BTN-ORD-074-01",
+        "BTN-ORD-074-02",
+        "BTN-ORD-074-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "ORD-075",
+      "name": "订单详情",
+      "fieldIds": [
+        "FLD-ORD-075-01",
+        "FLD-ORD-075-02",
+        "FLD-ORD-075-03",
+        "FLD-ORD-075-04",
+        "FLD-ORD-075-05",
+        "FLD-ORD-075-06",
+        "FLD-ORD-075-07",
+        "FLD-ORD-075-08",
+        "FLD-ORD-075-09",
+        "FLD-ORD-075-10",
+        "FLD-ORD-075-11",
+        "FLD-ORD-075-12",
+        "FLD-ORD-075-13",
+        "FLD-ORD-075-14",
+        "FLD-ORD-075-15",
+        "FLD-ORD-075-16",
+        "FLD-ORD-075-17",
+        "FLD-ORD-075-18"
+      ],
+      "buttonIds": [
+        "BTN-ORD-075-01",
+        "BTN-ORD-075-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "ORD-076",
+      "name": "订单明细/SKU",
+      "fieldIds": [
+        "FLD-ORD-076-01",
+        "FLD-ORD-076-02",
+        "FLD-ORD-076-03",
+        "FLD-ORD-076-04",
+        "FLD-ORD-076-05",
+        "FLD-ORD-076-06",
+        "FLD-ORD-076-07",
+        "FLD-ORD-076-08",
+        "FLD-ORD-076-09",
+        "FLD-ORD-076-10",
+        "FLD-ORD-076-11",
+        "FLD-ORD-076-12",
+        "FLD-ORD-076-13",
+        "FLD-ORD-076-14",
+        "FLD-ORD-076-15",
+        "FLD-ORD-076-16",
+        "FLD-ORD-076-17",
+        "FLD-ORD-076-18"
+      ],
+      "buttonIds": [
+        "BTN-ORD-076-01",
+        "BTN-ORD-076-02",
+        "BTN-ORD-076-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "ORD-077",
+      "name": "订单同步",
+      "fieldIds": [
+        "FLD-ORD-077-01",
+        "FLD-ORD-077-02",
+        "FLD-ORD-077-03",
+        "FLD-ORD-077-04",
+        "FLD-ORD-077-05",
+        "FLD-ORD-077-06",
+        "FLD-ORD-077-07",
+        "FLD-ORD-077-08",
+        "FLD-ORD-077-09",
+        "FLD-ORD-077-10",
+        "FLD-ORD-077-11",
+        "FLD-ORD-077-12",
+        "FLD-ORD-077-13",
+        "FLD-ORD-077-14",
+        "FLD-ORD-077-15",
+        "FLD-ORD-077-16",
+        "FLD-ORD-077-17",
+        "FLD-ORD-077-18",
+        "FLD-ORD-077-19",
+        "FLD-ORD-077-20"
+      ],
+      "buttonIds": [
+        "BTN-ORD-077-01",
+        "BTN-ORD-077-02",
+        "BTN-ORD-077-03",
+        "BTN-ORD-077-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "ORD-078",
+      "name": "SKU匹配",
+      "fieldIds": [
+        "FLD-ORD-078-01",
+        "FLD-ORD-078-02",
+        "FLD-ORD-078-03",
+        "FLD-ORD-078-04",
+        "FLD-ORD-078-05",
+        "FLD-ORD-078-06",
+        "FLD-ORD-078-07",
+        "FLD-ORD-078-08",
+        "FLD-ORD-078-09",
+        "FLD-ORD-078-10",
+        "FLD-ORD-078-11",
+        "FLD-ORD-078-12",
+        "FLD-ORD-078-13",
+        "FLD-ORD-078-14",
+        "FLD-ORD-078-15",
+        "FLD-ORD-078-16",
+        "FLD-ORD-078-17",
+        "FLD-ORD-078-18"
+      ],
+      "buttonIds": [
+        "BTN-ORD-078-01",
+        "BTN-ORD-078-02",
+        "BTN-ORD-078-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "ORD-079",
+      "name": "采购建议",
+      "fieldIds": [
+        "FLD-ORD-079-01",
+        "FLD-ORD-079-02",
+        "FLD-ORD-079-03",
+        "FLD-ORD-079-04",
+        "FLD-ORD-079-05",
+        "FLD-ORD-079-06",
+        "FLD-ORD-079-07",
+        "FLD-ORD-079-08",
+        "FLD-ORD-079-09",
+        "FLD-ORD-079-10",
+        "FLD-ORD-079-11",
+        "FLD-ORD-079-12",
+        "FLD-ORD-079-13",
+        "FLD-ORD-079-14",
+        "FLD-ORD-079-15",
+        "FLD-ORD-079-16",
+        "FLD-ORD-079-17",
+        "FLD-ORD-079-18"
+      ],
+      "buttonIds": [
+        "BTN-ORD-079-01",
+        "BTN-ORD-079-02",
+        "BTN-ORD-079-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "ORD-080",
+      "name": "订单履约跟踪",
+      "fieldIds": [
+        "FLD-ORD-080-01",
+        "FLD-ORD-080-02",
+        "FLD-ORD-080-03",
+        "FLD-ORD-080-04",
+        "FLD-ORD-080-05",
+        "FLD-ORD-080-06",
+        "FLD-ORD-080-07",
+        "FLD-ORD-080-08",
+        "FLD-ORD-080-09",
+        "FLD-ORD-080-10",
+        "FLD-ORD-080-11",
+        "FLD-ORD-080-12",
+        "FLD-ORD-080-13",
+        "FLD-ORD-080-14",
+        "FLD-ORD-080-15",
+        "FLD-ORD-080-16",
+        "FLD-ORD-080-17",
+        "FLD-ORD-080-18"
+      ],
+      "buttonIds": [
+        "BTN-ORD-080-01",
+        "BTN-ORD-080-02",
+        "BTN-ORD-080-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "ORD-081",
+      "name": "订单财务",
+      "fieldIds": [
+        "FLD-ORD-081-01",
+        "FLD-ORD-081-02",
+        "FLD-ORD-081-03",
+        "FLD-ORD-081-04",
+        "FLD-ORD-081-05",
+        "FLD-ORD-081-06",
+        "FLD-ORD-081-07",
+        "FLD-ORD-081-08",
+        "FLD-ORD-081-09",
+        "FLD-ORD-081-10",
+        "FLD-ORD-081-11",
+        "FLD-ORD-081-12",
+        "FLD-ORD-081-13",
+        "FLD-ORD-081-14",
+        "FLD-ORD-081-15",
+        "FLD-ORD-081-16",
+        "FLD-ORD-081-17",
+        "FLD-ORD-081-18"
+      ],
+      "buttonIds": [
+        "BTN-ORD-081-01",
+        "BTN-ORD-081-02",
+        "BTN-ORD-081-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PUR-082",
+      "name": "采购建议",
+      "fieldIds": [
+        "FLD-PUR-082-01",
+        "FLD-PUR-082-02",
+        "FLD-PUR-082-03",
+        "FLD-PUR-082-04",
+        "FLD-PUR-082-05",
+        "FLD-PUR-082-06",
+        "FLD-PUR-082-07",
+        "FLD-PUR-082-08",
+        "FLD-PUR-082-09",
+        "FLD-PUR-082-10",
+        "FLD-PUR-082-11",
+        "FLD-PUR-082-12",
+        "FLD-PUR-082-13",
+        "FLD-PUR-082-14"
+      ],
+      "buttonIds": [
+        "BTN-PUR-082-01",
+        "BTN-PUR-082-02",
+        "BTN-PUR-082-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PUR-083",
+      "name": "采购单列表",
+      "fieldIds": [
+        "FLD-PUR-083-01",
+        "FLD-PUR-083-02",
+        "FLD-PUR-083-03",
+        "FLD-PUR-083-04",
+        "FLD-PUR-083-05",
+        "FLD-PUR-083-06",
+        "FLD-PUR-083-07",
+        "FLD-PUR-083-08",
+        "FLD-PUR-083-09",
+        "FLD-PUR-083-10",
+        "FLD-PUR-083-11",
+        "FLD-PUR-083-12",
+        "FLD-PUR-083-13",
+        "FLD-PUR-083-14"
+      ],
+      "buttonIds": [
+        "BTN-PUR-083-01",
+        "BTN-PUR-083-02",
+        "BTN-PUR-083-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PUR-084",
+      "name": "采购单详情",
+      "fieldIds": [
+        "FLD-PUR-084-01",
+        "FLD-PUR-084-02",
+        "FLD-PUR-084-03",
+        "FLD-PUR-084-04",
+        "FLD-PUR-084-05",
+        "FLD-PUR-084-06",
+        "FLD-PUR-084-07",
+        "FLD-PUR-084-08",
+        "FLD-PUR-084-09",
+        "FLD-PUR-084-10",
+        "FLD-PUR-084-11",
+        "FLD-PUR-084-12",
+        "FLD-PUR-084-13",
+        "FLD-PUR-084-14"
+      ],
+      "buttonIds": [
+        "BTN-PUR-084-01",
+        "BTN-PUR-084-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PUR-085",
+      "name": "采购确认",
+      "fieldIds": [
+        "FLD-PUR-085-01",
+        "FLD-PUR-085-02",
+        "FLD-PUR-085-03",
+        "FLD-PUR-085-04",
+        "FLD-PUR-085-05",
+        "FLD-PUR-085-06",
+        "FLD-PUR-085-07",
+        "FLD-PUR-085-08",
+        "FLD-PUR-085-09",
+        "FLD-PUR-085-10",
+        "FLD-PUR-085-11",
+        "FLD-PUR-085-12",
+        "FLD-PUR-085-13",
+        "FLD-PUR-085-14"
+      ],
+      "buttonIds": [
+        "BTN-PUR-085-01",
+        "BTN-PUR-085-02",
+        "BTN-PUR-085-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PUR-086",
+      "name": "采购商品明细",
+      "fieldIds": [
+        "FLD-PUR-086-01",
+        "FLD-PUR-086-02",
+        "FLD-PUR-086-03",
+        "FLD-PUR-086-04",
+        "FLD-PUR-086-05",
+        "FLD-PUR-086-06",
+        "FLD-PUR-086-07",
+        "FLD-PUR-086-08",
+        "FLD-PUR-086-09",
+        "FLD-PUR-086-10",
+        "FLD-PUR-086-11",
+        "FLD-PUR-086-12",
+        "FLD-PUR-086-13",
+        "FLD-PUR-086-14"
+      ],
+      "buttonIds": [
+        "BTN-PUR-086-01",
+        "BTN-PUR-086-02",
+        "BTN-PUR-086-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PUR-087",
+      "name": "采购供应商",
+      "fieldIds": [
+        "FLD-PUR-087-01",
+        "FLD-PUR-087-02",
+        "FLD-PUR-087-03",
+        "FLD-PUR-087-04",
+        "FLD-PUR-087-05",
+        "FLD-PUR-087-06",
+        "FLD-PUR-087-07",
+        "FLD-PUR-087-08",
+        "FLD-PUR-087-09",
+        "FLD-PUR-087-10",
+        "FLD-PUR-087-11",
+        "FLD-PUR-087-12",
+        "FLD-PUR-087-13",
+        "FLD-PUR-087-14"
+      ],
+      "buttonIds": [
+        "BTN-PUR-087-01",
+        "BTN-PUR-087-02",
+        "BTN-PUR-087-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PUR-088",
+      "name": "采购失败/异常",
+      "fieldIds": [
+        "FLD-PUR-088-01",
+        "FLD-PUR-088-02",
+        "FLD-PUR-088-03",
+        "FLD-PUR-088-04",
+        "FLD-PUR-088-05",
+        "FLD-PUR-088-06",
+        "FLD-PUR-088-07",
+        "FLD-PUR-088-08",
+        "FLD-PUR-088-09",
+        "FLD-PUR-088-10",
+        "FLD-PUR-088-11",
+        "FLD-PUR-088-12",
+        "FLD-PUR-088-13",
+        "FLD-PUR-088-14"
+      ],
+      "buttonIds": [
+        "BTN-PUR-088-01",
+        "BTN-PUR-088-02",
+        "BTN-PUR-088-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "LOGI-089",
+      "name": "物流列表",
+      "fieldIds": [
+        "FLD-LOGI-089-01",
+        "FLD-LOGI-089-02",
+        "FLD-LOGI-089-03",
+        "FLD-LOGI-089-04",
+        "FLD-LOGI-089-05",
+        "FLD-LOGI-089-06",
+        "FLD-LOGI-089-07",
+        "FLD-LOGI-089-08",
+        "FLD-LOGI-089-09",
+        "FLD-LOGI-089-10",
+        "FLD-LOGI-089-11",
+        "FLD-LOGI-089-12"
+      ],
+      "buttonIds": [
+        "BTN-LOGI-089-01",
+        "BTN-LOGI-089-02",
+        "BTN-LOGI-089-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "LOGI-090",
+      "name": "物流详情",
+      "fieldIds": [
+        "FLD-LOGI-090-01",
+        "FLD-LOGI-090-02",
+        "FLD-LOGI-090-03",
+        "FLD-LOGI-090-04",
+        "FLD-LOGI-090-05",
+        "FLD-LOGI-090-06",
+        "FLD-LOGI-090-07",
+        "FLD-LOGI-090-08",
+        "FLD-LOGI-090-09",
+        "FLD-LOGI-090-10",
+        "FLD-LOGI-090-11",
+        "FLD-LOGI-090-12"
+      ],
+      "buttonIds": [
+        "BTN-LOGI-090-01",
+        "BTN-LOGI-090-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "LOGI-091",
+      "name": "发货记录",
+      "fieldIds": [
+        "FLD-LOGI-091-01",
+        "FLD-LOGI-091-02",
+        "FLD-LOGI-091-03",
+        "FLD-LOGI-091-04",
+        "FLD-LOGI-091-05",
+        "FLD-LOGI-091-06",
+        "FLD-LOGI-091-07",
+        "FLD-LOGI-091-08",
+        "FLD-LOGI-091-09",
+        "FLD-LOGI-091-10",
+        "FLD-LOGI-091-11",
+        "FLD-LOGI-091-12"
+      ],
+      "buttonIds": [
+        "BTN-LOGI-091-01",
+        "BTN-LOGI-091-02",
+        "BTN-LOGI-091-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "LOGI-092",
+      "name": "物流轨迹",
+      "fieldIds": [
+        "FLD-LOGI-092-01",
+        "FLD-LOGI-092-02",
+        "FLD-LOGI-092-03",
+        "FLD-LOGI-092-04",
+        "FLD-LOGI-092-05",
+        "FLD-LOGI-092-06",
+        "FLD-LOGI-092-07",
+        "FLD-LOGI-092-08",
+        "FLD-LOGI-092-09",
+        "FLD-LOGI-092-10",
+        "FLD-LOGI-092-11",
+        "FLD-LOGI-092-12"
+      ],
+      "buttonIds": [
+        "BTN-LOGI-092-01",
+        "BTN-LOGI-092-02",
+        "BTN-LOGI-092-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "AS-093",
+      "name": "售后列表",
+      "fieldIds": [
+        "FLD-AS-093-01",
+        "FLD-AS-093-02",
+        "FLD-AS-093-03",
+        "FLD-AS-093-04",
+        "FLD-AS-093-05",
+        "FLD-AS-093-06",
+        "FLD-AS-093-07",
+        "FLD-AS-093-08",
+        "FLD-AS-093-09",
+        "FLD-AS-093-10",
+        "FLD-AS-093-11",
+        "FLD-AS-093-12"
+      ],
+      "buttonIds": [
+        "BTN-AS-093-01",
+        "BTN-AS-093-02",
+        "BTN-AS-093-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "AS-094",
+      "name": "售后详情",
+      "fieldIds": [
+        "FLD-AS-094-01",
+        "FLD-AS-094-02",
+        "FLD-AS-094-03",
+        "FLD-AS-094-04",
+        "FLD-AS-094-05",
+        "FLD-AS-094-06",
+        "FLD-AS-094-07",
+        "FLD-AS-094-08",
+        "FLD-AS-094-09",
+        "FLD-AS-094-10",
+        "FLD-AS-094-11",
+        "FLD-AS-094-12"
+      ],
+      "buttonIds": [
+        "BTN-AS-094-01",
+        "BTN-AS-094-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "AS-095",
+      "name": "售后双侧关联与退款核对",
+      "fieldIds": [
+        "FLD-AS-095-01",
+        "FLD-AS-095-02",
+        "FLD-AS-095-03",
+        "FLD-AS-095-04",
+        "FLD-AS-095-05",
+        "FLD-AS-095-06",
+        "FLD-AS-095-07",
+        "FLD-AS-095-08",
+        "FLD-AS-095-09",
+        "FLD-AS-095-10",
+        "FLD-AS-095-11",
+        "FLD-AS-095-12",
+        "FLD-AS-095-13",
+        "FLD-AS-095-14"
+      ],
+      "buttonIds": [
+        "BTN-AS-095-01",
+        "BTN-AS-095-02",
+        "BTN-AS-095-03",
+        "BTN-AS-095-04",
+        "BTN-AS-095-05",
+        "BTN-AS-095-06"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "FIN-096",
+      "name": "财务流水",
+      "fieldIds": [
+        "FLD-FIN-096-01",
+        "FLD-FIN-096-02",
+        "FLD-FIN-096-03",
+        "FLD-FIN-096-04",
+        "FLD-FIN-096-05",
+        "FLD-FIN-096-06",
+        "FLD-FIN-096-07",
+        "FLD-FIN-096-08",
+        "FLD-FIN-096-09",
+        "FLD-FIN-096-10",
+        "FLD-FIN-096-11",
+        "FLD-FIN-096-12",
+        "FLD-FIN-096-13",
+        "FLD-FIN-096-14",
+        "FLD-FIN-096-15",
+        "FLD-FIN-096-16"
+      ],
+      "buttonIds": [
+        "BTN-FIN-096-01",
+        "BTN-FIN-096-02",
+        "BTN-FIN-096-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "FIN-097",
+      "name": "利润汇总",
+      "fieldIds": [
+        "FLD-FIN-097-01",
+        "FLD-FIN-097-02",
+        "FLD-FIN-097-03",
+        "FLD-FIN-097-04",
+        "FLD-FIN-097-05",
+        "FLD-FIN-097-06",
+        "FLD-FIN-097-07",
+        "FLD-FIN-097-08",
+        "FLD-FIN-097-09",
+        "FLD-FIN-097-10",
+        "FLD-FIN-097-11",
+        "FLD-FIN-097-12",
+        "FLD-FIN-097-13",
+        "FLD-FIN-097-14",
+        "FLD-FIN-097-15",
+        "FLD-FIN-097-16"
+      ],
+      "buttonIds": [
+        "BTN-FIN-097-01",
+        "BTN-FIN-097-02",
+        "BTN-FIN-097-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "TSK-098",
+      "name": "任务列表",
+      "fieldIds": [
+        "FLD-TSK-098-01",
+        "FLD-TSK-098-02",
+        "FLD-TSK-098-03",
+        "FLD-TSK-098-04",
+        "FLD-TSK-098-05",
+        "FLD-TSK-098-06",
+        "FLD-TSK-098-07",
+        "FLD-TSK-098-08",
+        "FLD-TSK-098-09",
+        "FLD-TSK-098-10",
+        "FLD-TSK-098-11",
+        "FLD-TSK-098-12",
+        "FLD-TSK-098-13",
+        "FLD-TSK-098-14",
+        "FLD-TSK-098-15",
+        "FLD-TSK-098-16",
+        "FLD-TSK-098-17"
+      ],
+      "buttonIds": [
+        "BTN-TSK-098-01",
+        "BTN-TSK-098-02",
+        "BTN-TSK-098-03",
+        "BTN-TSK-098-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "TSK-099",
+      "name": "任务详情",
+      "fieldIds": [
+        "FLD-TSK-099-01",
+        "FLD-TSK-099-02",
+        "FLD-TSK-099-03",
+        "FLD-TSK-099-04",
+        "FLD-TSK-099-05",
+        "FLD-TSK-099-06",
+        "FLD-TSK-099-07",
+        "FLD-TSK-099-08",
+        "FLD-TSK-099-09",
+        "FLD-TSK-099-10",
+        "FLD-TSK-099-11",
+        "FLD-TSK-099-12",
+        "FLD-TSK-099-13",
+        "FLD-TSK-099-14",
+        "FLD-TSK-099-15",
+        "FLD-TSK-099-16"
+      ],
+      "buttonIds": [
+        "BTN-TSK-099-01",
+        "BTN-TSK-099-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "TSK-100",
+      "name": "任务执行日志",
+      "fieldIds": [
+        "FLD-TSK-100-01",
+        "FLD-TSK-100-02",
+        "FLD-TSK-100-03",
+        "FLD-TSK-100-04",
+        "FLD-TSK-100-05",
+        "FLD-TSK-100-06",
+        "FLD-TSK-100-07",
+        "FLD-TSK-100-08",
+        "FLD-TSK-100-09",
+        "FLD-TSK-100-10",
+        "FLD-TSK-100-11",
+        "FLD-TSK-100-12",
+        "FLD-TSK-100-13",
+        "FLD-TSK-100-14",
+        "FLD-TSK-100-15",
+        "FLD-TSK-100-16",
+        "FLD-TSK-100-17"
+      ],
+      "buttonIds": [
+        "BTN-TSK-100-01",
+        "BTN-TSK-100-02",
+        "BTN-TSK-100-03",
+        "BTN-TSK-100-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "TSK-101",
+      "name": "Worker Lease",
+      "fieldIds": [
+        "FLD-TSK-101-01",
+        "FLD-TSK-101-02",
+        "FLD-TSK-101-03",
+        "FLD-TSK-101-04",
+        "FLD-TSK-101-05",
+        "FLD-TSK-101-06",
+        "FLD-TSK-101-07",
+        "FLD-TSK-101-08",
+        "FLD-TSK-101-09",
+        "FLD-TSK-101-10",
+        "FLD-TSK-101-11",
+        "FLD-TSK-101-12",
+        "FLD-TSK-101-13",
+        "FLD-TSK-101-14",
+        "FLD-TSK-101-15",
+        "FLD-TSK-101-16"
+      ],
+      "buttonIds": [
+        "BTN-TSK-101-01",
+        "BTN-TSK-101-02",
+        "BTN-TSK-101-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "TSK-102",
+      "name": "调度计划",
+      "fieldIds": [
+        "FLD-TSK-102-01",
+        "FLD-TSK-102-02",
+        "FLD-TSK-102-03",
+        "FLD-TSK-102-04",
+        "FLD-TSK-102-05",
+        "FLD-TSK-102-06",
+        "FLD-TSK-102-07",
+        "FLD-TSK-102-08",
+        "FLD-TSK-102-09",
+        "FLD-TSK-102-10",
+        "FLD-TSK-102-11",
+        "FLD-TSK-102-12",
+        "FLD-TSK-102-13",
+        "FLD-TSK-102-14",
+        "FLD-TSK-102-15",
+        "FLD-TSK-102-16"
+      ],
+      "buttonIds": [
+        "BTN-TSK-102-01",
+        "BTN-TSK-102-02",
+        "BTN-TSK-102-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "STD-103",
+      "name": "标准分类树",
+      "fieldIds": [
+        "FLD-STD-103-01",
+        "FLD-STD-103-02",
+        "FLD-STD-103-03",
+        "FLD-STD-103-04",
+        "FLD-STD-103-05",
+        "FLD-STD-103-06",
+        "FLD-STD-103-07",
+        "FLD-STD-103-08",
+        "FLD-STD-103-09",
+        "FLD-STD-103-10",
+        "FLD-STD-103-11",
+        "FLD-STD-103-12",
+        "FLD-STD-103-13"
+      ],
+      "buttonIds": [
+        "BTN-STD-103-01",
+        "BTN-STD-103-02",
+        "BTN-STD-103-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "STD-104",
+      "name": "标准分类编辑",
+      "fieldIds": [
+        "FLD-STD-104-01",
+        "FLD-STD-104-02",
+        "FLD-STD-104-03",
+        "FLD-STD-104-04",
+        "FLD-STD-104-05",
+        "FLD-STD-104-06",
+        "FLD-STD-104-07",
+        "FLD-STD-104-08",
+        "FLD-STD-104-09",
+        "FLD-STD-104-10",
+        "FLD-STD-104-11",
+        "FLD-STD-104-12",
+        "FLD-STD-104-13"
+      ],
+      "buttonIds": [
+        "BTN-STD-104-01",
+        "BTN-STD-104-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "STD-105",
+      "name": "标准属性库",
+      "fieldIds": [
+        "FLD-STD-105-01",
+        "FLD-STD-105-02",
+        "FLD-STD-105-03",
+        "FLD-STD-105-04",
+        "FLD-STD-105-05",
+        "FLD-STD-105-06",
+        "FLD-STD-105-07",
+        "FLD-STD-105-08",
+        "FLD-STD-105-09",
+        "FLD-STD-105-10",
+        "FLD-STD-105-11",
+        "FLD-STD-105-12",
+        "FLD-STD-105-13"
+      ],
+      "buttonIds": [
+        "BTN-STD-105-01",
+        "BTN-STD-105-02",
+        "BTN-STD-105-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "STD-106",
+      "name": "分类属性绑定",
+      "fieldIds": [
+        "FLD-STD-106-01",
+        "FLD-STD-106-02",
+        "FLD-STD-106-03",
+        "FLD-STD-106-04",
+        "FLD-STD-106-05",
+        "FLD-STD-106-06",
+        "FLD-STD-106-07",
+        "FLD-STD-106-08",
+        "FLD-STD-106-09",
+        "FLD-STD-106-10",
+        "FLD-STD-106-11",
+        "FLD-STD-106-12",
+        "FLD-STD-106-13"
+      ],
+      "buttonIds": [
+        "BTN-STD-106-01",
+        "BTN-STD-106-02",
+        "BTN-STD-106-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "STD-107",
+      "name": "标准码值管理",
+      "fieldIds": [
+        "FLD-STD-107-01",
+        "FLD-STD-107-02",
+        "FLD-STD-107-03",
+        "FLD-STD-107-04",
+        "FLD-STD-107-05",
+        "FLD-STD-107-06",
+        "FLD-STD-107-07",
+        "FLD-STD-107-08",
+        "FLD-STD-107-09",
+        "FLD-STD-107-10",
+        "FLD-STD-107-11",
+        "FLD-STD-107-12",
+        "FLD-STD-107-13"
+      ],
+      "buttonIds": [
+        "BTN-STD-107-01",
+        "BTN-STD-107-02",
+        "BTN-STD-107-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "STD-108",
+      "name": "标准码版本",
+      "fieldIds": [
+        "FLD-STD-108-01",
+        "FLD-STD-108-02",
+        "FLD-STD-108-03",
+        "FLD-STD-108-04",
+        "FLD-STD-108-05",
+        "FLD-STD-108-06",
+        "FLD-STD-108-07",
+        "FLD-STD-108-08",
+        "FLD-STD-108-09",
+        "FLD-STD-108-10",
+        "FLD-STD-108-11",
+        "FLD-STD-108-12",
+        "FLD-STD-108-13"
+      ],
+      "buttonIds": [
+        "BTN-STD-108-01",
+        "BTN-STD-108-02",
+        "BTN-STD-108-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "MED-109",
+      "name": "存储提供方",
+      "fieldIds": [
+        "FLD-MED-109-01",
+        "FLD-MED-109-02",
+        "FLD-MED-109-03",
+        "FLD-MED-109-04",
+        "FLD-MED-109-05",
+        "FLD-MED-109-06",
+        "FLD-MED-109-07",
+        "FLD-MED-109-08",
+        "FLD-MED-109-09",
+        "FLD-MED-109-10",
+        "FLD-MED-109-11",
+        "FLD-MED-109-12",
+        "FLD-MED-109-13"
+      ],
+      "buttonIds": [
+        "BTN-MED-109-01",
+        "BTN-MED-109-02",
+        "BTN-MED-109-03",
+        "BTN-MED-109-04",
+        "BTN-MED-109-05"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "MED-110",
+      "name": "存储策略",
+      "fieldIds": [
+        "FLD-MED-110-01",
+        "FLD-MED-110-02",
+        "FLD-MED-110-03",
+        "FLD-MED-110-04",
+        "FLD-MED-110-05",
+        "FLD-MED-110-06",
+        "FLD-MED-110-07",
+        "FLD-MED-110-08",
+        "FLD-MED-110-09",
+        "FLD-MED-110-10",
+        "FLD-MED-110-11",
+        "FLD-MED-110-12",
+        "FLD-MED-110-13"
+      ],
+      "buttonIds": [
+        "BTN-MED-110-01",
+        "BTN-MED-110-02",
+        "BTN-MED-110-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "MED-111",
+      "name": "媒体对象列表",
+      "fieldIds": [
+        "FLD-MED-111-01",
+        "FLD-MED-111-02",
+        "FLD-MED-111-03",
+        "FLD-MED-111-04",
+        "FLD-MED-111-05",
+        "FLD-MED-111-06",
+        "FLD-MED-111-07",
+        "FLD-MED-111-08",
+        "FLD-MED-111-09",
+        "FLD-MED-111-10",
+        "FLD-MED-111-11",
+        "FLD-MED-111-12",
+        "FLD-MED-111-13"
+      ],
+      "buttonIds": [
+        "BTN-MED-111-01",
+        "BTN-MED-111-02",
+        "BTN-MED-111-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "MED-112",
+      "name": "媒体上传/恢复",
+      "fieldIds": [
+        "FLD-MED-112-01",
+        "FLD-MED-112-02",
+        "FLD-MED-112-03",
+        "FLD-MED-112-04",
+        "FLD-MED-112-05",
+        "FLD-MED-112-06",
+        "FLD-MED-112-07",
+        "FLD-MED-112-08",
+        "FLD-MED-112-09",
+        "FLD-MED-112-10",
+        "FLD-MED-112-11",
+        "FLD-MED-112-12",
+        "FLD-MED-112-13"
+      ],
+      "buttonIds": [
+        "BTN-MED-112-01",
+        "BTN-MED-112-02",
+        "BTN-MED-112-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "MED-113",
+      "name": "媒体引用关系",
+      "fieldIds": [
+        "FLD-MED-113-01",
+        "FLD-MED-113-02",
+        "FLD-MED-113-03",
+        "FLD-MED-113-04",
+        "FLD-MED-113-05",
+        "FLD-MED-113-06",
+        "FLD-MED-113-07",
+        "FLD-MED-113-08",
+        "FLD-MED-113-09",
+        "FLD-MED-113-10",
+        "FLD-MED-113-11",
+        "FLD-MED-113-12",
+        "FLD-MED-113-13"
+      ],
+      "buttonIds": [
+        "BTN-MED-113-01",
+        "BTN-MED-113-02",
+        "BTN-MED-113-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SYS-114",
+      "name": "本人账号与操作范围",
+      "fieldIds": [
+        "FLD-SYS-114-01",
+        "FLD-SYS-114-02",
+        "FLD-SYS-114-03",
+        "FLD-SYS-114-04",
+        "FLD-SYS-114-05",
+        "FLD-SYS-114-06",
+        "FLD-SYS-114-07",
+        "FLD-SYS-114-08",
+        "FLD-SYS-114-09",
+        "FLD-SYS-114-10",
+        "FLD-SYS-114-11",
+        "FLD-SYS-114-12"
+      ],
+      "buttonIds": [
+        "BTN-SYS-114-01",
+        "BTN-SYS-114-02",
+        "BTN-SYS-114-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SYS-115",
+      "name": "操作权限与确认边界",
+      "fieldIds": [
+        "FLD-SYS-115-01",
+        "FLD-SYS-115-02",
+        "FLD-SYS-115-03",
+        "FLD-SYS-115-04",
+        "FLD-SYS-115-05",
+        "FLD-SYS-115-06",
+        "FLD-SYS-115-07",
+        "FLD-SYS-115-08",
+        "FLD-SYS-115-09",
+        "FLD-SYS-115-10",
+        "FLD-SYS-115-11",
+        "FLD-SYS-115-12"
+      ],
+      "buttonIds": [
+        "BTN-SYS-115-01",
+        "BTN-SYS-115-02",
+        "BTN-SYS-115-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SYS-116",
+      "name": "SecretRef",
+      "fieldIds": [
+        "FLD-SYS-116-01",
+        "FLD-SYS-116-02",
+        "FLD-SYS-116-03",
+        "FLD-SYS-116-04",
+        "FLD-SYS-116-05",
+        "FLD-SYS-116-06",
+        "FLD-SYS-116-07",
+        "FLD-SYS-116-08",
+        "FLD-SYS-116-09",
+        "FLD-SYS-116-10",
+        "FLD-SYS-116-11",
+        "FLD-SYS-116-12"
+      ],
+      "buttonIds": [
+        "BTN-SYS-116-01",
+        "BTN-SYS-116-02",
+        "BTN-SYS-116-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SYS-117",
+      "name": "审计日志",
+      "fieldIds": [
+        "FLD-SYS-117-01",
+        "FLD-SYS-117-02",
+        "FLD-SYS-117-03",
+        "FLD-SYS-117-04",
+        "FLD-SYS-117-05",
+        "FLD-SYS-117-06",
+        "FLD-SYS-117-07",
+        "FLD-SYS-117-08",
+        "FLD-SYS-117-09",
+        "FLD-SYS-117-10",
+        "FLD-SYS-117-11",
+        "FLD-SYS-117-12"
+      ],
+      "buttonIds": [
+        "BTN-SYS-117-01",
+        "BTN-SYS-117-02",
+        "BTN-SYS-117-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SYS-118",
+      "name": "运行日志",
+      "fieldIds": [
+        "FLD-SYS-118-01",
+        "FLD-SYS-118-02",
+        "FLD-SYS-118-03",
+        "FLD-SYS-118-04",
+        "FLD-SYS-118-05",
+        "FLD-SYS-118-06",
+        "FLD-SYS-118-07",
+        "FLD-SYS-118-08",
+        "FLD-SYS-118-09",
+        "FLD-SYS-118-10",
+        "FLD-SYS-118-11",
+        "FLD-SYS-118-12"
+      ],
+      "buttonIds": [
+        "BTN-SYS-118-01",
+        "BTN-SYS-118-02",
+        "BTN-SYS-118-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SYS-119",
+      "name": "安全事件",
+      "fieldIds": [
+        "FLD-SYS-119-01",
+        "FLD-SYS-119-02",
+        "FLD-SYS-119-03",
+        "FLD-SYS-119-04",
+        "FLD-SYS-119-05",
+        "FLD-SYS-119-06",
+        "FLD-SYS-119-07",
+        "FLD-SYS-119-08",
+        "FLD-SYS-119-09",
+        "FLD-SYS-119-10",
+        "FLD-SYS-119-11",
+        "FLD-SYS-119-12"
+      ],
+      "buttonIds": [
+        "BTN-SYS-119-01",
+        "BTN-SYS-119-02",
+        "BTN-SYS-119-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SYS-120",
+      "name": "备份恢复",
+      "fieldIds": [
+        "FLD-SYS-120-01",
+        "FLD-SYS-120-02",
+        "FLD-SYS-120-03",
+        "FLD-SYS-120-04",
+        "FLD-SYS-120-05",
+        "FLD-SYS-120-06",
+        "FLD-SYS-120-07",
+        "FLD-SYS-120-08",
+        "FLD-SYS-120-09",
+        "FLD-SYS-120-10",
+        "FLD-SYS-120-11",
+        "FLD-SYS-120-12"
+      ],
+      "buttonIds": [
+        "BTN-SYS-120-01",
+        "BTN-SYS-120-02",
+        "BTN-SYS-120-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SYS-121",
+      "name": "系统参数",
+      "fieldIds": [
+        "FLD-SYS-121-01",
+        "FLD-SYS-121-02",
+        "FLD-SYS-121-03",
+        "FLD-SYS-121-04",
+        "FLD-SYS-121-05",
+        "FLD-SYS-121-06",
+        "FLD-SYS-121-07",
+        "FLD-SYS-121-08",
+        "FLD-SYS-121-09",
+        "FLD-SYS-121-10",
+        "FLD-SYS-121-11",
+        "FLD-SYS-121-12"
+      ],
+      "buttonIds": [
+        "BTN-SYS-121-01",
+        "BTN-SYS-121-02",
+        "BTN-SYS-121-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SYS-122",
+      "name": "诊断中心",
+      "fieldIds": [
+        "FLD-SYS-122-01",
+        "FLD-SYS-122-02",
+        "FLD-SYS-122-03",
+        "FLD-SYS-122-04",
+        "FLD-SYS-122-05",
+        "FLD-SYS-122-06",
+        "FLD-SYS-122-07",
+        "FLD-SYS-122-08",
+        "FLD-SYS-122-09",
+        "FLD-SYS-122-10",
+        "FLD-SYS-122-11",
+        "FLD-SYS-122-12"
+      ],
+      "buttonIds": [
+        "BTN-SYS-122-01",
+        "BTN-SYS-122-02",
+        "BTN-SYS-122-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "RTE-123",
+      "name": "Worker管理",
+      "fieldIds": [
+        "FLD-RTE-123-01",
+        "FLD-RTE-123-02",
+        "FLD-RTE-123-03",
+        "FLD-RTE-123-04",
+        "FLD-RTE-123-05",
+        "FLD-RTE-123-06",
+        "FLD-RTE-123-07",
+        "FLD-RTE-123-08",
+        "FLD-RTE-123-09",
+        "FLD-RTE-123-10",
+        "FLD-RTE-123-11",
+        "FLD-RTE-123-12",
+        "FLD-RTE-123-13",
+        "FLD-RTE-123-14",
+        "FLD-RTE-123-15",
+        "FLD-RTE-123-16"
+      ],
+      "buttonIds": [
+        "BTN-RTE-123-01",
+        "BTN-RTE-123-02",
+        "BTN-RTE-123-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "RTE-124",
+      "name": "BrowserSession",
+      "fieldIds": [
+        "FLD-RTE-124-01",
+        "FLD-RTE-124-02",
+        "FLD-RTE-124-03",
+        "FLD-RTE-124-04",
+        "FLD-RTE-124-05",
+        "FLD-RTE-124-06",
+        "FLD-RTE-124-07",
+        "FLD-RTE-124-08",
+        "FLD-RTE-124-09",
+        "FLD-RTE-124-10",
+        "FLD-RTE-124-11",
+        "FLD-RTE-124-12",
+        "FLD-RTE-124-13",
+        "FLD-RTE-124-14",
+        "FLD-RTE-124-15",
+        "FLD-RTE-124-16"
+      ],
+      "buttonIds": [
+        "BTN-RTE-124-01",
+        "BTN-RTE-124-02",
+        "BTN-RTE-124-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "RTE-125",
+      "name": "RouteResolver/路由预览",
+      "fieldIds": [
+        "FLD-RTE-125-01",
+        "FLD-RTE-125-02",
+        "FLD-RTE-125-03",
+        "FLD-RTE-125-04",
+        "FLD-RTE-125-05",
+        "FLD-RTE-125-06",
+        "FLD-RTE-125-07",
+        "FLD-RTE-125-08",
+        "FLD-RTE-125-09",
+        "FLD-RTE-125-10",
+        "FLD-RTE-125-11",
+        "FLD-RTE-125-12",
+        "FLD-RTE-125-13",
+        "FLD-RTE-125-14",
+        "FLD-RTE-125-15",
+        "FLD-RTE-125-16"
+      ],
+      "buttonIds": [
+        "BTN-RTE-125-01",
+        "BTN-RTE-125-02",
+        "BTN-RTE-125-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PRD-126",
+      "name": "商品编辑后预览",
+      "fieldIds": [
+        "FLD-PRD-126-01",
+        "FLD-PRD-126-02",
+        "FLD-PRD-126-03",
+        "FLD-PRD-126-04",
+        "FLD-PRD-126-05",
+        "FLD-PRD-126-06",
+        "FLD-PRD-126-07",
+        "FLD-PRD-126-08",
+        "FLD-PRD-126-09",
+        "FLD-PRD-126-10",
+        "FLD-PRD-126-11",
+        "FLD-PRD-126-12",
+        "FLD-PRD-126-13",
+        "FLD-PRD-126-14",
+        "FLD-PRD-126-15",
+        "FLD-PRD-126-16"
+      ],
+      "buttonIds": [
+        "BTN-PRD-126-01",
+        "BTN-PRD-126-02",
+        "BTN-PRD-126-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SRC-127",
+      "name": "采集预览",
+      "fieldIds": [
+        "FLD-SRC-127-01",
+        "FLD-SRC-127-02",
+        "FLD-SRC-127-03",
+        "FLD-SRC-127-04",
+        "FLD-SRC-127-05",
+        "FLD-SRC-127-06",
+        "FLD-SRC-127-07",
+        "FLD-SRC-127-08",
+        "FLD-SRC-127-09",
+        "FLD-SRC-127-10",
+        "FLD-SRC-127-11",
+        "FLD-SRC-127-12",
+        "FLD-SRC-127-13",
+        "FLD-SRC-127-14",
+        "FLD-SRC-127-15",
+        "FLD-SRC-127-16"
+      ],
+      "buttonIds": [
+        "BTN-SRC-127-01",
+        "BTN-SRC-127-02",
+        "BTN-SRC-127-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SRC-128",
+      "name": "来源版本差异",
+      "fieldIds": [
+        "FLD-SRC-128-01",
+        "FLD-SRC-128-02",
+        "FLD-SRC-128-03",
+        "FLD-SRC-128-04",
+        "FLD-SRC-128-05",
+        "FLD-SRC-128-06",
+        "FLD-SRC-128-07",
+        "FLD-SRC-128-08",
+        "FLD-SRC-128-09",
+        "FLD-SRC-128-10",
+        "FLD-SRC-128-11",
+        "FLD-SRC-128-12",
+        "FLD-SRC-128-13",
+        "FLD-SRC-128-14",
+        "FLD-SRC-128-15",
+        "FLD-SRC-128-16"
+      ],
+      "buttonIds": [
+        "BTN-SRC-128-01",
+        "BTN-SRC-128-02",
+        "BTN-SRC-128-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SYS-129",
+      "name": "系统设置",
+      "fieldIds": [
+        "FLD-SYS-129-01",
+        "FLD-SYS-129-02",
+        "FLD-SYS-129-03",
+        "FLD-SYS-129-04",
+        "FLD-SYS-129-05",
+        "FLD-SYS-129-06",
+        "FLD-SYS-129-07",
+        "FLD-SYS-129-08",
+        "FLD-SYS-129-09",
+        "FLD-SYS-129-10",
+        "FLD-SYS-129-11",
+        "FLD-SYS-129-12"
+      ],
+      "buttonIds": [
+        "BTN-SYS-129-01",
+        "BTN-SYS-129-02",
+        "BTN-SYS-129-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SYS-130",
+      "name": "品牌设置",
+      "fieldIds": [
+        "FLD-SYS-130-01",
+        "FLD-SYS-130-02",
+        "FLD-SYS-130-03",
+        "FLD-SYS-130-04",
+        "FLD-SYS-130-05",
+        "FLD-SYS-130-06",
+        "FLD-SYS-130-07",
+        "FLD-SYS-130-08",
+        "FLD-SYS-130-09",
+        "FLD-SYS-130-10",
+        "FLD-SYS-130-11",
+        "FLD-SYS-130-12"
+      ],
+      "buttonIds": [
+        "BTN-SYS-130-01",
+        "BTN-SYS-130-02",
+        "BTN-SYS-130-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SYS-131",
+      "name": "本人账号资料",
+      "fieldIds": [
+        "FLD-SYS-131-01",
+        "FLD-SYS-131-02",
+        "FLD-SYS-131-03",
+        "FLD-SYS-131-04",
+        "FLD-SYS-131-05",
+        "FLD-SYS-131-06",
+        "FLD-SYS-131-07",
+        "FLD-SYS-131-08",
+        "FLD-SYS-131-09",
+        "FLD-SYS-131-10",
+        "FLD-SYS-131-11",
+        "FLD-SYS-131-12"
+      ],
+      "buttonIds": [
+        "BTN-SYS-131-01",
+        "BTN-SYS-131-02",
+        "BTN-SYS-131-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SYS-132",
+      "name": "本人账号编辑",
+      "fieldIds": [
+        "FLD-SYS-132-01",
+        "FLD-SYS-132-02",
+        "FLD-SYS-132-03",
+        "FLD-SYS-132-04",
+        "FLD-SYS-132-05",
+        "FLD-SYS-132-06",
+        "FLD-SYS-132-07",
+        "FLD-SYS-132-08",
+        "FLD-SYS-132-09",
+        "FLD-SYS-132-10",
+        "FLD-SYS-132-11",
+        "FLD-SYS-132-12"
+      ],
+      "buttonIds": [
+        "BTN-SYS-132-01",
+        "BTN-SYS-132-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SYS-133",
+      "name": "操作权限说明",
+      "fieldIds": [
+        "FLD-SYS-133-01",
+        "FLD-SYS-133-02",
+        "FLD-SYS-133-03",
+        "FLD-SYS-133-04",
+        "FLD-SYS-133-05",
+        "FLD-SYS-133-06",
+        "FLD-SYS-133-07",
+        "FLD-SYS-133-08",
+        "FLD-SYS-133-09",
+        "FLD-SYS-133-10",
+        "FLD-SYS-133-11",
+        "FLD-SYS-133-12"
+      ],
+      "buttonIds": [
+        "BTN-SYS-133-01",
+        "BTN-SYS-133-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SYS-134",
+      "name": "菜单管理",
+      "fieldIds": [
+        "FLD-SYS-134-01",
+        "FLD-SYS-134-02",
+        "FLD-SYS-134-03",
+        "FLD-SYS-134-04",
+        "FLD-SYS-134-05",
+        "FLD-SYS-134-06",
+        "FLD-SYS-134-07",
+        "FLD-SYS-134-08",
+        "FLD-SYS-134-09",
+        "FLD-SYS-134-10",
+        "FLD-SYS-134-11",
+        "FLD-SYS-134-12"
+      ],
+      "buttonIds": [
+        "BTN-SYS-134-01",
+        "BTN-SYS-134-02",
+        "BTN-SYS-134-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SYS-135",
+      "name": "日志中心",
+      "fieldIds": [
+        "FLD-SYS-135-01",
+        "FLD-SYS-135-02",
+        "FLD-SYS-135-03",
+        "FLD-SYS-135-04",
+        "FLD-SYS-135-05",
+        "FLD-SYS-135-06",
+        "FLD-SYS-135-07",
+        "FLD-SYS-135-08",
+        "FLD-SYS-135-09",
+        "FLD-SYS-135-10",
+        "FLD-SYS-135-11",
+        "FLD-SYS-135-12"
+      ],
+      "buttonIds": [
+        "BTN-SYS-135-01",
+        "BTN-SYS-135-02",
+        "BTN-SYS-135-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SYS-136",
+      "name": "日志详情",
+      "fieldIds": [
+        "FLD-SYS-136-01",
+        "FLD-SYS-136-02",
+        "FLD-SYS-136-03",
+        "FLD-SYS-136-04",
+        "FLD-SYS-136-05",
+        "FLD-SYS-136-06",
+        "FLD-SYS-136-07",
+        "FLD-SYS-136-08",
+        "FLD-SYS-136-09",
+        "FLD-SYS-136-10",
+        "FLD-SYS-136-11",
+        "FLD-SYS-136-12"
+      ],
+      "buttonIds": [
+        "BTN-SYS-136-01",
+        "BTN-SYS-136-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "MED-137",
+      "name": "存储健康与测试",
+      "fieldIds": [
+        "FLD-MED-137-01",
+        "FLD-MED-137-02",
+        "FLD-MED-137-03",
+        "FLD-MED-137-04",
+        "FLD-MED-137-05",
+        "FLD-MED-137-06",
+        "FLD-MED-137-07",
+        "FLD-MED-137-08",
+        "FLD-MED-137-09",
+        "FLD-MED-137-10",
+        "FLD-MED-137-11",
+        "FLD-MED-137-12",
+        "FLD-MED-137-13"
+      ],
+      "buttonIds": [
+        "BTN-MED-137-01",
+        "BTN-MED-137-02",
+        "BTN-MED-137-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "MED-138",
+      "name": "存储迁移",
+      "fieldIds": [
+        "FLD-MED-138-01",
+        "FLD-MED-138-02",
+        "FLD-MED-138-03",
+        "FLD-MED-138-04",
+        "FLD-MED-138-05",
+        "FLD-MED-138-06",
+        "FLD-MED-138-07",
+        "FLD-MED-138-08",
+        "FLD-MED-138-09",
+        "FLD-MED-138-10",
+        "FLD-MED-138-11",
+        "FLD-MED-138-12",
+        "FLD-MED-138-13"
+      ],
+      "buttonIds": [
+        "BTN-MED-138-01",
+        "BTN-MED-138-02",
+        "BTN-MED-138-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "STD-139",
+      "name": "数据字典",
+      "fieldIds": [
+        "FLD-STD-139-01",
+        "FLD-STD-139-02",
+        "FLD-STD-139-03",
+        "FLD-STD-139-04",
+        "FLD-STD-139-05",
+        "FLD-STD-139-06",
+        "FLD-STD-139-07",
+        "FLD-STD-139-08",
+        "FLD-STD-139-09",
+        "FLD-STD-139-10",
+        "FLD-STD-139-11",
+        "FLD-STD-139-12",
+        "FLD-STD-139-13"
+      ],
+      "buttonIds": [
+        "BTN-STD-139-01",
+        "BTN-STD-139-02",
+        "BTN-STD-139-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "SYS-140",
+      "name": "系统版本/升级",
+      "fieldIds": [
+        "FLD-SYS-140-01",
+        "FLD-SYS-140-02",
+        "FLD-SYS-140-03",
+        "FLD-SYS-140-04",
+        "FLD-SYS-140-05",
+        "FLD-SYS-140-06",
+        "FLD-SYS-140-07",
+        "FLD-SYS-140-08",
+        "FLD-SYS-140-09",
+        "FLD-SYS-140-10",
+        "FLD-SYS-140-11",
+        "FLD-SYS-140-12"
+      ],
+      "buttonIds": [
+        "BTN-SYS-140-01",
+        "BTN-SYS-140-02",
+        "BTN-SYS-140-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "CHN-141",
+      "name": "发布回执对账",
+      "fieldIds": [
+        "FLD-CHN-141-01",
+        "FLD-CHN-141-02",
+        "FLD-CHN-141-03",
+        "FLD-CHN-141-04",
+        "FLD-CHN-141-05",
+        "FLD-CHN-141-06",
+        "FLD-CHN-141-07",
+        "FLD-CHN-141-08",
+        "FLD-CHN-141-09",
+        "FLD-CHN-141-10",
+        "FLD-CHN-141-11",
+        "FLD-CHN-141-12",
+        "FLD-CHN-141-13",
+        "FLD-CHN-141-14",
+        "FLD-CHN-141-15"
+      ],
+      "buttonIds": [
+        "BTN-CHN-141-01",
+        "BTN-CHN-141-02",
+        "BTN-CHN-141-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "PRD-142",
+      "name": "商品编辑冲突",
+      "fieldIds": [
+        "FLD-PRD-142-01",
+        "FLD-PRD-142-02",
+        "FLD-PRD-142-03",
+        "FLD-PRD-142-04",
+        "FLD-PRD-142-05",
+        "FLD-PRD-142-06",
+        "FLD-PRD-142-07",
+        "FLD-PRD-142-08",
+        "FLD-PRD-142-09",
+        "FLD-PRD-142-10",
+        "FLD-PRD-142-11",
+        "FLD-PRD-142-12",
+        "FLD-PRD-142-13",
+        "FLD-PRD-142-14",
+        "FLD-PRD-142-15",
+        "FLD-PRD-142-16"
+      ],
+      "buttonIds": [
+        "BTN-PRD-142-01",
+        "BTN-PRD-142-02"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "ORD-143",
+      "name": "订单异常/冲突",
+      "fieldIds": [
+        "FLD-ORD-143-01",
+        "FLD-ORD-143-02",
+        "FLD-ORD-143-03",
+        "FLD-ORD-143-04",
+        "FLD-ORD-143-05",
+        "FLD-ORD-143-06",
+        "FLD-ORD-143-07",
+        "FLD-ORD-143-08",
+        "FLD-ORD-143-09",
+        "FLD-ORD-143-10",
+        "FLD-ORD-143-11",
+        "FLD-ORD-143-12",
+        "FLD-ORD-143-13",
+        "FLD-ORD-143-14",
+        "FLD-ORD-143-15",
+        "FLD-ORD-143-16",
+        "FLD-ORD-143-17",
+        "FLD-ORD-143-18"
+      ],
+      "buttonIds": [
+        "BTN-ORD-143-01",
+        "BTN-ORD-143-02",
+        "BTN-ORD-143-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "AS-144",
+      "name": "售后异常/冲突",
+      "fieldIds": [
+        "FLD-AS-144-01",
+        "FLD-AS-144-02",
+        "FLD-AS-144-03",
+        "FLD-AS-144-04",
+        "FLD-AS-144-05",
+        "FLD-AS-144-06",
+        "FLD-AS-144-07",
+        "FLD-AS-144-08",
+        "FLD-AS-144-09",
+        "FLD-AS-144-10",
+        "FLD-AS-144-11",
+        "FLD-AS-144-12"
+      ],
+      "buttonIds": [
+        "BTN-AS-144-01",
+        "BTN-AS-144-02",
+        "BTN-AS-144-03"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "TSK-145",
+      "name": "人工任务中心",
+      "fieldIds": [
+        "FLD-TSK-145-01",
+        "FLD-TSK-145-02",
+        "FLD-TSK-145-03",
+        "FLD-TSK-145-04",
+        "FLD-TSK-145-05",
+        "FLD-TSK-145-06",
+        "FLD-TSK-145-07",
+        "FLD-TSK-145-08",
+        "FLD-TSK-145-09",
+        "FLD-TSK-145-10",
+        "FLD-TSK-145-11",
+        "FLD-TSK-145-12",
+        "FLD-TSK-145-13",
+        "FLD-TSK-145-14",
+        "FLD-TSK-145-15",
+        "FLD-TSK-145-16",
+        "FLD-TSK-145-17"
+      ],
+      "buttonIds": [
+        "BTN-TSK-145-01",
+        "BTN-TSK-145-02",
+        "BTN-TSK-145-03",
+        "BTN-TSK-145-04"
+      ]
+    },
+    {
+      "surface": "web",
+      "id": "CUR-SRC-006",
+      "name": "链接采集批次",
+      "fieldIds": [
+        "SRC-006-F-001",
+        "SRC-006-F-002",
+        "SRC-006-F-003",
+        "SRC-006-F-004",
+        "SRC-006-F-005",
+        "SRC-006-F-006",
+        "SRC-006-F-007"
+      ],
+      "buttonIds": []
+    },
+    {
+      "surface": "web",
+      "id": "CUR-LOG-002",
+      "name": "物流回填确认",
+      "fieldIds": [
+        "LOG-002-F-001",
+        "LOG-002-F-002",
+        "LOG-002-F-003",
+        "LOG-002-F-004",
+        "LOG-002-F-005",
+        "LOG-002-F-006",
+        "LOG-002-F-007",
+        "LOG-002-F-008",
+        "LOG-002-F-009",
+        "LOG-002-F-010",
+        "LOG-002-F-011",
+        "LOG-002-F-012",
+        "LOG-002-F-013",
+        "LOG-002-F-014",
+        "LOG-002-F-015",
+        "LOG-002-F-016"
+      ],
+      "buttonIds": []
+    },
+    {
+      "surface": "web",
+      "id": "CUR-SYS-004",
+      "name": "浏览器配置",
+      "fieldIds": [
+        "SYS-004-F-001",
+        "SYS-004-F-002",
+        "SYS-004-F-003",
+        "SYS-004-F-004",
+        "SYS-004-F-005",
+        "SYS-004-F-006"
+      ],
+      "buttonIds": []
+    },
+    {
+      "surface": "web",
+      "id": "CUR-SYS-005",
+      "name": "UTP管理",
+      "fieldIds": [
+        "SYS-005-F-001",
+        "SYS-005-F-002",
+        "SYS-005-F-003",
+        "SYS-005-F-004",
+        "SYS-005-F-005",
+        "SYS-005-F-006"
+      ],
+      "buttonIds": []
+    },
+    {
+      "surface": "web",
+      "id": "CUR-SYS-008",
+      "name": "AI配置",
+      "fieldIds": [
+        "SYS-008-F-001",
+        "SYS-008-F-002",
+        "SYS-008-F-003",
+        "SYS-008-F-004",
+        "SYS-008-F-005",
+        "SYS-008-F-006",
+        "SYS-008-F-007",
+        "SYS-008-F-008",
+        "SYS-008-X-F-001",
+        "SYS-008-X-F-002",
+        "SYS-008-X-F-003"
+      ],
+      "buttonIds": []
+    },
+    {
+      "surface": "web",
+      "id": "CUR-PKG-001",
+      "name": "包装 OCR 核对",
+      "fieldIds": [
+        "PKG-001-F-001",
+        "PKG-001-F-002",
+        "PKG-001-F-003",
+        "PKG-001-F-004",
+        "PKG-001-F-005",
+        "PKG-001-F-006",
+        "PKG-001-F-007",
+        "PKG-001-F-008"
+      ],
+      "buttonIds": []
+    },
+    {
+      "surface": "web",
+      "id": "CUR-JD-001",
+      "name": "京东商品准备",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "web",
+      "id": "CUR-JD-002",
+      "name": "京东类目与属性",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "web",
+      "id": "CUR-JD-003",
+      "name": "京东草稿同步与回读",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "web",
+      "id": "CUR-JD-004",
+      "name": "京东审核与发布确认",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "web",
+      "id": "CUR-JD-005",
+      "name": "京东发布对账恢复",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "web",
+      "id": "CUR-JD-006",
+      "name": "京东订单详情",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "web",
+      "id": "CUR-INST-001",
+      "name": "安装与运行管理",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "PC-001",
+      "name": "PC首页",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "PC-002",
+      "name": "Worker配对",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "PC-003",
+      "name": "Worker状态",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "PC-004",
+      "name": "BrowserProfile",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "PC-005",
+      "name": "BrowserSession",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "PC-006",
+      "name": "RouteSnapshot",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "PC-007",
+      "name": "Adapter",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "PC-008",
+      "name": "Fixture",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "PC-009",
+      "name": "商品探查执行",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "PC-010",
+      "name": "正式采集执行",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "PC-011",
+      "name": "采集人工处理",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "PC-012",
+      "name": "媒体下载/上传",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "PC-013",
+      "name": "登录人工处理",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "PC-014",
+      "name": "店铺草稿同步执行",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "PC-015",
+      "name": "发布回执对账",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "PC-016",
+      "name": "订单同步执行",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "PC-017",
+      "name": "1688 采购建单与回读",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "PC-018",
+      "name": "物流同步执行",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "PC-019",
+      "name": "售后只读协查",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "PC-020",
+      "name": "PC诊断/日志",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "CUR-PC-LOGIN",
+      "name": "登录中心",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "CUR-PC-MONITOR",
+      "name": "任务监控",
+      "fieldIds": [],
+      "buttonIds": []
+    },
+    {
+      "surface": "pc",
+      "id": "CUR-PC-SETTINGS",
+      "name": "连接与设置",
+      "fieldIds": [],
+      "buttonIds": []
+    }
+  ],
+  "inventoryInterpretation": "Runtime inventory:181 scenes;61 logical pages. Existence is not acceptance.",
+  "testFamilies": {
+    "配置登录": [
+      "v920-login-endpoints",
+      "w8r2b-c1-configuration",
+      "w8r2b-c1-ui-pc",
+      "v911v11-platform-setup",
+      "multi-profile",
+      "pc-console"
+    ],
+    "商品采集": [
+      "utp-catalog",
+      "source-search.integration",
+      "source-pagination.integration",
+      "w3-source-links.integration",
+      "w3-shop.integration",
+      "w8r2b-workspace.integration"
+    ],
+    "商品加工": [
+      "w4-workbench.integration",
+      "w8r2b-ui",
+      "packaging-ocr",
+      "product-ai.integration",
+      "local-ai",
+      "w3-media.integration"
+    ],
+    "草稿发布": [
+      "w5-publication.integration",
+      "w5-publication-verifier",
+      "publication-executor",
+      "xhs-publication-adapter",
+      "w7r2-wechat-publication.integration",
+      "w7r6b-jd-native",
+      "w7r6c-jd-publication"
+    ],
+    "订单采购": [
+      "store-order-sync.integration",
+      "xhs-orders",
+      "w7r1-wechat-orders.integration",
+      "w7r7-jd-orders",
+      "w6-purchase.integration",
+      "purchase-readback.integration",
+      "utp-purchase",
+      "w7r3-wechat-purchase.integration",
+      "w7r8-jd-purchase.integration"
+    ],
+    "物流履约": [
+      "w6r2-fulfillment.integration",
+      "w6r2-fulfillment",
+      "w7r4-wechat-fulfillment.integration",
+      "w7r9-jd-fulfillment.integration"
+    ],
+    "售后财务": [
+      "w6r3-aftercare.integration",
+      "w6r3-aftercare",
+      "w6r3-ui",
+      "w7r5-wechat-aftercare.integration",
+      "w7r10-jd-aftercare.integration",
+      "human-finance.integration"
+    ],
+    "运行恢复": [
+      "pglite.integration",
+      "nas-http.integration",
+      "lease-keeper",
+      "w8r1-installation-workflow",
+      "w8r1-installation-http",
+      "w8r1-pc-installation"
+    ]
+  },
+  "baseline": "V9.2.0",
+  "v921Scope": "Authorization features inside SYS-001/SYS-002/PC-003/PC-006 and Browser login area; not whole-page acceptance"
+}

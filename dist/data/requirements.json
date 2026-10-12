@@ -19,7 +19,7 @@
     "businessScope": "个人/家庭经营工作空间；非企业级多租户 SaaS",
     "truthSource": "NAS Server",
     "workerBoundary": "PC Worker 仅执行授权浏览器任务并回传 Progress/Result/Evidence，不写业务数据库、不裁决业务状态。",
-    "currentVersion": "V9.2.0",
+    "currentVersion": "V9.2.1",
     "historicalRoles": [
       "OWNER",
       "OPS",
@@ -39960,5 +39960,16 @@
     "contract": "data/configuration-contract.json",
     "externalAcceptance": "PENDING_UNIFIED_SIT",
     "legacyRouteDifferences": 67
+  },
+  "v921Revision": {
+    "baseline": "V9.2.0",
+    "decision": "2026-10-12 owner confirmed independent BrowserProfile and UTP channels",
+    "scope": [
+      "independent UTP request/observation/owner confirmation",
+      "PC Runtime execution and per-operation identity recheck",
+      "channel-specific access; Browser expiry independent",
+      "PC profile instructions and advanced-only Cookie import"
+    ],
+    "actualAcceptance": "PENDING_UNIFIED_SIT"
   }
 }

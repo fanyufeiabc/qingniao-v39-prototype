@@ -1,0 +1,53 @@
+{
+  "version": "V9.2.1",
+  "baseline": "V9.2.0",
+  "fullRegression": {
+    "total": 546,
+    "pass": 545,
+    "fail": 0,
+    "skip": 1,
+    "exitCode": 0,
+    "evidence": "recovery/v921-resume/full-regression-final.tap",
+    "skipReason": "QN_TEST_DATABASE_URL not set; not counted as pass"
+  },
+  "utpFinalFocused": {
+    "total": 16,
+    "pass": 16,
+    "fail": 0,
+    "evidence": "recovery/v921-resume/utp-final-ui-transport.log",
+    "note": "Final added expiry/unconfigured authorization/tool-failure assertions are covered here after the full run snapshot; no subsequent production logic change"
+  },
+  "prototype": {
+    "p2": 114,
+    "configuration": 6,
+    "v920Compatibility": 4,
+    "utp": 5,
+    "failed": 0,
+    "mockOnly": true,
+    "realNetworkCalls": 0
+  },
+  "independentRuntimeImport": {
+    "NAS": "PASS 97 production packages; app/application/UTP/schema imports resolve locally",
+    "PC": "PASS 7 production packages; main/console/preflight/UTP imports resolve locally"
+  },
+  "migration": {
+    "count": 39,
+    "tablesIncludingLedger": 152,
+    "unchangedBaselineSql": 38,
+    "new": "V039_utp_channel_authorization.sql",
+    "realPostgreSQL": "NOT_VERIFIED"
+  },
+  "publication": {
+    "status": "NOT_SUBMITTED",
+    "baselineCommit": "6c07f492f936b4630b92e511fb04421f9b17808f",
+    "connectorWrite": "403 Resource not accessible by integration; browser authorized and uploading"
+  },
+  "visual": {
+    "prototype": "PENDING_AFTER_PUBLICATION",
+    "actualRenderedUI": "BLOCKED_BROWSER_BINARY_DOWNLOAD",
+    "reason": "Chrome for Testing download produced incomplete/non-ZIP payload; no local browser executable available",
+    "responsive": "NOT_VERIFIED"
+  },
+  "externalAcceptance": "PENDING_UNIFIED_SIT",
+  "legacyRouteDifferencesOpen": 67
+}

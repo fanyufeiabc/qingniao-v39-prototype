@@ -345,7 +345,7 @@ function render() {
     const isPc = state.mode === 'pc';
     const original = isPc ? pcPageMap.get(state.activePc) : pageMap.get(state.activeWeb);
     const page = original ? { ...original, name: prototype.title(original, state.routeParams) } : null;
-    document.title = `${page?.name || '青鸟'} · 青鸟 V9.2.0`;
+    document.title = `${page?.name || '青鸟'} · 青鸟 V9.2.1`;
     prototype.bind({ toast: showToast, render, close: closeOverlays, overlay: renderOverlay, navigatePc, domain,
       context: () => ({ mode: state.mode, params: { ...state.routeParams }, storeScope: state.storeScope, reviewMode: state.reviewMode, pcTask: state.pcTask }),
       nasDecision(task) { const pc = state.pcTasks.get(task.id); if (pc) { pc.locked = task.lock; pc.status = task.state; } },
@@ -358,7 +358,7 @@ function render() {
     const badge = original ? prototype.badge(state.mode, original.id, state.routeParams) : '';
     const content = isPc ? renderPcPage(page) : renderWebPage(page);
     const extra = original && !isPc ? prototype.extraBusiness(original.id, state.routeParams.__currentId) : '';
-    app.innerHTML = `<div class="app-shell ${isPc ? 'pc-shell' : ''}">${renderSidebar()}${renderTopbar(page)}<main class="main"><div class="page-wrap">${badge}${content}${extra}<footer class="prototype-footer"><span>V9.2.0</span><span>设计演示 · 本人操作 · NAS 业务真源 · 开发与实平台验收分别标记</span></footer></div></main></div>`;
+    app.innerHTML = `<div class="app-shell ${isPc ? 'pc-shell' : ''}">${renderSidebar()}${renderTopbar(page)}<main class="main"><div class="page-wrap">${badge}${content}${extra}<footer class="prototype-footer"><span>V9.2.1</span><span>设计演示 · 本人操作 · NAS 业务真源 · 开发与实平台验收分别标记</span></footer></div></main></div>`;
     renderOverlay();
     annotateLocalControls(app, page?.id || 'UNKNOWN');
     prototype.afterRender(app, page);
@@ -407,7 +407,7 @@ function renderPcNavigation() {
 function renderTopbar(page) {
     const isPc = state.mode === 'pc';
     const context = page && !isPc && isContextPage(page);
-    return `<header class="topbar"><div class="topbar-left"><div class="breadcrumb"><span>${isPc ? 'PC 执行端' : safe(moduleMeta[page?.module]?.label || '经营工作台')}</span><span class="slash">/</span>${context && state.routeParams.sourcePage ? `<button class="breadcrumb-link" data-return-context>${safe(pageMap.get(state.routeParams.sourcePage)?.name || state.routeParams.sourcePage)}</button><span class="slash">/</span>` : ''}<strong>${safe(page?.name || '页面不存在')}</strong>${reviewToolsVisible() ? `<code>${safe(state.routeParams.__currentId || '')}</code>` : ''}</div></div><div class="topbar-right"><button class="command-button" data-open-palette aria-label="搜索全部页面">${icon('search',16)}<span>查找页面</span><kbd>Ctrl K</kbd></button>${!isPc ? `<button class="top-control store-scope" data-store-scope>${icon('store',15)}<span>${safe(currentScope().label)}</span></button><button class="top-control" data-toggle-review title="切换字段、按钮及历史设计追踪显示">${icon('trace',15)}<span>${state.reviewMode ? '设计评审' : '业务视图'}</span></button>` : ''}<span class="freeze-pill">V9.2.0</span><span class="top-control role-control"><span class="role-avatar">我</span><strong>本人</strong></span></div></header>`;
+    return `<header class="topbar"><div class="topbar-left"><div class="breadcrumb"><span>${isPc ? 'PC 执行端' : safe(moduleMeta[page?.module]?.label || '经营工作台')}</span><span class="slash">/</span>${context && state.routeParams.sourcePage ? `<button class="breadcrumb-link" data-return-context>${safe(pageMap.get(state.routeParams.sourcePage)?.name || state.routeParams.sourcePage)}</button><span class="slash">/</span>` : ''}<strong>${safe(page?.name || '页面不存在')}</strong>${reviewToolsVisible() ? `<code>${safe(state.routeParams.__currentId || '')}</code>` : ''}</div></div><div class="topbar-right"><button class="command-button" data-open-palette aria-label="搜索全部页面">${icon('search',16)}<span>查找页面</span><kbd>Ctrl K</kbd></button>${!isPc ? `<button class="top-control store-scope" data-store-scope>${icon('store',15)}<span>${safe(currentScope().label)}</span></button><button class="top-control" data-toggle-review title="切换字段、按钮及历史设计追踪显示">${icon('trace',15)}<span>${state.reviewMode ? '设计评审' : '业务视图'}</span></button>` : ''}<span class="freeze-pill">V9.2.1</span><span class="top-control role-control"><span class="role-avatar">我</span><strong>本人</strong></span></div></header>`;
   }
 
   function renderPageHeader(page, actions = '') {

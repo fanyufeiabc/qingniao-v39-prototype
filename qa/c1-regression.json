@@ -1,5 +1,5 @@
 {
-  "version": "9.2.0",
+  "version": "9.2.1",
   "runtime": "jsdom explicit demo",
   "networkCalls": 0,
   "groups": [

@@ -1,0 +1,147 @@
+{
+  "version": "V9.2.1",
+  "requirements": [
+    {
+      "id": "R921-01",
+      "decision": "PC独立Profile网页登录",
+      "pages": [
+        "SYS-001",
+        "SYS-002",
+        "PC-003",
+        "PC-006"
+      ],
+      "implementation": [
+        "nas/src/application/utp-authorization.js",
+        "nas/src/utp-channel.js",
+        "pc-agent/src/utp-authorization.js"
+      ],
+      "tests": [
+        "test/v921-utp-authorization.test.js",
+        "scripts/test-v921.cjs"
+      ],
+      "externalAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "R921-02",
+      "decision": "NAS不收平台密码/Cookie",
+      "pages": [
+        "SYS-001",
+        "SYS-002",
+        "PC-003",
+        "PC-006"
+      ],
+      "implementation": [
+        "nas/src/application/utp-authorization.js",
+        "nas/src/utp-channel.js",
+        "pc-agent/src/utp-authorization.js"
+      ],
+      "tests": [
+        "test/v921-utp-authorization.test.js",
+        "scripts/test-v921.cjs"
+      ],
+      "externalAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "R921-03",
+      "decision": "UTP独立授权、观察与本人确认",
+      "pages": [
+        "SYS-001",
+        "SYS-002",
+        "PC-003",
+        "PC-006"
+      ],
+      "implementation": [
+        "nas/src/application/utp-authorization.js",
+        "nas/src/utp-channel.js",
+        "pc-agent/src/utp-authorization.js"
+      ],
+      "tests": [
+        "test/v921-utp-authorization.test.js",
+        "scripts/test-v921.cjs"
+      ],
+      "externalAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "R921-04",
+      "decision": "UTP与Browser分通道准入及Runtime实时身份重查",
+      "pages": [
+        "SYS-001",
+        "SYS-002",
+        "PC-003",
+        "PC-006"
+      ],
+      "implementation": [
+        "nas/src/application/utp-authorization.js",
+        "nas/src/utp-channel.js",
+        "pc-agent/src/utp-authorization.js"
+      ],
+      "tests": [
+        "test/v921-utp-authorization.test.js",
+        "scripts/test-v921.cjs"
+      ],
+      "externalAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "R921-05",
+      "decision": "默认会话复用、Cookie高级导入",
+      "pages": [
+        "SYS-001",
+        "SYS-002",
+        "PC-003",
+        "PC-006"
+      ],
+      "implementation": [
+        "nas/src/application/utp-authorization.js",
+        "nas/src/utp-channel.js",
+        "pc-agent/src/utp-authorization.js"
+      ],
+      "tests": [
+        "test/v921-utp-authorization.test.js",
+        "scripts/test-v921.cjs"
+      ],
+      "externalAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "R921-06",
+      "decision": "验证码风控本人接管、关键业务确认保留",
+      "pages": [
+        "SYS-001",
+        "SYS-002",
+        "PC-003",
+        "PC-006"
+      ],
+      "implementation": [
+        "nas/src/application/utp-authorization.js",
+        "nas/src/utp-channel.js",
+        "pc-agent/src/utp-authorization.js"
+      ],
+      "tests": [
+        "test/v921-utp-authorization.test.js",
+        "scripts/test-v921.cjs"
+      ],
+      "externalAcceptance": "PENDING_UNIFIED_SIT"
+    },
+    {
+      "id": "R921-07",
+      "decision": "UNKNOWN原锁保留及升级只读恢复",
+      "pages": [
+        "SYS-001",
+        "SYS-002",
+        "PC-003",
+        "PC-006"
+      ],
+      "implementation": [
+        "nas/src/application/utp-authorization.js",
+        "nas/src/utp-channel.js",
+        "pc-agent/src/utp-authorization.js"
+      ],
+      "tests": [
+        "test/v921-utp-authorization.test.js",
+        "scripts/test-v921.cjs"
+      ],
+      "externalAcceptance": "PENDING_UNIFIED_SIT"
+    }
+  ],
+  "historicalRouteDifferencesRemaining": 67,
+  "wholeW8R2BComplete": false
+}

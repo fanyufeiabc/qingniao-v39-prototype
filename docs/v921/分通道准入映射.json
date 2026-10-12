@@ -1,0 +1,32 @@
+{
+  "version": "V9.2.1",
+  "channels": [
+    {
+      "operation": "1688公开目录搜索、详情与经能力审定的店铺目录",
+      "NAS": "独立UTP配置 + DISCOVERED或VERIFIED + 版本/设备/能力合同",
+      "PC": "utp_discover / utp_session_status实时复查，之后调用原已审定工具",
+      "BrowserProfile": "仅账号与设备引用；网页登录健康不替代也不决定UTP准入",
+      "evidence": "v921 independent discovery + W3/W3R2 full regression"
+    },
+    {
+      "operation": "1688采购报价、建单、已有订单与物流回读、售后采购侧读取",
+      "NAS": "UTP linked=true + VERIFIED + 原买家匹配 + 冻结授权版本 + 原业务确认/合同/租约",
+      "PC": "每次实际调用前复查NAS与Runtime身份；网络/错身份阻断",
+      "BrowserProfile": "不读取Cookie；原网页登录编号保持独立",
+      "evidence": "V921 guarded Runtime + W6/W6R2/W6R3 + WeChat/JD procure/fulfill/aftercare"
+    },
+    {
+      "operation": "小红书、微信小店、京东商品草稿/发布、订单、店铺物流与售后读取",
+      "NAS": "各店铺能力合同与身份、对象/版本及关键本人确认",
+      "PC": "对应固定PC独立BrowserProfile和原执行器",
+      "BrowserProfile": "本人网页登录/验证码/风控；复用默认，Cookie高级可选",
+      "evidence": "W5 + W7R1–W7R10 full regression"
+    }
+  ],
+  "historicalOrchestration": "Server/Runtime discover/login/link/session_status: NAS now requests and confirms, fixed PC executes Runtime tools; neither tool catalog nor linked=false proves buyer authorization",
+  "UTPRequestsMinutes": 15,
+  "ownerIdentityWindowMinutes": 30,
+  "ownerIdentityWindowIsPlatformSessionTtl": false,
+  "UNKNOWN": "original locks retained; read-only recovery, never automatically resend old write",
+  "realSamples": "PENDING_UNIFIED_SIT"
+}

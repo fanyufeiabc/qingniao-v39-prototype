@@ -1,0 +1,25 @@
+{
+  "version": "V9.2.1",
+  "baseline": "V9.2.0",
+  "role": "static prototype; explicit local mock, no real NAS/PC/UTP connection",
+  "localTests": {
+    "p2": 114,
+    "configuration": 6,
+    "v920Compatibility": 4,
+    "utp": 5,
+    "failed": 0,
+    "mockOnly": true,
+    "realNetworkCalls": 0
+  },
+  "logicalPages": 61,
+  "runtimeScenes": 181,
+  "historicalFieldIds": 2030,
+  "historicalButtonIds": 437,
+  "businessCodeGitStatus": "not a Git checkout; delivered as separate ZIP",
+  "publication": {
+    "status": "NOT_SUBMITTED",
+    "baselineCommit": "6c07f492f936b4630b92e511fb04421f9b17808f",
+    "connectorWrite": "403 Resource not accessible by integration; browser authorized and uploading"
+  },
+  "externalAcceptance": "PENDING_UNIFIED_SIT"
+}

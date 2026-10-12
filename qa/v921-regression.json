@@ -1,0 +1,31 @@
+{
+  "version": "V9.2.1",
+  "type": "explicit mock; no real PC/UTP",
+  "groups": [
+    {
+      "name": "V921 current entry, separate authorization panel, legacy menus and no network",
+      "result": "PASS"
+    },
+    {
+      "name": "UTP save/readback, browser health independence and public discovery does not grant buyer",
+      "result": "PASS"
+    },
+    {
+      "name": "Wrong buyer, expired requests, stale revision, forbidden secrets and explicit owner confirmation",
+      "result": "PASS"
+    },
+    {
+      "name": "Prototype DTO and presentation mapping reject secrets, unsafe hosts and incomplete presentation contracts",
+      "result": "PASS"
+    },
+    {
+      "name": "PC login design shows local-only authorization, independent profiles and manual intervention",
+      "result": "PASS"
+    }
+  ],
+  "networkCalls": 0,
+  "summary": {
+    "pass": 5,
+    "fail": 0
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "version": "V9.2.1",
+  "baseline": "V9.2.0",
+  "schema": "V039_utp_channel_authorization.sql",
+  "fieldBindings": {
+    "accountId": "utp_authorization.account_id",
+    "profileId": "utp_authorization.profile_id",
+    "deviceId": "utp_authorization.device_id",
+    "host": "utp_authorization.host",
+    "revision": "utp_authorization.revision",
+    "contract": "utp_authorization.contract_json",
+    "contractHash": "utp_authorization.contract_sha256",
+    "expectedBuyerId": "utp_authorization.expected_buyer_id",
+    "observedBuyerId": "utp_authorization.observed_buyer_id",
+    "linked": "utp_authorization.linked",
+    "state": "utp_authorization.state",
+    "validUntil": "utp_authorization.valid_until",
+    "evidenceRef": "utp_authorization.evidence_ref"
+  },
+  "apis": [
+    {
+      "method": "GET",
+      "path": "/api/v1/utp-authorization",
+      "fields": []
+    },
+    {
+      "method": "PUT",
+      "path": "/api/v1/utp-authorization/accounts/{id}",
+      "fields": [
+        "profileId",
+        "deviceId",
+        "host",
+        "expectedBuyerId",
+        "contract",
+        "expectedRevision",
+        "confirmedSchema"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/utp-authorization/accounts/{id}/requests",
+      "fields": [
+        "action",
+        "expectedRevision"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/utp-authorization/accounts/{id}/revoke",
+      "fields": [
+        "expectedRevision"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/utp-authorization/requests/{id}/confirm",
+      "fields": [
+        "checkedOwner",
+        "expectedRevision",
+        "observedBuyerId"
+      ]
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/utp-authorization/requests/{id}/cancel",
+      "fields": []
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/worker/utp-authorization/requests",
+      "fields": []
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/worker/utp-authorization/requests/{id}/begin",
+      "fields": []
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/worker/utp-authorization/requests/{id}/observation",
+      "fields": [
+        "revision",
+        "contractHash",
+        "discovered",
+        "linked",
+        "buyerId",
+        "evidenceRef"
+      ]
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/worker/tasks/{taskId}/utp-authorization",
+      "fields": []
+    }
+  ],
+  "requestReadModel": {
+    "id": "utp_authorization_request.id",
+    "accountId": "utp_authorization_request.account_id",
+    "revision": "utp_authorization_request.revision",
+    "action": "utp_authorization_request.action",
+    "state": "utp_authorization_request.state",
+    "startedAt": "utp_authorization_request.started_at",
+    "expiresAt": "utp_authorization_request.expires_at",
+    "discovered": "utp_authorization_request.discovered",
+    "linked": "utp_authorization_request.linked",
+    "observedBuyerId": "utp_authorization_request.observed_buyer_id",
+    "evidenceRef": "utp_authorization_request.evidence_ref"
+  },
+  "frozenAuthorization": "utp_authorization_request.binding_snapshot; worker_task.utp_authorization_revision",
+  "localApi": "POST /api/configuration/utp-{pending,execute,status,close}, localhost + nonce, Agent stopped",
+  "secrets": "no Browser password/Cookie/session token accepted; QR/link stays local; Runtime credentials are not NAS DTO fields",
+  "validation": "closed fields, actual tool input schemas, mapped boolean/identity observations, current profile/device, revision, idempotency, expiry and owner confirmation",
+  "externalAcceptance": "PENDING_UNIFIED_SIT"
+}
