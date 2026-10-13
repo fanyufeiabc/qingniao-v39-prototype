@@ -1,0 +1,13 @@
+{
+  "version": "9.2.1",
+  "payloadVerified": 754,
+  "manifestAdditionalFile": 1,
+  "hashDifferences": [],
+  "installerSha256": "3bc88ef2ad89cd1dcc6686a6bc572a39fc8f34cd080479b292d4890c5f51883e",
+  "installerBytes": 25869196,
+  "runtimeSha256": "ba4e6d110e8c1592a1ecd390f6b05f3da124b13871a5be62b341a07a853c6c32",
+  "currentCodeCompared": true,
+  "manualCompared": true,
+  "actualWindowsAcceptance": "PENDING_UNIFIED_SIT",
+  "signed": false
+}

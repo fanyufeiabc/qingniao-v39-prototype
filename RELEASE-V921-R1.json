@@ -1,0 +1,13 @@
+{
+  "version": "9.2.1",
+  "increment": "R1",
+  "publication": "PENDING_AUTHORIZATION",
+  "applicationTests": {
+    "tests": 551,
+    "pass": 550,
+    "fail": 0,
+    "skipped": 1,
+    "cancelled": 0
+  },
+  "expectedParent": "f8b3c9a2e18608622e4309ae9b71095801416ad3"
+}

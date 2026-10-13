@@ -1,0 +1,30 @@
+{
+  "prototypeDesktop": {
+    "width": 1348,
+    "height": 936,
+    "horizontalScrollWidth": 1348,
+    "formWidth": 780,
+    "textFieldWidth": 738,
+    "observedScenes": [
+      "unified five-tab configuration",
+      "source account create/save/readback",
+      "independent profile create",
+      "UTP configuration and reviewed advanced fields",
+      "duplicate authorization request blocked",
+      "public-only readback and owner confirmation",
+      "wrong buyer blocks channel",
+      "PC login center with local-only UTP guidance"
+    ],
+    "evidence": "Browser observations in current conversation; explicit local prototype demo, not real platform"
+  },
+  "defect": {
+    "id": "V921-VIS-01",
+    "problem": "confirmed public-only request incorrectly said buyer identity verified",
+    "localFix": "closed with request-linked-specific wording and positive/negative DOM assertions",
+    "onlineStatus": "OPEN_UNTIL_AUTHORIZED_PUBLICATION"
+  },
+  "actualRenderedNASPC": "NOT_VERIFIED: local Chrome download returned incomplete/non-ZIP bytes; current UI DOM tests and component reuse are verified",
+  "responsiveMultipleWidths": "NOT_VERIFIED",
+  "realUserUsability": "NOT_VERIFIED",
+  "realPlatform": "PENDING_UNIFIED_SIT"
+}

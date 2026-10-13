@@ -1,0 +1,9 @@
+{
+  "parentRestoredFiles": 54,
+  "deltaRestoredFiles": 39,
+  "parentSha256": "b6c7d92013a49d11835e17fff4088246e8ccc3721918ee953c967d57bc13b739",
+  "deltaSha256": "fd0f78523bffd896a1c082360dd50c8b730f23321869cb9725ae7dc8156fea1f",
+  "conflicts": [],
+  "fullRegression": "Incomplete prior log retained; no final result recovered",
+  "screenshotsAndFinalExe": "Not saved in durable checkpoint; regenerate"
+}

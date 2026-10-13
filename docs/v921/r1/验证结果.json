@@ -1,0 +1,98 @@
+{
+  "version": "V9.2.1",
+  "increment": "R1",
+  "generatedAt": "2026-10-12T18:24:48.856587+00:00",
+  "application": {
+    "tests": 551,
+    "pass": 550,
+    "fail": 0,
+    "skipped": 1,
+    "cancelled": 0
+  },
+  "prototype": {
+    "p2-regression.json": {
+      "passed": 114,
+      "failed": 0,
+      "skipped": 0
+    },
+    "c1-regression.json": {
+      "passed": 6,
+      "failed": 0
+    },
+    "v920-regression.json": {
+      "pass": 4,
+      "fail": 0
+    },
+    "v921-regression.json": {
+      "pass": 5,
+      "fail": 0
+    }
+  },
+  "layout": {
+    "actualScreens": 244,
+    "prototypeScreens": 244,
+    "widths": [
+      1440,
+      1024,
+      768,
+      390
+    ],
+    "result": "PASS_TITLE_AND_HORIZONTAL_LAYOUT",
+    "fullFunctionalAcceptance": "PARTIAL_NOT_INFERRED_FROM_LAYOUT"
+  },
+  "browserInteractions": [
+    {
+      "name": "mobile menu opens all 18 entries and closes after navigation; table columns remain accessible",
+      "result": "PASS"
+    },
+    {
+      "name": "actual browser save/readback preserves hidden business data and source SKU bindings",
+      "result": "PASS"
+    },
+    {
+      "name": "actual browser stale version blocks overwrite and retains unsaved input until explicit discard",
+      "result": "PASS"
+    },
+    {
+      "name": "packaging field stays unchanged until original region and explicit owner checkbox are both selected",
+      "result": "PASS"
+    },
+    {
+      "name": "collection success retains original task and leads to its collected product; missing task remains an error",
+      "result": "PASS"
+    },
+    {
+      "name": "network failure retains route; refreshing restores local records without external platform requests",
+      "result": "PASS"
+    }
+  ],
+  "installer": {
+    "version": "9.2.1",
+    "increment": "R1",
+    "payloadFiles": 755,
+    "payloadVerified": 754,
+    "additionalManifestVerified": true,
+    "hashDifferences": [],
+    "currentSourceCompared": {
+      "ui-shared/page-registry.js": true,
+      "ui-shared/routes.js": true,
+      "pc-agent/src/utp-authorization.js": true,
+      "shared/utp-auth-contract.js": true
+    },
+    "installer": {
+      "name": "青鸟V9.2.1_Windows11_x64安装包.exe",
+      "bytes": 25864582,
+      "sha256": "dd1d10edbab023272f954497e3944f4662cae44ef01881cad4ae423d770d43d4"
+    },
+    "actualWindowsAcceptance": "PENDING_UNIFIED_SIT",
+    "signed": false
+  },
+  "corePreservation": {
+    "coreFilesChecked": 170,
+    "differences": [],
+    "migrationsChecked": 39,
+    "businessRules": "UNCHANGED"
+  },
+  "platformAcceptance": "PENDING_UNIFIED_SIT",
+  "publication": "BLOCKED_FINAL_PATCH_NOT_PUBLISHED"
+}

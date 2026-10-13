@@ -71,7 +71,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "SRC-002",
@@ -128,7 +135,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "SRC-003",
@@ -180,7 +194,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "SRC-004",
@@ -252,7 +273,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "SRC-005",
@@ -334,7 +362,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "PRD-001",
@@ -396,7 +431,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "PRD-002",
@@ -503,7 +545,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "PRD-003",
@@ -580,7 +629,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "PRD-004",
@@ -632,7 +688,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "PRD-005",
@@ -689,7 +752,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "STORE-001",
@@ -736,7 +806,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "扫码/密码由本人输入平台页；本机Cookie导入；店铺后台地址及配置停用。真实SIT待验证。",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "STORE-002",
@@ -793,7 +870,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2B",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "STORE-003",
@@ -865,7 +949,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2B",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "ORD-001",
@@ -927,7 +1018,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "ORD-001-D",
@@ -1054,7 +1152,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "ORD-002",
@@ -1111,7 +1216,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "PUR-001",
@@ -1173,7 +1285,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "PUR-002",
@@ -1270,7 +1389,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "PUR-003",
@@ -1352,7 +1478,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "LOG-001",
@@ -1424,7 +1557,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "LOG-002",
@@ -1531,7 +1671,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "AS-001",
@@ -1588,7 +1735,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "AS-002",
@@ -1665,7 +1819,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "FIN-001",
@@ -1747,7 +1908,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "FIN-002",
@@ -1839,7 +2007,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "FIN-003",
@@ -1906,7 +2081,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2C",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "SYS-001",
@@ -1968,7 +2150,14 @@
         "test/v921-utp-authorization.test.js",
         "test/v921-transport-recovery.test.js",
         "qa/v921-regression.json"
-      ]
+      ],
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "SYS-002",
@@ -2025,7 +2214,14 @@
         "test/v921-utp-authorization.test.js",
         "test/v921-transport-recovery.test.js",
         "qa/v921-regression.json"
-      ]
+      ],
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "SYS-004",
@@ -2082,7 +2278,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "SYS-005",
@@ -2093,11 +2296,11 @@
       "menu": "系统管理",
       "group": "运行支撑",
       "route": "#/web/SYS-005",
-      "renderer": "pending",
-      "phase": "W8R2D",
-      "frontend": "FRAMEWORK_ONLY",
-      "backend": "EXISTING_IMPLEMENTATION_REUSED",
-      "backendEvidence": "nas/src/application/platform-setup.js",
+      "renderer": "utpAuthorization",
+      "phase": "V9.2.1-R1",
+      "frontend": "LOCAL_AUTHORIZATION_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE",
+      "backend": "EXISTING_UTP_AUTHORIZATION_REUSED",
+      "backendEvidence": "nas/src/application/utp-authorization.js",
       "worker": "SEE_INCREMENT_CONTRACT",
       "localTests": "W8R1_REGRESSION_REFERENCE",
       "externalAcceptance": "PENDING_UNIFIED_SIT",
@@ -2139,7 +2342,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "UTP_AUTHORIZATION_ENTRY_VERIFIED_NOT_ALL_RUNTIME_MANAGEMENT_FEATURES",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "SYS-008",
@@ -2221,7 +2431,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "PC-003",
@@ -2273,7 +2490,14 @@
         "test/v921-utp-authorization.test.js",
         "test/v921-transport-recovery.test.js",
         "qa/v921-regression.json"
-      ]
+      ],
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "PC-004",
@@ -2320,7 +2544,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "导航与框架已建立，执行型字段与动作在 W8R2D 收口",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "DASH-001",
@@ -2411,7 +2642,14 @@
       "notes": "本批接通本地数据；真实环境与平台后置统一 SIT",
       "specComplete": false,
       "remainingControls": "诊断导出与完整跨模块对象工作区在后续批次收口",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "DASH-002",
@@ -2462,7 +2700,14 @@
       "notes": "本批接通本地数据；真实环境与平台后置统一 SIT",
       "specComplete": false,
       "remainingControls": "诊断导出与完整跨模块对象工作区在后续批次收口",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "DASH-003",
@@ -2518,7 +2763,14 @@
       "notes": "本批接通本地数据；真实环境与平台后置统一 SIT",
       "specComplete": false,
       "remainingControls": "诊断导出与完整跨模块对象工作区在后续批次收口",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "SYS-003",
@@ -2575,7 +2827,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "SYS-006",
@@ -2672,7 +2931,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "SYS-007",
@@ -2724,7 +2990,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "SYS-009",
@@ -2811,7 +3084,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "SYS-010",
@@ -2878,7 +3158,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "SYS-011",
@@ -2950,7 +3237,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "SYS-012",
@@ -3032,7 +3326,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "SRC-006",
@@ -3094,7 +3395,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "MED-001",
@@ -3166,7 +3474,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "MED-002",
@@ -3228,7 +3543,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "PKG-001",
@@ -3295,7 +3617,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "CAT-001",
@@ -3357,7 +3686,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "选择业务对象后整理资料，保存后回读核对。真实平台验证待统一 SIT。",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "STORE-004",
@@ -3424,7 +3760,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2B",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "PC-001",
@@ -3466,7 +3809,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "PC-002",
@@ -3508,7 +3858,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "PC-005",
@@ -3575,7 +3932,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "导航与框架已建立，执行型字段与动作在 W8R2D 收口",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "PC-006",
@@ -3652,7 +4016,14 @@
         "test/v921-utp-authorization.test.js",
         "test/v921-transport-recovery.test.js",
         "qa/v921-regression.json"
-      ]
+      ],
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "PC-007",
@@ -3709,7 +4080,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "JD-001",
@@ -3734,7 +4112,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2B",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "JD-002",
@@ -3759,7 +4144,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2B",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "JD-003",
@@ -3784,7 +4176,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2B",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "JD-004",
@@ -3809,7 +4208,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2B",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "JD-005",
@@ -3834,7 +4240,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2B",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "JD-006",
@@ -3859,7 +4272,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2B",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     },
     {
       "id": "INST-001",
@@ -3884,7 +4304,14 @@
         "SEE_V911_RTM_AND_INCREMENT"
       ],
       "notes": "现有复合工作区承接；逐字段页面收口在 W8R2D",
-      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE"
+      "v921Review": "INHERITED_MAPPING_NOT_FULL_PAGE_ACCEPTANCE",
+      "r1LayoutChecks": {
+        "1440": "PASS",
+        "1024": "PASS",
+        "768": "PASS",
+        "390": "PASS"
+      },
+      "r1FieldAndBusinessAcceptance": "INHERITED_PARTIAL_NO_AUTOMATIC_UPGRADE"
     }
   ],
   "counts": {
@@ -3897,7 +4324,414 @@
     "legacyPc": 20
   },
   "statusMeaning": "frontend/backend entries are implementation declarations; actual verification requires test logs. External always pending unless scoped POC.",
-  "legacyRouteDifferences": 67,
+  "legacyRouteDifferences": {
+    "version": "V9.1.2-W8R2B-C1",
+    "count": 67,
+    "differences": [
+      {
+        "surface": "web",
+        "oldId": "SRC-037",
+        "actual": "SRC-001",
+        "prototype": "SRC-005"
+      },
+      {
+        "surface": "web",
+        "oldId": "SRC-038",
+        "actual": "SRC-001",
+        "prototype": "SRC-005"
+      },
+      {
+        "surface": "web",
+        "oldId": "SRC-039",
+        "actual": "SRC-001",
+        "prototype": "SRC-005"
+      },
+      {
+        "surface": "web",
+        "oldId": "SRC-040",
+        "actual": "SRC-001",
+        "prototype": "SRC-005"
+      },
+      {
+        "surface": "web",
+        "oldId": "SRC-041",
+        "actual": "SRC-001",
+        "prototype": "SRC-005"
+      },
+      {
+        "surface": "web",
+        "oldId": "SRC-044",
+        "actual": "SRC-001",
+        "prototype": "SRC-002"
+      },
+      {
+        "surface": "web",
+        "oldId": "SRC-045",
+        "actual": "SRC-001",
+        "prototype": "SRC-002"
+      },
+      {
+        "surface": "web",
+        "oldId": "SRC-046",
+        "actual": "SRC-001",
+        "prototype": "SRC-003"
+      },
+      {
+        "surface": "web",
+        "oldId": "SRC-047",
+        "actual": "SRC-001",
+        "prototype": "SRC-004"
+      },
+      {
+        "surface": "web",
+        "oldId": "SRC-048",
+        "actual": "SRC-001",
+        "prototype": "SRC-006"
+      },
+      {
+        "surface": "web",
+        "oldId": "SRC-049",
+        "actual": "SRC-001",
+        "prototype": "SRC-004"
+      },
+      {
+        "surface": "web",
+        "oldId": "PRD-052",
+        "actual": "PRD-001",
+        "prototype": "PRD-002"
+      },
+      {
+        "surface": "web",
+        "oldId": "PRD-053",
+        "actual": "PRD-001",
+        "prototype": "PRD-002"
+      },
+      {
+        "surface": "web",
+        "oldId": "PRD-054",
+        "actual": "PRD-001",
+        "prototype": "PRD-004"
+      },
+      {
+        "surface": "web",
+        "oldId": "PRD-055",
+        "actual": "PRD-001",
+        "prototype": "PRD-004"
+      },
+      {
+        "surface": "web",
+        "oldId": "PRD-056",
+        "actual": "PRD-001",
+        "prototype": "MED-002"
+      },
+      {
+        "surface": "web",
+        "oldId": "PRD-059",
+        "actual": "PRD-001",
+        "prototype": "PRD-003"
+      },
+      {
+        "surface": "web",
+        "oldId": "PRD-060",
+        "actual": "PRD-001",
+        "prototype": "PRD-003"
+      },
+      {
+        "surface": "web",
+        "oldId": "PRD-061",
+        "actual": "PRD-001",
+        "prototype": "PRD-005"
+      },
+      {
+        "surface": "web",
+        "oldId": "CHN-066",
+        "actual": "STORE-002",
+        "prototype": "SYS-007"
+      },
+      {
+        "surface": "web",
+        "oldId": "CHN-067",
+        "actual": "STORE-002",
+        "prototype": "PRD-005"
+      },
+      {
+        "surface": "web",
+        "oldId": "CHN-068",
+        "actual": "STORE-002",
+        "prototype": "PRD-005"
+      },
+      {
+        "surface": "web",
+        "oldId": "CHN-069",
+        "actual": "STORE-002",
+        "prototype": "PRD-005"
+      },
+      {
+        "surface": "web",
+        "oldId": "CHN-070",
+        "actual": "STORE-002",
+        "prototype": "STORE-004"
+      },
+      {
+        "surface": "web",
+        "oldId": "CHN-071",
+        "actual": "STORE-002",
+        "prototype": "STORE-003"
+      },
+      {
+        "surface": "web",
+        "oldId": "CHN-072",
+        "actual": "STORE-002",
+        "prototype": "STORE-004"
+      },
+      {
+        "surface": "web",
+        "oldId": "CHN-073",
+        "actual": "STORE-002",
+        "prototype": "STORE-004"
+      },
+      {
+        "surface": "web",
+        "oldId": "ORD-075",
+        "actual": "ORD-001",
+        "prototype": "ORD-001-D"
+      },
+      {
+        "surface": "web",
+        "oldId": "ORD-076",
+        "actual": "ORD-001",
+        "prototype": "ORD-001-D"
+      },
+      {
+        "surface": "web",
+        "oldId": "ORD-077",
+        "actual": "ORD-001",
+        "prototype": "ORD-002"
+      },
+      {
+        "surface": "web",
+        "oldId": "ORD-079",
+        "actual": "ORD-001",
+        "prototype": "PUR-001"
+      },
+      {
+        "surface": "web",
+        "oldId": "ORD-080",
+        "actual": "ORD-001",
+        "prototype": "LOG-001"
+      },
+      {
+        "surface": "web",
+        "oldId": "ORD-081",
+        "actual": "ORD-001",
+        "prototype": "FIN-002"
+      },
+      {
+        "surface": "web",
+        "oldId": "PUR-083",
+        "actual": "PUR-001",
+        "prototype": "PUR-003"
+      },
+      {
+        "surface": "web",
+        "oldId": "PUR-084",
+        "actual": "PUR-001",
+        "prototype": "PUR-003"
+      },
+      {
+        "surface": "web",
+        "oldId": "PUR-085",
+        "actual": "PUR-001",
+        "prototype": "PUR-002"
+      },
+      {
+        "surface": "web",
+        "oldId": "PUR-086",
+        "actual": "PUR-001",
+        "prototype": "PUR-003"
+      },
+      {
+        "surface": "web",
+        "oldId": "PUR-087",
+        "actual": "PUR-001",
+        "prototype": "PUR-003"
+      },
+      {
+        "surface": "web",
+        "oldId": "PUR-088",
+        "actual": "PUR-001",
+        "prototype": "PUR-003"
+      },
+      {
+        "surface": "web",
+        "oldId": "LOGI-091",
+        "actual": "LOG-001",
+        "prototype": "LOG-002"
+      },
+      {
+        "surface": "web",
+        "oldId": "AS-094",
+        "actual": "AS-001",
+        "prototype": "AS-002"
+      },
+      {
+        "surface": "web",
+        "oldId": "AS-095",
+        "actual": "AS-001",
+        "prototype": "AS-002"
+      },
+      {
+        "surface": "web",
+        "oldId": "FIN-097",
+        "actual": "FIN-003",
+        "prototype": "FIN-001"
+      },
+      {
+        "surface": "web",
+        "oldId": "STD-107",
+        "actual": "CAT-001",
+        "prototype": "SYS-007"
+      },
+      {
+        "surface": "web",
+        "oldId": "STD-108",
+        "actual": "CAT-001",
+        "prototype": "SYS-007"
+      },
+      {
+        "surface": "web",
+        "oldId": "MED-109",
+        "actual": "MED-001",
+        "prototype": "SYS-006"
+      },
+      {
+        "surface": "web",
+        "oldId": "MED-110",
+        "actual": "MED-001",
+        "prototype": "SYS-006"
+      },
+      {
+        "surface": "web",
+        "oldId": "SYS-114",
+        "actual": "SYS-011",
+        "prototype": "SYS-010"
+      },
+      {
+        "surface": "web",
+        "oldId": "SYS-115",
+        "actual": "SYS-011",
+        "prototype": "SYS-010"
+      },
+      {
+        "surface": "web",
+        "oldId": "SYS-116",
+        "actual": "SYS-011",
+        "prototype": "SYS-010"
+      },
+      {
+        "surface": "web",
+        "oldId": "SYS-117",
+        "actual": "SYS-011",
+        "prototype": "SYS-010"
+      },
+      {
+        "surface": "web",
+        "oldId": "SYS-119",
+        "actual": "SYS-011",
+        "prototype": "SYS-010"
+      },
+      {
+        "surface": "web",
+        "oldId": "SYS-120",
+        "actual": "SYS-011",
+        "prototype": "SYS-012"
+      },
+      {
+        "surface": "web",
+        "oldId": "RTE-123",
+        "actual": "SYS-005",
+        "prototype": "SYS-003"
+      },
+      {
+        "surface": "web",
+        "oldId": "PRD-126",
+        "actual": "PRD-001",
+        "prototype": "PRD-002"
+      },
+      {
+        "surface": "web",
+        "oldId": "SRC-127",
+        "actual": "SRC-001",
+        "prototype": "SRC-005"
+      },
+      {
+        "surface": "web",
+        "oldId": "SRC-128",
+        "actual": "SRC-001",
+        "prototype": "SRC-005"
+      },
+      {
+        "surface": "web",
+        "oldId": "SYS-131",
+        "actual": "SYS-011",
+        "prototype": "SYS-010"
+      },
+      {
+        "surface": "web",
+        "oldId": "SYS-132",
+        "actual": "SYS-011",
+        "prototype": "SYS-010"
+      },
+      {
+        "surface": "web",
+        "oldId": "SYS-133",
+        "actual": "SYS-011",
+        "prototype": "SYS-010"
+      },
+      {
+        "surface": "web",
+        "oldId": "MED-137",
+        "actual": "MED-001",
+        "prototype": "SYS-006"
+      },
+      {
+        "surface": "web",
+        "oldId": "MED-138",
+        "actual": "MED-001",
+        "prototype": "SYS-006"
+      },
+      {
+        "surface": "web",
+        "oldId": "STD-139",
+        "actual": "CAT-001",
+        "prototype": "SYS-007"
+      },
+      {
+        "surface": "web",
+        "oldId": "SYS-140",
+        "actual": "SYS-011",
+        "prototype": "SYS-012"
+      },
+      {
+        "surface": "web",
+        "oldId": "CHN-141",
+        "actual": "STORE-002",
+        "prototype": "STORE-004"
+      },
+      {
+        "surface": "web",
+        "oldId": "PRD-142",
+        "actual": "PRD-001",
+        "prototype": "PRD-002"
+      },
+      {
+        "surface": "web",
+        "oldId": "AS-144",
+        "actual": "AS-001",
+        "prototype": "AS-002"
+      }
+    ]
+  },
   "designScenes": [
     {
       "surface": "web",
@@ -8054,5 +8888,16 @@
     ]
   },
   "baseline": "V9.2.0",
-  "v921Scope": "Authorization features inside SYS-001/SYS-002/PC-003/PC-006 and Browser login area; not whole-page acceptance"
+  "v921Scope": "Authorization features inside SYS-001/SYS-002/PC-003/PC-006 and Browser login area; not whole-page acceptance",
+  "legacyRouteDifferencesOpenCount": 0,
+  "legacyRouteDifferencesHistoricalCount": 67,
+  "legacyRouteMappingStatus": "LOCAL_MAPPING_VERIFIED_PUBLICATION_PENDING",
+  "legacyFunctionalAcceptance": "PARTIAL_DO_NOT_INFER_FROM_MAPPING",
+  "routeRemediation": {
+    "increment": "V9.2.1-R1",
+    "historicalRowsPreserved": 67,
+    "verification": "test/v921-r1-navigation.test.js",
+    "functionalPageReview": "Not closed by redirect alignment"
+  },
+  "r1VisualScope": "All logical page titles/layout at four widths; not full functional acceptance"
 }

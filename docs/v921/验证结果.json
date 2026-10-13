@@ -15,7 +15,7 @@
     "pass": 16,
     "fail": 0,
     "evidence": "recovery/v921-resume/utp-final-ui-transport.log",
-    "note": "Final added expiry/unconfigured authorization/tool-failure assertions are covered here after the full run snapshot; no subsequent production logic change"
+    "note": "Final expiry/unconfigured authorization/tool-failure and public-only versus buyer-confirmed UI assertions are covered here after the full run snapshot; only UI wording changed after business regression"
   },
   "prototype": {
     "p2": 114,
@@ -38,15 +38,43 @@
     "realPostgreSQL": "NOT_VERIFIED"
   },
   "publication": {
-    "status": "NOT_SUBMITTED",
-    "baselineCommit": "6c07f492f936b4630b92e511fb04421f9b17808f",
-    "connectorWrite": "403 Resource not accessible by integration; browser authorized and uploading"
+    "status": "PARTIALLY_PUBLISHED_FINAL_CORRECTION_BLOCKED",
+    "featureCommit": "f8b3c9a2e18608622e4309ae9b71095801416ad3",
+    "featurePagesRun": 38256711060,
+    "featurePagesConclusion": "success",
+    "finalUiCorrection": "LOCAL_FIX_VERIFIED_NOT_PUBLISHED",
+    "reason": "Automatic approval review rejected Continue as fanyufeiabc: requires action-time confirmation of repo, workflow, read:user, user:email OAuth permissions",
+    "businessSourceGitStatus": "NOT_A_GIT_CHECKOUT_DELIVERED_AS_ZIP"
   },
   "visual": {
-    "prototype": "PENDING_AFTER_PUBLICATION",
-    "actualRenderedUI": "BLOCKED_BROWSER_BINARY_DOWNLOAD",
-    "reason": "Chrome for Testing download produced incomplete/non-ZIP payload; no local browser executable available",
-    "responsive": "NOT_VERIFIED"
+    "prototypeDesktop": {
+      "width": 1348,
+      "height": 936,
+      "horizontalScrollWidth": 1348,
+      "formWidth": 780,
+      "textFieldWidth": 738,
+      "observedScenes": [
+        "unified five-tab configuration",
+        "source account create/save/readback",
+        "independent profile create",
+        "UTP configuration and reviewed advanced fields",
+        "duplicate authorization request blocked",
+        "public-only readback and owner confirmation",
+        "wrong buyer blocks channel",
+        "PC login center with local-only UTP guidance"
+      ],
+      "evidence": "Browser observations in current conversation; explicit local prototype demo, not real platform"
+    },
+    "defect": {
+      "id": "V921-VIS-01",
+      "problem": "confirmed public-only request incorrectly said buyer identity verified",
+      "localFix": "closed with request-linked-specific wording and positive/negative DOM assertions",
+      "onlineStatus": "OPEN_UNTIL_AUTHORIZED_PUBLICATION"
+    },
+    "actualRenderedNASPC": "NOT_VERIFIED: local Chrome download returned incomplete/non-ZIP bytes; current UI DOM tests and component reuse are verified",
+    "responsiveMultipleWidths": "NOT_VERIFIED",
+    "realUserUsability": "NOT_VERIFIED",
+    "realPlatform": "PENDING_UNIFIED_SIT"
   },
   "externalAcceptance": "PENDING_UNIFIED_SIT",
   "legacyRouteDifferencesOpen": 67

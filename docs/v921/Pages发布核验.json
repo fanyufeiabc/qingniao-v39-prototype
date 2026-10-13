@@ -1,0 +1,9 @@
+{
+  "status": "PARTIALLY_PUBLISHED_FINAL_CORRECTION_BLOCKED",
+  "featureCommit": "f8b3c9a2e18608622e4309ae9b71095801416ad3",
+  "featurePagesRun": 38256711060,
+  "featurePagesConclusion": "success",
+  "finalUiCorrection": "LOCAL_FIX_VERIFIED_NOT_PUBLISHED",
+  "reason": "Automatic approval review rejected Continue as fanyufeiabc: requires action-time confirmation of repo, workflow, read:user, user:email OAuth permissions",
+  "businessSourceGitStatus": "NOT_A_GIT_CHECKOUT_DELIVERED_AS_ZIP"
+}

@@ -1,0 +1,12 @@
+{
+  "scope": "Current NAS/PC frontend + local application HTTP + isolated PGlite; local prototype mock. No real platform or physical Windows/NAS.",
+  "checks": {
+    "pageWidthAndTitle": "All 61 actual pages + 61 prototype pages at four widths",
+    "actualBrowserInteractions": 6,
+    "prototypeHiddenAndTitleAssertions": 4
+  },
+  "manualReview": "Representative product editor, NAS dashboard, UTP management and narrow order list reviewed in this conversation; not full-field or human-usability acceptance.",
+  "initialFailures": "10 overflow cases retained in browser-first-failures.json, plus old UTP blocks overriding hidden; rectified and retested.",
+  "expectedErrors": "Pre-login401, stale409, missing object404, simulated network503; storage-unconfigured428 in initial layout fixtures. These are not platform pass evidence.",
+  "remaining": "Full fields/queries/buttons and missing independent business pages, real samples, physical device scaling and novice-user observation remain open."
+}

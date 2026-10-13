@@ -1,0 +1,47 @@
+{
+  "version": "V9.2.1",
+  "head": "f8b3c9a2e18608622e4309ae9b71095801416ad3",
+  "unpublishedCurrentPaths": [
+    "README.md",
+    "RELEASE-V921.json",
+    "SHA256SUMS-V921.txt",
+    "dist/index.html",
+    "dist/ui/utp-authorization-ui.js",
+    "docs/v921/验证结果.json",
+    "docs/v921/需求设计与逐页整改.md",
+    "docs/v921/全菜单全页面覆盖核对.json",
+    "docs/v921/易用性评审与逐页整改.md",
+    "docs/v921/任务恢复及执行状态报告.md"
+  ],
+  "unpublishedRuntimePaths": [
+    "dist/index.html",
+    "dist/ui/utp-authorization-ui.js"
+  ],
+  "historicalLocalOnlyPaths": [
+    "SHA256SUMS.txt",
+    "SHA256SUMS-PACKAGE-C1.txt",
+    "W8R2B_RELEASE_META.json",
+    "docs/w8r2b-c1/验证结果.json",
+    "docs/w8r2b-c1/C1_任务恢复与执行状态.md",
+    "docs/w8r2b-c1/青鸟_基础配置操作说明_V9.1.2-W8R2B-C1.docx",
+    "docs/w8r2b-c1/04_青鸟逐页面功能规格_PRD_V9.1.2-W8R2B-C1.docx",
+    "docs/w8r2b-c1/发布补正与遗留问题.md",
+    "docs/w8r2b-c1/基础配置操作说明.html",
+    "docs/w8r2b-c1/02_青鸟业务需求说明书_BRD_V9.1.2-W8R2B-C1.docx",
+    "docs/w8r2b-c1/current-page-registry.json",
+    "docs/w8r2b-c1/03_青鸟软件需求规格说明书_SRS_V9.1.2-W8R2B-C1.docx",
+    "docs/w8r2b-c1/线上发布与浏览器验收.json",
+    "docs/w8r2b-c1/C1_小白用户易用性整改.md",
+    "docs/w8r2b-c1/数据库升级预检.sql",
+    "docs/w8r2b-c1/publication-status.json",
+    "docs/w8r2b-c1/修改文件清单.json",
+    "docs/w8r2b-c1/C1_菜单页面与功能核对.md"
+  ],
+  "preExistingLegacyDifferences": [
+    "W8R2B_REVIEW.md",
+    "scripts/build-prototype-w8r2b-review.py"
+  ],
+  "coreRegressionHashFilesCompared": 170,
+  "coreRegressionHashDifferences": [],
+  "onlineFinalVersionConsistency": "NOT_PASS_PUBLICATION_BLOCKED"
+}

@@ -1,0 +1,571 @@
+{
+  "version": "V9.2.1",
+  "baseline": "V9.2.0",
+  "unchangedMigrations": 38,
+  "changes": [
+    {
+      "path": "README.md",
+      "change": "MODIFIED",
+      "baselineSha256": "898d34c4f6b4307a3ac40e38fcbff24feac5e1a0e40418ee6ad8be3a2dcc0fd0",
+      "sha256": "36b304ec79cd8caa76057a864c235ae2896c6afc656aeae618ef29ee20f313ca"
+    },
+    {
+      "path": "RELEASE-V921.json",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "9ac155213cfd75b3e99b1c9be495a533c444a7db9baa49f514e258877211e489"
+    },
+    {
+      "path": "contracts/青鸟_UTP授权接口合同_V9.2.1.json",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "cbdc4871dfd9734338598576f2c78e603bc781f65ed9c9ea46689db9c99adcc3"
+    },
+    {
+      "path": "contracts/青鸟_基础配置接口合同_V9.2.1.json",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "9f95d85dc08d794f0ac094f73cf107e99110eb667bf9daec761a0507b431f672"
+    },
+    {
+      "path": "db/migrations/V039_utp_channel_authorization.sql",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "245c32e8005d475521f5bbf47e181c8e07a395fa5a217fb652ae0cc6b7cc068a"
+    },
+    {
+      "path": "deploy/templates/nas.package-lock.json",
+      "change": "MODIFIED",
+      "baselineSha256": "b7587f6b0f26ec783297e1c99542bb7df889ca18abdedff0289172545068a8ee",
+      "sha256": "df3287ff979f81f01076d717e6510c2366213d78c7c7abdfb90a0cf4eb4ec73c"
+    },
+    {
+      "path": "deploy/templates/nas.package.json",
+      "change": "MODIFIED",
+      "baselineSha256": "ef79be5b5871d15756c77636384a71c319fbcd41aa00b0ffc2a9bbdbfc7f268b",
+      "sha256": "8b19b7475f883b249c939ea02ca26bffc275988b2568f8db7906f4b7c160d88a"
+    },
+    {
+      "path": "deploy/templates/pc.package-lock.json",
+      "change": "MODIFIED",
+      "baselineSha256": "3636dff72b0e4f349ad59038a3947ffeabee21e238b2423c0ab61694270f8cdd",
+      "sha256": "5f8b1f4f56994af6bc413697bc14dea28d807af18afbcc22bc6982b0b7c8e66a"
+    },
+    {
+      "path": "deploy/templates/pc.package.json",
+      "change": "MODIFIED",
+      "baselineSha256": "1dcbade717b4ac89dffcdc2b11fe04cb040604673a23edbff4d38ef93345b2d2",
+      "sha256": "c49260fa43709ec3a85ce1ee7cdcc6d144034dba497435df2e33373ce32eecca"
+    },
+    {
+      "path": "deploy/windows-delete-list.nsh",
+      "change": "MODIFIED",
+      "baselineSha256": "27bb257f55d825e8804cae1a88afa57c86594b3c4f07f64628b08894335f79d1",
+      "sha256": "7dca1d3e1bf92a5c8b161f0efbbef408b2c3119585fbbf4a0ab46fec90cea864"
+    },
+    {
+      "path": "deploy/windows/installer.nsi",
+      "change": "MODIFIED",
+      "baselineSha256": "20403a73badf9136951e322336a15f1ac2803f98c0df71d8ad618e860a058f7a",
+      "sha256": "11978e4a37385fba646b82d152b4462039e15479710c0cad8b446cfd7f47e1f7"
+    },
+    {
+      "path": "docs/v921/02_青鸟_BRD_V9.2.1.md",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "bf2561943764e670f401acaefcfcdbbb94f05a082fc7b397693561e01587ca62"
+    },
+    {
+      "path": "docs/v921/03_青鸟_SRS_V9.2.1.md",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "3e035598b765090ebc67525eb336d924d44e4a439fddb8d4020d4d2ed3c33e50"
+    },
+    {
+      "path": "docs/v921/04_青鸟_PRD_V9.2.1.md",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "88d1339ba0ec8a3c37e5c7f6c1576ab62757196b7a535d3b3e3eaf857d9565d0"
+    },
+    {
+      "path": "docs/v921/UTP授权接口与字段映射.json",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "cbdc4871dfd9734338598576f2c78e603bc781f65ed9c9ea46689db9c99adcc3"
+    },
+    {
+      "path": "docs/v921/一致性核对报告.md",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "11990fd56ba47547a0bdd8f337c84a41d81767ee94e83e54f1f7313fbf182c30"
+    },
+    {
+      "path": "docs/v921/任务恢复及执行状态报告.md",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "e31d6b1e9371da9b37e13cb1a378b138a70959122e393ac8ede2bc2ffa45b360"
+    },
+    {
+      "path": "docs/v921/全菜单全页面覆盖核对.json",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "1179eab769bd7614b8152dcd3a2c4c855d8215b4bb58744ba31fc246b24b092b"
+    },
+    {
+      "path": "docs/v921/分通道准入映射.json",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "4c6140bc01d1f37cd3772f6bfecc249a356f6af292722c717103cbdf068f4570"
+    },
+    {
+      "path": "docs/v921/基础配置接口合同.json",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "9f95d85dc08d794f0ac094f73cf107e99110eb667bf9daec761a0507b431f672"
+    },
+    {
+      "path": "docs/v921/操作说明.html",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "43063a7a260c300a918f20c833d98b34c5671fe38175f985e2be4f3915ec9e7c"
+    },
+    {
+      "path": "docs/v921/操作说明.md",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "9dfe6dbbad6baf1fdcc72b328693a87649c09145b4872e1121385abd4336b868"
+    },
+    {
+      "path": "docs/v921/易用性评审与逐页整改.md",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "5296b8d31142814a39aacd319b7a34b5733214e853e9be12a308394f097d2244"
+    },
+    {
+      "path": "docs/v921/线上与最终源码差异.json",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "8c785e6092efad77aabffa027e98b5e517474f2faa67aa54ad7870c1606b1fa4"
+    },
+    {
+      "path": "docs/v921/需求设计与逐页整改.md",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "bb0df03e1a846e86eae968eb543b5b2fbf3cc32cb73b9a628ed01192e9ef5aa2"
+    },
+    {
+      "path": "docs/v921/需求追踪与决策.json",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "7fab36f6e80b84a0575978c06792799b394ab3b0e900ab0c2f3b82134c287af6"
+    },
+    {
+      "path": "docs/v921/验证结果.json",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "9ac155213cfd75b3e99b1c9be495a533c444a7db9baa49f514e258877211e489"
+    },
+    {
+      "path": "nas/src/aftercare-runtime.js",
+      "change": "MODIFIED",
+      "baselineSha256": "ef9e4048424200100e2870530e32f2e9027d455f120bfb085a44fb0eff84bf9b",
+      "sha256": "5bf813302ce276a6922ea3724ce9058199feaffaa088a82111e1589b2324d463"
+    },
+    {
+      "path": "nas/src/app.js",
+      "change": "MODIFIED",
+      "baselineSha256": "5d24b6f7c93e02888c56ac227632de9966157d77b7896f14866ce3bf88c334e2",
+      "sha256": "4491cf0c87f47856245f7d7becc88d5b41183e002b20986bad48482efc584efa"
+    },
+    {
+      "path": "nas/src/application/aftercare-workflow.js",
+      "change": "MODIFIED",
+      "baselineSha256": "4ef661575438bd5db28f04f2dd7d1b9160b179c890fd91bfbd910b322b0ef39e",
+      "sha256": "a0b896f996591af3dd5753e1db915aa99fe7ac20980047f3e3c2068bf756f2e1"
+    },
+    {
+      "path": "nas/src/application/collection-observation.js",
+      "change": "MODIFIED",
+      "baselineSha256": "ebfcb0a6aa191e2fb13c4a02188bcd5da6b3acdd72745f7763d10b8744e409cd",
+      "sha256": "5835fe114a4fd562539c651e6a906d359f858566e643ebecc9e372668fb258c2"
+    },
+    {
+      "path": "nas/src/application/configuration-flow.js",
+      "change": "MODIFIED",
+      "baselineSha256": "930dcb16dc894fe8a9ece7685e1d0da8eb5a51f04a82c2e23f68a1edc711f682",
+      "sha256": "0b17997b6679693502c5f3b62354f0eff654b7590b22e28ded5099061bc43587"
+    },
+    {
+      "path": "nas/src/application/fulfillment-workflow.js",
+      "change": "MODIFIED",
+      "baselineSha256": "6318240f14d3601947f8d6da39a5f29ff26bf7c72d551ded6a962e34825d47dc",
+      "sha256": "a5c89d85dc5e1721a4219558c642d607f976103825b779c82b7af67520f3c074"
+    },
+    {
+      "path": "nas/src/application/purchase-readback.js",
+      "change": "MODIFIED",
+      "baselineSha256": "0ed4e6d3570e1af7640843c2afefc5175689dbadd9a6a7b207ff3249bea4abc8",
+      "sha256": "87772e766f66636348ba1ad5151ecda10f09285d08b47b7b2cc8bff97e249076"
+    },
+    {
+      "path": "nas/src/application/purchase-workflow.js",
+      "change": "MODIFIED",
+      "baselineSha256": "dac3b95d50e1f359e470be5bb76120f12baf8753285733725ff461646ff20513",
+      "sha256": "fe1313d3435d2e6d151af38926f5c5cffb7da115379d7f5af863d5a00f11b75d"
+    },
+    {
+      "path": "nas/src/application/source-collection.js",
+      "change": "MODIFIED",
+      "baselineSha256": "b606251221e5a13060635d0943fcf92df9c8ee61451a06a0e001e950c10659e7",
+      "sha256": "f0a049d16d8592542927a788c5efa88fd0ce13f8c19b3283c96726f114323d40"
+    },
+    {
+      "path": "nas/src/application/source-input.js",
+      "change": "MODIFIED",
+      "baselineSha256": "01a7daf9c03627c27a94d19dabfdc99c5a50c423fd436cf7915f0063b2b66973",
+      "sha256": "fb51bb0e81427259310070cd672210885006255164cc212fadcfac17768951ba"
+    },
+    {
+      "path": "nas/src/application/source-link-observation.js",
+      "change": "MODIFIED",
+      "baselineSha256": "0b71cfb7103d5eea95d0d17b1f8475a5c30d30d15f969d1727892ce1c6b123c9",
+      "sha256": "d63bb12677b5ff5eaaa7ffabf2fcd2c303db98bd34ee30884eb4b49ff36633d1"
+    },
+    {
+      "path": "nas/src/application/source-observation.js",
+      "change": "MODIFIED",
+      "baselineSha256": "3a19b6ae8d25b458b7c6154f308dc5756cc8fd72eefc79e0000e76f259354771",
+      "sha256": "4cf3b6a8cb05f93c86e6aee215d4d04dc783339e90e9ed039946269b7b093acd"
+    },
+    {
+      "path": "nas/src/application/source-search.js",
+      "change": "MODIFIED",
+      "baselineSha256": "17592ed871979f70b8c1f1f28625fa6be4f28346233d98b8bc3745d59fbbc3f3",
+      "sha256": "2609cac161f0d52072c79e4ddd38c48c76490220f72693b91d6661b45c2e55aa"
+    },
+    {
+      "path": "nas/src/application/source-shop-observation.js",
+      "change": "MODIFIED",
+      "baselineSha256": "be366a915ed0e3208cefe64b2bfc8b65365e4c14aff789ee9c919229fa369546",
+      "sha256": "f8f9571c3be1c2672ea72e5e38f15481574eb388c36a1e2f9bc9d38168211b43"
+    },
+    {
+      "path": "nas/src/application/utp-authorization.js",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "ae3ec12f4bc5e18dd46584aeede22f2dea86ae841157c9fc7926597e7b69693b"
+    },
+    {
+      "path": "nas/src/fulfillment-runtime.js",
+      "change": "MODIFIED",
+      "baselineSha256": "b60891b28368014b47f3d4a7aab5d0e8de555d11c8a1474de66f6c80cbf085ec",
+      "sha256": "f499e7ec3890407acc1d9dcd3847af1703394f506dc18a5257003962f1819b41"
+    },
+    {
+      "path": "nas/src/main.js",
+      "change": "MODIFIED",
+      "baselineSha256": "d83823a40525336166f4fb8c96168cb230f4ce6a62115f9ba37be3c7b2d75510",
+      "sha256": "39113c4f580fbb545c76a0141304f3cd2b0c7c4c85207de8381b6894d572171c"
+    },
+    {
+      "path": "nas/src/purchase-runtime.js",
+      "change": "MODIFIED",
+      "baselineSha256": "de950a614cd5021a06e07c532134b7325ced7fe42a580bb32062fdee81aabdf1",
+      "sha256": "ff4634dd9ef0e2d6d54c28b1710df5ed3148e8292eeb71d526c3a5d30036212e"
+    },
+    {
+      "path": "nas/src/runtime-schema.js",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "928f9031807f46023146d1bd3a8dbe2ddc5fd75c7bac11f7cc461f3284c21c73"
+    },
+    {
+      "path": "nas/src/service.js",
+      "change": "MODIFIED",
+      "baselineSha256": "04e665fb5c80c62ae2db556216df5412c2504207a8af22cd65e502111424d4b7",
+      "sha256": "820d8d47a5c14b9cb1b553370c5cfd8671fe1e354c87a89263a63121024ec324"
+    },
+    {
+      "path": "nas/src/utp-channel.js",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "2ba6a940ba3c9778b28f3e9f45255240aa82ebee1a5d493e44bc62707544a527"
+    },
+    {
+      "path": "package-lock.json",
+      "change": "MODIFIED",
+      "baselineSha256": "1861f9300181ca4379b348241a8f3c9a5a4a016e6f4a9fefe3a0cbfe2a28a9a6",
+      "sha256": "30639e9f546d5eb10b53355596a12a427fdbb3c445827fa3c72f98a1996b7721"
+    },
+    {
+      "path": "package.json",
+      "change": "MODIFIED",
+      "baselineSha256": "2994ad550bc423701dc4615278becd53fc2874bcb4a6ed8a8bbbf711bd08b545",
+      "sha256": "202a53174ea77711374e0574669f5a5008584ec54e980a706511abc8db788c56"
+    },
+    {
+      "path": "pc-agent/src/adapters/mcp-stdio.js",
+      "change": "MODIFIED",
+      "baselineSha256": "ba609931325b9e1435689a57145d135d8c0e1b8db87fa2835b1c1de50edf1db6",
+      "sha256": "9fd99b940c0eeca0d51baf79afbe9ab62e9e66f4351172c40c3edc05290a5168"
+    },
+    {
+      "path": "pc-agent/src/client.js",
+      "change": "MODIFIED",
+      "baselineSha256": "1ccb0aa9562c527ac1927b5bb63dd2358c8ca8ee71782a31e2273f3a34a14733",
+      "sha256": "38e3270d0fed8f6090c0789f2cb86cd9b81b353938e28e91166e59e64848ef44"
+    },
+    {
+      "path": "pc-agent/src/console.js",
+      "change": "MODIFIED",
+      "baselineSha256": "d2da9bbf90bd9ab88f0bcb65e7f444a39b6d3c1d6532aeb304f22606429f1fd7",
+      "sha256": "59617d13fcc0be85c9df82e283a7952cabd71e5669772f16301323c9cd97f9d1"
+    },
+    {
+      "path": "pc-agent/src/main.js",
+      "change": "MODIFIED",
+      "baselineSha256": "09a8eee5734c6a5cd92d5666f51adce0525154eb697089512755a0e86d9b8ab0",
+      "sha256": "1d9b5248d86cc9aa9b6eeebe8715d54f535badbd3791ac20d21a9d9962e2e305"
+    },
+    {
+      "path": "pc-agent/src/utp-authorization.js",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "d24857fc85a4e3c3a339681c9edcbd143082324adbab64d029266814b7fcb0c6"
+    },
+    {
+      "path": "prototype-current/app-restored.js",
+      "change": "MODIFIED",
+      "baselineSha256": "4980cd1ef8dd8383f3d3c7cb3376a00725535f0c5c32ba83f1c4291a8a1d5f68",
+      "sha256": "f40d51612c31cc1a91152ffd464f062a91efb68ac959260f492f5d911182e7a4"
+    },
+    {
+      "path": "prototype-current/configuration-patch.js",
+      "change": "MODIFIED",
+      "baselineSha256": "1c4fef2b752535404de02b8bc82ccc2a13ad86029a081881c5483f0c891d72a5",
+      "sha256": "62efdf8964e1bec7c49e38972bf3be6f7f40ec9bd8698db057529bc1369c029e"
+    },
+    {
+      "path": "prototype-current/configuration.css",
+      "change": "MODIFIED",
+      "baselineSha256": "6f396e68a00dc0a76f45e9a71242d579cf484daa9e4c1bfdfb22fa60e8a1a66f",
+      "sha256": "80d69217a12af6208d64deb93c610c40626251933baaf28bf08044c80c2de290"
+    },
+    {
+      "path": "prototype-current/data/requirements.js",
+      "change": "MODIFIED",
+      "baselineSha256": "67a0ff49bdd8df212969a5b5ab483817fb4ba5b25cc9f0cb82878d624284e76c",
+      "sha256": "d86cb39164d8940bee13ef261f87260fe0af2e9088ff7c34e263190386cb266f"
+    },
+    {
+      "path": "prototype-current/data/requirements.json",
+      "change": "MODIFIED",
+      "baselineSha256": "aafd3b7ba8195d40abe290496e7b4d2d5d5ed6ca08243a74855b1840cc139bf9",
+      "sha256": "e26ef31316cc837ea371b34ceada0f091c83d14b5379cafe7d81ce5b1374bb36"
+    },
+    {
+      "path": "prototype-current/index.html",
+      "change": "MODIFIED",
+      "baselineSha256": "20cd348abfa566dcc91f8276dee89dbfc89c5d3fd8d0f483808aa8986c20f6a7",
+      "sha256": "388ba0f743195c10d4767879db221073615d4758a1a70344518e85650acabed4"
+    },
+    {
+      "path": "prototype-current/journey-review.js",
+      "change": "MODIFIED",
+      "baselineSha256": "0b480efecf7cbb84d79670aa7e34563cd56c24a8767570b26e657b2491cb2fa1",
+      "sha256": "8ea4d5b775b87bfcbcf9bfba59930725d74bf788e52bf01a711c88a2b68e7ec8"
+    },
+    {
+      "path": "prototype-current/prototype-map.js",
+      "change": "MODIFIED",
+      "baselineSha256": "39e408cb0f4d6a9cd3671378fb24dfc2a8be838aca976e9ab2b34c57a2bf8114",
+      "sha256": "57f430738d249a4ace393be289fd7f0b00292d7cf40f4c31aaed1291af8ec38f"
+    },
+    {
+      "path": "prototype-current/ui/configuration-ui.js",
+      "change": "MODIFIED",
+      "baselineSha256": "60c73ef86a975ffd7853b6e5ce9ee41475090ec37c406004a4257ba2bf52b026",
+      "sha256": "e1567fcbbfd8280d217f95d4aeef8916a93ef2661f940e962f36bbbb192d9e7b"
+    },
+    {
+      "path": "prototype-current/ui/page-registry.js",
+      "change": "MODIFIED",
+      "baselineSha256": "b5a95e9beb0d48f9f26a49cb35b7a6025f77b105c0f3d66a42ecd1ec42075540",
+      "sha256": "5702a3533d4c2fc606e24a97d948259a33b0fda39f7e0801cdd94bf7c20d4020"
+    },
+    {
+      "path": "prototype-current/ui/utp-authorization-ui.js",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "ebae33342de8ee63feaf8867122d525b386660bb0a64d179be01ef06df5dd063"
+    },
+    {
+      "path": "prototype-current/utp-prototype.js",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "46c9b133c6ed9a426f330c74f1b5f61f1ec99e1602c69760fe8be70a1095af5c"
+    },
+    {
+      "path": "scripts/build-deployment.js",
+      "change": "MODIFIED",
+      "baselineSha256": "f2b0b91d8881be1c0153dfc153ea9773923c1b1584002e6968228269df2646a2",
+      "sha256": "a9e0cd26e40f14acc875851cb89afd53196aaf7c168cc0f17e50f8d5130c728f"
+    },
+    {
+      "path": "scripts/build-windows-installer.js",
+      "change": "MODIFIED",
+      "baselineSha256": "b7ce9eed6f8bbc56a47958879ac989936d841824310bbea38080d5df5d612679",
+      "sha256": "1405b052ef96c978558f2ec9d2338deeb04456d0a41b3d3b44fbfc51508d4f0e"
+    },
+    {
+      "path": "scripts/migrate-v911-dev.js",
+      "change": "MODIFIED",
+      "baselineSha256": "fff6e967168afbb12fddea042b3b8e95bfd34cd717dd9044d248dfc386812233",
+      "sha256": "50f19c8b019fe84bda4181cec486ecd8a770e93ae3593c66d1de4a5a2ce5e88d"
+    },
+    {
+      "path": "shared/install-contract.js",
+      "change": "MODIFIED",
+      "baselineSha256": "3662b87fd8f265399e698f714124e86f8cf477519f26a500f9b2a4bb7a13ddd4",
+      "sha256": "70d463426a4731bc2cb23fcc3f8fe128be9d1ddc4672e94986514bc1a27a1469"
+    },
+    {
+      "path": "shared/utp-auth-contract.js",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "e215341a2347be0d14119c5a917c20d0dd46c932b49aa1ece996d890872af50c"
+    },
+    {
+      "path": "test/fixtures/aftercare-db.js",
+      "change": "MODIFIED",
+      "baselineSha256": "f2468df91855407dbd4bc8c943dff2cca96140622ef5dfbe3dd47593c94c748a",
+      "sha256": "3b00a569d1219f5b2a154d405a0b44fbce705d6902e15d195d777c48212cb12d"
+    },
+    {
+      "path": "test/fixtures/jd-orders.js",
+      "change": "MODIFIED",
+      "baselineSha256": "698c6800e151f3aadb0d6ee640080b10da3a166b2e15725dad8fda50aceaeea7",
+      "sha256": "3b0d7d42e2747d910707b575a1b3da11b96dfefe15e9c83459157de767a06b1f"
+    },
+    {
+      "path": "test/fixtures/utp-authorization.js",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "4bfb24e2e1ad57351970bb5a067775eadcabef4f62a26b5fc21d36e4f6ebb43d"
+    },
+    {
+      "path": "test/fixtures/wechat-orders.js",
+      "change": "MODIFIED",
+      "baselineSha256": "d9898bb60eaccbcd3eceaf3919d3631f5e7bd164eb42a238c469a82b86581de8",
+      "sha256": "fbc85f822da8b7d0245a9280768a3a5c5301236d61f71795334a48a8d6495fc0"
+    },
+    {
+      "path": "test/v911-migration-contract.test.js",
+      "change": "MODIFIED",
+      "baselineSha256": "ce2a7a3db15ea6d285481057d4af29f10ebfe6214f06fa3cb89696c2e2ac8868",
+      "sha256": "cde149e0d506ceeb86866751e7b5e08ab56a0253dd238eae8460b334fb2666fe"
+    },
+    {
+      "path": "test/v921-transport-recovery.test.js",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "8245eca678973e5295305b7446cfef16d7ab06cf61319f5abf5c59ab693042a3"
+    },
+    {
+      "path": "test/v921-utp-authorization.test.js",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "56039a51895e249ceb8165fb22c92e2c504d533e98b1bb93d789a8f63a27b21a"
+    },
+    {
+      "path": "test/w3-shop.integration.test.js",
+      "change": "MODIFIED",
+      "baselineSha256": "e492f5d918d36d7824372093b7809db0fa37d4cf16fe9873a686887a1f9ca0bf",
+      "sha256": "5a03cacd7c5a829788bffff7a077f2be4245ea3a7ee0307caaaa16464ca7991b"
+    },
+    {
+      "path": "test/w3-source-links.integration.test.js",
+      "change": "MODIFIED",
+      "baselineSha256": "910428e7df826224d5e86312976105036c3dbb47e5b184939ea6855102f03c96",
+      "sha256": "c5448d427f37fe942280802411a936b5a7d5265e2d449e9ac815bf6a09c3e752"
+    },
+    {
+      "path": "test/w6-purchase.integration.test.js",
+      "change": "MODIFIED",
+      "baselineSha256": "c6e942dbf91add5002a1a3665d3bf82e793d7ac102ad01b5f927ff764fa5c7b7",
+      "sha256": "1c3386e407e5c00e52a70a96e4e163d8f73a95b5e9a91986786f23bb868ad1d1"
+    },
+    {
+      "path": "test/w6r2-fulfillment.integration.test.js",
+      "change": "MODIFIED",
+      "baselineSha256": "4c5463885fc8fdd540b2ddcda4086bf0ac71de62914b7a142b73292e381f1429",
+      "sha256": "2f7bf7302dced84bc2bbf39bd77436fdd7df64f74750e723c2501d4e04a2d0ee"
+    },
+    {
+      "path": "test/w7r10-jd-aftercare.integration.test.js",
+      "change": "MODIFIED",
+      "baselineSha256": "6832f5ba5d663079990555a52683df61f1f6cbc3ffa189521ad68674d484cdf4",
+      "sha256": "7cc0370a480f5dea0c6473a09c8b246bc98cce20dd358bebb40f9a1b5a296b24"
+    },
+    {
+      "path": "test/w7r5-wechat-aftercare.integration.test.js",
+      "change": "MODIFIED",
+      "baselineSha256": "474785f94c2e96a4a1918046a06a027b640049db6da6a1a18f974896be826e6e",
+      "sha256": "5ed2054ee9dae06beed49dc58517b0ad351f6d5935cb4514f3517251fdffb6e5"
+    },
+    {
+      "path": "test/w7r8-jd-purchase-contract.test.js",
+      "change": "MODIFIED",
+      "baselineSha256": "5da34d3ab18519784788776801c80ad9ba142ece039fbf72c435e64b740978ac",
+      "sha256": "a8d97221090b0f5275fbc50747561fe21d02060368c25e2e43c0e6f455955d5f"
+    },
+    {
+      "path": "test/w8r1-installation-workflow.test.js",
+      "change": "MODIFIED",
+      "baselineSha256": "97d5e76fb756a9e30e2f99113e7da7f32da67404cce311a01f2be60dac298269",
+      "sha256": "99c1474d6eedd077bdd322c37b6946f4798ec83a40d18c4d6ebab021cb0aba12"
+    },
+    {
+      "path": "ui-shared/configuration-ui.js",
+      "change": "MODIFIED",
+      "baselineSha256": "60c73ef86a975ffd7853b6e5ce9ee41475090ec37c406004a4257ba2bf52b026",
+      "sha256": "e1567fcbbfd8280d217f95d4aeef8916a93ef2661f940e962f36bbbb192d9e7b"
+    },
+    {
+      "path": "ui-shared/page-registry.js",
+      "change": "MODIFIED",
+      "baselineSha256": "9545c6f892742b4ba5d330c0d16496496bb95962eefb2e93a2beff1029775056",
+      "sha256": "24b37df6667e3ce67fbb54b60385946e2a651dc94be0449ba6136b686a5078df"
+    },
+    {
+      "path": "ui-shared/utp-authorization-ui.js",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "ebae33342de8ee63feaf8867122d525b386660bb0a64d179be01ef06df5dd063"
+    },
+    {
+      "path": "web-nas/index.html",
+      "change": "MODIFIED",
+      "baselineSha256": "5588e2ba921267926e97ad23832df3ac1ca9ddace5b95febcc75b323a8c5919c",
+      "sha256": "6e14be3bcb2878a1d2e5fd4143c02085e4b93bafa609bb4fee000c9acd94e93c"
+    },
+    {
+      "path": "web-pc-console/configuration-login.js",
+      "change": "MODIFIED",
+      "baselineSha256": "c70d7abffe5f78d42fd93267e0ff51cc93836f9616c170c8ce016f289bd45d7e",
+      "sha256": "c737cbef70d27a0009487786629ab9c4665b813ed4e697be0b19834a00829a32"
+    },
+    {
+      "path": "web-pc-console/index.html",
+      "change": "MODIFIED",
+      "baselineSha256": "33c818487d81cd5baa21e69af9c90b15e5ec2d7889dce24242024441650bedae",
+      "sha256": "b71f784ba239c8bf3ceb156db46fe797b2e9c73c258d49582d2e0ef0f56c216a"
+    },
+    {
+      "path": "web-pc-console/utp-authorization.js",
+      "change": "ADDED",
+      "baselineSha256": null,
+      "sha256": "771aa69085ab62dfd2c6c62ab2a34cdbd1d0cb80fd373343f8f7dffc6bc8b3e1"
+    }
+  ]
+}

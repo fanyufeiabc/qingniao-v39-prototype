@@ -1,0 +1,62 @@
+﻿端,页面,名称,菜单,前端实施状态,后端依据,1440布局,1024布局,768布局,390布局,完整功能验收,真实平台验收
+web,SRC-001,货源搜索,货源与采集,LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE,nas/src/application/product-workspace.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,SRC-002,候选商品,货源与采集,LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE,nas/src/application/product-workspace.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,SRC-003,采集任务,货源与采集,LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE,nas/src/application/product-workspace.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,SRC-004,采集详情,货源与采集,LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE,nas/src/application/product-workspace.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,SRC-005,已采集货源,货源与采集,LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE,nas/src/application/product-workspace.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,PRD-001,商品列表,商品中心,LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE,nas/src/application/product-workspace.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,PRD-002,商品编辑,商品中心,LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE,nas/src/application/product-workspace.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,PRD-003,AI清洗与检测,商品中心,LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE,nas/src/application/product-workspace.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,PRD-004,商品版本,商品中心,LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE,nas/src/application/product-workspace.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,PRD-005,平台适配,商品中心,LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE,nas/src/application/product-workspace.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,STORE-001,我的店铺,平台与账号店铺,EXISTING_COMPOSITE_PARTIAL,nas/src/application/configuration-flow.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,STORE-002,渠道商品,店铺商品与草稿,EXISTING_COMPOSITE_PARTIAL,nas/src/application/store-publication.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,STORE-003,同步任务,店铺商品与草稿,EXISTING_COMPOSITE_PARTIAL,nas/src/application/store-publication.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,ORD-001,销售订单,订单中心,EXISTING_COMPOSITE_PARTIAL,nas/src/application/store-order-sync.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,ORD-001-D,订单详情弹窗,订单中心,EXISTING_COMPOSITE_PARTIAL,nas/src/application/store-order-sync.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,ORD-002,订单同步任务,订单中心,EXISTING_COMPOSITE_PARTIAL,nas/src/application/store-order-sync.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,PUR-001,采购建议,采购中心,EXISTING_COMPOSITE_PARTIAL,nas/src/application/purchase-workflow.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,PUR-002,采购确认,采购中心,EXISTING_COMPOSITE_PARTIAL,nas/src/application/purchase-workflow.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,PUR-003,采购订单,采购中心,EXISTING_COMPOSITE_PARTIAL,nas/src/application/purchase-workflow.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,LOG-001,物流中心,物流中心,EXISTING_COMPOSITE_PARTIAL,nas/src/application/fulfillment-workflow.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,LOG-002,物流回填确认,物流中心,EXISTING_COMPOSITE_PARTIAL,nas/src/application/fulfillment-workflow.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,AS-001,售后中心,售后中心,EXISTING_COMPOSITE_PARTIAL,nas/src/application/aftercare-workflow.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,AS-002,售后详情,售后中心,EXISTING_COMPOSITE_PARTIAL,nas/src/application/aftercare-workflow.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,FIN-001,经营核算总览,费用与核算,EXISTING_COMPOSITE_PARTIAL,nas/src/application/finance.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,FIN-002,订单项核算明细,费用与核算,EXISTING_COMPOSITE_PARTIAL,nas/src/application/finance.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,FIN-003,待补与待分配处理,费用与核算,EXISTING_COMPOSITE_PARTIAL,nas/src/application/finance.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,SYS-001,平台与账号设置,平台与账号店铺,EXISTING_COMPOSITE_PARTIAL,nas/src/application/configuration-flow.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,SYS-002,我的货源账号,平台与账号店铺,EXISTING_COMPOSITE_PARTIAL,nas/src/application/configuration-flow.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,SYS-004,浏览器配置,执行节点,EXISTING_COMPOSITE_PARTIAL,nas/src/application/platform-setup.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,SYS-005,UTP管理,系统管理,LOCAL_AUTHORIZATION_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE,nas/src/application/utp-authorization.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,SYS-008,AI配置,系统管理,FRAMEWORK_ONLY,nas/src/application/platform-setup.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+pc,PC-003,登录中心,PC 客户端,FRAMEWORK_ONLY,pc-agent/src/configuration-login.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+pc,PC-004,人工接管,PC 客户端,FRAMEWORK_ONLY,pc-agent/src/console.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,DASH-001,工作台,工作台,LOCAL_DATA,nas/src/application/operations-dashboard.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,DASH-002,待处理,待处理,LOCAL_DATA,nas/src/application/operations-dashboard.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,DASH-003,异常中心,异常中心,LOCAL_DATA,nas/src/application/operations-dashboard.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,SYS-003,PC客户端,执行节点,EXISTING_COMPOSITE_PARTIAL,nas/src/application/platform-setup.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,SYS-006,存储管理,媒体与存储,FRAMEWORK_ONLY,nas/src/application/platform-setup.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,SYS-007,映射规则,标准数据,FRAMEWORK_ONLY,nas/src/application/platform-setup.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,SYS-009,任务与执行,任务与执行,EXISTING_COMPOSITE_PARTIAL,nas/src/application/platform-setup.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,SYS-010,安全与审计,系统管理,FRAMEWORK_ONLY,nas/src/application/platform-setup.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,SYS-011,系统诊断,系统管理,FRAMEWORK_ONLY,nas/src/application/platform-setup.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,SYS-012,备份与维护,系统管理,EXISTING_COMPOSITE_PARTIAL,nas/src/application/platform-setup.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,SRC-006,链接采集批次,货源与采集,LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE,nas/src/application/product-workspace.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,MED-001,媒体清单,媒体与存储,LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE,nas/src/application/product-workspace.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,MED-002,图片加工与来源,媒体与存储,LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE,nas/src/application/product-workspace.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,PKG-001,包装 OCR 核对,商品中心,LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE,nas/src/application/packaging-ocr.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,CAT-001,类目与属性字典,标准数据,LOCAL_API_INTERFACE_PARTIAL_REQUIREMENT_COVERAGE,nas/src/application/product-workspace.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,STORE-004,草稿与发布确认,店铺商品与草稿,EXISTING_COMPOSITE_PARTIAL,nas/src/application/store-publication.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+pc,PC-001,首次配对,PC 客户端,EXISTING_COMPOSITE_PARTIAL,pc-agent/src/console.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+pc,PC-002,设备首页,PC 客户端,EXISTING_COMPOSITE_PARTIAL,pc-agent/src/console.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+pc,PC-005,任务监控,PC 客户端,FRAMEWORK_ONLY,pc-agent/src/console.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+pc,PC-006,连接与设置,PC 客户端,EXISTING_COMPOSITE_PARTIAL,pc-agent/src/console.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+pc,PC-007,账号档案与登录核验,PC 客户端,EXISTING_COMPOSITE_PARTIAL,pc-agent/src/console.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,JD-001,京东商品准备,店铺商品与草稿,EXISTING_COMPOSITE_PARTIAL,nas/src/application/jd-publication.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,JD-002,京东类目与属性,店铺商品与草稿,EXISTING_COMPOSITE_PARTIAL,nas/src/application/jd-publication.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,JD-003,京东草稿同步与回读,店铺商品与草稿,EXISTING_COMPOSITE_PARTIAL,nas/src/application/jd-publication.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,JD-004,京东审核与发布确认,店铺商品与草稿,EXISTING_COMPOSITE_PARTIAL,nas/src/application/jd-publication.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,JD-005,京东发布对账恢复,店铺商品与草稿,EXISTING_COMPOSITE_PARTIAL,nas/src/application/jd-publication.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,JD-006,京东订单详情,订单中心,EXISTING_COMPOSITE_PARTIAL,nas/src/application/jd-publication.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
+web,INST-001,安装与运行管理,系统管理,EXISTING_COMPOSITE_PARTIAL,nas/src/manager.js,PASS,PASS,PASS,PASS,继承原部分/未执行状态，不由布局替代,PENDING_UNIFIED_SIT
